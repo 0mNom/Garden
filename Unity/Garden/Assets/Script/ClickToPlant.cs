@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ClickToPlant : MonoBehaviour
 {
+    public GameObject bagObject;
     SpriteRenderer spriteRenderer;
     public Sprite evolution1;
     public Sprite potVide;
     Collider2D col;
-    float seed = 0;
 
 
     void Start()
@@ -20,6 +20,7 @@ public class ClickToPlant : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        BagScript bagScript = bagObject.GetComponent<BagScript>();
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -28,9 +29,9 @@ public class ClickToPlant : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
-                if (col == touchedCollider && spriteRenderer.sprite == potVide && seed != 0)
+                if (col == touchedCollider && spriteRenderer.sprite == potVide && bagScript.seed != 0)
                 {
-                    seed = 0;
+                    bagScript.seed = 0;
                     spriteRenderer.sprite = evolution1;
                 }
             }
