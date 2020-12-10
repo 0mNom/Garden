@@ -25,7 +25,7 @@ public class MarketManager : MonoBehaviour
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if (touchedCollider == ble.GetComponent<Collider2D>())
                 {
-                    Debug.Log("Yes");
+                    Debug.Log("Ble");
                     AddWeat();
                 }
             }
