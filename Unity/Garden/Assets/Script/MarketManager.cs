@@ -35,6 +35,6 @@ public class MarketManager : MonoBehaviour
     public void AddWeat()
     {
         BagScript bagScript = bagObject.GetComponent<BagScript>();
-        bagScript.seed = 1;
+        bagScript.plantingseed = 1;
     }
 }
