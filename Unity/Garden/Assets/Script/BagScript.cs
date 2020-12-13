@@ -264,7 +264,7 @@ public class BagScript : MonoBehaviour
         }
         else
         {
-            plantingseed = 2;
+            plantingseed = 9;
             kiwiseed--;
         }
         t_kiwi.text = kiwiseed.ToString();
