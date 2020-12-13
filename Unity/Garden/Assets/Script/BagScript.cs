@@ -24,6 +24,8 @@ public class BagScript : MonoBehaviour
         {
 
         }
+
+        t_monay.text = Monay.ToString();
     }
 
 
