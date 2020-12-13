@@ -54,8 +54,17 @@ public class ClickToPlant : MonoBehaviour
     public Sprite evolutionCherry1;
     int growingTimeCherry = 10;
 
+    //specific to Avocado
+    bool avocadoPlanted = false;
+    DateTime targetTimeAvocado;
+    public Sprite evolutionAvocado1;
+    int growingTimeAvocado = 10;
 
-
+    //specific to Kiwi
+    bool kiwiPlanted = false;
+    DateTime targetTimeKiwi;
+    public Sprite evolutionKiwi1;
+    int growingTimeKiwi = 10;
 
     void Start()
     {
@@ -140,6 +149,24 @@ public class ClickToPlant : MonoBehaviour
                         cherryPlanted = true;
                         gotPlant = true;
                     }
+
+                    if (bagScript.plantingseed == 8)
+                    {
+                        targetTimeAvocado = CurrentTime.AddSeconds(growingTimeAvocado);
+                        bagScript.plantingseed = 0;
+                        Debug.Log("Evolving in " + growingTimeAvocado + " seconds");
+                        avocadoPlanted = true;
+                        gotPlant = true;
+                    }
+
+                    if (bagScript.plantingseed == 9)
+                    {
+                        targetTimeKiwi = CurrentTime.AddSeconds(growingTimeKiwi);
+                        bagScript.plantingseed = 0;
+                        Debug.Log("Evolving in " + growingTimeKiwi + " seconds");
+                        kiwiPlanted = true;
+                        gotPlant = true;
+                    }
                 }
             }
         }
@@ -211,6 +238,26 @@ public class ClickToPlant : MonoBehaviour
                 Debug.Log("Evolution");
                 spriteRenderer.sprite = evolutionCherry1;
                 cherryPlanted = false;
+            }
+        }
+
+        if (avocadoPlanted)
+        {
+            if (DateTime.Compare(CurrentTime, targetTimeAvocado) == 1)
+            {
+                Debug.Log("Evolution");
+                spriteRenderer.sprite = evolutionAvocado1;
+                avocadoPlanted = false;
+            }
+        }
+
+        if (kiwiPlanted)
+        {
+            if (DateTime.Compare(CurrentTime, targetTimeKiwi) == 1)
+            {
+                Debug.Log("Evolution");
+                spriteRenderer.sprite = evolutionKiwi1;
+                kiwiPlanted = false;
             }
         }
     }
