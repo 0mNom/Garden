@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class WindowManager : MonoBehaviour
 {
-    public Text nameText;
-    public Text DialogueText;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI DialogueText;
 
     public Animator animator;
     public Queue<string> sentences;
