@@ -14,57 +14,75 @@ public class ClickToPlant : MonoBehaviour
 
     //specific to ble
     bool blePlanted = false;
-    DateTime targetTimeBle;
+    DateTime targetTimeBle1;
+    DateTime targetTimeBle2;
+    DateTime targetTimeBle3;
     public Sprite evolutionBle1;
-    int growingTimeBle = 10;
+    float growingTimeBle = 10;
 
     //specific to apple
     bool applePlanted = false;
-    DateTime targetTimeApple;
+    DateTime targetTimeApple1;
+    DateTime targetTimeApple2;
+    DateTime targetTimeApple3;
     public Sprite evolutionApple1;
-    int growingTimeApple = 10;
+    float growingTimeApple = 10;
 
     //specific to Tomato
     bool tomatoPlanted = false;
-    DateTime targetTimeTomato;
+    DateTime targetTimeTomato1;
+    DateTime targetTimeTomato2;
+    DateTime targetTimeTomato3;
     public Sprite evolutionTomato1;
-    int growingTimeTomato = 10;
+    float growingTimeTomato = 10;
 
     //specific to Eggplant
     bool eggplantPlanted = false;
-    DateTime targetTimeEggplant;
+    DateTime targetTimeEggplant1;
+    DateTime targetTimeEggplant2;
+    DateTime targetTimeEggplant3;
     public Sprite evolutionEggplant1;
-    int growingTimeEggplant = 10;
+    float growingTimeEggplant = 10;
 
     //specific to Pear
     bool pearPlanted = false;
-    DateTime targetTimePear;
+    DateTime targetTimePear1;
+    DateTime targetTimePear2;
+    DateTime targetTimePear3;
     public Sprite evolutionPear1;
-    int growingTimePear = 10;
+    float growingTimePear = 10;
 
     //specific to Sunflower
     bool sunflowerPlanted = false;
-    DateTime targetTimeSunflower;
+    DateTime targetTimeSunflower1;
+    DateTime targetTimeSunflower2;
+    DateTime targetTimeSunflower3;
     public Sprite evolutionSunflower1;
-    int growingTimeSunflower = 10;
+    float growingTimeSunflower = 10;
 
     //specific to Cherry
     bool cherryPlanted = false;
-    DateTime targetTimeCherry;
+    DateTime targetTimeCherry1;
+    DateTime targetTimeCherry2;
+    DateTime targetTimeCherry3;
     public Sprite evolutionCherry1;
-    int growingTimeCherry = 10;
+    float growingTimeCherry = 10;
 
     //specific to Avocado
     bool avocadoPlanted = false;
-    DateTime targetTimeAvocado;
+    DateTime targetTimeAvocado1;
+    DateTime targetTimeAvocado2;
+    DateTime targetTimeAvocado3;
     public Sprite evolutionAvocado1;
-    int growingTimeAvocado = 10;
+    float growingTimeAvocado = 10;
 
     //specific to Kiwi
     bool kiwiPlanted = false;
-    DateTime targetTimeKiwi;
+    DateTime targetTimeKiwi1;
+    DateTime targetTimeKiwi2;
+    DateTime targetTimeKiwi3;
     public Sprite evolutionKiwi1;
-    int growingTimeKiwi = 10;
+    float growingTimeKiwi = 10;
 
     void Start()
     {
@@ -89,7 +107,9 @@ public class ClickToPlant : MonoBehaviour
                 {
                     if(bagScript.plantingseed == 1)
                     {
-                        targetTimeBle = CurrentTime.AddSeconds(growingTimeBle);
+                        targetTimeBle1 = CurrentTime.AddSeconds(growingTimeBle * (1 / 3));
+                        targetTimeBle2 = CurrentTime.AddSeconds(growingTimeBle * (2 / 3));
+                        targetTimeBle3 = CurrentTime.AddSeconds(growingTimeBle);
                         bagScript.plantingseed = 0;
                         Debug.Log("Evolving in " + growingTimeBle + " seconds");
                         blePlanted = true;
@@ -98,7 +118,9 @@ public class ClickToPlant : MonoBehaviour
 
                     if (bagScript.plantingseed == 2)
                     {
-                        targetTimeApple = CurrentTime.AddSeconds(growingTimeApple);
+                        targetTimeApple1 = CurrentTime.AddSeconds(growingTimeApple * (1 / 3));
+                        targetTimeApple2 = CurrentTime.AddSeconds(growingTimeApple * (2 / 3));
+                        targetTimeApple3 = CurrentTime.AddSeconds(growingTimeApple);
                         bagScript.plantingseed = 0;
                         Debug.Log("Evolving in " + growingTimeApple + " seconds");
                         applePlanted = true;
@@ -107,7 +129,9 @@ public class ClickToPlant : MonoBehaviour
 
                     if (bagScript.plantingseed == 3)
                     {
-                        targetTimeTomato = CurrentTime.AddSeconds(growingTimeTomato);
+                        targetTimeTomato1 = CurrentTime.AddSeconds(growingTimeTomato * (1 / 3));
+                        targetTimeTomato2 = CurrentTime.AddSeconds(growingTimeTomato * (2 / 3));
+                        targetTimeTomato3 = CurrentTime.AddSeconds(growingTimeTomato);
                         bagScript.plantingseed = 0;
                         Debug.Log("Evolving in " + growingTimeTomato + " seconds");
                         tomatoPlanted = true;
@@ -116,7 +140,9 @@ public class ClickToPlant : MonoBehaviour
 
                     if (bagScript.plantingseed == 4)
                     {
-                        targetTimeEggplant = CurrentTime.AddSeconds(growingTimeEggplant);
+                        targetTimeEggplant1 = CurrentTime.AddSeconds(growingTimeEggplant * (1 / 3));
+                        targetTimeEggplant2 = CurrentTime.AddSeconds(growingTimeEggplant * (2 / 3));
+                        targetTimeEggplant3 = CurrentTime.AddSeconds(growingTimeEggplant);
                         bagScript.plantingseed = 0;
                         Debug.Log("Evolving in " + growingTimeEggplant + " seconds");
                         eggplantPlanted = true;
@@ -125,7 +151,9 @@ public class ClickToPlant : MonoBehaviour
 
                     if (bagScript.plantingseed == 5)
                     {
-                        targetTimePear = CurrentTime.AddSeconds(growingTimePear);
+                        targetTimePear1 = CurrentTime.AddSeconds(growingTimePear * (1 / 3));
+                        targetTimePear2 = CurrentTime.AddSeconds(growingTimePear * (2 / 3));
+                        targetTimePear3 = CurrentTime.AddSeconds(growingTimePear);
                         bagScript.plantingseed = 0;
                         Debug.Log("Evolving in " + growingTimePear + " seconds");
                         pearPlanted = true;
@@ -134,7 +162,9 @@ public class ClickToPlant : MonoBehaviour
 
                     if (bagScript.plantingseed == 6)
                     {
-                        targetTimeSunflower = CurrentTime.AddSeconds(growingTimeSunflower);
+                        targetTimeSunflower1 = CurrentTime.AddSeconds(growingTimeSunflower * (1 / 3));
+                        targetTimeSunflower2 = CurrentTime.AddSeconds(growingTimeSunflower * (2 / 3));
+                        targetTimeSunflower3 = CurrentTime.AddSeconds(growingTimeSunflower);
                         bagScript.plantingseed = 0;
                         Debug.Log("Evolving in " + growingTimeSunflower + " seconds");
                         sunflowerPlanted = true;
@@ -143,7 +173,9 @@ public class ClickToPlant : MonoBehaviour
 
                     if (bagScript.plantingseed == 7)
                     {
-                        targetTimeCherry = CurrentTime.AddSeconds(growingTimeCherry);
+                        targetTimeCherry1 = CurrentTime.AddSeconds(growingTimeCherry * (1 / 3));
+                        targetTimeCherry2 = CurrentTime.AddSeconds(growingTimeCherry * (2 / 3));
+                        targetTimeCherry3 = CurrentTime.AddSeconds(growingTimeCherry);
                         bagScript.plantingseed = 0;
                         Debug.Log("Evolving in " + growingTimeCherry + " seconds");
                         cherryPlanted = true;
@@ -152,7 +184,9 @@ public class ClickToPlant : MonoBehaviour
 
                     if (bagScript.plantingseed == 8)
                     {
-                        targetTimeAvocado = CurrentTime.AddSeconds(growingTimeAvocado);
+                        targetTimeAvocado1 = CurrentTime.AddSeconds(growingTimeAvocado * (1 / 3));
+                        targetTimeAvocado2 = CurrentTime.AddSeconds(growingTimeAvocado * (2 / 3));
+                        targetTimeAvocado3 = CurrentTime.AddSeconds(growingTimeAvocado);
                         bagScript.plantingseed = 0;
                         Debug.Log("Evolving in " + growingTimeAvocado + " seconds");
                         avocadoPlanted = true;
@@ -161,7 +195,9 @@ public class ClickToPlant : MonoBehaviour
 
                     if (bagScript.plantingseed == 9)
                     {
-                        targetTimeKiwi = CurrentTime.AddSeconds(growingTimeKiwi);
+                        targetTimeKiwi1 = CurrentTime.AddSeconds(growingTimeKiwi * (1 / 3));
+                        targetTimeKiwi2 = CurrentTime.AddSeconds(growingTimeKiwi * (2 / 3));
+                        targetTimeKiwi3 = CurrentTime.AddSeconds(growingTimeKiwi);
                         bagScript.plantingseed = 0;
                         Debug.Log("Evolving in " + growingTimeKiwi + " seconds");
                         kiwiPlanted = true;
@@ -173,7 +209,7 @@ public class ClickToPlant : MonoBehaviour
 
         if(blePlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeBle) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeBle1) == 1)
             {
                 Debug.Log("Evolution");
                 spriteRenderer.sprite = evolutionBle1;
@@ -183,7 +219,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (applePlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeApple) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeApple1) == 1)
             {
                 Debug.Log("Evolution");
                 spriteRenderer.sprite = evolutionApple1;
@@ -193,7 +229,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (tomatoPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeTomato) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeTomato1) == 1)
             {
                 Debug.Log("Evolution");
                 spriteRenderer.sprite = evolutionTomato1;
@@ -203,7 +239,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (eggplantPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeEggplant) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeEggplant1) == 1)
             {
                 Debug.Log("Evolution");
                 spriteRenderer.sprite = evolutionEggplant1;
@@ -213,7 +249,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (pearPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimePear) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimePear1) == 1)
             {
                 Debug.Log("Evolution");
                 spriteRenderer.sprite = evolutionPear1;
@@ -223,7 +259,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (sunflowerPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeSunflower) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeSunflower1) == 1)
             {
                 Debug.Log("Evolution");
                 spriteRenderer.sprite = evolutionSunflower1;
@@ -233,7 +269,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (cherryPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeCherry) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeCherry1) == 1)
             {
                 Debug.Log("Evolution");
                 spriteRenderer.sprite = evolutionCherry1;
@@ -243,7 +279,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (avocadoPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeAvocado) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeAvocado1) == 1)
             {
                 Debug.Log("Evolution");
                 spriteRenderer.sprite = evolutionAvocado1;
@@ -253,7 +289,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (kiwiPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeKiwi) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeKiwi1) == 1)
             {
                 Debug.Log("Evolution");
                 spriteRenderer.sprite = evolutionKiwi1;
