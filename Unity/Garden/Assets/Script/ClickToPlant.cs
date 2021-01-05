@@ -95,7 +95,6 @@ public class ClickToPlant : MonoBehaviour
     {
         CurrentTime = DateTime.Now;
 
-        
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -210,7 +209,7 @@ public class ClickToPlant : MonoBehaviour
             }
         }
 
-        if(blePlanted)
+        if (blePlanted)
         {
             if (DateTime.Compare(CurrentTime, targetTimeBle1) == 1 && spriteRenderer.sprite == spritePlantedSeed)
             {
