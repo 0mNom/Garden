@@ -95,7 +95,7 @@ public class ClickToPlant : MonoBehaviour
     {
         CurrentTime = DateTime.Now;
 
-        BagScript bagScript = bagObject.GetComponent<BagScript>();
+        
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -103,6 +103,7 @@ public class ClickToPlant : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
+                BagScript bagScript = bagObject.GetComponent<BagScript>();
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if (col == touchedCollider && bagScript.plantingseed != 0 && gotPlant == false)
                 {
