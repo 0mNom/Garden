@@ -8,13 +8,14 @@ public class BagScript : MonoBehaviour
     public int plantingseed;
     public int wheatseed, appleseed, tomatoseed, eggplantseed, pearseed, sunflowerseed, cherryseed, avoseed, kiwiseed;
     public GameObject error;
-    public TMP_Text t_wheat, t_apple, t_tomato, t_eggplant, t_pear, t_sunflower, t_cherry, t_avo, t_kiwi, t_monay;
-    public int Monay;
+    public TMP_Text t_wheat, t_apple, t_tomato, t_eggplant, t_pear, t_sunflower, t_cherry, t_avo, t_kiwi, t_monay, t_gem;
+    public int Monay,Gems;
 
     // Start is called before the first frame update
     void Start()
     {
         Monay = 748;
+        Gems = 5;
     }
 
     // Update is called once per frame
@@ -26,6 +27,7 @@ public class BagScript : MonoBehaviour
         }
 
         t_monay.text = Monay.ToString();
+        t_gem.text = Gems.ToString();
     }
 
 
