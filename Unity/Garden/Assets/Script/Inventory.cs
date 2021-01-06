@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Save : MonoBehaviour
+public class Inventory : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int pot1, pot2, pot3, pot4, pot5, pot6, pot7; //number of each kind of pot
     void Start()
     {
         
