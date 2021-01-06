@@ -28,6 +28,30 @@ public class BagScript : MonoBehaviour
 
         t_monay.text = Monay.ToString();
         t_gem.text = Gems.ToString();
+        t_apple.text = appleseed.ToString();
+        t_wheat.text = wheatseed.ToString();
+        t_cherry.text = cherryseed.ToString();
+        t_tomato.text = tomatoseed.ToString();
+        t_eggplant.text = eggplantseed.ToString();
+        t_pear.text = pearseed.ToString();
+        t_sunflower.text = sunflowerseed.ToString();
+        t_avo.text = avoseed.ToString();
+        t_kiwi.text = kiwiseed.ToString();
+    }
+
+
+    public void LoadGame()
+    {
+        SaveData data = SaveManager.LoadGame();
+
+        Monay = data.s_Money;
+        Gems = data.s_Gems;
+
+    }
+
+    public void SaveGame()
+    {
+        SaveManager.SaveGame(this);
     }
 
 

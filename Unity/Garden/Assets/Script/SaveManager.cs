@@ -4,13 +4,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveManager 
 {
-   public static void SaveGame()
+   public static void SaveGame(BagScript bag)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/player.weed";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        SaveData data = new SaveData();
+        SaveData data = new SaveData(bag);
 
 
         formatter.Serialize(stream, data);

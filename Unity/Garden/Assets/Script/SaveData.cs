@@ -6,21 +6,23 @@ using UnityEngine;
 [System.Serializable]
 public class SaveData 
 {
-    public BagScript bag;
+   /* public BagScript bag;
     public Inventory invent;
-    public PotPlaces places;
+    public PotPlaces places;*/
 
 
     public int s_Money, s_Gems; // currency/bank
     public int s_wheat, s_apple, s_tomato, s_eggplant, s_pear, s_sunflower, s_cherry, s_avo, s_kiwi; //number of seeds in bag
+    
+    /*
     public int s_pot1, s_pot2, s_pot3, s_pot4, s_pot5, s_pot6, s_pot7; //number of each kind of pot
     public bool s_p1, s_p2, s_p3, s_p4, s_p5, s_p6, s_p7, s_p8, s_p9, s_p10; //pot places activated
     public int s_sp1, s_sp2, s_sp3, s_sp4, s_sp5, s_sp6, s_sp7, s_sp8, s_sp9, s_sp10; //skins on the active pots 
     public int s_pp1, s_pp2, s_pp3, s_pp4, s_pp5, s_pp6, s_pp7, s_pp8, s_pp9, s_pp10; //Plant in active pot 
-
+    */
    
 
-    public SaveData()
+    public SaveData(BagScript bag)
     {
 
         //back collection
@@ -37,7 +39,7 @@ public class SaveData
         s_cherry = bag.cherryseed;
         s_avo = bag.avoseed;
         s_kiwi = bag.kiwiseed;
-
+/*
         //object inventory colleection
         s_pot1 = invent.pot1;
         s_pot2 = invent.pot2;
@@ -110,11 +112,11 @@ public class SaveData
             s_sp10 = places.sp10;
             s_pp10 = places.pp10;
         }
-
+        */
 
     }
 
-    public void Load()
+  /*  public void Load()
     {
 
         //bank collection load
@@ -207,5 +209,5 @@ public class SaveData
 
 
 
-    }
+    }*/
 }
