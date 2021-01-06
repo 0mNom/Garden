@@ -40,19 +40,7 @@ public class BagScript : MonoBehaviour
     }
 
 
-    public void LoadGame()
-    {
-        SaveData data = SaveManager.LoadGame();
-
-        Monay = data.s_Money;
-        Gems = data.s_Gems;
-
-    }
-
-    public void SaveGame()
-    {
-        SaveManager.SaveGame(this);
-    }
+   
 
 
     public void buyApple()

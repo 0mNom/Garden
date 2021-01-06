@@ -4893,7 +4893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &888692063
 Transform:
   m_ObjectHideFlags: 0
@@ -4962,6 +4962,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
+  plantInPot: 0
+  pp1: {fileID: 1403264362}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1448289100}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -5605,7 +5608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1101214951
 Transform:
   m_ObjectHideFlags: 0
@@ -5674,6 +5677,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
+  plantInPot: 0
+  pp1: {fileID: 1403264362}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1637025497}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -5767,7 +5773,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1103599395
 Transform:
   m_ObjectHideFlags: 0
@@ -5836,6 +5842,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
+  plantInPot: 0
+  pp1: {fileID: 1403264362}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1764406409}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -6996,7 +7005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efe90777cad7684ea0f204694410c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1: 0
+  p1: 1
   p2: 0
   p3: 0
   p4: 0
@@ -7026,6 +7035,10 @@ MonoBehaviour:
   pp8: 0
   pp9: 0
   pp10: 0
+  pousse: {fileID: -637025637235216774, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  evolutionEggplant1: {fileID: 6540770804100739324, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  evolutionEggplant2: {fileID: 6897711099101215649, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  spriteRenderer1: {fileID: 266576707}
 --- !u!114 &1403264363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7058,6 +7071,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bag: {fileID: 1860585979}
+  invent: {fileID: 1403264363}
+  places: {fileID: 1403264362}
 --- !u!1 &1415728167
 GameObject:
   m_ObjectHideFlags: 0
@@ -9084,7 +9099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1760712564
 Transform:
   m_ObjectHideFlags: 0
@@ -9153,6 +9168,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
+  plantInPot: 0
+  pp1: {fileID: 1403264362}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 660590805}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -9646,6 +9664,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
+  plantInPot: 0
+  pp1: {fileID: 1403264362}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 266576707}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -9769,7 +9790,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1826354704
 Transform:
   m_ObjectHideFlags: 0
@@ -9838,6 +9859,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
+  plantInPot: 0
+  pp1: {fileID: 1403264362}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1059371539}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -11363,7 +11387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2055077850
 Transform:
   m_ObjectHideFlags: 0
@@ -11432,6 +11456,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
+  plantInPot: 0
+  pp1: {fileID: 1403264362}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 480657651}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
