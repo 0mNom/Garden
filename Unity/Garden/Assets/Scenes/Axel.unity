@@ -143,7 +143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &7689297
 Animator:
   serializedVersion: 3
@@ -2323,7 +2323,7 @@ GameObject:
   - component: {fileID: 266576707}
   m_Layer: 0
   m_Name: Plant_Pot_1
-  m_TagString: Untagged
+  m_TagString: 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5741,7 +5741,7 @@ RectTransform:
   - {fileID: 207976202}
   - {fileID: 1940098199}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7279,7 +7279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   plantInPot: 0
-  pp1: {fileID: 1403264362}
+  potPlace: {fileID: 0}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1448289100}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -7966,7 +7966,7 @@ GameObject:
   - component: {fileID: 1059371539}
   m_Layer: 0
   m_Name: Plant_Pot_2
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8183,11 +8183,11 @@ GameObject:
   - component: {fileID: 1101214952}
   m_Layer: 0
   m_Name: Pot_3
-  m_TagString: Untagged
+  m_TagString: 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1101214951
 Transform:
   m_ObjectHideFlags: 0
@@ -8258,7 +8258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   plantInPot: 0
-  pp1: {fileID: 1403264362}
+  potPlace: {fileID: 1403264362}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1637025497}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -8423,7 +8423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   plantInPot: 0
-  pp1: {fileID: 1403264362}
+  potPlace: {fileID: 0}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1764406409}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -10416,7 +10416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   p1: 1
-  p2: 0
+  p2: 1
   p3: 0
   p4: 0
   p5: 0
@@ -10445,10 +10445,36 @@ MonoBehaviour:
   pp8: 0
   pp9: 0
   pp10: 0
-  pousse: {fileID: 21300000, guid: a2594b56e3a12ee4eb039ccb59840c37, type: 3}
+  pousseBle: {fileID: 0}
+  evolutionBle1: {fileID: 0}
+  evolutionBle2: {fileID: 0}
+  pousseApple: {fileID: 21300000, guid: a2594b56e3a12ee4eb039ccb59840c37, type: 3}
+  evolutionApple1: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
+  evolutionApple2: {fileID: 21300000, guid: 38f87462002134b4d85ea3dd52620813, type: 3}
+  pousseTomato: {fileID: 0}
+  evolutionTomato1: {fileID: 0}
+  evolutionTomato2: {fileID: 0}
+  pousseEgg: {fileID: -637025637235216774, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionEggplant1: {fileID: 6540770804100739324, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionEggplant2: {fileID: 6897711099101215649, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
-  spriteRenderer1: {fileID: 266576707}
+  poussePear: {fileID: 0}
+  evolutionPear1: {fileID: 0}
+  evolutionPear2: {fileID: 0}
+  pousseSun: {fileID: 0}
+  evolutionSun1: {fileID: 0}
+  evolutionSun2: {fileID: 0}
+  pousseCherry: {fileID: 0}
+  evolutionCherry1: {fileID: 0}
+  evolutionCherry2: {fileID: 0}
+  pousseAvo: {fileID: 0}
+  evolutionAvo1: {fileID: 0}
+  evolutionAvo2: {fileID: 0}
+  pousseKiwi: {fileID: 0}
+  evolutionKiwi1: {fileID: 0}
+  evolutionKiwi2: {fileID: 0}
+  spriteRendererP1: {fileID: 266576707}
+  spriteRendererP2: {fileID: 1059371539}
+  spriteRendererP3: {fileID: 1637025497}
 --- !u!114 &1403264363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12133,7 +12159,7 @@ GameObject:
   - component: {fileID: 1637025497}
   m_Layer: 0
   m_Name: Plant_Pot_3
-  m_TagString: Untagged
+  m_TagString: 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13112,7 +13138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   plantInPot: 0
-  pp1: {fileID: 1403264362}
+  potPlace: {fileID: 0}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 660590805}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -13563,7 +13589,7 @@ GameObject:
   - component: {fileID: 1806503534}
   m_Layer: 0
   m_Name: Pot_1
-  m_TagString: Untagged
+  m_TagString: 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13608,12 +13634,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   plantInPot: 0
-  pp1: {fileID: 1403264362}
+  potPlace: {fileID: 1403264362}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 266576707}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   gotPlant: 0
-  spritePlantedSeed: {fileID: 21300000, guid: a2594b56e3a12ee4eb039ccb59840c37, type: 3}
+  spritePlantedSeed: {fileID: -3901439969645370052, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   evolutionBle1: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
   evolutionBle2: {fileID: 0}
   evolutionApple1: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
@@ -13728,11 +13754,11 @@ GameObject:
   - component: {fileID: 1826354705}
   m_Layer: 0
   m_Name: Pot_2
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1826354704
 Transform:
   m_ObjectHideFlags: 0
@@ -13803,7 +13829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   plantInPot: 0
-  pp1: {fileID: 1403264362}
+  potPlace: {fileID: 1403264362}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1059371539}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -15008,7 +15034,7 @@ Transform:
   - {fileID: 1103599395}
   - {fileID: 1760712564}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1963690005
 GameObject:
@@ -15855,7 +15881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   plantInPot: 0
-  pp1: {fileID: 1403264362}
+  potPlace: {fileID: 0}
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 480657651}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
