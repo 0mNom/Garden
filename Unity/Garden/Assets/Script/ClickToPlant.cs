@@ -245,7 +245,7 @@ public class ClickToPlant : MonoBehaviour
         // if (tag == "1") Debug.Log("POT 1");
         if (tag == "2") potPlace.pp2 = plantInPot;
         //if (tag == "2") Debug.Log("POT 2");
-        if (tag == "3") potPlace.pp1 = plantInPot;
+        if (tag == "3") potPlace.pp3 = plantInPot;
         // if (tag == "3") Debug.Log("POT 3");
 
        

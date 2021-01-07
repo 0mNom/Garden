@@ -35,159 +35,159 @@ public class PotPlaces : MonoBehaviour
     {
         //----------------------------Pot 1------------------------------
 
-        if (p2)
+        if (p1)
         {
             //Ble
-            if (pp2 == 1f)
+            if (pp1 == 1f)
             {
-                spriteRendererP2.sprite = pousseBle;
+                spriteRendererP1.sprite = pousseBle;
 
             }
-            if (pp2 == 1.1f)
+            if (pp1 == 1.1f)
             {
-                spriteRendererP2.sprite = evolutionBle1;
+                spriteRendererP1.sprite = evolutionBle1;
 
             }
-            if (pp2 == 1.2f)
+            if (pp1 == 1.2f)
             {
-                spriteRendererP2.sprite = evolutionBle2;
+                spriteRendererP1.sprite = evolutionBle2;
 
             }
 
             //Apple
-            if (pp2 == 2f)
+            if (pp1 == 2f)
             {
-                spriteRendererP2.sprite = pousseApple;
+                spriteRendererP1.sprite = pousseApple;
 
             }
-            if (pp2 == 2.1f)
+            if (pp1 == 2.1f)
             {
-                spriteRendererP2.sprite = evolutionApple1;
+                spriteRendererP1.sprite = evolutionApple1;
 
             }
-            if (pp2 == 2.2f)
+            if (pp1 == 2.2f)
             {
-                spriteRendererP2.sprite = evolutionApple2;
+                spriteRendererP1.sprite = evolutionApple2;
 
             }
 
             //Tomato
-            if (pp2 == 3f)
+            if (pp1 == 3f)
             {
-                spriteRendererP2.sprite = pousseTomato;
+                spriteRendererP1.sprite = pousseTomato;
 
             }
-            if (pp2 == 3.1f)
+            if (pp1 == 3.1f)
             {
-                spriteRendererP2.sprite = evolutionTomato1;
+                spriteRendererP1.sprite = evolutionTomato1;
 
             }
-            if (pp2 == 3.2f)
+            if (pp1 == 3.2f)
             {
-                spriteRendererP2.sprite = evolutionTomato2;
+                spriteRendererP1.sprite = evolutionTomato2;
 
             }
 
             //Eggplant
-            if (pp2 == 4f)
+            if (pp1 == 4f)
             {
-                spriteRendererP2.sprite = pousseEgg;
+                spriteRendererP1.sprite = pousseEgg;
 
             }
-            if (pp2 == 4.1f)
+            if (pp1 == 4.1f)
             {
-                spriteRendererP2.sprite = evolutionEggplant1;
+                spriteRendererP1.sprite = evolutionEggplant1;
 
             }
-            if (pp2 == 4.2f)
+            if (pp1 == 4.2f)
             {
-                spriteRendererP2.sprite = evolutionEggplant2;
+                spriteRendererP1.sprite = evolutionEggplant2;
 
             }
 
             //Pear
-            if (pp2 == 5f)
+            if (pp1 == 5f)
             {
-                spriteRendererP2.sprite = poussePear;
+                spriteRendererP1.sprite = poussePear;
 
             }
-            if (pp2 == 5.1f)
+            if (pp1 == 5.1f)
             {
-                spriteRendererP2.sprite = evolutionPear1;
+                spriteRendererP1.sprite = evolutionPear1;
 
             }
-            if (pp2 == 5.2f)
+            if (pp1 == 5.2f)
             {
-                spriteRendererP2.sprite = evolutionPear2;
+                spriteRendererP1.sprite = evolutionPear2;
 
             }
 
             //Sunflower
-            if (pp2 == 6f)
+            if (pp1 == 6f)
             {
-                spriteRendererP2.sprite = pousseSun;
+                spriteRendererP1.sprite = pousseSun;
 
             }
-            if (pp2 == 6.1f)
+            if (pp1 == 6.1f)
             {
-                spriteRendererP2.sprite = evolutionSun1;
+                spriteRendererP1.sprite = evolutionSun1;
 
             }
-            if (pp2 == 6.2f)
+            if (pp1 == 6.2f)
             {
-                spriteRendererP2.sprite = evolutionSun2;
+                spriteRendererP1.sprite = evolutionSun2;
 
             }
 
             //cherry
-            if (pp2 == 7f)
+            if (pp1 == 7f)
             {
-                spriteRendererP2.sprite = pousseCherry;
+                spriteRendererP1.sprite = pousseCherry;
 
             }
-            if (pp2 == 7.1f)
+            if (pp1 == 7.1f)
             {
-                spriteRendererP2.sprite = evolutionCherry1;
+                spriteRendererP1.sprite = evolutionCherry1;
 
             }
-            if (pp2 == 7.2f)
+            if (pp1 == 7.2f)
             {
-                spriteRendererP2.sprite = evolutionCherry2;
+                spriteRendererP1.sprite = evolutionCherry2;
 
             }
 
 
             //Avo
-            if (pp2 == 8f)
+            if (pp1 == 8f)
             {
-                spriteRendererP2.sprite = pousseAvo;
+                spriteRendererP1.sprite = pousseAvo;
 
             }
-            if (pp2 == 8.1f)
+            if (pp1 == 8.1f)
             {
-                spriteRendererP2.sprite = evolutionAvo1;
+                spriteRendererP1.sprite = evolutionAvo1;
 
             }
-            if (pp2 == 8.2f)
+            if (pp1 == 8.2f)
             {
-                spriteRendererP2.sprite = evolutionAvo2;
+                spriteRendererP1.sprite = evolutionAvo2;
 
             }
 
             //Kiwi
-            if (pp2 == 9f)
+            if (pp1 == 9f)
             {
-                spriteRendererP2.sprite = pousseKiwi;
+                spriteRendererP1.sprite = pousseKiwi;
 
             }
-            if (pp2 == 9.1f)
+            if (pp1 == 9.1f)
             {
-                spriteRendererP2.sprite = evolutionKiwi1;
+                spriteRendererP1.sprite = evolutionKiwi1;
 
             }
-            if (pp2 == 9.2f)
+            if (pp1 == 9.2f)
             {
-                spriteRendererP2.sprite = evolutionKiwi2;
+                spriteRendererP1.sprite = evolutionKiwi2;
 
             }
         }
