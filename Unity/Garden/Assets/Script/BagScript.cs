@@ -9,6 +9,8 @@ public class BagScript : MonoBehaviour
     public int wheatseed, appleseed, tomatoseed, eggplantseed, pearseed, sunflowerseed, cherryseed, avoseed, kiwiseed;
     public GameObject error;
     public TMP_Text t_wheat, t_apple, t_tomato, t_eggplant, t_pear, t_sunflower, t_cherry, t_avo, t_kiwi, t_monay, t_gem;
+    public TMP_Text t_pot1, t_pot2, t_pot3, t_pot4, t_pot5, t_pot6, t_pot7;
+    public int pot1, pot2, pot3, pot4, pot5, pot6, pot7;
     public int Monay,Gems;
 
     // Start is called before the first frame update
@@ -37,12 +39,110 @@ public class BagScript : MonoBehaviour
         t_sunflower.text = sunflowerseed.ToString();
         t_avo.text = avoseed.ToString();
         t_kiwi.text = kiwiseed.ToString();
+
+
+        t_pot1.text = pot1.ToString();
+        t_pot2.text = pot2.ToString();
+        t_pot3.text = pot3.ToString();
+        t_pot4.text = pot4.ToString();
+        t_pot5.text = pot5.ToString();
+        t_pot6.text = pot6.ToString();
+        t_pot7.text = pot7.ToString();
     }
 
 
    
+    //Premium shop 
+    //Pot shop 
+
+    public void buyP1()
+    {
+        if (Gems < 10)
+        {
+            StartCoroutine("errr");
+        }
+        else
+        {
+            Gems -= 10;
+            pot1++;
+        }
+    }
+    public void buyP2()
+    {
+        if (Gems < 2)
+        {
+            StartCoroutine("errr");
+        }
+        else
+        {
+            Gems -= 2;
+            pot2++;
+        }
+    }
+    public void buyP3()
+    {
+        if (Gems < 12)
+        {
+            StartCoroutine("errr");
+        }
+        else
+        {
+            Gems -= 12;
+            pot3++;
+        }
+    }
+    public void buyP4()
+    {
+        if (Gems < 2)
+        {
+            StartCoroutine("errr");
+        }
+        else
+        {
+            Gems -= 2;
+            pot4++;
+        }
+    }
+    public void buyP5()
+    {
+        if (Gems < 30)
+        {
+            StartCoroutine("errr");
+        }
+        else
+        {
+            Gems -= 30;
+            pot5++;
+        }
+    }
+    public void buyP6()
+    {
+        if (Gems < 1)
+        {
+            StartCoroutine("errr");
+        }
+        else
+        {
+            Gems -= 1;
+            pot6++;
+        }
+    }
+    public void buyP7()
+    {
+        if (Gems < 4)
+        {
+            StartCoroutine("errr");
+        }
+        else
+        {
+            Gems -= 4;
+            pot7++;
+        }
+    }
 
 
+
+    //Seed Shop 
     public void buyApple()
     {
         if (Monay < 15)

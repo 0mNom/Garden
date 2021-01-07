@@ -25,24 +25,25 @@ public class PotPlaces : MonoBehaviour
 
     public void loadplants()
     {
-       // if (p1)
-       // {
+        if (p1)
+        {
             if (pp1 == 4f)
             {
                 spriteRenderer1.sprite = pousse;
-            Debug.Log("baby");
-        }
+                Debug.Log("baby");
+            }
             if (pp1 == 4.1f)
             {
                 spriteRenderer1.sprite = evolutionEggplant1;
-            Debug.Log("Egg1");
-        }
+                Debug.Log("Egg1");
+            }
             if (pp1 == 4.2f)
             {
                 spriteRenderer1.sprite = evolutionEggplant2;
-            Debug.Log("Egg2");
+                Debug.Log("Egg2");
+            }
         }
-       // Debug.Log("Eggssssss");
-        //}
+       
+
     }
 }
