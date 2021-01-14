@@ -126,18 +126,18 @@ public class ClickToPlant : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
-                BagScript bagScript = bagObject.GetComponent<BagScript>();
+                BagScript bagScript1 = bagObject.GetComponent<BagScript>();
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
 
                 
 
-                if (col == touchedCollider && bagScript.plantingseed != 0 && gotPlant == false)
+                if (col == touchedCollider && bagScript1.plantingseed != 0 && gotPlant == false)
                 {
                     String tag = col.tag;
                     Debug.Log(tag);
 
 
-                    if (bagScript.plantingseed == 1)
+                    if (bagScript1.plantingseed == 1)
                     {
                         spriteRenderer.sprite = spritePlantedSeed;
                         plantInPot = 1f;
@@ -146,10 +146,10 @@ public class ClickToPlant : MonoBehaviour
                         //Debug.Log("Evolving in " + growingTimeBle + " seconds");
                         blePlanted = true;
                         gotPlant = true;
-                        bagScript.plantingseed = 0;
+                        bagScript1.plantingseed = 0;
                     }
 
-                    if (bagScript.plantingseed == 2)
+                    if (bagScript1.plantingseed == 2)
                     {
                         spriteRenderer.sprite = spritePlantedSeed;
                         plantInPot = 2f;
@@ -158,10 +158,10 @@ public class ClickToPlant : MonoBehaviour
                        // Debug.Log("Evolving in " + growingTimeApple + " seconds");
                         applePlanted = true;
                         gotPlant = true;
-                        bagScript.plantingseed = 0;
+                        bagScript1.plantingseed = 0;
                     }
 
-                    if (bagScript.plantingseed == 3)
+                    if (bagScript1.plantingseed == 3)
                     {
                         spriteRenderer.sprite = spritePlantedSeed;
                         plantInPot = 3f;
@@ -170,10 +170,10 @@ public class ClickToPlant : MonoBehaviour
                         //Debug.Log("Evolving in " + growingTimeTomato + " seconds");
                         tomatoPlanted = true;
                         gotPlant = true;
-                        bagScript.plantingseed = 0;
+                        bagScript1.plantingseed = 0;
                     }
 
-                    if (bagScript.plantingseed == 4)
+                    if (bagScript1.plantingseed == 4)
                     {
                         spriteRenderer.sprite = spritePlantedSeed;
                         plantInPot = 4f;
@@ -184,10 +184,10 @@ public class ClickToPlant : MonoBehaviour
                        // Debug.Log("Evolving in " + growingTimeEggplant + " seconds");
                         eggplantPlanted = true;
                         gotPlant = true;
-                        bagScript.plantingseed = 0;
+                        bagScript1.plantingseed = 0;
                     }
 
-                    if (bagScript.plantingseed == 5)
+                    if (bagScript1.plantingseed == 5)
                     {
                         spriteRenderer.sprite = spritePlantedSeed;
                         plantInPot = 5f;
@@ -196,10 +196,10 @@ public class ClickToPlant : MonoBehaviour
                        // Debug.Log("Evolving in " + growingTimePear + " seconds");
                         pearPlanted = true;
                         gotPlant = true;
-                        bagScript.plantingseed = 0;
+                        bagScript1.plantingseed = 0;
                     }
 
-                    if (bagScript.plantingseed == 6)
+                    if (bagScript1.plantingseed == 6)
                     {
                         spriteRenderer.sprite = spritePlantedSeed;
                         plantInPot = 6f;
@@ -208,10 +208,10 @@ public class ClickToPlant : MonoBehaviour
                        // Debug.Log("Evolving in " + growingTimeSunflower + " seconds");
                         sunflowerPlanted = true;
                         gotPlant = true;
-                        bagScript.plantingseed = 0;
+                        bagScript1.plantingseed = 0;
                     }
 
-                    if (bagScript.plantingseed == 7)
+                    if (bagScript1.plantingseed == 7)
                     {
                         spriteRenderer.sprite = spritePlantedSeed;
                         plantInPot = 7f;
@@ -220,10 +220,10 @@ public class ClickToPlant : MonoBehaviour
                        // Debug.Log("Evolving in " + growingTimeCherry + " seconds");
                         cherryPlanted = true;
                         gotPlant = true;
-                        bagScript.plantingseed = 0;
+                        bagScript1.plantingseed = 0;
                     }
 
-                    if (bagScript.plantingseed == 8)
+                    if (bagScript1.plantingseed == 8)
                     {
                         spriteRenderer.sprite = spritePlantedSeed;
                         plantInPot = 8f;
@@ -232,10 +232,10 @@ public class ClickToPlant : MonoBehaviour
                        // Debug.Log("Evolving in " + growingTimeAvocado + " seconds");
                         avocadoPlanted = true;
                         gotPlant = true;
-                        bagScript.plantingseed = 0;
+                        bagScript1.plantingseed = 0;
                     }
 
-                    if (bagScript.plantingseed == 9)
+                    if (bagScript1.plantingseed == 9)
                     {
                         spriteRenderer.sprite = spritePlantedSeed;
                         plantInPot = 9f;
@@ -244,7 +244,7 @@ public class ClickToPlant : MonoBehaviour
                         //Debug.Log("Evolving in " + growingTimeKiwi + " seconds");
                         kiwiPlanted = true;
                         gotPlant = true;
-                        bagScript.plantingseed = 0;
+                        bagScript1.plantingseed = 0;
                     }
                 }
             }
