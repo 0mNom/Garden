@@ -344,16 +344,14 @@ public class ClickToPlant : MonoBehaviour
             {
                // Debug.Log("Evolution");
                 plantInPot = 4.1f;
-                potPlace.loadplants();
-                //spriteRenderer.sprite = evolutionEggplant1;
+                spriteRenderer.sprite = evolutionEggplant1;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeEggplant2) == 1 && spriteRenderer.sprite == evolutionEggplant1)
             {
                // Debug.Log("Evolution 2");
                 sellingPrice = 10;
                 plantInPot = 4.2f;
-                potPlace.loadplants();
-                //spriteRenderer.sprite = evolutionEggplant2;
+                spriteRenderer.sprite = evolutionEggplant2;
                 plantFinished = true;
                 eggplantPlanted = false;
             }
