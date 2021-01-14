@@ -99,6 +99,7 @@ public class ButtonPopUp : MonoBehaviour
             ImagePlantDuPopUp.sprite = null;
 
             canSell = false;
+            StartCoroutine("WaitForSellingTime");
         }
     }
 
