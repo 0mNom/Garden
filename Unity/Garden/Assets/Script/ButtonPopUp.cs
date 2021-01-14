@@ -6,7 +6,7 @@ using TMPro;
 
 public class ButtonPopUp : MonoBehaviour
 {
-    
+    public GameObject bagObject;
     Collider2D col;
     public string Name;
     public TextMeshProUGUI nameText;
@@ -27,8 +27,9 @@ public class ButtonPopUp : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
+                BagScript bagScript = bagObject.GetComponent<BagScript>();
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
-                if (col == touchedCollider)
+                if (col == touchedCollider && bagScript.plantingseed == 0)
                 {
                     //FAIRE CE QUE TU VEUX AVEC LE CLICK ICI
                     OpenPanel();
