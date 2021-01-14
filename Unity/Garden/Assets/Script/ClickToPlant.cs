@@ -13,6 +13,8 @@ public class ClickToPlant : MonoBehaviour
 
     //the end 
 
+    public bool plantFinished = false;
+    public int sellingPrice;
 
     public GameObject bagObject;
     public SpriteRenderer spriteRenderer;
@@ -29,6 +31,8 @@ public class ClickToPlant : MonoBehaviour
     public Sprite evolutionBle1;
     public Sprite evolutionBle2;
     float growingTimeBle = 20;
+    public bool finishedBle = false;
+
 
     //specific to apple
     bool applePlanted = false;
@@ -37,6 +41,7 @@ public class ClickToPlant : MonoBehaviour
     public Sprite evolutionApple1;
     public Sprite evolutionApple2;
     float growingTimeApple = 20;
+    public bool finishedApple = false;
 
     //specific to Tomato
     bool tomatoPlanted = false;
@@ -45,6 +50,7 @@ public class ClickToPlant : MonoBehaviour
     public Sprite evolutionTomato1;
     public Sprite evolutionTomato2;
     float growingTimeTomato = 20;
+    public bool finishedTomato = false;
 
     //specific to Eggplant
     bool eggplantPlanted = false;
@@ -53,6 +59,7 @@ public class ClickToPlant : MonoBehaviour
     public Sprite evolutionEggplant1;
     public Sprite evolutionEggplant2;
     float growingTimeEggplant = 20;
+    public bool finishedEggplant = false;
 
     //specific to Pear
     bool pearPlanted = false;
@@ -61,6 +68,7 @@ public class ClickToPlant : MonoBehaviour
     public Sprite evolutionPear1;
     public Sprite evolutionPear2;
     float growingTimePear = 10;
+    public bool finishedPear = false;
 
     //specific to Sunflower
     bool sunflowerPlanted = false;
@@ -69,6 +77,7 @@ public class ClickToPlant : MonoBehaviour
     public Sprite evolutionSunflower1;
     public Sprite evolutionSunflower2;
     float growingTimeSunflower = 10;
+    public bool finishedSunflower = false;
 
     //specific to Cherry
     bool cherryPlanted = false;
@@ -77,6 +86,7 @@ public class ClickToPlant : MonoBehaviour
     public Sprite evolutionCherry1;
     public Sprite evolutionCherry2;
     float growingTimeCherry = 10;
+    public bool finishedCherry = false;
 
     //specific to Avocado
     bool avocadoPlanted = false;
@@ -85,6 +95,7 @@ public class ClickToPlant : MonoBehaviour
     public Sprite evolutionAvocado1;
     public Sprite evolutionAvocado2;
     float growingTimeAvocado = 10;
+    public bool finishedAvocado = false;
 
     //specific to Kiwi
     bool kiwiPlanted = false;
@@ -93,6 +104,7 @@ public class ClickToPlant : MonoBehaviour
     public Sprite evolutionKiwi1;
     public Sprite evolutionKiwi2;
     float growingTimeKiwi = 10;
+    public bool finishedKiwi = false;
 
     void Start()
     {
@@ -265,8 +277,10 @@ public class ClickToPlant : MonoBehaviour
             else if (DateTime.Compare(CurrentTime, targetTimeBle2) == 1 && spriteRenderer.sprite == evolutionBle1)
             {
                // Debug.Log("Evolution 2");
+                sellingPrice = 10;
                 plantInPot = 1.2f;
                 spriteRenderer.sprite = evolutionBle2;
+                plantFinished = true;
                 blePlanted = false;
             }
         }
@@ -282,8 +296,10 @@ public class ClickToPlant : MonoBehaviour
             else if (DateTime.Compare(CurrentTime, targetTimeApple2) == 1 && spriteRenderer.sprite == evolutionApple1)
             {
                 //Debug.Log("Evolution 2");
+                sellingPrice = 20;
                 plantInPot = 2.2f;
                 spriteRenderer.sprite = evolutionApple2;
+                plantFinished = true;
                 applePlanted = false;
             }
             
@@ -300,8 +316,10 @@ public class ClickToPlant : MonoBehaviour
             else if (DateTime.Compare(CurrentTime, targetTimeTomato2) == 1 && spriteRenderer.sprite == evolutionTomato1)
             {
                // Debug.Log("Evolution 2");
+                sellingPrice = 10;
                 plantInPot = 3.2f;
                 spriteRenderer.sprite = evolutionTomato2;
+                plantFinished = true;
                 tomatoPlanted = false;
             }
         }
@@ -317,8 +335,10 @@ public class ClickToPlant : MonoBehaviour
             else if (DateTime.Compare(CurrentTime, targetTimeEggplant2) == 1 && spriteRenderer.sprite == evolutionEggplant1)
             {
                // Debug.Log("Evolution 2");
+                sellingPrice = 10;
                 plantInPot = 4.2f;
                 spriteRenderer.sprite = evolutionEggplant2;
+                plantFinished = true;
                 eggplantPlanted = false;
             }
         }
@@ -334,8 +354,10 @@ public class ClickToPlant : MonoBehaviour
             else if(DateTime.Compare(CurrentTime, targetTimePear2) == 1 && spriteRenderer.sprite == evolutionPear1)
             {
                // Debug.Log("Evolution 2");
+                sellingPrice = 10;
                 plantInPot = 5.2f;
                 spriteRenderer.sprite = evolutionPear2;
+                plantFinished = true;
                 pearPlanted = false;
             }
         }
@@ -351,8 +373,10 @@ public class ClickToPlant : MonoBehaviour
             else if (DateTime.Compare(CurrentTime, targetTimeSunflower2) == 1 && spriteRenderer.sprite == evolutionSunflower1)
             {
                // Debug.Log("Evolution 2");
+                sellingPrice = 20;
                 plantInPot = 6.2f;
                 spriteRenderer.sprite = evolutionSunflower2;
+                plantFinished = true;
                 sunflowerPlanted = false;
             }
         }
@@ -368,8 +392,10 @@ public class ClickToPlant : MonoBehaviour
             else if (DateTime.Compare(CurrentTime, targetTimeCherry2) == 1 && spriteRenderer.sprite == evolutionCherry1)
             {
                // Debug.Log("Evolution 2");
+                sellingPrice = 10;
                 plantInPot = 7.2f;
                 spriteRenderer.sprite = evolutionCherry2;
+                plantFinished = true;
                 cherryPlanted = false;
             }
         }
@@ -385,8 +411,10 @@ public class ClickToPlant : MonoBehaviour
             else if (DateTime.Compare(CurrentTime, targetTimeAvocado2) == 1 && spriteRenderer.sprite == evolutionAvocado1)
             {
                 //Debug.Log("Evolution 2");
+                sellingPrice = 10;
                 plantInPot = 8.2f;
                 spriteRenderer.sprite = evolutionAvocado2;
+                plantFinished = true;
                 avocadoPlanted = false;
             }
         }
@@ -402,8 +430,10 @@ public class ClickToPlant : MonoBehaviour
             else if (DateTime.Compare(CurrentTime, targetTimeKiwi2) == 1 && spriteRenderer.sprite == evolutionKiwi1)
             {
                // Debug.Log("Evolution 2");
+                sellingPrice = 10;
                 plantInPot = 9.2f;
                 spriteRenderer.sprite = evolutionKiwi2;
+                plantFinished = true;
                 kiwiPlanted = false;
             }
         }

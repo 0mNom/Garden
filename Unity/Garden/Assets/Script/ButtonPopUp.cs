@@ -12,6 +12,11 @@ public class ButtonPopUp : MonoBehaviour
     public TextMeshProUGUI nameText;
     public Animator animator;
 
+    public Button sellButton;
+
+    public Image ImagePotDuPopUp;
+    public Image ImagePlantDuPopUp;
+
     void Start()
     {
         col = GetComponent<Collider2D>();
@@ -31,21 +36,57 @@ public class ButtonPopUp : MonoBehaviour
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if (col == touchedCollider && bagScript.plantingseed == 0)
                 {
-                    //FAIRE CE QUE TU VEUX AVEC LE CLICK ICI
                     OpenPanel();
-
                 }
             }
+        }
+
+        ClickToPlant clickToPlantScript = gameObject.GetComponent<ClickToPlant>();
+
+        if (clickToPlantScript.plantFinished)
+        {
+            sellButton.gameObject.SetActive(true);
+
+            Button btn = sellButton.GetComponent<Button>();
+            btn.onClick.AddListener(SellPlant);
+        }
+
+        if(clickToPlantScript.plantFinished == false)
+        {
+            sellButton.gameObject.SetActive(false);
         }
     }
 
     public void OpenPanel()
     {
         animator.SetBool("IsOpen", true);
+
+        SpriteRenderer spritePot = gameObject.GetComponent<SpriteRenderer>();
+        ImagePotDuPopUp.sprite = spritePot.sprite;
+        SpriteRenderer spritePlant = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
+        ImagePlantDuPopUp.sprite = spritePlant.sprite;
     }
 
     public void ClosePanel()
     {
         animator.SetBool("IsOpen", false);
+    }
+
+    public void SellPlant()
+    {
+        //what type of plant is sold
+        ClickToPlant clickToPlantScript = gameObject.GetComponent<ClickToPlant>();
+        int addedMoney = clickToPlantScript.sellingPrice;
+
+        // add money
+        BagScript bagScript = bagObject.GetComponent<BagScript>();
+        bagScript.Monay = bagScript.Monay + addedMoney;
+
+
+        // delete the plant
+        clickToPlantScript.spriteRenderer.sprite = null;
+        clickToPlantScript.gotPlant = false;
+        clickToPlantScript.plantFinished = false;
+        ImagePlantDuPopUp.sprite = null;
     }
 }
