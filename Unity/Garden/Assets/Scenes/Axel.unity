@@ -7495,6 +7495,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  plantFinished: 0
+  sellingPrice: 0
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1448289100}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -7502,22 +7504,31 @@ MonoBehaviour:
   spritePlantedSeed: {fileID: 21300000, guid: 38f87462002134b4d85ea3dd52620813, type: 3}
   evolutionBle1: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
   evolutionBle2: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
+  finishedBle: 0
   evolutionApple1: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
   evolutionApple2: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
+  finishedApple: 0
   evolutionTomato1: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
   evolutionTomato2: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
+  finishedTomato: 0
   evolutionEggplant1: {fileID: -637025637235216774, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionEggplant2: {fileID: 6897711099101215649, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedEggplant: 0
   evolutionPear1: {fileID: 5051672456841407309, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   evolutionPear2: {fileID: 9205105562912555126, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
+  finishedPear: 0
   evolutionSunflower1: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionSunflower2: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedSunflower: 0
   evolutionCherry1: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
   evolutionCherry2: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
+  finishedCherry: 0
   evolutionAvocado1: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
   evolutionAvocado2: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
+  finishedAvocado: 0
   evolutionKiwi1: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
   evolutionKiwi2: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
+  finishedKiwi: 0
 --- !u!212 &888692067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8478,6 +8489,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  plantFinished: 0
+  sellingPrice: 0
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1637025497}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -8485,22 +8498,31 @@ MonoBehaviour:
   spritePlantedSeed: {fileID: 21300000, guid: 38f87462002134b4d85ea3dd52620813, type: 3}
   evolutionBle1: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
   evolutionBle2: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
+  finishedBle: 0
   evolutionApple1: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
   evolutionApple2: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
+  finishedApple: 0
   evolutionTomato1: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
   evolutionTomato2: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
+  finishedTomato: 0
   evolutionEggplant1: {fileID: -637025637235216774, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionEggplant2: {fileID: 6897711099101215649, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedEggplant: 0
   evolutionPear1: {fileID: 5051672456841407309, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   evolutionPear2: {fileID: 9205105562912555126, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
+  finishedPear: 0
   evolutionSunflower1: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionSunflower2: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedSunflower: 0
   evolutionCherry1: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
   evolutionCherry2: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
+  finishedCherry: 0
   evolutionAvocado1: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
   evolutionAvocado2: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
+  finishedAvocado: 0
   evolutionKiwi1: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
   evolutionKiwi2: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
+  finishedKiwi: 0
 --- !u!212 &1101214955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8647,6 +8669,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  plantFinished: 0
+  sellingPrice: 0
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1764406409}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -8654,22 +8678,31 @@ MonoBehaviour:
   spritePlantedSeed: {fileID: 21300000, guid: 38f87462002134b4d85ea3dd52620813, type: 3}
   evolutionBle1: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
   evolutionBle2: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
+  finishedBle: 0
   evolutionApple1: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
   evolutionApple2: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
+  finishedApple: 0
   evolutionTomato1: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
   evolutionTomato2: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
+  finishedTomato: 0
   evolutionEggplant1: {fileID: -637025637235216774, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionEggplant2: {fileID: 6897711099101215649, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedEggplant: 0
   evolutionPear1: {fileID: 5051672456841407309, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   evolutionPear2: {fileID: 9205105562912555126, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
+  finishedPear: 0
   evolutionSunflower1: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionSunflower2: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedSunflower: 0
   evolutionCherry1: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
   evolutionCherry2: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
+  finishedCherry: 0
   evolutionAvocado1: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
   evolutionAvocado2: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
+  finishedAvocado: 0
   evolutionKiwi1: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
   evolutionKiwi2: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
+  finishedKiwi: 0
 --- !u!212 &1103599399
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13008,7 +13041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1702328270
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13486,6 +13519,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  plantFinished: 0
+  sellingPrice: 0
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 660590805}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -13493,22 +13528,31 @@ MonoBehaviour:
   spritePlantedSeed: {fileID: 21300000, guid: 38f87462002134b4d85ea3dd52620813, type: 3}
   evolutionBle1: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
   evolutionBle2: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
+  finishedBle: 0
   evolutionApple1: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
   evolutionApple2: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
+  finishedApple: 0
   evolutionTomato1: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
   evolutionTomato2: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
+  finishedTomato: 0
   evolutionEggplant1: {fileID: -637025637235216774, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionEggplant2: {fileID: 6897711099101215649, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedEggplant: 0
   evolutionPear1: {fileID: 5051672456841407309, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   evolutionPear2: {fileID: 9205105562912555126, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
+  finishedPear: 0
   evolutionSunflower1: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionSunflower2: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedSunflower: 0
   evolutionCherry1: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
   evolutionCherry2: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
+  finishedCherry: 0
   evolutionAvocado1: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
   evolutionAvocado2: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
+  finishedAvocado: 0
   evolutionKiwi1: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
   evolutionKiwi2: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
+  finishedKiwi: 0
 --- !u!212 &1760712568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13982,6 +14026,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  plantFinished: 0
+  sellingPrice: 0
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 266576707}
   potVide: {fileID: 7692800895671616095, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
@@ -13989,22 +14035,31 @@ MonoBehaviour:
   spritePlantedSeed: {fileID: -3901439969645370052, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   evolutionBle1: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
   evolutionBle2: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
+  finishedBle: 0
   evolutionApple1: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
   evolutionApple2: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
+  finishedApple: 0
   evolutionTomato1: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
   evolutionTomato2: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
+  finishedTomato: 0
   evolutionEggplant1: {fileID: -637025637235216774, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionEggplant2: {fileID: 6897711099101215649, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedEggplant: 0
   evolutionPear1: {fileID: 5051672456841407309, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   evolutionPear2: {fileID: 9205105562912555126, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
+  finishedPear: 0
   evolutionSunflower1: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionSunflower2: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedSunflower: 0
   evolutionCherry1: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
   evolutionCherry2: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
+  finishedCherry: 0
   evolutionAvocado1: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
   evolutionAvocado2: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
+  finishedAvocado: 0
   evolutionKiwi1: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
   evolutionKiwi2: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
+  finishedKiwi: 0
 --- !u!212 &1806503532
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14185,6 +14240,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  plantFinished: 0
+  sellingPrice: 0
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 1059371539}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -14192,22 +14249,31 @@ MonoBehaviour:
   spritePlantedSeed: {fileID: 21300000, guid: 38f87462002134b4d85ea3dd52620813, type: 3}
   evolutionBle1: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
   evolutionBle2: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
+  finishedBle: 0
   evolutionApple1: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
   evolutionApple2: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
+  finishedApple: 0
   evolutionTomato1: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
   evolutionTomato2: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
+  finishedTomato: 0
   evolutionEggplant1: {fileID: -637025637235216774, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionEggplant2: {fileID: 6897711099101215649, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedEggplant: 0
   evolutionPear1: {fileID: 5051672456841407309, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   evolutionPear2: {fileID: 9205105562912555126, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
+  finishedPear: 0
   evolutionSunflower1: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionSunflower2: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedSunflower: 0
   evolutionCherry1: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
   evolutionCherry2: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
+  finishedCherry: 0
   evolutionAvocado1: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
   evolutionAvocado2: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
+  finishedAvocado: 0
   evolutionKiwi1: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
   evolutionKiwi2: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
+  finishedKiwi: 0
 --- !u!212 &1826354708
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16241,6 +16307,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  plantFinished: 0
+  sellingPrice: 0
   bagObject: {fileID: 1860585977}
   spriteRenderer: {fileID: 480657651}
   potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
@@ -16248,22 +16316,31 @@ MonoBehaviour:
   spritePlantedSeed: {fileID: 21300000, guid: 38f87462002134b4d85ea3dd52620813, type: 3}
   evolutionBle1: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
   evolutionBle2: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
+  finishedBle: 0
   evolutionApple1: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
   evolutionApple2: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
+  finishedApple: 0
   evolutionTomato1: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
   evolutionTomato2: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
+  finishedTomato: 0
   evolutionEggplant1: {fileID: -637025637235216774, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionEggplant2: {fileID: 6897711099101215649, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedEggplant: 0
   evolutionPear1: {fileID: 5051672456841407309, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   evolutionPear2: {fileID: 9205105562912555126, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
+  finishedPear: 0
   evolutionSunflower1: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
   evolutionSunflower2: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  finishedSunflower: 0
   evolutionCherry1: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
   evolutionCherry2: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
+  finishedCherry: 0
   evolutionAvocado1: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
   evolutionAvocado2: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
+  finishedAvocado: 0
   evolutionKiwi1: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
   evolutionKiwi2: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
+  finishedKiwi: 0
 --- !u!212 &2055077854
 SpriteRenderer:
   m_ObjectHideFlags: 0
