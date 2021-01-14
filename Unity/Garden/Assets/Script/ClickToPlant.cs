@@ -147,6 +147,7 @@ public class ClickToPlant : MonoBehaviour
                         blePlanted = true;
                         gotPlant = true;
                         bagScript1.plantingseed = 0;
+                        StartCoroutine("WaitForOpenPannel");
                     }
 
                     if (bagScript1.plantingseed == 2)
@@ -159,6 +160,7 @@ public class ClickToPlant : MonoBehaviour
                         applePlanted = true;
                         gotPlant = true;
                         bagScript1.plantingseed = 0;
+                        StartCoroutine("WaitForOpenPannel");
                     }
 
                     if (bagScript1.plantingseed == 3)
@@ -171,6 +173,7 @@ public class ClickToPlant : MonoBehaviour
                         tomatoPlanted = true;
                         gotPlant = true;
                         bagScript1.plantingseed = 0;
+                        StartCoroutine("WaitForOpenPannel");
                     }
 
                     if (bagScript1.plantingseed == 4)
@@ -185,6 +188,7 @@ public class ClickToPlant : MonoBehaviour
                         eggplantPlanted = true;
                         gotPlant = true;
                         bagScript1.plantingseed = 0;
+                        StartCoroutine("WaitForOpenPannel");
                     }
 
                     if (bagScript1.plantingseed == 5)
@@ -197,6 +201,7 @@ public class ClickToPlant : MonoBehaviour
                         pearPlanted = true;
                         gotPlant = true;
                         bagScript1.plantingseed = 0;
+                        StartCoroutine("WaitForOpenPannel");
                     }
 
                     if (bagScript1.plantingseed == 6)
@@ -209,6 +214,7 @@ public class ClickToPlant : MonoBehaviour
                         sunflowerPlanted = true;
                         gotPlant = true;
                         bagScript1.plantingseed = 0;
+                        StartCoroutine("WaitForOpenPannel");
                     }
 
                     if (bagScript1.plantingseed == 7)
@@ -221,6 +227,7 @@ public class ClickToPlant : MonoBehaviour
                         cherryPlanted = true;
                         gotPlant = true;
                         bagScript1.plantingseed = 0;
+                        StartCoroutine("WaitForOpenPannel");
                     }
 
                     if (bagScript1.plantingseed == 8)
@@ -233,6 +240,7 @@ public class ClickToPlant : MonoBehaviour
                         avocadoPlanted = true;
                         gotPlant = true;
                         bagScript1.plantingseed = 0;
+                        StartCoroutine("WaitForOpenPannel");
                     }
 
                     if (bagScript1.plantingseed == 9)
@@ -245,12 +253,12 @@ public class ClickToPlant : MonoBehaviour
                         kiwiPlanted = true;
                         gotPlant = true;
                         bagScript1.plantingseed = 0;
+                        StartCoroutine("WaitForOpenPannel");
                     }
                 }
             }
 
-            BagScript bagScript = bagObject.GetComponent<BagScript>();
-            bagScript.canOpenPannel = true;
+            
         }
 
         if (tag == "1") potPlace.pp1 = plantInPot;
@@ -437,5 +445,12 @@ public class ClickToPlant : MonoBehaviour
                 kiwiPlanted = false;
             }
         }
+    }
+
+    IEnumerator WaitForOpenPannel()
+    {
+        yield return new WaitForSeconds(1);
+        BagScript bagScript = bagObject.GetComponent<BagScript>();
+        bagScript.canOpenPannel = true;
     }
 }
