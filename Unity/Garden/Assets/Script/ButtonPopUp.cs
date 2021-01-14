@@ -87,6 +87,7 @@ public class ButtonPopUp : MonoBehaviour
         clickToPlantScript.spriteRenderer.sprite = null;
         clickToPlantScript.gotPlant = false;
         clickToPlantScript.plantFinished = false;
+        clickToPlantScript.plantInPot = 0f;
         ImagePlantDuPopUp.sprite = null;
     }
 }
