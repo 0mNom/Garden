@@ -17,10 +17,13 @@ public class ButtonPopUp : MonoBehaviour
     public SpriteRenderer ImagePotDuPopUp;
     public SpriteRenderer ImagePlantDuPopUp;
 
+    bool canSell;
+
     void Start()
     {
         col = GetComponent<Collider2D>();
         nameText.text = Name;
+        canSell = true;
     }
 
     void Update()
@@ -55,6 +58,7 @@ public class ButtonPopUp : MonoBehaviour
         {
             sellButton.gameObject.SetActive(false);
         }
+
     }
 
     public void OpenPanel()
@@ -76,20 +80,27 @@ public class ButtonPopUp : MonoBehaviour
 
     public void SellPlant()
     {
-        //what type of plant is sold
-        ClickToPlant clickToPlantScript = gameObject.GetComponent<ClickToPlant>();
-        int addedMoney = clickToPlantScript.sellingPrice;
+        if(canSell)
+        {
+            //what type of plant is sold
+            ClickToPlant clickToPlantScript = gameObject.GetComponent<ClickToPlant>();
+            int addedMoney = clickToPlantScript.sellingPrice;
 
-        // add money
-        BagScript bagScript = bagObject.GetComponent<BagScript>();
-        bagScript.Monay = bagScript.Monay + addedMoney;
+            // add money
+            BagScript bagScript = bagObject.GetComponent<BagScript>();
+            bagScript.Monay = bagScript.Monay + addedMoney;
 
 
-        // delete the plant
-        clickToPlantScript.spriteRenderer.sprite = null;
-        clickToPlantScript.gotPlant = false;
-        clickToPlantScript.plantFinished = false;
-        clickToPlantScript.plantInPot = 0f;
-        ImagePlantDuPopUp.sprite = null;
+            // delete the plant
+            clickToPlantScript.spriteRenderer.sprite = null;
+            clickToPlantScript.gotPlant = false;
+            clickToPlantScript.plantFinished = false;
+            clickToPlantScript.plantInPot = 0f;
+            ImagePlantDuPopUp.sprite = null;
+
+            canSell = false;
+        }
+
+        canSell = true;
     }
 }
