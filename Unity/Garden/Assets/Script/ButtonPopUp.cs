@@ -14,8 +14,8 @@ public class ButtonPopUp : MonoBehaviour
 
     public Button sellButton;
 
-    public Image ImagePotDuPopUp;
-    public Image ImagePlantDuPopUp;
+    public SpriteRenderer ImagePotDuPopUp;
+    public SpriteRenderer ImagePlantDuPopUp;
 
     void Start()
     {
@@ -69,6 +69,8 @@ public class ButtonPopUp : MonoBehaviour
 
     public void ClosePanel()
     {
+        ImagePotDuPopUp.sprite = null;
+        ImagePlantDuPopUp.sprite = null;
         animator.SetBool("IsOpen", false);
     }
 
