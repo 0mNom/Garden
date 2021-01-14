@@ -12,12 +12,14 @@ public class BagScript : MonoBehaviour
     public TMP_Text t_pot1, t_pot2, t_pot3, t_pot4, t_pot5, t_pot6, t_pot7;
     public int pot1, pot2, pot3, pot4, pot5, pot6, pot7;
     public int Monay,Gems;
+    public bool canOpenPannel;
 
     // Start is called before the first frame update
     void Start()
     {
         Monay = 748;
         Gems = 5;
+        canOpenPannel = true;
     }
 
     // Update is called once per frame
@@ -272,6 +274,7 @@ public class BagScript : MonoBehaviour
         }
         else
         {
+            canOpenPannel = false;
             appleseed--;
             plantingseed = 2;
         }
@@ -287,6 +290,7 @@ public class BagScript : MonoBehaviour
         }
         else
         {
+            canOpenPannel = false;
             plantingseed = 1;
             wheatseed--;
         }
@@ -300,6 +304,7 @@ public class BagScript : MonoBehaviour
         }
         else
         {
+            canOpenPannel = false;
             plantingseed = 7;
             cherryseed--;
         }
@@ -314,6 +319,7 @@ public class BagScript : MonoBehaviour
         }
         else
         {
+            canOpenPannel = false;
             plantingseed = 3;
             tomatoseed--;
         }
@@ -327,6 +333,7 @@ public class BagScript : MonoBehaviour
         }
         else
         {
+            canOpenPannel = false;
             plantingseed = 4;
             eggplantseed--;
         }
@@ -340,6 +347,7 @@ public class BagScript : MonoBehaviour
         }
         else
         {
+            canOpenPannel = false;
             plantingseed = 5;
             pearseed--;
         }
@@ -353,6 +361,7 @@ public class BagScript : MonoBehaviour
         }
         else
         {
+            canOpenPannel = false;
             plantingseed = 6;
             sunflowerseed--;
         }
@@ -366,6 +375,7 @@ public class BagScript : MonoBehaviour
         }
         else
         {
+            canOpenPannel = false;
             plantingseed = 8;
             avoseed--;
         }
@@ -379,6 +389,7 @@ public class BagScript : MonoBehaviour
         }
         else
         {
+            canOpenPannel = false;
             plantingseed = 9;
             kiwiseed--;
         }

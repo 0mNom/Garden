@@ -249,10 +249,9 @@ public class ClickToPlant : MonoBehaviour
                 }
             }
 
-            
-
+            BagScript bagScript = bagObject.GetComponent<BagScript>();
+            bagScript.canOpenPannel = true;
         }
-
 
         if (tag == "1") potPlace.pp1 = plantInPot;
         // if (tag == "1") Debug.Log("POT 1");

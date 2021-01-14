@@ -37,7 +37,7 @@ public class ButtonPopUp : MonoBehaviour
             {
                 BagScript bagScript = bagObject.GetComponent<BagScript>();
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
-                if (col == touchedCollider && bagScript.plantingseed == 0)
+                if (col == touchedCollider && bagScript.canOpenPannel == true)
                 {
                     OpenPanel();
                 }
