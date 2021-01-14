@@ -100,6 +100,11 @@ public class ButtonPopUp : MonoBehaviour
 
             canSell = false;
         }
+    }
+
+    IEnumerator WaitForSellingTime()
+    {
+        yield return new WaitForSeconds(3);
 
         canSell = true;
     }
