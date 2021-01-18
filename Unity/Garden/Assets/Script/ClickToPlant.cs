@@ -33,7 +33,6 @@ public class ClickToPlant : MonoBehaviour
     float growingTimeBle = 20;
     public bool finishedBle = false;
 
-
     //specific to apple
     bool applePlanted = false;
     DateTime targetTimeApple1;
