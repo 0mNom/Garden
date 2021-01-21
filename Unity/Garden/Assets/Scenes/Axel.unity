@@ -2758,6 +2758,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273406894}
   m_CullTransparentMesh: 0
+--- !u!1001 &292070648
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1963132029}
+    m_Modifications:
+    - target: {fileID: 2885881521463263911, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_Name
+      value: Plant_Pot_1 Copy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.8920364
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.0034006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: bagObject
+      value: 
+      objectReference: {fileID: 1860585977}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1924161742}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 7689297}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: sellButton
+      value: 
+      objectReference: {fileID: 1702328271}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: ImagePotDuPopUp
+      value: 
+      objectReference: {fileID: 1685069751}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: ImagePlantDuPopUp
+      value: 
+      objectReference: {fileID: 901149058}
+    - target: {fileID: 2885881521936281484, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: m_Name
+      value: Pot_1 Copy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885881521936281486, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: potPlace
+      value: 
+      objectReference: {fileID: 1403264362}
+    - target: {fileID: 2885881521936281486, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: bagObject
+      value: 
+      objectReference: {fileID: 1860585977}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
 --- !u!1 &300530383
 GameObject:
   m_ObjectHideFlags: 0
@@ -3855,6 +3948,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465799529}
   m_CullTransparentMesh: 0
+--- !u!4 &477045730 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2885881521936281480, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+  m_PrefabInstance: {fileID: 292070648}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &480657649
 GameObject:
   m_ObjectHideFlags: 0
@@ -7776,7 +7874,7 @@ Transform:
   m_Children:
   - {fileID: 1448289099}
   m_Father: {fileID: 1963132029}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &888692064
 MonoBehaviour:
@@ -8860,7 +8958,7 @@ Transform:
   m_Children:
   - {fileID: 1637025496}
   m_Father: {fileID: 1963132029}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1101214952
 MonoBehaviour:
@@ -9043,7 +9141,7 @@ Transform:
   m_Children:
   - {fileID: 1764406408}
   m_Father: {fileID: 1963132029}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1103599396
 MonoBehaviour:
@@ -14791,7 +14889,7 @@ Transform:
   m_Children:
   - {fileID: 660590804}
   m_Father: {fileID: 1963132029}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1760712565
 MonoBehaviour:
@@ -15328,9 +15426,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1826354704}
   - component: {fileID: 1826354708}
-  - component: {fileID: 1826354707}
   - component: {fileID: 1826354706}
   - component: {fileID: 1826354705}
+  - component: {fileID: 1826354707}
   m_Layer: 0
   m_Name: Pot_2
   m_TagString: 2
@@ -15351,7 +15449,7 @@ Transform:
   m_Children:
   - {fileID: 1059371538}
   m_Father: {fileID: 1963132029}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1826354705
 MonoBehaviour:
@@ -15419,36 +15517,36 @@ MonoBehaviour:
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
-  spriteRenderer: {fileID: 1059371539}
-  potVide: {fileID: 515063778736874889, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  spriteRenderer: {fileID: 266576707}
+  potVide: {fileID: 7692800895671616095, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   gotPlant: 0
-  spritePlantedSeed: {fileID: 21300000, guid: 38f87462002134b4d85ea3dd52620813, type: 3}
-  evolutionBle1: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
-  evolutionBle2: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
+  spritePlantedSeed: {fileID: -7072262485073290446, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionBle1: {fileID: 0}
+  evolutionBle2: {fileID: 0}
   finishedBle: 0
-  evolutionApple1: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
-  evolutionApple2: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
+  evolutionApple1: {fileID: 0}
+  evolutionApple2: {fileID: 0}
   finishedApple: 0
-  evolutionTomato1: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
-  evolutionTomato2: {fileID: 21300000, guid: 04c31b4e3ee9b1245857868b81a56751, type: 3}
+  evolutionTomato1: {fileID: 0}
+  evolutionTomato2: {fileID: 0}
   finishedTomato: 0
-  evolutionEggplant1: {fileID: -637025637235216774, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
-  evolutionEggplant2: {fileID: 6897711099101215649, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  evolutionEggplant1: {fileID: 8638330062718480922, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionEggplant2: {fileID: -6356853177289981808, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   finishedEggplant: 0
-  evolutionPear1: {fileID: 5051672456841407309, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
-  evolutionPear2: {fileID: 9205105562912555126, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
+  evolutionPear1: {fileID: 0}
+  evolutionPear2: {fileID: 0}
   finishedPear: 0
-  evolutionSunflower1: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
-  evolutionSunflower2: {fileID: 9101957735655456481, guid: 320b4cfb657697b43a65e654b4858990, type: 3}
+  evolutionSunflower1: {fileID: 0}
+  evolutionSunflower2: {fileID: 0}
   finishedSunflower: 0
-  evolutionCherry1: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
-  evolutionCherry2: {fileID: 21300000, guid: 05405759d5ec3b9459f3a11a738b51dc, type: 3}
+  evolutionCherry1: {fileID: 0}
+  evolutionCherry2: {fileID: 0}
   finishedCherry: 0
-  evolutionAvocado1: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
-  evolutionAvocado2: {fileID: 21300000, guid: 3a63d561d2c25a14fa449d1e8defa48e, type: 3}
+  evolutionAvocado1: {fileID: 0}
+  evolutionAvocado2: {fileID: 0}
   finishedAvocado: 0
-  evolutionKiwi1: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
-  evolutionKiwi2: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
+  evolutionKiwi1: {fileID: 0}
+  evolutionKiwi2: {fileID: 0}
   finishedKiwi: 0
 --- !u!212 &1826354708
 SpriteRenderer:
@@ -16758,6 +16856,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1806503533}
+  - {fileID: 477045730}
   - {fileID: 1826354704}
   - {fileID: 1101214951}
   - {fileID: 888692063}
@@ -17284,7 +17383,7 @@ Transform:
   m_Children:
   - {fileID: 480657650}
   m_Father: {fileID: 1963132029}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2055077851
 MonoBehaviour:
