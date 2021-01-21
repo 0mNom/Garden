@@ -8,7 +8,7 @@ public class ButtonPopUp : MonoBehaviour
 {
     public GameObject bagObject;
     Collider2D col;
-    public string Name;
+    public string Name1, Name2, Name3;
     public TextMeshProUGUI nameText;
     public Animator animator;
 
@@ -17,12 +17,14 @@ public class ButtonPopUp : MonoBehaviour
     public SpriteRenderer ImagePotDuPopUp;
     public SpriteRenderer ImagePlantDuPopUp;
 
+    public string tag;
+
     bool canSell;
 
     void Start()
     {
         col = GetComponent<Collider2D>();
-        nameText.text = Name;
+       
         canSell = true;
     }
 
@@ -39,7 +41,10 @@ public class ButtonPopUp : MonoBehaviour
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if (col == touchedCollider && bagScript.canOpenPannel == true)
                 {
-                    OpenPanel();
+                    tag = touchedCollider.tag;
+
+                    OpenPanel(tag);
+                   
                 }
             }
         }
@@ -61,9 +66,14 @@ public class ButtonPopUp : MonoBehaviour
 
     }
 
-    public void OpenPanel()
+    public void OpenPanel(string tag)
     {
         animator.SetBool("IsOpen", true);
+ 
+        if (tag == "1" ) nameText.text = Name1;
+        if (tag == "2" ) nameText.text = Name2;
+        if (tag == "3" ) nameText.text = Name3;
+
 
         SpriteRenderer spritePot = gameObject.GetComponent<SpriteRenderer>();
         ImagePotDuPopUp.sprite = spritePot.sprite;

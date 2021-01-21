@@ -266,6 +266,11 @@ public class BagScript : MonoBehaviour
         }
         t_kiwi.text = kiwiseed.ToString();
     }
+
+
+
+    //planting
+
     public void plantApple()
     {
         if (appleseed < 1)

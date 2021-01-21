@@ -139,7 +139,7 @@ public class ClickToPlant : MonoBehaviour
                     if (bagScript1.plantingseed == 1)
                     {
                         plantInPot = 1f;
-                        EnvoyerVariable();
+                        EnvoyerVariable(tag);
                         potPlace.loadplants();
                         targetTimeBle1 = CurrentTime.AddSeconds(growingTimeBle/2);
                         targetTimeBle2 = CurrentTime.AddSeconds(growingTimeBle);
@@ -153,7 +153,7 @@ public class ClickToPlant : MonoBehaviour
                     if (bagScript1.plantingseed == 2)
                     {
                         plantInPot = 2f;
-                        EnvoyerVariable();
+                        EnvoyerVariable(tag);
                         potPlace.loadplants();
                         targetTimeApple1 = CurrentTime.AddSeconds(growingTimeApple/2);
                         targetTimeApple2 = CurrentTime.AddSeconds(growingTimeApple);
@@ -167,7 +167,7 @@ public class ClickToPlant : MonoBehaviour
                     if (bagScript1.plantingseed == 3)
                     {
                         plantInPot = 3f;
-                        EnvoyerVariable();
+                        EnvoyerVariable(tag);
                         potPlace.loadplants();
                         targetTimeTomato1 = CurrentTime.AddSeconds(growingTimeTomato/2);
                         targetTimeTomato2 = CurrentTime.AddSeconds(growingTimeTomato);
@@ -181,7 +181,7 @@ public class ClickToPlant : MonoBehaviour
                     if (bagScript1.plantingseed == 4)
                     {
                         plantInPot = 4f;
-                        EnvoyerVariable();
+                        EnvoyerVariable(tag);
                         potPlace.loadplants();
                         targetTimeEggplant1 = CurrentTime.AddSeconds(growingTimeEggplant/2);
                         targetTimeEggplant2 = CurrentTime.AddSeconds(growingTimeEggplant);
@@ -197,7 +197,7 @@ public class ClickToPlant : MonoBehaviour
                     if (bagScript1.plantingseed == 5)
                     {
                         plantInPot = 5f;
-                        EnvoyerVariable();
+                        EnvoyerVariable(tag);
                         potPlace.loadplants();
                         targetTimePear1 = CurrentTime.AddSeconds(growingTimePear/2);
                         targetTimePear2 = CurrentTime.AddSeconds(growingTimePear);
@@ -211,7 +211,7 @@ public class ClickToPlant : MonoBehaviour
                     if (bagScript1.plantingseed == 6)
                     {
                         plantInPot = 6f;
-                        EnvoyerVariable();
+                        EnvoyerVariable(tag);
                         potPlace.loadplants();
                         targetTimeSunflower1 = CurrentTime.AddSeconds(growingTimeSunflower/2);
                         targetTimeSunflower2 = CurrentTime.AddSeconds(growingTimeSunflower);
@@ -225,7 +225,7 @@ public class ClickToPlant : MonoBehaviour
                     if (bagScript1.plantingseed == 7)
                     {
                         plantInPot = 7f;
-                        EnvoyerVariable();
+                        EnvoyerVariable(tag);
                         potPlace.loadplants();
                         targetTimeCherry1 = CurrentTime.AddSeconds(growingTimeCherry/2);
                         targetTimeCherry2 = CurrentTime.AddSeconds(growingTimeCherry);
@@ -239,7 +239,7 @@ public class ClickToPlant : MonoBehaviour
                     if (bagScript1.plantingseed == 8)
                     {
                         plantInPot = 8f;
-                        EnvoyerVariable();
+                        EnvoyerVariable(tag);
                         potPlace.loadplants();
                         targetTimeAvocado1 = CurrentTime.AddSeconds(growingTimeAvocado/2);
                         targetTimeAvocado2 = CurrentTime.AddSeconds(growingTimeAvocado);
@@ -254,7 +254,7 @@ public class ClickToPlant : MonoBehaviour
                     {
 
                         plantInPot = 9f;
-                        EnvoyerVariable();
+                        EnvoyerVariable(tag);
                         potPlace.loadplants();
                         targetTimeKiwi1 = CurrentTime.AddSeconds(growingTimeKiwi/2);
                         targetTimeKiwi2 = CurrentTime.AddSeconds(growingTimeKiwi);
@@ -452,7 +452,7 @@ public class ClickToPlant : MonoBehaviour
         }
     }
 
-    public void EnvoyerVariable()
+    public void EnvoyerVariable(String tag)
     {
         if (tag == "1") potPlace.pp1 = plantInPot;
         // if (tag == "1") Debug.Log("POT 1");

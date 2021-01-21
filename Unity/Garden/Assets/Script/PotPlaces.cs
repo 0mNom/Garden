@@ -17,7 +17,9 @@ public class PotPlaces : MonoBehaviour
     public Sprite pousseCherry, evolutionCherry1, evolutionCherry2;
     public Sprite pousseAvo, evolutionAvo1, evolutionAvo2;
     public Sprite pousseKiwi, evolutionKiwi1, evolutionKiwi2;
+    public Sprite Skin1, Skin2, Skin3, Skin4, Skin5, Skin6, Skin7, Skin8, Skin9, Skin10;
     public SpriteRenderer spriteRendererP1,spriteRendererP2, spriteRendererP3;
+    public SpriteRenderer spriteRendererPot1, spriteRendererPot2, spriteRendererPot3;
 
 
     void Start()
@@ -30,6 +32,49 @@ public class PotPlaces : MonoBehaviour
     {
         
     }
+
+    public void loadpots()
+    {
+
+        //-----------------pot1------------------------
+        if (sp1 == 1) spriteRendererPot1.sprite = Skin1;
+        if (sp1 == 2) spriteRendererPot1.sprite = Skin2;
+        if (sp1 == 3) spriteRendererPot1.sprite = Skin3;
+        if (sp1 == 4) spriteRendererPot1.sprite = Skin4;
+        if (sp1 == 5) spriteRendererPot1.sprite = Skin5;
+        if (sp1 == 6) spriteRendererPot1.sprite = Skin6;
+        if (sp1 == 7) spriteRendererPot1.sprite = Skin7;
+        if (sp1 == 8) spriteRendererPot1.sprite = Skin8;
+        if (sp1 == 9) spriteRendererPot1.sprite = Skin9;
+        if (sp1 == 10) spriteRendererPot1.sprite = Skin10;
+
+
+        //-----------------pot2------------------------
+        if (sp2 == 1) spriteRendererPot1.sprite = Skin1;
+        if (sp2 == 2) spriteRendererPot1.sprite = Skin2;
+        if (sp2 == 3) spriteRendererPot1.sprite = Skin3;
+        if (sp2 == 4) spriteRendererPot1.sprite = Skin4;
+        if (sp2 == 5) spriteRendererPot1.sprite = Skin5;
+        if (sp2 == 6) spriteRendererPot1.sprite = Skin6;
+        if (sp2 == 7) spriteRendererPot1.sprite = Skin7;
+        if (sp2 == 8) spriteRendererPot1.sprite = Skin8;
+        if (sp2 == 9) spriteRendererPot1.sprite = Skin9;
+        if (sp2 == 10) spriteRendererPot1.sprite = Skin10;
+
+
+        //-----------------pot3------------------------
+        if (sp3 == 1) spriteRendererPot1.sprite = Skin1;
+        if (sp3 == 2) spriteRendererPot1.sprite = Skin2;
+        if (sp3 == 3) spriteRendererPot1.sprite = Skin3;
+        if (sp3 == 4) spriteRendererPot1.sprite = Skin4;
+        if (sp3 == 5) spriteRendererPot1.sprite = Skin5;
+        if (sp3 == 6) spriteRendererPot1.sprite = Skin6;
+        if (sp3 == 7) spriteRendererPot1.sprite = Skin7;
+        if (sp3 == 8) spriteRendererPot1.sprite = Skin8;
+        if (sp3 == 9) spriteRendererPot1.sprite = Skin9;
+        if (sp3 == 10) spriteRendererPot1.sprite = Skin10;
+    }
+
 
     public void loadplants()
     {
