@@ -25,7 +25,7 @@ public class BagScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(plantingseed);
+        //Debug.Log(plantingseed);
         if(plantingseed == 1)
         {
 
