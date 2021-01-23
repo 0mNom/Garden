@@ -7,6 +7,7 @@ using TMPro;
 public class ButtonPopUp : MonoBehaviour
 {
     public GameObject bagObject;
+    public GameObject thePotClicked;
     Collider2D col;
     public string Name1, Name2, Name3;
     public TextMeshProUGUI nameText;
@@ -17,7 +18,7 @@ public class ButtonPopUp : MonoBehaviour
     public SpriteRenderer ImagePotDuPopUp;
     public SpriteRenderer ImagePlantDuPopUp;
 
-    public string tag;
+    public string Tag;
 
     bool canSell;
 
@@ -41,28 +42,33 @@ public class ButtonPopUp : MonoBehaviour
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if (col == touchedCollider && bagScript.canOpenPannel == true)
                 {
-                    tag = touchedCollider.tag;
 
-                    OpenPanel(tag);
-                   
+                    Tag = touchedCollider.tag;
+
+                    OpenPanel(Tag);
+                    ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
+
+                    if (clickToPlantScript.plantFinished)
+                    {
+
+                        sellButton.gameObject.SetActive(true);
+                        Debug.Log(gameObject);
+                        Button btn = sellButton.GetComponent<Button>();
+                        btn.onClick.AddListener(SellPlant);
+                    }
+
+                    if (!clickToPlantScript.plantFinished)
+                    {
+                        Debug.Log("yess ");
+                        sellButton.gameObject.SetActive(false);
+                    }
                 }
             }
         }
 
-        ClickToPlant clickToPlantScript = gameObject.GetComponent<ClickToPlant>();
+        
 
-        if (clickToPlantScript.plantFinished)
-        {
-            sellButton.gameObject.SetActive(true);
-
-            Button btn = sellButton.GetComponent<Button>();
-            btn.onClick.AddListener(SellPlant);
-        }
-
-        if(clickToPlantScript.plantFinished == false)
-        {
-            sellButton.gameObject.SetActive(false);
-        }
+        
 
     }
 
@@ -93,7 +99,7 @@ public class ButtonPopUp : MonoBehaviour
         if(canSell)
         {
             //what type of plant is sold
-            ClickToPlant clickToPlantScript = gameObject.GetComponent<ClickToPlant>();
+            ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
             int addedMoney = clickToPlantScript.sellingPrice;
 
             // add money
@@ -107,6 +113,8 @@ public class ButtonPopUp : MonoBehaviour
             clickToPlantScript.plantFinished = false;
             clickToPlantScript.plantInPot = 0f;
             ImagePlantDuPopUp.sprite = null;
+            clickToPlantScript.EnvoyerVariable(Tag);
+            
 
             canSell = false;
             StartCoroutine("WaitForSellingTime");

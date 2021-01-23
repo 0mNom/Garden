@@ -478,7 +478,7 @@ Transform:
   m_LocalScale: {x: 1.9165344, y: 1.7773291, z: 1.9165344}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &42720931
 GameObject:
@@ -1712,7 +1712,7 @@ Transform:
   m_LocalScale: {x: 1.88229, y: 2.00187, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &207976201
 GameObject:
@@ -2167,6 +2167,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245555000}
   m_CullTransparentMesh: 0
+--- !u!1001 &260718333
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7676691194556127211, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_Name
+      value: P_DedLeaves
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676691194556127212, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f224debc10f82243b193094eaea1ba1, type: 3}
 --- !u!212 &266576707 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2885881521463263910, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
@@ -5897,7 +5966,7 @@ RectTransform:
   - {fileID: 636383997}
   - {fileID: 1299948808}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7486,6 +7555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagObject: {fileID: 1860585977}
+  thePotClicked: {fileID: 0}
   Name1: 
   Name2: 
   Name3: 
@@ -7494,7 +7564,7 @@ MonoBehaviour:
   sellButton: {fileID: 1702328271}
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
-  tag: 
+  Tag: 
 --- !u!61 &888692065
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7802,7 +7872,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &953618965
 GameObject:
@@ -8121,6 +8191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagObject: {fileID: 1860585977}
+  thePotClicked: {fileID: 0}
   Name1: 
   Name2: 
   Name3: 
@@ -8129,7 +8200,7 @@ MonoBehaviour:
   sellButton: {fileID: 1702328271}
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
-  tag: 
+  Tag: 
 --- !u!61 &975528007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8715,6 +8786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagObject: {fileID: 1860585977}
+  thePotClicked: {fileID: 0}
   Name1: 
   Name2: 
   Name3: 
@@ -8723,7 +8795,7 @@ MonoBehaviour:
   sellButton: {fileID: 1702328271}
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
-  tag: 
+  Tag: 
 --- !u!61 &1103599397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9167,7 +9239,7 @@ Transform:
   - {fileID: 1470022197}
   - {fileID: 101134757}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1172176872
 GameObject:
@@ -9905,30 +9977,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 757091246}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1360750641}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &1283336837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10155,6 +10203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagObject: {fileID: 1860585977}
+  thePotClicked: {fileID: 0}
   Name1: 
   Name2: 
   Name3: 
@@ -10163,7 +10212,7 @@ MonoBehaviour:
   sellButton: {fileID: 1702328271}
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
-  tag: 
+  Tag: 
 --- !u!61 &1316593942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11403,7 +11452,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1403264362
 MonoBehaviour:
@@ -11450,30 +11499,39 @@ MonoBehaviour:
   pousseBle: {fileID: 3576204951292836673, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionBle1: {fileID: -8733773252520658896, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionBle2: {fileID: -7523791883135114678, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionBle3: {fileID: -590805069577431851, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   pousseApple: {fileID: 8532793640707250610, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionApple1: {fileID: -2277497117890853638, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionApple2: {fileID: 8998766240166631555, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionApple3: {fileID: 0}
   pousseTomato: {fileID: 7689940656616605574, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionTomato1: {fileID: 8532793640707250610, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionTomato2: {fileID: -2277497117890853638, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionTomato3: {fileID: 8998766240166631555, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   pousseEgg: {fileID: -7072262485073290446, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionEggplant1: {fileID: 8638330062718480922, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionEggplant2: {fileID: -6356853177289981808, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionEggplant3: {fileID: -8242419473159045144, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   poussePear: {fileID: -3901439969645370052, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   evolutionPear1: {fileID: 5051672456841407309, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   evolutionPear2: {fileID: 9205105562912555126, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
+  evolutionPear3: {fileID: 8252967992558012352, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   pousseSun: {fileID: -7072262485073290446, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionSun1: {fileID: 2183991771371066542, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionSun2: {fileID: 2183991771371066542, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionSun3: {fileID: 0}
   pousseCherry: {fileID: -7072262485073290446, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionCherry1: {fileID: 21300000, guid: 59a4da305cfdd8b47a7702af5622c06b, type: 3}
   evolutionCherry2: {fileID: 21300000, guid: 59a4da305cfdd8b47a7702af5622c06b, type: 3}
+  evolutionCherry3: {fileID: 8998766240166631555, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   pousseAvo: {fileID: -7072262485073290446, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionAvo1: {fileID: 2882856621486060386, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionAvo2: {fileID: 1080203096490090065, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionAvo3: {fileID: -3691624954443584971, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   pousseKiwi: {fileID: -7072262485073290446, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   evolutionKiwi1: {fileID: 21300000, guid: 59a4da305cfdd8b47a7702af5622c06b, type: 3}
   evolutionKiwi2: {fileID: 21300000, guid: 59a4da305cfdd8b47a7702af5622c06b, type: 3}
+  evolutionKiwi3: {fileID: 0}
   Skin1: {fileID: 7692800895671616095, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   Skin2: {fileID: 3047777607093885583, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   Skin3: {fileID: 3714476649690943754, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
@@ -14204,6 +14262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagObject: {fileID: 1860585977}
+  thePotClicked: {fileID: 0}
   Name1: 
   Name2: 
   Name3: 
@@ -14212,7 +14271,7 @@ MonoBehaviour:
   sellButton: {fileID: 1702328271}
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
-  tag: 
+  Tag: 
 --- !u!61 &1760712566
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15707,7 +15766,7 @@ Transform:
   - {fileID: 975528005}
   - {fileID: 1316593940}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1974552166
 GameObject:
@@ -16066,6 +16125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagObject: {fileID: 1860585977}
+  thePotClicked: {fileID: 0}
   Name1: 
   Name2: 
   Name3: 
@@ -16074,7 +16134,7 @@ MonoBehaviour:
   sellButton: {fileID: 1702328271}
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
-  tag: 
+  Tag: 
 --- !u!61 &2029744616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16362,6 +16422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagObject: {fileID: 1860585977}
+  thePotClicked: {fileID: 0}
   Name1: 
   Name2: 
   Name3: 
@@ -16370,7 +16431,7 @@ MonoBehaviour:
   sellButton: {fileID: 1702328271}
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
-  tag: 
+  Tag: 
 --- !u!61 &2055077852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17135,13 +17196,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1806503534}
+    - target: {fileID: 5051124593289584031, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5051124593876663810, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_Name
       value: PlantPopUp Canvus
       objectReference: {fileID: 0}
     - target: {fileID: 5051124593876663810, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5051124593876663813, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: places
@@ -17185,7 +17250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5051124593876663815, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5051124593876663815, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
