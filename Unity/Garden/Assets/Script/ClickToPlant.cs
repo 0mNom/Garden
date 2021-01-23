@@ -236,6 +236,7 @@ public class ClickToPlant : MonoBehaviour
                     }
 
                     Debug.Log(tag);
+                   
                 }
             }
 
@@ -251,7 +252,18 @@ public class ClickToPlant : MonoBehaviour
 
         if (blePlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeBle1) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeBle2) == 1)
+            {
+
+                sellingPrice = 10;
+                plantInPot = 1.2f;
+                EnvoyerVariable(tag);
+                potPlace.loadplants();
+
+                plantFinished = true;
+                blePlanted = false;
+            }
+            else if (DateTime.Compare(CurrentTime, targetTimeBle1) == 1)
             {
                
                 plantInPot = 1.1f;
@@ -260,23 +272,24 @@ public class ClickToPlant : MonoBehaviour
               
             }
 
-            else if (DateTime.Compare(CurrentTime, targetTimeBle2) == 1 )
-            {
-               
-                sellingPrice = 10;
-                plantInPot = 1.2f;
-                EnvoyerVariable(tag);
-                potPlace.loadplants();
-               
-                plantFinished = true;
-                blePlanted = false;
-            }
+             
 
         }
 
         if (applePlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeApple1) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeApple2) == 1)
+            {
+
+                sellingPrice = 20;
+                plantInPot = 2.2f;
+                EnvoyerVariable(tag);
+                potPlace.loadplants();
+
+                plantFinished = true;
+                applePlanted = false;
+            }
+            else if (DateTime.Compare(CurrentTime, targetTimeApple1) == 1)
             {
               
                 plantInPot = 2.1f;
@@ -284,23 +297,24 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
              
             }
-            else if (DateTime.Compare(CurrentTime, targetTimeApple2) == 1 )
-            {
-               
-                sellingPrice = 20;
-                plantInPot = 2.2f;
-                EnvoyerVariable(tag);
-                potPlace.loadplants();
-               
-                plantFinished = true;
-                applePlanted = false;
-            }
+             
             
         }
 
         if (tomatoPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeTomato1) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeTomato2) == 1)
+            {
+
+                sellingPrice = 10;
+                plantInPot = 3.2f;
+                EnvoyerVariable(tag);
+                potPlace.loadplants();
+
+                plantFinished = true;
+                tomatoPlanted = false;
+            }
+            else if (DateTime.Compare(CurrentTime, targetTimeTomato1) == 1)
             {
                
                 plantInPot = 3.1f;
@@ -308,68 +322,75 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
                
             }
-            else if (DateTime.Compare(CurrentTime, targetTimeTomato2) == 1)
-            {
-               
-                sellingPrice = 10;
-                plantInPot = 3.2f;
-                EnvoyerVariable(tag);
-                potPlace.loadplants();
-               
-                plantFinished = true;
-                tomatoPlanted = false;
-            }
+            
         }
 
         if (eggplantPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeEggplant1) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeEggplant2) == 1)
             {
-               
-                plantInPot = 4.1f;
-                EnvoyerVariable(tag);
-                potPlace.loadplants();
-               
-            }
-            else if (DateTime.Compare(CurrentTime, targetTimeEggplant2) == 1 )
-            {
-               
+
                 sellingPrice = 10;
                 plantInPot = 4.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
-               
+
                 plantFinished = true;
                 eggplantPlanted = false;
             }
+            else if (DateTime.Compare(CurrentTime, targetTimeEggplant1) == 1)
+            {
+
+                plantInPot = 4.1f;
+                EnvoyerVariable(tag);
+                potPlace.loadplants();
+
+            }
+            
+            
+            
         }
 
         if (pearPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimePear1) == 1 )
+            if (DateTime.Compare(CurrentTime, targetTimePear2) == 1)
             {
-               
-                plantInPot = 5.1f;
-                EnvoyerVariable(tag);
-                potPlace.loadplants();
-              
-            }
-            else if(DateTime.Compare(CurrentTime, targetTimePear2) == 1 )
-            {
-               
+
                 sellingPrice = 10;
                 plantInPot = 5.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
-              
+
                 plantFinished = true;
                 pearPlanted = false;
             }
+            else if (DateTime.Compare(CurrentTime, targetTimePear1) == 1)
+            {
+
+                plantInPot = 5.1f;
+                EnvoyerVariable(tag);
+                potPlace.loadplants();
+
+            }
+            
+             
+            
         }
 
         if (sunflowerPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeSunflower1) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeSunflower2) == 1)
+            {
+
+                sellingPrice = 20;
+                plantInPot = 6.2f;
+                EnvoyerVariable(tag);
+                potPlace.loadplants();
+
+                plantFinished = true;
+                sunflowerPlanted = false;
+            }
+            else if (DateTime.Compare(CurrentTime, targetTimeSunflower1) == 1)
             {
                
                 plantInPot = 6.1f;
@@ -377,32 +398,14 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
               
             }
-            else if (DateTime.Compare(CurrentTime, targetTimeSunflower2) == 1)
-            {
-               
-                sellingPrice = 20;
-                plantInPot = 6.2f;
-                EnvoyerVariable(tag);
-                potPlace.loadplants();
-               
-                plantFinished = true;
-                sunflowerPlanted = false;
-            }
+            
         }
 
         if (cherryPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeCherry1) == 1)// && spriteRenderer.sprite == spritePlantedSeed)
-            {
-               // Debug.Log("Evolution");
-                plantInPot = 7.1f;
-                EnvoyerVariable(tag);
-                potPlace.loadplants();
-               // spriteRenderer.sprite = evolutionCherry1;
-            }
-            else if (DateTime.Compare(CurrentTime, targetTimeCherry2) == 1 )//&& spriteRenderer.sprite == evolutionCherry1)
-            {
-               // Debug.Log("Evolution 2");
+           if (DateTime.Compare(CurrentTime, targetTimeCherry2) == 1)//&& spriteRenderer.sprite == evolutionCherry1)
+           {
+                // Debug.Log("Evolution 2");
                 sellingPrice = 10;
                 plantInPot = 7.2f;
                 EnvoyerVariable(tag);
@@ -411,11 +414,31 @@ public class ClickToPlant : MonoBehaviour
                 plantFinished = true;
                 cherryPlanted = false;
             }
+            else if (DateTime.Compare(CurrentTime, targetTimeCherry1) == 1)// && spriteRenderer.sprite == spritePlantedSeed)
+            {
+               // Debug.Log("Evolution");
+                plantInPot = 7.1f;
+                EnvoyerVariable(tag);
+                potPlace.loadplants();
+               // spriteRenderer.sprite = evolutionCherry1;
+            }
+            
         }
 
         if (avocadoPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeAvocado1) == 1)
+            if (DateTime.Compare(CurrentTime, targetTimeAvocado2) == 1)
+            {
+
+                sellingPrice = 10;
+                plantInPot = 8.2f;
+                EnvoyerVariable(tag);
+                potPlace.loadplants();
+
+                plantFinished = true;
+                avocadoPlanted = false;
+            }
+            else if (DateTime.Compare(CurrentTime, targetTimeAvocado1) == 1)
             {
                
                 plantInPot = 8.1f;
@@ -423,22 +446,23 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
                
             }
-            else if (DateTime.Compare(CurrentTime, targetTimeAvocado2) == 1)
-            {
-                
-                sellingPrice = 10;
-                plantInPot = 8.2f;
-                EnvoyerVariable(tag);
-                potPlace.loadplants();
-                
-                plantFinished = true;
-                avocadoPlanted = false;
-            }
+            
         }
 
         if (kiwiPlanted)
         {
-            if (DateTime.Compare(CurrentTime, targetTimeKiwi1) == 1)// && spriteRenderer.sprite == spritePlantedSeed)
+            if (DateTime.Compare(CurrentTime, targetTimeKiwi2) == 1)//&& spriteRenderer.sprite == evolutionKiwi1)
+            {
+                // Debug.Log("Evolution 2");
+                sellingPrice = 10;
+                plantInPot = 9.2f;
+                EnvoyerVariable(tag);
+                potPlace.loadplants();
+                // spriteRenderer.sprite = evolutionKiwi2;
+                plantFinished = true;
+                kiwiPlanted = false;
+            }
+            else if (DateTime.Compare(CurrentTime, targetTimeKiwi1) == 1)// && spriteRenderer.sprite == spritePlantedSeed)
             {
                 //Debug.Log("Evolution");
                 plantInPot = 9.1f;
@@ -446,17 +470,7 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
                 //spriteRenderer.sprite = evolutionKiwi1;
             }
-            else if (DateTime.Compare(CurrentTime, targetTimeKiwi2) == 1 )//&& spriteRenderer.sprite == evolutionKiwi1)
-            {
-               // Debug.Log("Evolution 2");
-                sellingPrice = 10;
-                plantInPot = 9.2f;
-                EnvoyerVariable(tag);
-                potPlace.loadplants();
-               // spriteRenderer.sprite = evolutionKiwi2;
-                plantFinished = true;
-                kiwiPlanted = false;
-            }
+            
         }
     }
 

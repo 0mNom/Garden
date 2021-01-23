@@ -24,7 +24,7 @@ public class PotSkins : MonoBehaviour
     {
         if (popUp.tag == "1") places.sp1 = 1;
         if (popUp.tag == "2") places.sp2 = 1;
-        if (popUp.tag == "3") places.sp1 = 1;
+        if (popUp.tag == "3") places.sp3 = 1;
         places.loadpots();
 
     }
@@ -32,15 +32,15 @@ public class PotSkins : MonoBehaviour
     {
         if (popUp.tag == "1") places.sp1 = 2;
         if (popUp.tag == "2") places.sp2 = 2;
-        if (popUp.tag == "3") places.sp1 = 2;
+        if (popUp.tag == "3") places.sp3 = 2;
         places.loadpots();
 
     }
     public void skin3()
     {
-        if (popUp.tag == "1") places.sp1 = 2;
-        if (popUp.tag == "2") places.sp2 = 2;
-        if (popUp.tag == "3") places.sp1 = 2;
+        if (popUp.tag == "1") places.sp1 = 3;
+        if (popUp.tag == "2") places.sp2 = 3;
+        if (popUp.tag == "3") places.sp3 = 3;
         places.loadpots();
 
     }
