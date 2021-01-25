@@ -103,7 +103,16 @@ public class ButtonPopUp : MonoBehaviour
 
     public void OpenPanel(string tag)
     {
-        
+        ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
+        if (clickToPlantScript.plantFinished)
+        {
+            // Debug.Log(Tag);
+            sellButton.gameObject.SetActive(true);
+            //Debug.Log(gameObject);
+            Button btn = sellButton.GetComponent<Button>();
+
+            btn.onClick.AddListener(SellPlant);
+        }
         animator.SetBool("IsOpen", true);
         pannelActive = true;
         if (tag == "1" ) nameText.text = Name1;
