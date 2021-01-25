@@ -117,12 +117,10 @@ public class ClickToPlant : MonoBehaviour
                 BagScript bagScript1 = bagObject.GetComponent<BagScript>();
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
 
-                
-
                 if (col == touchedCollider && bagScript1.plantingseed != 0 && gotPlant == false)
                 {
                     String tag = col.tag;
-                    Debug.Log(tag);
+                    //Debug.Log(tag);
 
 
                     if (bagScript1.plantingseed == 1)

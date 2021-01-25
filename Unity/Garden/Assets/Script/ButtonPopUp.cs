@@ -41,18 +41,21 @@ public class ButtonPopUp : MonoBehaviour
             {
                 BagScript bagScript = bagObject.GetComponent<BagScript>();
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
+
                 if (col == touchedCollider && bagScript.canOpenPannel == true)
                 {
 
-                    Tag = touchedCollider.tag;
+                    Tag = col.tag;
 
-                    
+                    Debug.Log(Tag);
 
                     OpenPanel(Tag);
+
+                    /*
                     ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
 
-
-                    if (clickToPlantScript.plantFinished)
+                    
+                    if (clickToPlantScript.plantFinished && pannelActive == true)
                     {
                        // Debug.Log(Tag);
                         sellButton.gameObject.SetActive(true);
@@ -62,15 +65,31 @@ public class ButtonPopUp : MonoBehaviour
                         btn.onClick.AddListener(SellPlant);
                     }
 
-                    if (!clickToPlantScript.plantFinished)
+                    if (!clickToPlantScript.plantFinished && pannelActive == true)
                     {
                        // Debug.Log("yess ");
                         sellButton.gameObject.SetActive(false);
-                    }
+                    }*/
+
                 }
             }
         }
+        ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
+        if (clickToPlantScript.plantFinished && pannelActive == true)
+        {
+            // Debug.Log(Tag);
+            sellButton.gameObject.SetActive(true);
+            //Debug.Log(gameObject);
+            Button btn = sellButton.GetComponent<Button>();
 
+            btn.onClick.AddListener(SellPlant);
+        }
+
+        if (!clickToPlantScript.plantFinished && pannelActive == true)
+        {
+            // Debug.Log("yess ");
+            sellButton.gameObject.SetActive(false);
+        }
 
 
     }
