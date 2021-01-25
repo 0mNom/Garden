@@ -74,6 +74,7 @@ public class ButtonPopUp : MonoBehaviour
                 }
             }
         }
+        Debug.Log(pannelActive);
         if (pannelActive == true)
         {
             ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
