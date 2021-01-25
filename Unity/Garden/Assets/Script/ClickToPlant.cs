@@ -313,6 +313,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 2.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
                 applePlanted = false;
@@ -323,7 +325,9 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 2.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
-             
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
+
             }
             else if (DateTime.Compare(CurrentTime, targetTimeApple1) == 1)
             {
@@ -331,7 +335,9 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 2.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
-             
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
+
             }
              
             
@@ -346,6 +352,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 3.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
                 tomatoPlanted = false;
@@ -356,7 +364,9 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 3.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
-               
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
+
             }
             else if (DateTime.Compare(CurrentTime, targetTimeTomato1) == 1)
             {
@@ -364,7 +374,9 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 3.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
-               
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
+
             }
             
         }
@@ -378,6 +390,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 4.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
                 eggplantPlanted = false;
@@ -388,6 +402,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 4.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
 
             }
             else if (DateTime.Compare(CurrentTime, targetTimeEggplant1) == 1)
@@ -396,6 +412,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 4.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
 
             }
             
@@ -412,6 +430,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 5.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
                 pearPlanted = false;
@@ -422,6 +442,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 5.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
 
             }
             else if (DateTime.Compare(CurrentTime, targetTimePear1) == 1)
@@ -430,6 +452,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 5.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
 
             }
             
@@ -446,6 +470,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 6.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
                 sunflowerPlanted = false;
@@ -456,7 +482,9 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 6.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
-              
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
+
             }
             else if (DateTime.Compare(CurrentTime, targetTimeSunflower1) == 1)
             {
@@ -464,7 +492,9 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 6.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
-              
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
+
             }            
         }
 
@@ -476,6 +506,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 7.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
                 plantFinished = true;
                 cherryPlanted = false;
             }
@@ -484,12 +516,16 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 7.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
             }
             else if (DateTime.Compare(CurrentTime, targetTimeCherry1) == 1)
             {
                 plantInPot = 7.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
             }            
         }
 
@@ -502,6 +538,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 8.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
                 avocadoPlanted = false;
@@ -512,6 +550,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 8.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel(); 
                
             }
             else if (DateTime.Compare(CurrentTime, targetTimeAvocado1) == 1)
@@ -520,7 +560,9 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 8.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
-               
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
+
             }
             
         }
@@ -533,6 +575,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 9.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
                 plantFinished = true;
                 kiwiPlanted = false;
             }
@@ -541,12 +585,16 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 9.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
             }
             else if (DateTime.Compare(CurrentTime, targetTimeKiwi1) == 1)
             {
                 plantInPot = 9.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
             }
         }
     }
