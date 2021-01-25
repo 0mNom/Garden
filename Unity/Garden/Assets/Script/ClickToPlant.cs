@@ -122,6 +122,7 @@ public class ClickToPlant : MonoBehaviour
                 if (col == touchedCollider && bagScript1.plantingseed != 0 && gotPlant == false)
                 {
                     String tag = col.tag;
+                    Debug.Log(tag);
 
 
                     if (bagScript1.plantingseed == 1)
@@ -252,6 +253,7 @@ public class ClickToPlant : MonoBehaviour
                         StartCoroutine("WaitForOpenPannel");
                     }
 
+                    Debug.Log(tag);
                    
                 }
             }
@@ -274,8 +276,10 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 plantFinished = true;
-                blePlanted = false;
-                
+                blePlanted = false; 
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
+
             }
             else if (DateTime.Compare(CurrentTime, targetTimeBle2) == 1)
             {
@@ -283,11 +287,13 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 1.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
-
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
             }
             else if (DateTime.Compare(CurrentTime, targetTimeBle1) == 1)
             {
-               
+                ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                buttonPopUpScript.LoadPannel();
                 plantInPot = 1.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();

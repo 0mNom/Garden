@@ -6,6 +6,7 @@ using TMPro;
 
 public class ButtonPopUp : MonoBehaviour
 {
+    public bool pannelActive;
     public GameObject bagObject;
     public GameObject thePotClicked;
     Collider2D col;
@@ -45,37 +46,42 @@ public class ButtonPopUp : MonoBehaviour
 
                     Tag = touchedCollider.tag;
 
+                    
+
                     OpenPanel(Tag);
                     ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
 
+
                     if (clickToPlantScript.plantFinished)
                     {
-
+                       // Debug.Log(Tag);
                         sellButton.gameObject.SetActive(true);
-                        Debug.Log(gameObject);
+                        //Debug.Log(gameObject);
                         Button btn = sellButton.GetComponent<Button>();
+
                         btn.onClick.AddListener(SellPlant);
                     }
 
                     if (!clickToPlantScript.plantFinished)
                     {
-                        Debug.Log("yess ");
+                       // Debug.Log("yess ");
                         sellButton.gameObject.SetActive(false);
                     }
                 }
             }
         }
 
-        
 
-        
 
     }
 
+    
+
     public void OpenPanel(string tag)
     {
+        
         animator.SetBool("IsOpen", true);
- 
+        pannelActive = true;
         if (tag == "1" ) nameText.text = Name1;
         if (tag == "2" ) nameText.text = Name2;
         if (tag == "3" ) nameText.text = Name3;
@@ -85,6 +91,19 @@ public class ButtonPopUp : MonoBehaviour
         ImagePotDuPopUp.sprite = spritePot.sprite;
         SpriteRenderer spritePlant = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
         ImagePlantDuPopUp.sprite = spritePlant.sprite;
+       //Debug.Log(tag);
+    }
+
+    public void LoadPannel()
+    {
+        if(pannelActive)
+        {
+            SpriteRenderer spritePot = gameObject.GetComponent<SpriteRenderer>();
+            ImagePotDuPopUp.sprite = spritePot.sprite;
+            SpriteRenderer spritePlant = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
+            ImagePlantDuPopUp.sprite = spritePlant.sprite;
+        }
+        
     }
 
     public void ClosePanel()
@@ -92,14 +111,17 @@ public class ButtonPopUp : MonoBehaviour
         ImagePotDuPopUp.sprite = null;
         ImagePlantDuPopUp.sprite = null;
         animator.SetBool("IsOpen", false);
+        pannelActive = false;
     }
+
 
     public void SellPlant()
     {
         if(canSell)
         {
+           // Debug.Log(tag);
             //what type of plant is sold
-            ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
+            ClickToPlant clickToPlantScript = gameObject.GetComponent<ClickToPlant>();
             int addedMoney = clickToPlantScript.sellingPrice;
 
             // add money
@@ -117,6 +139,7 @@ public class ButtonPopUp : MonoBehaviour
             
 
             canSell = false;
+            Tag = null;
             StartCoroutine("WaitForSellingTime");
         }
     }
@@ -126,5 +149,10 @@ public class ButtonPopUp : MonoBehaviour
         yield return new WaitForSeconds(3);
 
         canSell = true;
+    }
+
+    public void resetTag()
+    {
+        Tag = null;
     }
 }
