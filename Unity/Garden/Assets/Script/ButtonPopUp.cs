@@ -182,6 +182,7 @@ public class ButtonPopUp : MonoBehaviour
             Button btn = sellButton.GetComponent<Button>();
 
             btn.onClick.RemoveListener(SellPlant);
+            ClosePanel();
             StartCoroutine("WaitForSellingTime");
         }
     }
