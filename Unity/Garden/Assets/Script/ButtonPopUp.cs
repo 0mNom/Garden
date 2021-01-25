@@ -136,7 +136,9 @@ public class ButtonPopUp : MonoBehaviour
         ImagePlantDuPopUp.sprite = null;
         animator.SetBool("IsOpen", false);
         pannelActive = false;
+        Tag = null;
         Debug.Log("pannelactive = " + pannelActive);
+        Debug.Log(Tag);
     }
 
 
