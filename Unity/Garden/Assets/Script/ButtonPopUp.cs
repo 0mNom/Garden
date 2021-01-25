@@ -149,9 +149,9 @@ public class ButtonPopUp : MonoBehaviour
     {
         if(canSell)
         {
-           // Debug.Log(tag);
+            // Debug.Log(tag);
             //what type of plant is sold
-            ClickToPlant clickToPlantScript = gameObject.GetComponent<ClickToPlant>();
+            ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
             int addedMoney = clickToPlantScript.sellingPrice;
 
             // add money
@@ -166,10 +166,13 @@ public class ButtonPopUp : MonoBehaviour
             clickToPlantScript.plantInPot = 0f;
             ImagePlantDuPopUp.sprite = null;
             clickToPlantScript.EnvoyerVariable(Tag);
-            
 
+            Debug.Log(clickToPlantScript.plantFinished);
             canSell = false;
             Tag = null;
+            Button btn = sellButton.GetComponent<Button>();
+
+            btn.onClick.RemoveListener(SellPlant);
             StartCoroutine("WaitForSellingTime");
         }
     }
