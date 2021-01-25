@@ -137,6 +137,9 @@ public class ButtonPopUp : MonoBehaviour
         animator.SetBool("IsOpen", false);
         pannelActive = false;
         Tag = null;
+        Button btn = sellButton.GetComponent<Button>();
+
+        btn.onClick.RemoveListener(SellPlant);
         Debug.Log("pannelactive = " + pannelActive);
         Debug.Log(Tag);
     }
