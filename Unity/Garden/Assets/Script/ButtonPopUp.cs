@@ -74,22 +74,26 @@ public class ButtonPopUp : MonoBehaviour
                 }
             }
         }
-        ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
-        if (clickToPlantScript.plantFinished && pannelActive == true)
+        if (pannelActive == true)
         {
-            // Debug.Log(Tag);
-            sellButton.gameObject.SetActive(true);
-            //Debug.Log(gameObject);
-            Button btn = sellButton.GetComponent<Button>();
+            ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
+            if (clickToPlantScript.plantFinished)
+            {
+                // Debug.Log(Tag);
+                sellButton.gameObject.SetActive(true);
+                //Debug.Log(gameObject);
+                Button btn = sellButton.GetComponent<Button>();
 
-            btn.onClick.AddListener(SellPlant);
-        }
+                btn.onClick.AddListener(SellPlant);
+            }
 
-        if (!clickToPlantScript.plantFinished && pannelActive == true)
-        {
-            // Debug.Log("yess ");
-            sellButton.gameObject.SetActive(false);
+            if (!clickToPlantScript.plantFinished)
+            {
+                // Debug.Log("yess ");
+                sellButton.gameObject.SetActive(false);
+            }
         }
+        
 
 
     }
