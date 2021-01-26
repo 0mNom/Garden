@@ -27,7 +27,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimeBle1;
     DateTime targetTimeBle2;
     DateTime targetTimeBle3;
-    float growingTimeBle = 9;
+    float growingTimeBle = 12;
     public bool finishedBle = false;
 
     //specific to apple
