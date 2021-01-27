@@ -5656,6 +5656,10 @@ PrefabInstance:
       propertyPath: bagObject
       value: 
       objectReference: {fileID: 1860585977}
+    - target: {fileID: 2844716468914934949, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
+      propertyPath: water
+      value: 
+      objectReference: {fileID: 5051124593875790419}
     - target: {fileID: 2844716468914934951, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
       propertyPath: bagObject
       value: 
@@ -7515,6 +7519,10 @@ PrefabInstance:
       propertyPath: bagObject
       value: 
       objectReference: {fileID: 1860585977}
+    - target: {fileID: 7154368241924471958, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
+      propertyPath: water
+      value: 
+      objectReference: {fileID: 5051124593875790419}
     - target: {fileID: 7154368242788675735, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7631,6 +7639,9 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  water: {fileID: 5051124593875790419}
+  canWater: 0
+  waterIncrease: 1.1
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -8279,6 +8290,9 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  water: {fileID: 5051124593875790419}
+  canWater: 0
+  waterIncrease: 1.1
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -8875,6 +8889,9 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  water: {fileID: 5051124593875790419}
+  canWater: 0
+  waterIncrease: 1.1
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -10293,6 +10310,9 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  water: {fileID: 5051124593875790419}
+  canWater: 0
+  waterIncrease: 1.1
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -14364,6 +14384,9 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  water: {fileID: 5051124593875790419}
+  canWater: 0
+  waterIncrease: 1.1
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -16228,6 +16251,9 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  water: {fileID: 5051124593875790419}
+  canWater: 0
+  waterIncrease: 1.1
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -16526,6 +16552,9 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
+  water: {fileID: 5051124593875790419}
+  canWater: 0
+  waterIncrease: 1.1
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -17232,8 +17261,23 @@ PrefabInstance:
       propertyPath: bagObject
       value: 
       objectReference: {fileID: 1860585977}
+    - target: {fileID: 2885881521936281486, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: water
+      value: 
+      objectReference: {fileID: 5051124593875790419}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+--- !u!114 &2885881521507213798 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2885881521936281486, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+  m_PrefabInstance: {fileID: 2885881521507213797}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5051124593875790418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17621,6 +17665,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5051124593864927742, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2885881521507213798}
+    - target: {fileID: 5051124593864927742, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: watering
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051124593864927742, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ClickToPlant, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5051124593876663810, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_Name
       value: PlantPopUp Canvus
@@ -17731,6 +17787,17 @@ PrefabInstance:
       objectReference: {fileID: 5954868398754355043, guid: 5f8f1f1534437974aa780f99c0da1af1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+--- !u!114 &5051124593875790419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5051124593876663818, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+  m_PrefabInstance: {fileID: 5051124593875790418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c0e68c03dbbc5469637c6b351467ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8978735677304610848
 PrefabInstance:
   m_ObjectHideFlags: 0

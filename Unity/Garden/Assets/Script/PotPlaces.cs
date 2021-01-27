@@ -44,9 +44,9 @@ public class PotPlaces : MonoBehaviour
         if (sp1 == 5) spriteRendererPot1.sprite = Skin5;
         if (sp1 == 6) spriteRendererPot1.sprite = Skin6;
         if (sp1 == 7) spriteRendererPot1.sprite = Skin7;
-        if (sp1 == 8) spriteRendererPot1.sprite = Skin8;
+       /* if (sp1 == 8) spriteRendererPot1.sprite = Skin8;
         if (sp1 == 9) spriteRendererPot1.sprite = Skin9;
-        if (sp1 == 10) spriteRendererPot1.sprite = Skin10;
+        if (sp1 == 10) spriteRendererPot1.sprite = Skin10;*/
 
 
         //-----------------pot2------------------------
@@ -57,9 +57,9 @@ public class PotPlaces : MonoBehaviour
         if (sp2 == 5) spriteRendererPot1.sprite = Skin5;
         if (sp2 == 6) spriteRendererPot1.sprite = Skin6;
         if (sp2 == 7) spriteRendererPot1.sprite = Skin7;
-        if (sp2 == 8) spriteRendererPot1.sprite = Skin8;
+      /*  if (sp2 == 8) spriteRendererPot1.sprite = Skin8;
         if (sp2 == 9) spriteRendererPot1.sprite = Skin9;
-        if (sp2 == 10) spriteRendererPot1.sprite = Skin10;
+        if (sp2 == 10) spriteRendererPot1.sprite = Skin10;*/
 
 
         //-----------------pot3------------------------
@@ -70,9 +70,9 @@ public class PotPlaces : MonoBehaviour
         if (sp3 == 5) spriteRendererPot1.sprite = Skin5;
         if (sp3 == 6) spriteRendererPot1.sprite = Skin6;
         if (sp3 == 7) spriteRendererPot1.sprite = Skin7;
-        if (sp3 == 8) spriteRendererPot1.sprite = Skin8;
+  /*      if (sp3 == 8) spriteRendererPot1.sprite = Skin8;
         if (sp3 == 9) spriteRendererPot1.sprite = Skin9;
-        if (sp3 == 10) spriteRendererPot1.sprite = Skin10;
+        if (sp3 == 10) spriteRendererPot1.sprite = Skin10;*/
     }
 
 
