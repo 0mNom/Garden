@@ -23,7 +23,7 @@ public class PotSkins : MonoBehaviour
 
     public void skin1()
     {
-        if (inv.pot1
+        //if (inv.pot1)
 
         if (popUp.Tag == "1") places.sp1 = 1;
         if (popUp.Tag == "2") places.sp2 = 1;
