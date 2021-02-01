@@ -135,7 +135,7 @@ public class ButtonPopUp : MonoBehaviour
         ImagePlantDuPopUp.sprite = null;
         animator.SetBool("IsOpen", false);
         pannelActive = false;
-        Tag = null;
+        //Tag = null;
         Button btn = sellButton.GetComponent<Button>();
 
         btn.onClick.RemoveListener(SellPlant);
