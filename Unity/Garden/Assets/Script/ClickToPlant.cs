@@ -67,7 +67,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimePear1;
     DateTime targetTimePear2;
     DateTime targetTimePear3;
-    float growingTimePear = 9;
+    float growingTimePear = 90;
     public bool finishedPear = false;
 
     //specific to Sunflower
