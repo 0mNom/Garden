@@ -301,6 +301,8 @@ public class ClickToPlant : MonoBehaviour
                     //Debug.Log(tag);
                     canWaterFirstEvo = true;
                     canWaterSecondEvo = true;
+                    Debug.Log(canWaterFirstEvo);
+                    Debug.Log(canWaterSecondEvo);
                 }
             }
         }
