@@ -296,7 +296,7 @@ public class ClickToPlant : MonoBehaviour
                         bagScript1.MakePotsShine = false;
                     }
 
-                    Debug.Log(tag);
+                    //Debug.Log(tag);
                    
                 }
             }

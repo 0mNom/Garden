@@ -54,7 +54,7 @@ public class ButtonPopUp : MonoBehaviour
                 {
                     Tag = col.tag;
 
-                    Debug.Log(Tag);
+                    //Debug.Log(Tag);
 
                     OpenPanel(Tag);
                 }
@@ -189,6 +189,7 @@ public class ButtonPopUp : MonoBehaviour
 
     void WaterOnClick()
     {
+        Debug.Log(Tag);
         ClickToPlant clickToPlantScript1 = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
         if (clickToPlantScript1.canWater)
         {
