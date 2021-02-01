@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class ButtonPopUp : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class ButtonPopUp : MonoBehaviour
         col = GetComponent<Collider2D>();
        
         canSell = true;
-        wateringButton.onClick.AddListener(WaterOnClick);
+        wateringButton.onClick.AddListener(delegate { WaterOnClick(Tag); });
     }
 
     void Update()
@@ -187,10 +188,10 @@ public class ButtonPopUp : MonoBehaviour
 
 
 
-    void WaterOnClick()
+    void WaterOnClick(string TagObj)
     {
-        Debug.Log(gameObject.tag);
-        ClickToPlant clickToPlantScript1 = gameObject.GetComponent<ClickToPlant>();
+        Debug.Log(TagObj);
+        ClickToPlant clickToPlantScript1 = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
         if (clickToPlantScript1.canWater)
         {
             water.water();
