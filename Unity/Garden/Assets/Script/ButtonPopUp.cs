@@ -36,7 +36,7 @@ public class ButtonPopUp : MonoBehaviour
         col = GetComponent<Collider2D>();
        
         canSell = true;
-        wateringButton.onClick.AddListener(delegate { WaterOnClick(Tag); });
+        //wateringButton.onClick.AddListener(delegate { WaterOnClick(clickToPlantScript); });
     }
 
     void Update()
@@ -99,6 +99,7 @@ public class ButtonPopUp : MonoBehaviour
             Button btn = sellButton.GetComponent<Button>();
 
             btn.onClick.AddListener(SellPlant);
+
         }
         animator.SetBool("IsOpen", true);
         pannelActive = true;
@@ -111,7 +112,9 @@ public class ButtonPopUp : MonoBehaviour
         ImagePotDuPopUp.sprite = spritePot.sprite;
         SpriteRenderer spritePlant = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
         ImagePlantDuPopUp.sprite = spritePlant.sprite;
-       //Debug.Log(tag);
+
+        wateringButton.onClick.AddListener(delegate { WaterOnClick(clickToPlantScript); });
+        //Debug.Log(tag);
     }
 
     public void LoadPannel()
@@ -188,10 +191,10 @@ public class ButtonPopUp : MonoBehaviour
 
 
 
-    void WaterOnClick(string TagObj)
+    void WaterOnClick(ClickToPlant clickToPlantScript1)
     {
-        Debug.Log(TagObj);
-        ClickToPlant clickToPlantScript1 = GameObject.FindGameObjectWithTag(TagObj).GetComponent<ClickToPlant>();
+        //Debug.Log(TagObj);
+        //ClickToPlant clickToPlantScript1 = GameObject.FindGameObjectWithTag(TagObj).GetComponent<ClickToPlant>();
         if (clickToPlantScript1.canWater)
         {
             water.water();
