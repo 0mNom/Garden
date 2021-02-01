@@ -6,6 +6,11 @@ using TMPro;
 
 public class ButtonPopUp : MonoBehaviour
 {
+    //watering
+    public Watering water;
+    public float waterIncrease = 1.1f;
+
+
     public bool pannelActive;
     public GameObject bagObject;
     public GameObject thePotClicked;
@@ -23,11 +28,14 @@ public class ButtonPopUp : MonoBehaviour
 
     bool canSell;
 
+    public Button wateringButton;
+
     void Start()
     {
         col = GetComponent<Collider2D>();
        
         canSell = true;
+        wateringButton.onClick.AddListener(WaterOnClick);
     }
 
     void Update()
@@ -44,37 +52,15 @@ public class ButtonPopUp : MonoBehaviour
 
                 if (col == touchedCollider && bagScript.canOpenPannel == true)
                 {
-
                     Tag = col.tag;
 
                     Debug.Log(Tag);
 
                     OpenPanel(Tag);
-
-                    /*
-                    ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
-
-                    
-                    if (clickToPlantScript.plantFinished && pannelActive == true)
-                    {
-                       // Debug.Log(Tag);
-                        sellButton.gameObject.SetActive(true);
-                        //Debug.Log(gameObject);
-                        Button btn = sellButton.GetComponent<Button>();
-
-                        btn.onClick.AddListener(SellPlant);
-                    }
-
-                    if (!clickToPlantScript.plantFinished && pannelActive == true)
-                    {
-                       // Debug.Log("yess ");
-                        sellButton.gameObject.SetActive(false);
-                    }*/
-
                 }
             }
         }
-        Debug.Log(pannelActive);
+
         if (pannelActive == true)
         {
             ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
@@ -197,5 +183,19 @@ public class ButtonPopUp : MonoBehaviour
     public void resetTag()
     {
         Tag = null;
+    }
+
+
+
+    void WaterOnClick()
+    {
+        ClickToPlant clickToPlantScript1 = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
+        if (clickToPlantScript1.canWater)
+        {
+            water.water();
+            clickToPlantScript1.canWater = false;
+            clickToPlantScript1.sellingPrice = (int)((float)clickToPlantScript1.sellingPrice * 1.1);
+        }
+        Debug.Log(clickToPlantScript1.sellingPrice);
     }
 }

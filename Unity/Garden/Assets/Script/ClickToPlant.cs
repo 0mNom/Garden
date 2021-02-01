@@ -10,11 +10,14 @@ public class ClickToPlant : MonoBehaviour
     public float plantInPot = 0f;
     public PotPlaces potPlace;
 
-    public Watering water;
+    //watering
+    //public Watering water;
     public bool canWater = false;
-    public float waterIncrease = 1.1f;
+    //public float waterIncrease = 1.1f;
 
     //the end 
+
+    public GameObject ShineSprite;
 
     public bool plantFinished = false;
     public int sellingPrice = 1;
@@ -106,9 +109,20 @@ public class ClickToPlant : MonoBehaviour
     void Update()
     {
         CurrentTime = DateTime.Now;
-       
-       
-        
+        BagScript bagScript2 = bagObject.GetComponent<BagScript>();
+        if (bagScript2.MakePotsShine)
+        {
+            if (gotPlant == false)
+            {
+                ShineSprite.SetActive(true);
+            }
+            else if (gotPlant)
+            {
+                ShineSprite.SetActive(false);
+            }
+        }
+
+
 
         if (Input.touchCount > 0)
         {
@@ -136,6 +150,7 @@ public class ClickToPlant : MonoBehaviour
                         targetTimeBle3 = CurrentTime.AddSeconds(growingTimeBle);
                         blePlanted = true;
                         gotPlant = true;
+                        bagScript1.wheatseed--;
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 15;
@@ -152,6 +167,7 @@ public class ClickToPlant : MonoBehaviour
                       
                         applePlanted = true;
                         gotPlant = true;
+                        bagScript1.appleseed--;
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 45;
@@ -167,6 +183,7 @@ public class ClickToPlant : MonoBehaviour
                         targetTimeTomato3 = CurrentTime.AddSeconds(growingTimeTomato);
                         tomatoPlanted = true;
                         gotPlant = true;
+                        bagScript1.tomatoseed--;
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
 
@@ -183,6 +200,7 @@ public class ClickToPlant : MonoBehaviour
                         targetTimeEggplant3 = CurrentTime.AddSeconds(growingTimeEggplant);
                         eggplantPlanted = true;
                         gotPlant = true;
+                        bagScript1.eggplantseed--;
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 200;
@@ -198,6 +216,7 @@ public class ClickToPlant : MonoBehaviour
                         targetTimePear3 = CurrentTime.AddSeconds(growingTimePear);
                         pearPlanted = true;
                         gotPlant = true;
+                        bagScript1.pearseed--;
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 500;
@@ -213,6 +232,7 @@ public class ClickToPlant : MonoBehaviour
                         targetTimeSunflower3 = CurrentTime.AddSeconds(growingTimeSunflower);
                         sunflowerPlanted = true;
                         gotPlant = true;
+                        bagScript1.sunflowerseed--;
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 1500;
@@ -228,6 +248,7 @@ public class ClickToPlant : MonoBehaviour
                         targetTimeCherry3 = CurrentTime.AddSeconds(growingTimeCherry);
                         cherryPlanted = true;
                         gotPlant = true;
+                        bagScript1.cherryseed--;
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 4000;
@@ -243,6 +264,7 @@ public class ClickToPlant : MonoBehaviour
                         targetTimeAvocado3 = CurrentTime.AddSeconds(growingTimeAvocado);
                         avocadoPlanted = true;
                         gotPlant = true;
+                        bagScript1.avoseed--;
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 12300;
@@ -259,6 +281,7 @@ public class ClickToPlant : MonoBehaviour
                         targetTimeKiwi3 = CurrentTime.AddSeconds(growingTimeKiwi);
                         kiwiPlanted = true;
                         gotPlant = true;
+                        bagScript1.kiwiseed--;
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 35000;
@@ -281,8 +304,7 @@ public class ClickToPlant : MonoBehaviour
         {
             if (DateTime.Compare(CurrentTime, targetTimeBle3) == 1)
             {
-
-                
+                canWater = false;
                 plantInPot = 1.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -294,7 +316,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeBle2) == 1)
             {
-
+                canWater = true;
                 plantInPot = 1.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -303,6 +325,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeBle1) == 1)
             {
+                canWater = true;
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
                 plantInPot = 1.1f;
@@ -319,8 +342,7 @@ public class ClickToPlant : MonoBehaviour
         {
             if (DateTime.Compare(CurrentTime, targetTimeApple3) == 1)
             {
-
-               
+                canWater = false;
                 plantInPot = 2.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -332,7 +354,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeApple2) == 1)
             {
-              
+                canWater = true;
                 plantInPot = 2.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -342,7 +364,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeApple1) == 1)
             {
-              
+                canWater = true;
                 plantInPot = 2.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -358,8 +380,7 @@ public class ClickToPlant : MonoBehaviour
         {
             if (DateTime.Compare(CurrentTime, targetTimeTomato3) == 1)
             {
-
-               
+                canWater = false;
                 plantInPot = 3.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -371,7 +392,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeTomato2) == 1)
             {
-               
+                canWater = true;
                 plantInPot = 3.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -381,7 +402,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeTomato1) == 1)
             {
-               
+                canWater = true;
                 plantInPot = 3.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -396,8 +417,7 @@ public class ClickToPlant : MonoBehaviour
         {
             if (DateTime.Compare(CurrentTime, targetTimeEggplant3) == 1)
             {
-
-                
+                canWater = false;
                 plantInPot = 4.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -409,7 +429,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeEggplant2) == 1)
             {
-
+                canWater = true;
                 plantInPot = 4.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -419,7 +439,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeEggplant1) == 1)
             {
-
+                canWater = true;
                 plantInPot = 4.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -436,8 +456,7 @@ public class ClickToPlant : MonoBehaviour
         {
             if (DateTime.Compare(CurrentTime, targetTimePear3) == 1)
             {
-
-               
+                canWater = false;
                 plantInPot = 5.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -449,7 +468,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimePear2) == 1)
             {
-
+                canWater = true;
                 plantInPot = 5.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -459,7 +478,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimePear1) == 1)
             {
-
+                canWater = true;
                 plantInPot = 5.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -476,8 +495,7 @@ public class ClickToPlant : MonoBehaviour
         {
             if (DateTime.Compare(CurrentTime, targetTimeSunflower3) == 1)
             {
-
-                
+                canWater = false;
                 plantInPot = 6.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -489,7 +507,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeSunflower2) == 1)
             {
-               
+                canWater = true;
                 plantInPot = 6.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -499,7 +517,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeSunflower1) == 1)
             {
-               
+                canWater = true;
                 plantInPot = 6.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -513,7 +531,7 @@ public class ClickToPlant : MonoBehaviour
         {
            if (DateTime.Compare(CurrentTime, targetTimeCherry3) == 1)
            {
-               
+                canWater = false;
                 plantInPot = 7.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -524,6 +542,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeCherry2) == 1)
             {
+                canWater = true;
                 plantInPot = 7.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -532,6 +551,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeCherry1) == 1)
             {
+                canWater = true;
                 plantInPot = 7.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -544,8 +564,7 @@ public class ClickToPlant : MonoBehaviour
         {
             if (DateTime.Compare(CurrentTime, targetTimeAvocado3) == 1)
             {
-
-                
+                canWater = false;
                 plantInPot = 8.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -557,7 +576,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeAvocado2) == 1)
             {
-               
+                canWater = true;
                 plantInPot = 8.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -567,7 +586,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeAvocado1) == 1)
             {
-               
+                canWater = true;
                 plantInPot = 8.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -582,7 +601,7 @@ public class ClickToPlant : MonoBehaviour
         {
             if (DateTime.Compare(CurrentTime, targetTimeKiwi3) == 1)
             {
-               
+                canWater = false;
                 plantInPot = 9.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -593,6 +612,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeKiwi2) == 1)
             {
+                canWater = true;
                 plantInPot = 9.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -601,6 +621,7 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeKiwi1) == 1)
             {
+                canWater = true;
                 plantInPot = 9.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -627,6 +648,7 @@ public class ClickToPlant : MonoBehaviour
         bagScript.canOpenPannel = true;
     }
 
+    /*
     public void watering()
     {
         water.water();
@@ -635,4 +657,5 @@ public class ClickToPlant : MonoBehaviour
         Debug.Log(sellingPrice);
 
     }
+    */
 }

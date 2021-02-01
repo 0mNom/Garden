@@ -1804,6 +1804,7 @@ MonoBehaviour:
   Monay: 0
   Gems: 100
   canOpenPannel: 0
+  MakePotsShine: 0
 --- !u!114 &207976204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5672,6 +5673,10 @@ PrefabInstance:
       propertyPath: water
       value: 
       objectReference: {fileID: 5051124593875790419}
+    - target: {fileID: 2844716468914934949, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
+      propertyPath: ShineSprite
+      value: 
+      objectReference: {fileID: 2099154762}
     - target: {fileID: 2844716468914934951, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
       propertyPath: bagObject
       value: 
@@ -5708,6 +5713,10 @@ PrefabInstance:
       propertyPath: Name3
       value: Berthe
       objectReference: {fileID: 0}
+    - target: {fileID: 2844716468914934951, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
+      propertyPath: wateringButton
+      value: 
+      objectReference: {fileID: 1232243432}
     - target: {fileID: 2844716468914934952, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.24
@@ -7479,6 +7488,10 @@ PrefabInstance:
       propertyPath: Name3
       value: Berthe
       objectReference: {fileID: 0}
+    - target: {fileID: 7154368241924471956, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
+      propertyPath: wateringButton
+      value: 
+      objectReference: {fileID: 1232243432}
     - target: {fileID: 7154368241924471957, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.62
@@ -7535,6 +7548,10 @@ PrefabInstance:
       propertyPath: water
       value: 
       objectReference: {fileID: 5051124593875790419}
+    - target: {fileID: 7154368241924471958, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
+      propertyPath: ShineSprite
+      value: 
+      objectReference: {fileID: 1563323955}
     - target: {fileID: 7154368242788675735, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7598,6 +7615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  water: {fileID: 0}
+  waterIncrease: 1.1
   pannelActive: 0
   bagObject: {fileID: 1860585977}
   thePotClicked: {fileID: 0}
@@ -7610,6 +7629,7 @@ MonoBehaviour:
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
   Tag: 
+  wateringButton: {fileID: 0}
 --- !u!61 &888692065
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7651,9 +7671,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
-  water: {fileID: 5051124593875790419}
   canWater: 0
-  waterIncrease: 1.1
+  ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -8249,6 +8268,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  water: {fileID: 0}
+  waterIncrease: 1.1
   pannelActive: 0
   bagObject: {fileID: 1860585977}
   thePotClicked: {fileID: 0}
@@ -8261,6 +8282,7 @@ MonoBehaviour:
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
   Tag: 
+  wateringButton: {fileID: 0}
 --- !u!61 &975528007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8302,9 +8324,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
-  water: {fileID: 5051124593875790419}
   canWater: 0
-  waterIncrease: 1.1
+  ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -8452,6 +8473,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1006226300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2083450924656640722, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+  m_PrefabInstance: {fileID: 2885881521507213797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1012783990
 GameObject:
   m_ObjectHideFlags: 0
@@ -8848,6 +8874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  water: {fileID: 0}
+  waterIncrease: 1.1
   pannelActive: 0
   bagObject: {fileID: 1860585977}
   thePotClicked: {fileID: 0}
@@ -8860,6 +8888,7 @@ MonoBehaviour:
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
   Tag: 
+  wateringButton: {fileID: 0}
 --- !u!61 &1103599397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8901,9 +8930,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
-  water: {fileID: 5051124593875790419}
   canWater: 0
-  waterIncrease: 1.1
+  ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -9868,6 +9896,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5370407630714537284, guid: c87a215f557724647b5bbd137aa54ff7, type: 3}
   m_PrefabInstance: {fileID: 1225553489}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1232243432 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5051124593864927742, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+  m_PrefabInstance: {fileID: 5051124593875790418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1235982136
 GameObject:
   m_ObjectHideFlags: 0
@@ -10269,6 +10308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  water: {fileID: 0}
+  waterIncrease: 1.1
   pannelActive: 0
   bagObject: {fileID: 1860585977}
   thePotClicked: {fileID: 0}
@@ -10281,6 +10322,7 @@ MonoBehaviour:
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
   Tag: 
+  wateringButton: {fileID: 0}
 --- !u!61 &1316593942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10322,9 +10364,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
-  water: {fileID: 5051124593875790419}
   canWater: 0
-  waterIncrease: 1.1
+  ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -12919,6 +12960,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558296562}
   m_CullTransparentMesh: 0
+--- !u!1 &1563323955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2941814529756759903, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
+  m_PrefabInstance: {fileID: 885457689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1565458079
 GameObject:
   m_ObjectHideFlags: 0
@@ -14345,6 +14391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  water: {fileID: 0}
+  waterIncrease: 1.1
   pannelActive: 0
   bagObject: {fileID: 1860585977}
   thePotClicked: {fileID: 0}
@@ -14357,6 +14405,7 @@ MonoBehaviour:
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
   Tag: 
+  wateringButton: {fileID: 0}
 --- !u!61 &1760712566
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14398,9 +14447,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
-  water: {fileID: 5051124593875790419}
   canWater: 0
-  waterIncrease: 1.1
+  ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -15213,6 +15261,7 @@ MonoBehaviour:
   Monay: 0
   Gems: 100
   canOpenPannel: 0
+  MakePotsShine: 0
 --- !u!114 &1860585980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16224,6 +16273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  water: {fileID: 0}
+  waterIncrease: 1.1
   pannelActive: 0
   bagObject: {fileID: 1860585977}
   thePotClicked: {fileID: 0}
@@ -16236,6 +16287,7 @@ MonoBehaviour:
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
   Tag: 
+  wateringButton: {fileID: 0}
 --- !u!61 &2029744616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16277,9 +16329,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
-  water: {fileID: 5051124593875790419}
   canWater: 0
-  waterIncrease: 1.1
+  ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -16525,6 +16576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  water: {fileID: 0}
+  waterIncrease: 1.1
   pannelActive: 0
   bagObject: {fileID: 1860585977}
   thePotClicked: {fileID: 0}
@@ -16537,6 +16590,7 @@ MonoBehaviour:
   ImagePotDuPopUp: {fileID: 1685069751}
   ImagePlantDuPopUp: {fileID: 901149058}
   Tag: 
+  wateringButton: {fileID: 0}
 --- !u!61 &2055077852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16578,9 +16632,8 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 1403264362}
-  water: {fileID: 5051124593875790419}
   canWater: 0
-  waterIncrease: 1.1
+  ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
@@ -16912,6 +16965,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089812651}
   m_CullTransparentMesh: 0
+--- !u!1 &2099154762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5559186709401674179, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
+  m_PrefabInstance: {fileID: 684364853}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2101470436
 GameObject:
   m_ObjectHideFlags: 0
@@ -17275,6 +17333,10 @@ PrefabInstance:
       propertyPath: ImagePlantDuPopUp
       value: 
       objectReference: {fileID: 901149058}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: wateringButton
+      value: 
+      objectReference: {fileID: 1232243432}
     - target: {fileID: 2885881521936281484, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
       propertyPath: m_Name
       value: Pot_1
@@ -17291,6 +17353,14 @@ PrefabInstance:
       propertyPath: water
       value: 
       objectReference: {fileID: 5051124593875790419}
+    - target: {fileID: 2885881521936281486, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: ShineSprite
+      value: 
+      objectReference: {fileID: 1006226300}
+    - target: {fileID: 2885881521936281486, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: gotPlant
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
 --- !u!114 &2885881521507213798 stripped

@@ -13,6 +13,7 @@ public class BagScript : MonoBehaviour
     public int pot1, pot2, pot3, pot4, pot5, pot6, pot7;
     public int Monay,Gems;
     public bool canOpenPannel;
+    public bool MakePotsShine;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class BagScript : MonoBehaviour
         Monay = 748;
         Gems = 5;
         canOpenPannel = true;
+        MakePotsShine = false;
     }
 
     // Update is called once per frame
@@ -197,7 +199,8 @@ public class BagScript : MonoBehaviour
         else
         {
             canOpenPannel = false;
-            appleseed--;
+            MakePotsShine = true;
+            //appleseed--;
             plantingseed = 2;
         }
 
@@ -213,8 +216,9 @@ public class BagScript : MonoBehaviour
         else
         {
             canOpenPannel = false;
+            MakePotsShine = true;
             plantingseed = 1;
-            wheatseed--;
+            //wheatseed--;
         }
         t_wheat.text = wheatseed.ToString();
     }
@@ -227,8 +231,9 @@ public class BagScript : MonoBehaviour
         else
         {
             canOpenPannel = false;
+            MakePotsShine = true;
             plantingseed = 7;
-            cherryseed--;
+            //cherryseed--;
         }
         t_cherry.text = cherryseed.ToString();
 
@@ -242,8 +247,9 @@ public class BagScript : MonoBehaviour
         else
         {
             canOpenPannel = false;
+            MakePotsShine = true;
             plantingseed = 3;
-            tomatoseed--;
+            //tomatoseed--;
         }
         t_tomato.text = tomatoseed.ToString();
     }
@@ -256,8 +262,9 @@ public class BagScript : MonoBehaviour
         else
         {
             canOpenPannel = false;
+            MakePotsShine = true;
             plantingseed = 4;
-            eggplantseed--;
+            //eggplantseed--;
         }
         t_eggplant.text = eggplantseed.ToString();
     }
@@ -270,8 +277,9 @@ public class BagScript : MonoBehaviour
         else
         {
             canOpenPannel = false;
+            MakePotsShine = true;
             plantingseed = 5;
-            pearseed--;
+            //pearseed--;
         }
         t_pear.text = pearseed.ToString();
     }
@@ -284,8 +292,9 @@ public class BagScript : MonoBehaviour
         else
         {
             canOpenPannel = false;
+            MakePotsShine = true;
             plantingseed = 6;
-            sunflowerseed--;
+            //sunflowerseed--;
         }
         t_sunflower.text = sunflowerseed.ToString();
     }
@@ -298,8 +307,9 @@ public class BagScript : MonoBehaviour
         else
         {
             canOpenPannel = false;
+            MakePotsShine = true;
             plantingseed = 8;
-            avoseed--;
+            //avoseed--;
         }
         t_avo.text = avoseed.ToString();
     }
@@ -312,8 +322,9 @@ public class BagScript : MonoBehaviour
         else
         {
             canOpenPannel = false;
+            MakePotsShine = true;
             plantingseed = 9;
-            kiwiseed--;
+            //kiwiseed--;
         }
         t_kiwi.text = kiwiseed.ToString();
     }
@@ -324,5 +335,4 @@ public class BagScript : MonoBehaviour
         yield return new WaitForSeconds(5);
         error.SetActive(false);
     }
-
 }
