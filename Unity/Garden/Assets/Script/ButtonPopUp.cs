@@ -195,13 +195,14 @@ public class ButtonPopUp : MonoBehaviour
     {
         //Debug.Log(TagObj);
         //ClickToPlant clickToPlantScript1 = GameObject.FindGameObjectWithTag(TagObj).GetComponent<ClickToPlant>();
-        if (clickToPlantScript1.canWater)
+        if (clickToPlantScript1.canWater == true)
         {
+            Debug.Log(clickToPlantScript1.canWater);
             water.water();
             clickToPlantScript1.canWater = false;
             clickToPlantScript1.sellingPrice = (int)((float)clickToPlantScript1.sellingPrice * 1.1);
         }
-        Debug.Log(clickToPlantScript1.canWater);
+        //Debug.Log(clickToPlantScript1.canWater);
         Debug.Log(clickToPlantScript1.sellingPrice);
     }
 }
