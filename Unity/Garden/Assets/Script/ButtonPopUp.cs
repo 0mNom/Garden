@@ -141,6 +141,8 @@ public class ButtonPopUp : MonoBehaviour
         btn.onClick.RemoveListener(SellPlant);
         Debug.Log("pannelactive = " + pannelActive);
         Debug.Log(Tag);
+        ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
+        wateringButton.onClick.RemoveListener(delegate { WaterOnClick(clickToPlantScript); }); ;
     }
 
 
