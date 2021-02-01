@@ -201,6 +201,7 @@ public class ButtonPopUp : MonoBehaviour
             clickToPlantScript1.canWater = false;
             clickToPlantScript1.sellingPrice = (int)((float)clickToPlantScript1.sellingPrice * 1.1);
         }
+        Debug.Log(clickToPlantScript1.canWater);
         Debug.Log(clickToPlantScript1.sellingPrice);
     }
 }
