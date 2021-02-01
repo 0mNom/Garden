@@ -191,7 +191,7 @@ public class ButtonPopUp : MonoBehaviour
     void WaterOnClick(string TagObj)
     {
         Debug.Log(TagObj);
-        ClickToPlant clickToPlantScript1 = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
+        ClickToPlant clickToPlantScript1 = GameObject.FindGameObjectWithTag(TagObj).GetComponent<ClickToPlant>();
         if (clickToPlantScript1.canWater)
         {
             water.water();
