@@ -154,6 +154,7 @@ public class ClickToPlant : MonoBehaviour
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 15;
+                        bagScript1.MakePotsShine = false;
                     }
 
                     else if (bagScript1.plantingseed == 2)
@@ -171,6 +172,7 @@ public class ClickToPlant : MonoBehaviour
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 45;
+                        bagScript1.MakePotsShine = false;
                     }
 
                     else if (bagScript1.plantingseed == 3)
@@ -188,6 +190,7 @@ public class ClickToPlant : MonoBehaviour
                         StartCoroutine("WaitForOpenPannel");
 
                         sellingPrice = 90;
+                        bagScript1.MakePotsShine = false;
                     }
 
                     else if (bagScript1.plantingseed == 4)
@@ -204,6 +207,7 @@ public class ClickToPlant : MonoBehaviour
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 200;
+                        bagScript1.MakePotsShine = false;
                     }
 
                     else if (bagScript1.plantingseed == 5)
@@ -220,6 +224,7 @@ public class ClickToPlant : MonoBehaviour
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 500;
+                        bagScript1.MakePotsShine = false;
                     }
 
                     else if (bagScript1.plantingseed == 6)
@@ -236,6 +241,7 @@ public class ClickToPlant : MonoBehaviour
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 1500;
+                        bagScript1.MakePotsShine = false;
                     }
 
                     else if (bagScript1.plantingseed == 7)
@@ -252,6 +258,7 @@ public class ClickToPlant : MonoBehaviour
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 4000;
+                        bagScript1.MakePotsShine = false;
                     }
 
                     else if (bagScript1.plantingseed == 8)
@@ -268,6 +275,7 @@ public class ClickToPlant : MonoBehaviour
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 12300;
+                        bagScript1.MakePotsShine = false;
                     }
 
                     else if (bagScript1.plantingseed == 9)
@@ -285,6 +293,7 @@ public class ClickToPlant : MonoBehaviour
                         bagScript1.plantingseed = 0;
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 35000;
+                        bagScript1.MakePotsShine = false;
                     }
 
                     Debug.Log(tag);
