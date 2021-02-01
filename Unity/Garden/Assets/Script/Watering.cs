@@ -20,7 +20,7 @@ public class Watering : MonoBehaviour
 
     public void water()
     {
-        Instantiate(particle);
+        //Instantiate(particle);
         if (deadleaves) deadleaves = !deadleaves;
     }
 }
