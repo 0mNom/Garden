@@ -2911,6 +2911,7 @@ GameObject:
   - component: {fileID: 374864667}
   - component: {fileID: 374864666}
   - component: {fileID: 374864665}
+  - component: {fileID: 374864668}
   m_Layer: 0
   m_Name: MoneyText
   m_TagString: Untagged
@@ -3031,9 +3032,28 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000017762, y: 0}
+  m_AnchoredPosition: {x: 0.1, y: 0}
   m_SizeDelta: {x: 1.110131, y: 0.41025925}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &374864668
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374864664}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb824f59441d66c4f9bd37ca3c67c393, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &440594961
 GameObject:
   m_ObjectHideFlags: 0
@@ -8747,7 +8767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000017762, y: 0}
+  m_AnchoredPosition: {x: 0.13, y: 0}
   m_SizeDelta: {x: 1.110131, y: 0.41025925}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1077878414
@@ -17813,6 +17833,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5051124593289584029, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051124593289584029, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051124593289584029, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051124593289584029, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 9100000, guid: fb824f59441d66c4f9bd37ca3c67c393, type: 2}
     - target: {fileID: 5051124593289584031, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_IsActive
       value: 0
