@@ -35,7 +35,7 @@ public class PotSkins : MonoBehaviour
         if (popUp.Tag == "8") places.sp8 = 1;
         if (popUp.Tag == "9") places.sp9 = 1;
         if (popUp.Tag == "10") places.sp10 = 1;
-        places.loadpots();
+        sendinfo();
 
     }
     public void skin2()
@@ -50,7 +50,7 @@ public class PotSkins : MonoBehaviour
         if (popUp.Tag == "8") places.sp8 = 2;
         if (popUp.Tag == "9") places.sp9 = 2;
         if (popUp.Tag == "10") places.sp10 = 2;
-        places.loadpots();
+        sendinfo();
 
     }
     public void skin3()
@@ -65,7 +65,7 @@ public class PotSkins : MonoBehaviour
         if (popUp.Tag == "8") places.sp8 = 3;
         if (popUp.Tag == "9") places.sp9 = 3;
         if (popUp.Tag == "10") places.sp10 = 3;
-        places.loadpots();
+        sendinfo();
 
     }
      public void skin4()
@@ -80,8 +80,14 @@ public class PotSkins : MonoBehaviour
         if (popUp.Tag == "8") places.sp8 = 4;
         if (popUp.Tag == "9") places.sp9 = 4;
         if (popUp.Tag == "10") places.sp10 = 4;
-        places.loadpots();
+        sendinfo();
 
+
+    }
+    public void sendinfo()
+    {
+        //if (popUp.Tag == "1") places.loadpot("1");
+            places.loadpot(popUp.Tag);
     }
 
 }
