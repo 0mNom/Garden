@@ -135,7 +135,7 @@ public class ButtonPopUp : MonoBehaviour
         ImagePlantDuPopUp.sprite = null;
         animator.SetBool("IsOpen", false);
         pannelActive = false;
-        ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
+        ClickToPlant clickToPlantScript = gameObject.GetComponent<ClickToPlant>();
         wateringButton.onClick.RemoveListener(delegate { WaterOnClick(clickToPlantScript); });
         Tag = null;
         Button btn = sellButton.GetComponent<Button>();
