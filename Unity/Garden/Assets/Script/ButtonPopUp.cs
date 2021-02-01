@@ -129,14 +129,14 @@ public class ButtonPopUp : MonoBehaviour
         
     }
 
-    public void ClosePanel()
+    public void ClosePanel(ClickToPlant clickToPlantScript1)
     {
         ImagePotDuPopUp.sprite = null;
         ImagePlantDuPopUp.sprite = null;
         animator.SetBool("IsOpen", false);
         pannelActive = false;
         ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
-        wateringButton.onClick.RemoveListener(delegate { WaterOnClick(clickToPlantScript); }); ;
+        wateringButton.onClick.RemoveListener(delegate { WaterOnClick(clickToPlantScript1); });
         Tag = null;
         Button btn = sellButton.GetComponent<Button>();
 
@@ -175,7 +175,7 @@ public class ButtonPopUp : MonoBehaviour
             Button btn = sellButton.GetComponent<Button>();
 
             btn.onClick.RemoveListener(SellPlant);
-            ClosePanel();
+            ClosePanel(clickToPlantScript);
             StartCoroutine("WaitForSellingTime");
         }
     }
