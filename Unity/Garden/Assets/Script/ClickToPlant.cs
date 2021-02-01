@@ -13,6 +13,8 @@ public class ClickToPlant : MonoBehaviour
     //watering
     //public Watering water;
     public bool canWater = false;
+    public bool canWaterFirstEvo = false;
+    public bool canWaterSecondEvo = false;
     //public float waterIncrease = 1.1f;
 
     //the end 
@@ -297,7 +299,8 @@ public class ClickToPlant : MonoBehaviour
                     }
 
                     //Debug.Log(tag);
-                   
+                    canWaterFirstEvo = true;
+                    canWaterSecondEvo = true;
                 }
             }
         }
@@ -325,7 +328,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeBle2) == 1)
             {
-                canWater = true;
+                if (canWaterSecondEvo == true)
+                {
+                    canWater = true;
+                    canWaterSecondEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 1.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -334,7 +342,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeBle1) == 1)
             {
-                canWater = true;
+                if (canWaterFirstEvo == true)
+                {
+                    canWater = true;
+                    canWaterFirstEvo = false;
+                }
+                //canWater = true;
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
                 plantInPot = 1.1f;
@@ -363,7 +376,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeApple2) == 1)
             {
-                canWater = true;
+                if (canWaterSecondEvo == true)
+                {
+                    canWater = true;
+                    canWaterSecondEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 2.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -373,7 +391,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeApple1) == 1)
             {
-                canWater = true;
+                if (canWaterFirstEvo == true)
+                {
+                    canWater = true;
+                    canWaterFirstEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 2.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -401,7 +424,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeTomato2) == 1)
             {
-                canWater = true;
+                if (canWaterSecondEvo == true)
+                {
+                    canWater = true;
+                    canWaterSecondEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 3.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -411,7 +439,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeTomato1) == 1)
             {
-                canWater = true;
+                if (canWaterFirstEvo == true)
+                {
+                    canWater = true;
+                    canWaterFirstEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 3.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -438,7 +471,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeEggplant2) == 1)
             {
-                canWater = true;
+                if (canWaterSecondEvo == true)
+                {
+                    canWater = true;
+                    canWaterSecondEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 4.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -448,7 +486,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeEggplant1) == 1)
             {
-                canWater = true;
+                if (canWaterFirstEvo == true)
+                {
+                    canWater = true;
+                    canWaterFirstEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 4.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -477,7 +520,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimePear2) == 1)
             {
-                canWater = true;
+                if (canWaterSecondEvo == true)
+                {
+                    canWater = true;
+                    canWaterSecondEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 5.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -487,7 +535,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimePear1) == 1)
             {
-                canWater = true;
+                if (canWaterFirstEvo == true)
+                {
+                    canWater = true;
+                    canWaterFirstEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 5.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -516,7 +569,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeSunflower2) == 1)
             {
-                canWater = true;
+                if (canWaterSecondEvo == true)
+                {
+                    canWater = true;
+                    canWaterSecondEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 6.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -526,7 +584,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeSunflower1) == 1)
             {
-                canWater = true;
+                if (canWaterFirstEvo == true)
+                {
+                    canWater = true;
+                    canWaterFirstEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 6.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -551,7 +614,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeCherry2) == 1)
             {
-                canWater = true;
+                if (canWaterSecondEvo == true)
+                {
+                    canWater = true;
+                    canWaterSecondEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 7.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -560,7 +628,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeCherry1) == 1)
             {
-                canWater = true;
+                if (canWaterFirstEvo == true)
+                {
+                    canWater = true;
+                    canWaterFirstEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 7.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -582,10 +655,16 @@ public class ClickToPlant : MonoBehaviour
 
                 plantFinished = true;
                 avocadoPlanted = false;
+
             }
             else if (DateTime.Compare(CurrentTime, targetTimeAvocado2) == 1)
             {
-                canWater = true;
+                if (canWaterSecondEvo == true)
+                {
+                    canWater = true;
+                    canWaterSecondEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 8.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -595,7 +674,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeAvocado1) == 1)
             {
-                canWater = true;
+                if(canWaterFirstEvo == true)
+                {
+                    canWater = true;
+                    canWaterFirstEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 8.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -621,7 +705,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeKiwi2) == 1)
             {
-                canWater = true;
+                if (canWaterSecondEvo == true)
+                {
+                    canWater = true;
+                    canWaterSecondEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 9.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
@@ -630,7 +719,12 @@ public class ClickToPlant : MonoBehaviour
             }
             else if (DateTime.Compare(CurrentTime, targetTimeKiwi1) == 1)
             {
-                canWater = true;
+                if (canWaterFirstEvo == true)
+                {
+                    canWater = true;
+                    canWaterFirstEvo = false;
+                }
+                //canWater = true;
                 plantInPot = 9.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
