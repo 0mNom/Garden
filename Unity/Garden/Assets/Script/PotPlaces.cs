@@ -23,8 +23,11 @@ public class PotPlaces : MonoBehaviour
     public SpriteRenderer spriteRendererPot1, spriteRendererPot2, spriteRendererPot3;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public SpriteRenderer spriteRendererPot1Shine, spriteRendererPot2Shine, spriteRendererPot3Shine;
     public Animator potAnim;
+=======
+>>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
 =======
 >>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
 =======
@@ -42,6 +45,7 @@ public class PotPlaces : MonoBehaviour
         
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public void loadpot(string tag)
@@ -176,6 +180,8 @@ public class PotPlaces : MonoBehaviour
 
      }
 
+=======
+>>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
 =======
 >>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
 =======
