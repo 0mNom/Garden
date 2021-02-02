@@ -10,6 +10,9 @@ public class ClickToPlant : MonoBehaviour
     public float plantInPot = 0f;
     public PotPlaces potPlace;
 
+    public Animator potAnim;
+
+
     //watering
     //public Watering water;
     public bool canWater = false;
@@ -131,6 +134,8 @@ public class ClickToPlant : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
+           
+
             if (touch.phase == TouchPhase.Began)
             {
                 BagScript bagScript1 = bagObject.GetComponent<BagScript>();
@@ -140,6 +145,10 @@ public class ClickToPlant : MonoBehaviour
                 {
                     String tag = col.tag;
                     //Debug.Log(tag);
+
+                    potAnim = GameObject.FindGameObjectWithTag(tag).GetComponent<Animator>();
+                    potAnim.SetTrigger("POP");
+
 
 
                     if (bagScript1.plantingseed == 1)
