@@ -18,8 +18,11 @@ public class PotPlaces : MonoBehaviour
     public Sprite pousseAvo, evolutionAvo1, evolutionAvo2, evolutionAvo3;
     public Sprite pousseKiwi, evolutionKiwi1, evolutionKiwi2, evolutionKiwi3;
     public Sprite Skin1, Skin2, Skin3, Skin4, Skin5, Skin6, Skin7, Skin8, Skin9, Skin10;
+    public Sprite Skin1Shine, Skin2Shine, Skin3Shine, Skin4Shine, Skin5Shine, Skin6Shine, Skin7Shine, Skin8Shine, Skin9Shine, Skin10Shine;
     public SpriteRenderer spriteRendererP1,spriteRendererP2, spriteRendererP3;
     public SpriteRenderer spriteRendererPot1, spriteRendererPot2, spriteRendererPot3;
+    public SpriteRenderer spriteRendererPot1Shine, spriteRendererPot2Shine, spriteRendererPot3Shine;
+    public Animator potAnim;
 
 
     void Start()
@@ -32,6 +35,138 @@ public class PotPlaces : MonoBehaviour
     {
         
     }
+
+    public void loadpot(string tag)
+    {
+        if( tag == "1")
+        {
+            potAnim = GameObject.FindGameObjectWithTag(tag).GetComponent<Animator>();
+            potAnim.SetTrigger("POP");
+
+            if (sp1 == 1)
+            {
+                spriteRendererPot1.sprite = Skin1;
+                spriteRendererPot1Shine.sprite = Skin1Shine;
+            }
+            if (sp1 == 2) 
+            {
+                spriteRendererPot1.sprite = Skin2;
+                spriteRendererPot1Shine.sprite = Skin2Shine;
+            }
+            if (sp1 == 3)
+            {
+                spriteRendererPot1.sprite = Skin3;
+                spriteRendererPot1Shine.sprite= Skin3Shine;
+            }
+            if (sp1 == 4)
+            {
+                spriteRendererPot1.sprite = Skin4;
+                spriteRendererPot1Shine.sprite = Skin4Shine;
+            }
+            if (sp1 == 5)
+            {
+                spriteRendererPot1.sprite = Skin5;
+                spriteRendererPot1Shine.sprite = Skin5Shine;
+            }
+            if (sp1 == 6)
+            {
+                spriteRendererPot1.sprite = Skin6;
+                spriteRendererPot1Shine.sprite = Skin6Shine;
+            }
+            if (sp1 == 7)
+            {
+                spriteRendererPot1.sprite = Skin7;
+                spriteRendererPot1Shine.sprite = Skin7Shine;
+            }
+        }
+
+
+        if (tag == "2")
+        {
+            potAnim = GameObject.FindGameObjectWithTag(tag).GetComponent<Animator>();
+            potAnim.SetTrigger("POP");
+            if (sp2 == 1)
+            {
+                spriteRendererPot1.sprite = Skin1;
+                spriteRendererPot1Shine.sprite = Skin1Shine;
+            }
+            if (sp2 == 2)
+            {
+                spriteRendererPot1.sprite = Skin2;
+                spriteRendererPot1Shine.sprite = Skin2Shine;
+            }
+            if (sp2 == 3)
+            {
+                spriteRendererPot1.sprite = Skin3;
+                spriteRendererPot1Shine.sprite = Skin3Shine;
+            }
+            if (sp2 == 4)
+            {
+                spriteRendererPot1.sprite = Skin4;
+                spriteRendererPot1Shine.sprite = Skin4Shine;
+            }
+            if (sp2 == 5)
+            {
+                spriteRendererPot2.sprite = Skin5;
+                spriteRendererPot2Shine.sprite = Skin5Shine;
+            }
+            if (sp2 == 6)
+            {
+                spriteRendererPot2.sprite = Skin6;
+                spriteRendererPot2Shine.sprite = Skin6Shine;
+            }
+            if (sp2 == 7)
+            {
+                spriteRendererPot2.sprite = Skin7;
+                spriteRendererPot2Shine.sprite = Skin7Shine;
+            }
+        }
+
+
+        if (tag == "3")
+        {
+            potAnim = GameObject.FindGameObjectWithTag(tag).GetComponent<Animator>();
+            potAnim.SetTrigger("POP");
+            if (sp3 == 1)
+            {
+                spriteRendererPot3.sprite = Skin1;
+                spriteRendererPot3Shine.sprite = Skin1Shine;
+            }
+            if (sp3 == 2)
+            {
+                spriteRendererPot3.sprite = Skin2;
+                spriteRendererPot3Shine.sprite = Skin2Shine;
+            }
+            if (sp3 == 3)
+            {
+                spriteRendererPot3.sprite = Skin3;
+                spriteRendererPot3Shine.sprite = Skin3Shine;
+            }
+            if (sp3 == 4)
+            {
+                spriteRendererPot3.sprite = Skin4;
+                spriteRendererPot3Shine.sprite = Skin4Shine;
+            }
+            if (sp3 == 5)
+            {
+                spriteRendererPot3.sprite = Skin5;
+                spriteRendererPot3Shine.sprite = Skin5Shine;
+            }
+            if (sp3 == 6)
+            {
+                spriteRendererPot3.sprite = Skin6;
+                spriteRendererPot3Shine.sprite = Skin6Shine;
+            }
+            if (sp3 == 7)
+            {
+                spriteRendererPot3.sprite = Skin7;
+                spriteRendererPot3Shine.sprite = Skin7Shine;
+            }
+        }
+
+
+
+     }
 
     public void loadpots()
     {
@@ -50,26 +185,26 @@ public class PotPlaces : MonoBehaviour
 
 
         //-----------------pot2------------------------
-        if (sp2 == 1) spriteRendererPot1.sprite = Skin1;
-        if (sp2 == 2) spriteRendererPot1.sprite = Skin2;
-        if (sp2 == 3) spriteRendererPot1.sprite = Skin3;
-        if (sp2 == 4) spriteRendererPot1.sprite = Skin4;
-        if (sp2 == 5) spriteRendererPot1.sprite = Skin5;
-        if (sp2 == 6) spriteRendererPot1.sprite = Skin6;
-        if (sp2 == 7) spriteRendererPot1.sprite = Skin7;
+        if (sp2 == 1) spriteRendererPot2.sprite = Skin1;
+        if (sp2 == 2) spriteRendererPot2.sprite = Skin2;
+        if (sp2 == 3) spriteRendererPot2.sprite = Skin3;
+        if (sp2 == 4) spriteRendererPot2.sprite = Skin4;
+        if (sp2 == 5) spriteRendererPot2.sprite = Skin5;
+        if (sp2 == 6) spriteRendererPot2.sprite = Skin6;
+        if (sp2 == 7) spriteRendererPot2.sprite = Skin7;
       /*  if (sp2 == 8) spriteRendererPot1.sprite = Skin8;
         if (sp2 == 9) spriteRendererPot1.sprite = Skin9;
         if (sp2 == 10) spriteRendererPot1.sprite = Skin10;*/
 
 
         //-----------------pot3------------------------
-        if (sp3 == 1) spriteRendererPot1.sprite = Skin1;
-        if (sp3 == 2) spriteRendererPot1.sprite = Skin2;
-        if (sp3 == 3) spriteRendererPot1.sprite = Skin3;
-        if (sp3 == 4) spriteRendererPot1.sprite = Skin4;
-        if (sp3 == 5) spriteRendererPot1.sprite = Skin5;
-        if (sp3 == 6) spriteRendererPot1.sprite = Skin6;
-        if (sp3 == 7) spriteRendererPot1.sprite = Skin7;
+        if (sp3 == 1) spriteRendererPot3.sprite = Skin1;
+        if (sp3 == 2) spriteRendererPot3.sprite = Skin2;
+        if (sp3 == 3) spriteRendererPot3.sprite = Skin3;
+        if (sp3 == 4) spriteRendererPot3.sprite = Skin4;
+        if (sp3 == 5) spriteRendererPot3.sprite = Skin5;
+        if (sp3 == 6) spriteRendererPot3.sprite = Skin6;
+        if (sp3 == 7) spriteRendererPot3.sprite = Skin7;
   /*      if (sp3 == 8) spriteRendererPot1.sprite = Skin8;
         if (sp3 == 9) spriteRendererPot1.sprite = Skin9;
         if (sp3 == 10) spriteRendererPot1.sprite = Skin10;*/
