@@ -8476,6 +8476,7 @@ Canvas:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709725433}
   m_Enabled: 1
+<<<<<<< HEAD
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 67766982}
@@ -8491,6 +8492,33 @@ Canvas:
   m_TargetDisplay: 0
 --- !u!224 &709725437
 RectTransform:
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  plantInPot: 0
+  potPlace: {fileID: 1403264362}
+  canWater: 0
+  ShineSprite: {fileID: 0}
+  plantFinished: 0
+  sellingPrice: 0
+  bagObject: {fileID: 1860585977}
+  spriteRenderer: {fileID: 1147981017}
+  gotPlant: 0
+  finishedBle: 0
+  finishedApple: 0
+  finishedTomato: 0
+  finishedEggplant: 0
+  finishedPear: 0
+  finishedSunflower: 0
+  finishedCherry: 0
+  finishedAvocado: 0
+  finishedKiwi: 0
+--- !u!212 &975528009
+SpriteRenderer:
+>>>>>>> parent of 490c6a0... Warter particle
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16657,6 +16685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -16737,6 +16766,8 @@ MonoBehaviour:
 --- !u!222 &1364032591
 CanvasRenderer:
 =======
+=======
+>>>>>>> parent of 490c6a0... Warter particle
   particle: {fileID: 0}
   deadleaves: 0
 --- !u!4 &1194656224
@@ -17195,6 +17226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -17274,6 +17306,29 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1374825924
 CanvasRenderer:
+=======
+  isActive: 0
+  plantInPot: 0
+  potPlace: {fileID: 1403264362}
+  canWater: 0
+  ShineSprite: {fileID: 0}
+  plantFinished: 0
+  sellingPrice: 0
+  bagObject: {fileID: 1860585977}
+  spriteRenderer: {fileID: 1358931716}
+  gotPlant: 0
+  finishedBle: 0
+  finishedApple: 0
+  finishedTomato: 0
+  finishedEggplant: 0
+  finishedPear: 0
+  finishedSunflower: 0
+  finishedCherry: 0
+  finishedAvocado: 0
+  finishedKiwi: 0
+--- !u!212 &1316593944
+SpriteRenderer:
+>>>>>>> parent of 490c6a0... Warter particle
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
