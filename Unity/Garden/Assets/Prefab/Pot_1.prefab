@@ -158,7 +158,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.92, y: 16.98}
+  m_Size: {x: 5.99, y: 2.57}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -177,7 +177,6 @@ GameObject:
   - component: {fileID: 2885881521936281486}
   - component: {fileID: 2885881521936281487}
   - component: {fileID: 2885881521936281483}
-  - component: {fileID: 2885881521507213800}
   m_Layer: 0
   m_Name: Pot_1
   m_TagString: 1
@@ -192,7 +191,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2885881521936281484}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.194, y: -1.922, z: -1}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
@@ -220,7 +219,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -267,23 +266,39 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 0}
-  canWater: 0
-  canWaterFirstEvo: 0
-  canWaterSecondEvo: 0
-  ShineSprite: {fileID: 2083450924656640722}
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 0}
   spriteRenderer: {fileID: 2885881521463263910}
+  potVide: {fileID: 7692800895671616095, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   gotPlant: 0
+  spritePlantedSeed: {fileID: -7072262485073290446, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionBle1: {fileID: 0}
+  evolutionBle2: {fileID: 0}
   finishedBle: 0
+  evolutionApple1: {fileID: 0}
+  evolutionApple2: {fileID: 0}
   finishedApple: 0
+  evolutionTomato1: {fileID: 0}
+  evolutionTomato2: {fileID: 0}
   finishedTomato: 0
+  evolutionEggplant1: {fileID: 8638330062718480922, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionEggplant2: {fileID: -6356853177289981808, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   finishedEggplant: 0
+  evolutionPear1: {fileID: 0}
+  evolutionPear2: {fileID: 0}
   finishedPear: 0
+  evolutionSunflower1: {fileID: 0}
+  evolutionSunflower2: {fileID: 0}
   finishedSunflower: 0
+  evolutionCherry1: {fileID: 0}
+  evolutionCherry2: {fileID: 0}
   finishedCherry: 0
+  evolutionAvocado1: {fileID: 0}
+  evolutionAvocado2: {fileID: 0}
   finishedAvocado: 0
+  evolutionKiwi1: {fileID: 0}
+  evolutionKiwi2: {fileID: 0}
   finishedKiwi: 0
 --- !u!61 &2885881521936281487
 BoxCollider2D:
@@ -323,11 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  water: {fileID: 0}
-  waterIncrease: 1.1
-  pannelActive: 0
   bagObject: {fileID: 0}
-  thePotClicked: {fileID: 0}
   Name1: Steve
   Name2: Lauren
   Name3: Berthe
@@ -336,24 +347,4 @@ MonoBehaviour:
   sellButton: {fileID: 0}
   ImagePotDuPopUp: {fileID: 0}
   ImagePlantDuPopUp: {fileID: 0}
-  Tag: 
-  wateringButton: {fileID: 0}
---- !u!95 &2885881521507213800
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2885881521936281484}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 42fc04579d84606498f64755ea78df99, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  tag: 

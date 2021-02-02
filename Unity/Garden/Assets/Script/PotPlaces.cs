@@ -21,8 +21,11 @@ public class PotPlaces : MonoBehaviour
     public Sprite Skin1Shine, Skin2Shine, Skin3Shine, Skin4Shine, Skin5Shine, Skin6Shine, Skin7Shine, Skin8Shine, Skin9Shine, Skin10Shine;
     public SpriteRenderer spriteRendererP1,spriteRendererP2, spriteRendererP3;
     public SpriteRenderer spriteRendererPot1, spriteRendererPot2, spriteRendererPot3;
+<<<<<<< HEAD
     public SpriteRenderer spriteRendererPot1Shine, spriteRendererPot2Shine, spriteRendererPot3Shine;
     public Animator potAnim;
+=======
+>>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
 
 
     void Start()
@@ -36,6 +39,7 @@ public class PotPlaces : MonoBehaviour
         
     }
 
+<<<<<<< HEAD
     public void loadpot(string tag)
     {
         if( tag == "1")
@@ -168,6 +172,8 @@ public class PotPlaces : MonoBehaviour
 
      }
 
+=======
+>>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
     public void loadpots()
     {
 

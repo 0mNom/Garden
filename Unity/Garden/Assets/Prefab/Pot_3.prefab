@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2844716468377020056}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.39999962, y: 2.1250005, z: -0.5000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2844716468914934952}
@@ -95,7 +95,6 @@ GameObject:
   - component: {fileID: 2844716468914934949}
   - component: {fileID: 2844716468914934950}
   - component: {fileID: 2844716468914934951}
-  - component: {fileID: 9178535425348299181}
   m_Layer: 0
   m_Name: Pot_3
   m_TagString: 3
@@ -110,7 +109,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2844716468914934953}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.28, y: -3.1, z: -1}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
@@ -138,7 +137,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -185,23 +184,39 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 0}
-  canWater: 0
-  canWaterFirstEvo: 0
-  canWaterSecondEvo: 0
-  ShineSprite: {fileID: 5559186709401674179}
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 0}
   spriteRenderer: {fileID: 2844716468377020054}
+  potVide: {fileID: 5450997762466904680, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   gotPlant: 0
+  spritePlantedSeed: {fileID: 7689940656616605574, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionBle1: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
+  evolutionBle2: {fileID: 21300000, guid: 9085d65c9e2e3d54b856314e46362c74, type: 3}
   finishedBle: 0
+  evolutionApple1: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
+  evolutionApple2: {fileID: 21300000, guid: 480ea58a990c9f64eb48321ba8a0b4b9, type: 3}
   finishedApple: 0
+  evolutionTomato1: {fileID: 8532793640707250610, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionTomato2: {fileID: -2277497117890853638, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   finishedTomato: 0
+  evolutionEggplant1: {fileID: 8638330062718480922, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionEggplant2: {fileID: -6356853177289981808, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   finishedEggplant: 0
+  evolutionPear1: {fileID: 5051672456841407309, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
+  evolutionPear2: {fileID: 9205105562912555126, guid: 09c8e834250dee34193ce7373d0cb9a8, type: 3}
   finishedPear: 0
+  evolutionSunflower1: {fileID: 2183991771371066542, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionSunflower2: {fileID: 2183991771371066542, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   finishedSunflower: 0
+  evolutionCherry1: {fileID: 8532793640707250610, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionCherry2: {fileID: -2277497117890853638, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   finishedCherry: 0
+  evolutionAvocado1: {fileID: 2882856621486060386, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
+  evolutionAvocado2: {fileID: 1080203096490090065, guid: 0a5d88eb3d7e55b41804ba3cc4dd8036, type: 3}
   finishedAvocado: 0
+  evolutionKiwi1: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
+  evolutionKiwi2: {fileID: 21300000, guid: c56c7a01d03138a4a93e4eb6741450c6, type: 3}
   finishedKiwi: 0
 --- !u!61 &2844716468914934950
 BoxCollider2D:
@@ -241,40 +256,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  water: {fileID: 0}
-  waterIncrease: 1.1
-  pannelActive: 0
   bagObject: {fileID: 0}
-  thePotClicked: {fileID: 0}
-  Name1: Steve
-  Name2: Lauren
-  Name3: Berthe
+  Name1: 
+  Name2: 
+  Name3: 
   nameText: {fileID: 0}
   animator: {fileID: 0}
   sellButton: {fileID: 0}
   ImagePotDuPopUp: {fileID: 0}
   ImagePlantDuPopUp: {fileID: 0}
-  Tag: 
-  wateringButton: {fileID: 0}
---- !u!95 &9178535425348299181
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2844716468914934953}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 42fc04579d84606498f64755ea78df99, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  tag: 
 --- !u!1 &5559186709401674179
 GameObject:
   m_ObjectHideFlags: 0
