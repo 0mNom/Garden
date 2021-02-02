@@ -38,7 +38,7 @@ public class PotSkins : MonoBehaviour
         {
             inv.pot1--;
 
-
+            Debug.Log(popUp.Tag);
             if (popUp.Tag == "1") places.sp1 = 1;
             if (popUp.Tag == "2") places.sp2 = 1;
             if (popUp.Tag == "3") places.sp3 = 1;
@@ -69,6 +69,7 @@ public class PotSkins : MonoBehaviour
         {
             inv.pot2--;
 
+            Debug.Log(popUp.Tag);
             if (popUp.Tag == "1") places.sp1 = 2;
             if (popUp.Tag == "2") places.sp2 = 2;
             if (popUp.Tag == "3") places.sp3 = 2;
@@ -99,6 +100,7 @@ public class PotSkins : MonoBehaviour
         {
             inv.pot3--;
 
+            Debug.Log(popUp.Tag);
             if (popUp.Tag == "1") places.sp1 = 3;
             if (popUp.Tag == "2") places.sp2 = 3;
             if (popUp.Tag == "3") places.sp3 = 3;
