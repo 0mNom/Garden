@@ -113,7 +113,7 @@ public class ButtonPopUp : MonoBehaviour
         SpriteRenderer spritePlant = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
         ImagePlantDuPopUp.sprite = spritePlant.sprite;
 
-        wateringButton.onClick.AddListener(WaterOnClick);
+        wateringButton.onClick.AddListener(delegate { WaterOnClick(clickToPlantScript); });
         //Debug.Log(tag);
     }
 
@@ -136,7 +136,7 @@ public class ButtonPopUp : MonoBehaviour
         animator.SetBool("IsOpen", false);
         pannelActive = false;
         ClickToPlant clickToPlantScript = gameObject.GetComponent<ClickToPlant>();
-        wateringButton.onClick.RemoveListener(WaterOnClick);
+        wateringButton.onClick.RemoveListener(delegate { WaterOnClick(clickToPlantScript); });
         Tag = null;
         Button btn = sellButton.GetComponent<Button>();
 
@@ -194,18 +194,18 @@ public class ButtonPopUp : MonoBehaviour
 
 
 
-    void WaterOnClick()
+    void WaterOnClick(ClickToPlant clickToPlantScript1)
     {
         //Debug.Log(TagObj);
-        ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
-        if (clickToPlantScript.canWater == true)
+        //ClickToPlant clickToPlantScript1 = GameObject.FindGameObjectWithTag(TagObj).GetComponent<ClickToPlant>();
+        if (clickToPlantScript1.canWater == true)
         {
-            Debug.Log(clickToPlantScript.canWater);
+            Debug.Log(clickToPlantScript1.canWater);
             water.water();
-            clickToPlantScript.canWater = false;
-            clickToPlantScript.sellingPrice = (int)((float)clickToPlantScript.sellingPrice * 1.1);
+            clickToPlantScript1.canWater = false;
+            clickToPlantScript1.sellingPrice = (int)((float)clickToPlantScript1.sellingPrice * 1.1);
         }
-        //Debug.Log(clickToPlantScript.canWater);
-        Debug.Log(clickToPlantScript.sellingPrice);
+        //Debug.Log(clickToPlantScript1.canWater);
+        Debug.Log(clickToPlantScript1.sellingPrice);
     }
 }
