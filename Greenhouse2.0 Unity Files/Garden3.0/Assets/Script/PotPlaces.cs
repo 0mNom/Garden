@@ -87,22 +87,22 @@ public class PotPlaces : MonoBehaviour
             potAnim.SetTrigger("POP");
             if (sp2 == 1)
             {
-                spriteRendererPot1.sprite = Skin1;
+                spriteRendererPot2.sprite = Skin1;
                 spriteRendererPot1Shine.sprite = Skin1Shine;
             }
             if (sp2 == 2)
             {
-                spriteRendererPot1.sprite = Skin2;
+                spriteRendererPot2.sprite = Skin2;
                 spriteRendererPot1Shine.sprite = Skin2Shine;
             }
             if (sp2 == 3)
             {
-                spriteRendererPot1.sprite = Skin3;
+                spriteRendererPot2.sprite = Skin3;
                 spriteRendererPot1Shine.sprite = Skin3Shine;
             }
             if (sp2 == 4)
             {
-                spriteRendererPot1.sprite = Skin4;
+                spriteRendererPot2.sprite = Skin4;
                 spriteRendererPot1Shine.sprite = Skin4Shine;
             }
             if (sp2 == 5)
