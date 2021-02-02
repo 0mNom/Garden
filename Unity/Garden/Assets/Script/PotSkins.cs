@@ -64,6 +64,9 @@ public class PotSkins : MonoBehaviour
         if (popUp.Tag == "9") places.sp9 = 1;
         if (popUp.Tag == "10") places.sp10 = 1;
         places.loadpots();
+<<<<<<< HEAD
+>>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
+=======
 >>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
 
     }
@@ -107,6 +110,9 @@ public class PotSkins : MonoBehaviour
         if (popUp.Tag == "9") places.sp9 = 2;
         if (popUp.Tag == "10") places.sp10 = 2;
         places.loadpots();
+<<<<<<< HEAD
+>>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
+=======
 >>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
 
     }
@@ -149,6 +155,9 @@ public class PotSkins : MonoBehaviour
         if (popUp.Tag == "9") places.sp9 = 3;
         if (popUp.Tag == "10") places.sp10 = 3;
         places.loadpots();
+<<<<<<< HEAD
+>>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
+=======
 >>>>>>> parent of 08d9fd4... pot pop anim and inv included in pot changer
 
     }
