@@ -8140,6 +8140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -8218,6 +8219,57 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &700224665
 CanvasRenderer:
+=======
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.75, y: 2.69}
+    newSize: {x: 2.75, y: 2.69}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.92, y: 3.5}
+  m_EdgeRadius: 0
+--- !u!114 &888692066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888692062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  plantInPot: 0
+  potPlace: {fileID: 1403264362}
+  canWater: 0
+  ShineSprite: {fileID: 0}
+  plantFinished: 0
+  sellingPrice: 0
+  bagObject: {fileID: 1860585977}
+  spriteRenderer: {fileID: 1448289100}
+  gotPlant: 0
+  finishedBle: 0
+  finishedApple: 0
+  finishedTomato: 0
+  finishedEggplant: 0
+  finishedPear: 0
+  finishedSunflower: 0
+  finishedCherry: 0
+  finishedAvocado: 0
+  finishedKiwi: 0
+--- !u!212 &888692067
+SpriteRenderer:
+>>>>>>> parent of 490c6a0... Warter particle
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8531,6 +8583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -13588,11 +13641,21 @@ MonoBehaviour:
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
+=======
+  isActive: 0
+  plantInPot: 0
+  potPlace: {fileID: 1403264362}
+  canWater: 0
+>>>>>>> parent of 490c6a0... Warter particle
   ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
   bagObject: {fileID: 1860585977}
+<<<<<<< HEAD
   spriteRenderer: {fileID: 1764406409}
+=======
+  spriteRenderer: {fileID: 1147981017}
+>>>>>>> parent of 490c6a0... Warter particle
   gotPlant: 0
   finishedBle: 0
   finishedApple: 0
@@ -13603,6 +13666,7 @@ MonoBehaviour:
   finishedCherry: 0
   finishedAvocado: 0
   finishedKiwi: 0
+<<<<<<< HEAD
 --- !u!212 &1103599399
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14188,12 +14252,19 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1147981017
+=======
+--- !u!212 &975528009
+>>>>>>> parent of 490c6a0... Warter particle
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1147981015}
+=======
+  m_GameObject: {fileID: 975528004}
+>>>>>>> parent of 490c6a0... Warter particle
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -15686,8 +15757,6 @@ MonoBehaviour:
   potPlace: {fileID: 1403264362}
   potAnim: {fileID: 0}
   canWater: 0
-  canWaterFirstEvo: 0
-  canWaterSecondEvo: 0
   ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
@@ -16587,6 +16656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -16666,6 +16736,12 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1364032591
 CanvasRenderer:
+=======
+  particle: {fileID: 0}
+  deadleaves: 0
+--- !u!4 &1194656224
+Transform:
+>>>>>>> parent of 490c6a0... Warter particle
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17258,6 +17334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_Color: {r: 0.49056602, g: 0.2464938, b: 0.04396581, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -17277,6 +17354,57 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1379319067
 CanvasRenderer:
+=======
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.75, y: 2.69}
+    newSize: {x: 2.75, y: 2.69}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.92, y: 3.5}
+  m_EdgeRadius: 0
+--- !u!114 &1316593943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316593939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  plantInPot: 0
+  potPlace: {fileID: 1403264362}
+  canWater: 0
+  ShineSprite: {fileID: 0}
+  plantFinished: 0
+  sellingPrice: 0
+  bagObject: {fileID: 1860585977}
+  spriteRenderer: {fileID: 1358931716}
+  gotPlant: 0
+  finishedBle: 0
+  finishedApple: 0
+  finishedTomato: 0
+  finishedEggplant: 0
+  finishedPear: 0
+  finishedSunflower: 0
+  finishedCherry: 0
+  finishedAvocado: 0
+  finishedKiwi: 0
+--- !u!212 &1316593944
+SpriteRenderer:
+>>>>>>> parent of 490c6a0... Warter particle
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21356,6 +21484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -21376,6 +21505,29 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1794491518
 CanvasRenderer:
+=======
+  isActive: 0
+  plantInPot: 0
+  potPlace: {fileID: 1403264362}
+  canWater: 0
+  ShineSprite: {fileID: 0}
+  plantFinished: 0
+  sellingPrice: 0
+  bagObject: {fileID: 1860585977}
+  spriteRenderer: {fileID: 660590805}
+  gotPlant: 0
+  finishedBle: 0
+  finishedApple: 0
+  finishedTomato: 0
+  finishedEggplant: 0
+  finishedPear: 0
+  finishedSunflower: 0
+  finishedCherry: 0
+  finishedAvocado: 0
+  finishedKiwi: 0
+--- !u!212 &1760712568
+SpriteRenderer:
+>>>>>>> parent of 490c6a0... Warter particle
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23830,8 +23982,6 @@ MonoBehaviour:
   potPlace: {fileID: 1403264362}
   potAnim: {fileID: 0}
   canWater: 0
-  canWaterFirstEvo: 0
-  canWaterSecondEvo: 0
   ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
@@ -24136,8 +24286,6 @@ MonoBehaviour:
   potPlace: {fileID: 1403264362}
   potAnim: {fileID: 0}
   canWater: 0
-  canWaterFirstEvo: 0
-  canWaterSecondEvo: 0
   ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
@@ -25461,10 +25609,6 @@ PrefabInstance:
       propertyPath: popUp
       value: 
       objectReference: {fileID: 1806503534}
-    - target: {fileID: 5051124593876663813, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
-      propertyPath: inv
-      value: 
-      objectReference: {fileID: 1403264363}
     - target: {fileID: 5051124593876663814, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_Camera
       value: 
