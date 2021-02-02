@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class PotSkins : MonoBehaviour
 {
-    public Button buttonSkin1;
+    /*public Button buttonSkin1;
     public Button buttonSkin2;
-    public Button buttonSkin3;
+    public Button buttonSkin3;*/
     // public string tag;
     public PotPlaces places;
     ButtonPopUp popUp;
@@ -16,9 +16,9 @@ public class PotSkins : MonoBehaviour
 
     void Start()
     {
-        buttonSkin1.onClick.AddListener(skin1);
+        /* buttonSkin1.onClick.AddListener(skin1);
         buttonSkin2.onClick.AddListener(skin2);
-        buttonSkin3.onClick.AddListener(skin3);
+        buttonSkin3.onClick.AddListener(skin3);*/
     }
 
     // Update is called once per frame

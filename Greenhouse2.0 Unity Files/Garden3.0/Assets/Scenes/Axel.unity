@@ -8045,6 +8045,18 @@ PrefabInstance:
       propertyPath: wateringButton
       value: 
       objectReference: {fileID: 1232243432}
+    - target: {fileID: 2844716468914934951, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
+      propertyPath: buttonSkin1
+      value: 
+      objectReference: {fileID: 5051124593875790421}
+    - target: {fileID: 2844716468914934951, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
+      propertyPath: buttonSkin2
+      value: 
+      objectReference: {fileID: 5051124593875790420}
+    - target: {fileID: 2844716468914934951, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
+      propertyPath: buttonSkin3
+      value: 
+      objectReference: {fileID: 5051124593875790419}
     - target: {fileID: 2844716468914934952, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.24
@@ -8112,9 +8124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3660a42dc0ab77144896ed53c69e5bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSkin1: {fileID: 5051124593875790421}
-  buttonSkin2: {fileID: 5051124593875790420}
-  buttonSkin3: {fileID: 5051124593875790419}
   places: {fileID: 1403264362}
   inv: {fileID: 1403264363}
 --- !u!1 &700224662
@@ -10851,6 +10860,18 @@ PrefabInstance:
       propertyPath: wateringButton
       value: 
       objectReference: {fileID: 1232243432}
+    - target: {fileID: 7154368241924471956, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
+      propertyPath: buttonSkin1
+      value: 
+      objectReference: {fileID: 5051124593875790421}
+    - target: {fileID: 7154368241924471956, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
+      propertyPath: buttonSkin2
+      value: 
+      objectReference: {fileID: 5051124593875790420}
+    - target: {fileID: 7154368241924471956, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
+      propertyPath: buttonSkin3
+      value: 
+      objectReference: {fileID: 5051124593875790419}
     - target: {fileID: 7154368241924471957, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.62
@@ -10922,9 +10943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3660a42dc0ab77144896ed53c69e5bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSkin1: {fileID: 5051124593875790421}
-  buttonSkin2: {fileID: 5051124593875790420}
-  buttonSkin3: {fileID: 5051124593875790419}
   places: {fileID: 1403264362}
   inv: {fileID: 1403264363}
 --- !u!1 &888692062
@@ -10976,6 +10994,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSkin1: {fileID: 0}
+  buttonSkin2: {fileID: 0}
+  buttonSkin3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -12570,6 +12591,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSkin1: {fileID: 0}
+  buttonSkin2: {fileID: 0}
+  buttonSkin3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -13577,6 +13601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSkin1: {fileID: 0}
+  buttonSkin2: {fileID: 0}
+  buttonSkin3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -15677,6 +15704,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSkin1: {fileID: 0}
+  buttonSkin2: {fileID: 0}
+  buttonSkin3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -20856,6 +20886,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSkin1: {fileID: 0}
+  buttonSkin2: {fileID: 0}
+  buttonSkin3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -23821,6 +23854,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSkin1: {fileID: 0}
+  buttonSkin2: {fileID: 0}
+  buttonSkin3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -24127,6 +24163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSkin1: {fileID: 0}
+  buttonSkin2: {fileID: 0}
+  buttonSkin3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -25429,6 +25468,18 @@ PrefabInstance:
       propertyPath: wateringButton
       value: 
       objectReference: {fileID: 1232243432}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: buttonSkin1
+      value: 
+      objectReference: {fileID: 5051124593875790421}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: buttonSkin2
+      value: 
+      objectReference: {fileID: 5051124593875790420}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: buttonSkin3
+      value: 
+      objectReference: {fileID: 5051124593875790419}
     - target: {fileID: 2885881521936281484, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
       propertyPath: m_Name
       value: Pot_1
@@ -25460,9 +25511,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3660a42dc0ab77144896ed53c69e5bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSkin1: {fileID: 5051124593875790421}
-  buttonSkin2: {fileID: 5051124593875790420}
-  buttonSkin3: {fileID: 5051124593875790419}
   places: {fileID: 1403264362}
   inv: {fileID: 1403264363}
 --- !u!1001 &5051124593875790418

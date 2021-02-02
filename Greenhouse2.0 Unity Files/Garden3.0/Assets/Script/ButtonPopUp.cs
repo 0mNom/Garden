@@ -7,6 +7,11 @@ using UnityEngine.Events;
 
 public class ButtonPopUp : MonoBehaviour
 {
+    public Button buttonSkin1;
+    public Button buttonSkin2;
+    public Button buttonSkin3;
+    PotSkins potSkins;
+
     //watering
     public Watering water;
     public float waterIncrease = 1.1f;
@@ -33,6 +38,7 @@ public class ButtonPopUp : MonoBehaviour
 
     void Start()
     {
+        potSkins = gameObject.GetComponent<PotSkins>();
         col = GetComponent<Collider2D>();
        
         canSell = true;
@@ -58,6 +64,9 @@ public class ButtonPopUp : MonoBehaviour
                     //Debug.Log(Tag);
 
                     OpenPanel(Tag);
+                    buttonSkin1.onClick.AddListener(potSkins.skin1);
+                    buttonSkin2.onClick.AddListener(potSkins.skin2);
+                    buttonSkin3.onClick.AddListener(potSkins.skin3);
                 }
             }
         }
@@ -141,6 +150,9 @@ public class ButtonPopUp : MonoBehaviour
         Button btn = sellButton.GetComponent<Button>();
 
         btn.onClick.RemoveListener(SellPlant);
+        buttonSkin1.onClick.RemoveListener(potSkins.skin1);
+        buttonSkin2.onClick.RemoveListener(potSkins.skin2);
+        buttonSkin3.onClick.RemoveListener(potSkins.skin3);
         Debug.Log("pannelactive = " + pannelActive);
         Debug.Log(Tag);
         
