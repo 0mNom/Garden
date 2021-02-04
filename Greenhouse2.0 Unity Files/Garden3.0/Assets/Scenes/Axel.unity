@@ -1788,8 +1788,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c8d6e3f7a889b46bb3e69fdc3a4a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuySlider: {fileID: 0}
+  WheatSlider: {fileID: 0}
+  SliderValue: {fileID: 0}
   plantingseed: 0
+  wheatprice: 0
+  appleprice: 0
+  tomatoprice: 0
+  eggplantprice: 0
+  pearprice: 0
+  sunflowerprice: 0
+  cherryprice: 0
+  avoprice: 0
+  kiwiprice: 0
   wheatseed: 0
   appleseed: 0
   tomatoseed: 0
@@ -2212,7 +2222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &249788676
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7424,7 +7434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &624138843
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8330,6 +8340,18 @@ PrefabInstance:
       propertyPath: buttonSkin3
       value: 
       objectReference: {fileID: 5051124593875790419}
+    - target: {fileID: 2844716468914934951, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
+      propertyPath: timeTextPot1
+      value: 
+      objectReference: {fileID: 1319458506}
+    - target: {fileID: 2844716468914934951, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
+      propertyPath: timeTextPot2
+      value: 
+      objectReference: {fileID: 624138842}
+    - target: {fileID: 2844716468914934951, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
+      propertyPath: timeTextPot3
+      value: 
+      objectReference: {fileID: 249788675}
     - target: {fileID: 2844716468914934952, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.24
@@ -11274,6 +11296,9 @@ MonoBehaviour:
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -12872,6 +12897,9 @@ MonoBehaviour:
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -13883,6 +13911,9 @@ MonoBehaviour:
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -15987,6 +16018,9 @@ MonoBehaviour:
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -16131,7 +16165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1319458507
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21440,6 +21474,9 @@ MonoBehaviour:
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -23110,8 +23147,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c8d6e3f7a889b46bb3e69fdc3a4a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuySlider: {fileID: 0}
+  WheatSlider: {fileID: 0}
+  SliderValue: {fileID: 0}
   plantingseed: 0
+  wheatprice: 0
+  appleprice: 0
+  tomatoprice: 0
+  eggplantprice: 0
+  pearprice: 0
+  sunflowerprice: 0
+  cherryprice: 0
+  avoprice: 0
+  kiwiprice: 0
   wheatseed: 0
   appleseed: 0
   tomatoseed: 0
@@ -24410,6 +24457,9 @@ MonoBehaviour:
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -24720,6 +24770,9 @@ MonoBehaviour:
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
