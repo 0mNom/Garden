@@ -2863,6 +2863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c8d6e3f7a889b46bb3e69fdc3a4a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BuySlider: {fileID: 0}
   plantingseed: 0
   wheatseed: 0
   appleseed: 0
@@ -14967,15 +14968,15 @@ MonoBehaviour:
   pot5: 0
   pot6: 0
   pot7: 0
-  bag: {fileID: 0}
-  error: {fileID: 0}
-  t_pot1: {fileID: 0}
-  t_pot2: {fileID: 0}
-  t_pot3: {fileID: 0}
-  t_pot4: {fileID: 0}
-  t_pot5: {fileID: 0}
-  t_pot6: {fileID: 0}
-  t_pot7: {fileID: 0}
+  bag: {fileID: 1860585979}
+  error: {fileID: 192989773}
+  t_pot1: {fileID: 2076736253}
+  t_pot2: {fileID: 850548298}
+  t_pot3: {fileID: 1354994786}
+  t_pot4: {fileID: 658115358}
+  t_pot5: {fileID: 1366828141}
+  t_pot6: {fileID: 542450213}
+  t_pot7: {fileID: 110922657}
 --- !u!114 &1403264364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17173,12 +17174,24 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1084542513}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 3
+  m_MaxValue: 100
   m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 636383996}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1596969330
 GameObject:
   m_ObjectHideFlags: 0
@@ -20155,6 +20168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c8d6e3f7a889b46bb3e69fdc3a4a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BuySlider: {fileID: 1591066306}
   plantingseed: 0
   wheatseed: 0
   appleseed: 0
