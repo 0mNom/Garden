@@ -127,46 +127,46 @@ public class BagScript : MonoBehaviour
         }
         else
         {
-            Monay -= 7;
+            Monay -= tomatoprice;
             tomatoseed++;
         }
         t_tomato.text = tomatoseed.ToString();
     }
     public void buyeggplant()
     {
-        if (Monay < 5)
+        if (Monay < eggplantprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 5;
+            Monay -= eggplantprice;
             eggplantseed++;
         }
         t_eggplant.text = eggplantseed.ToString();
     }
     public void buypears()
     {
-        if (Monay < 5)
+        if (Monay < pearprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 5;
+            Monay -= pearprice;
             pearseed++;
         }
         t_pear.text = pearseed.ToString();
     }
     public void buysunflower()
     {
-        if (Monay < 10)
+        if (Monay < sunflowerprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 10;
+            Monay -= sunflowerprice;
             sunflowerseed++;
         }
         t_sunflower.text = sunflowerseed.ToString();
