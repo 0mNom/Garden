@@ -325,6 +325,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (blePlanted)
         {
+            Debug.Log(targetTimeBle3-CurrentTime);
             if (DateTime.Compare(CurrentTime, targetTimeBle3) == 1)
             {
                 canWater = false;
@@ -373,6 +374,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (applePlanted)
         {
+            Debug.Log(targetTimeApple3 - CurrentTime);
             if (DateTime.Compare(CurrentTime, targetTimeApple3) == 1)
             {
                 canWater = false;
@@ -421,6 +423,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (tomatoPlanted)
         {
+            Debug.Log(targetTimeTomato3 - CurrentTime);
             if (DateTime.Compare(CurrentTime, targetTimeTomato3) == 1)
             {
                 canWater = false;
@@ -468,6 +471,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (eggplantPlanted)
         {
+            Debug.Log(targetTimeEggplant3 - CurrentTime);
             if (DateTime.Compare(CurrentTime, targetTimeEggplant3) == 1)
             {
                 canWater = false;
@@ -517,6 +521,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (pearPlanted)
         {
+            Debug.Log(targetTimePear3 - CurrentTime);
             if (DateTime.Compare(CurrentTime, targetTimePear3) == 1)
             {
                 canWater = false;
@@ -566,6 +571,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (sunflowerPlanted)
         {
+            Debug.Log(targetTimeSunflower3 - CurrentTime);
             if (DateTime.Compare(CurrentTime, targetTimeSunflower3) == 1)
             {
                 canWater = false;
@@ -612,7 +618,8 @@ public class ClickToPlant : MonoBehaviour
 
         if (cherryPlanted)
         {
-           if (DateTime.Compare(CurrentTime, targetTimeCherry3) == 1)
+            Debug.Log(targetTimeCherry3 - CurrentTime);
+            if (DateTime.Compare(CurrentTime, targetTimeCherry3) == 1)
            {
                 canWater = false;
                 plantInPot = 7.3f;
@@ -655,6 +662,8 @@ public class ClickToPlant : MonoBehaviour
 
         if (avocadoPlanted)
         {
+
+            Debug.Log(targetTimeAvocado3 - CurrentTime);
             if (DateTime.Compare(CurrentTime, targetTimeAvocado3) == 1)
             {
                 canWater = false;
@@ -703,6 +712,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (kiwiPlanted)
         {
+            Debug.Log(targetTimeKiwi3 - CurrentTime);
             if (DateTime.Compare(CurrentTime, targetTimeKiwi3) == 1)
             {
                 canWater = false;
