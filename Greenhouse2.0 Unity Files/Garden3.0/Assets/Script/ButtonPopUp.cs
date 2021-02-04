@@ -11,6 +11,17 @@ public class ButtonPopUp : MonoBehaviour
     public Button buttonSkin2;
     public Button buttonSkin3;
     PotSkins potSkins;
+    public GameObject timeTextPot1;
+    public GameObject timeTextPot2;
+    public GameObject timeTextPot3;
+    //public GameObject timeTextPot4;
+    //public GameObject timeTextPot5;
+    //public GameObject timeTextPot6;
+    //public GameObject timeTextPot7;
+    //public GameObject timeTextPot8;
+    //public GameObject timeTextPot9;
+    //public GameObject timeTextPot10;
+
 
     //watering
     public Watering water;
@@ -60,6 +71,28 @@ public class ButtonPopUp : MonoBehaviour
                 if (col == touchedCollider && bagScript.canOpenPannel == true)
                 {
                     Tag = col.tag;
+                    if (Tag == "1")
+                    {
+                        timeTextPot1.SetActive(true);
+                        timeTextPot2.SetActive(false);
+                        timeTextPot3.SetActive(false);
+                    }
+
+                    Tag = col.tag;
+                    if (Tag == "2")
+                    {
+                        timeTextPot1.SetActive(false);
+                        timeTextPot2.SetActive(true);
+                        timeTextPot3.SetActive(false);
+                    }
+
+                    Tag = col.tag;
+                    if (Tag == "3")
+                    {
+                        timeTextPot1.SetActive(false);
+                        timeTextPot2.SetActive(false);
+                        timeTextPot3.SetActive(true);
+                    }
 
                     //Debug.Log(Tag);
 
