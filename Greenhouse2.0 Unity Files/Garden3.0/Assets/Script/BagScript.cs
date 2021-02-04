@@ -6,11 +6,10 @@ using TMPro;
 
 public class BagScript : MonoBehaviour
 {
-    public Slider WheatSlider;
+    public Slider BuySlider;
     public TextMeshProUGUI SliderValue;
 
     public int plantingseed;
-    public int wheatprice, appleprice, tomatoprice, eggplantprice, pearprice, sunflowerprice, cherryprice, avoprice, kiwiprice;
     public int wheatseed, appleseed, tomatoseed, eggplantseed, pearseed, sunflowerseed, cherryseed, avoseed, kiwiseed;
     public GameObject error;
     public TMP_Text t_wheat, t_apple, t_tomato, t_eggplant, t_pear, t_sunflower, t_cherry, t_avo, t_kiwi, t_monay, t_gem;
@@ -27,15 +26,6 @@ public class BagScript : MonoBehaviour
         Gems = 100;
         canOpenPannel = true;
         MakePotsShine = false;
-        wheatprice = 5;
-        appleprice = 15;
-        tomatoprice = 7;
-        eggplantprice = 5;
-        pearprice = 5;
-        sunflowerprice = 10;
-        cherryprice = 9;
-        avoprice = 3;
-        kiwiprice = 3;
        
 
     }
@@ -43,7 +33,7 @@ public class BagScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SliderValue.text = WheatSlider.value.ToString();
+        SliderValue.text = BuySlider.value.ToString();
 
         //Debug.Log(plantingseed);
         if (plantingseed == 1)
@@ -79,13 +69,13 @@ public class BagScript : MonoBehaviour
     //Seed Shop 
     public void buyApple()
     {
-        if (Monay < appleprice)
+        if (Monay < 15)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= appleprice;
+            Monay -= 15;
             appleseed++;
         }
 
@@ -94,26 +84,26 @@ public class BagScript : MonoBehaviour
     }
     public void buywheat()
     {
-        if (Monay < wheatprice)
+        if (Monay < 5)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= wheatprice * (int)WheatSlider.value;
-            wheatseed = wheatseed + (int)WheatSlider.value;
+            Monay -= 5 * (int)BuySlider.value;
+            wheatseed = wheatseed + (int)BuySlider.value;
         }
         t_wheat.text = wheatseed.ToString();
     }
     public void buycherry()
     {
-        if (Monay < cherryprice)
+        if (Monay < 9)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= cherryprice;
+            Monay -= 9;
             cherryseed++;
         }
         t_cherry.text = cherryseed.ToString();
@@ -121,52 +111,52 @@ public class BagScript : MonoBehaviour
     }
     public void buytomato()
     {
-        if (Monay < tomatoprice)
+        if (Monay < 7)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= tomatoprice;
+            Monay -= 7;
             tomatoseed++;
         }
         t_tomato.text = tomatoseed.ToString();
     }
     public void buyeggplant()
     {
-        if (Monay < eggplantprice)
+        if (Monay < 5)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= eggplantprice;
+            Monay -= 5;
             eggplantseed++;
         }
         t_eggplant.text = eggplantseed.ToString();
     }
     public void buypears()
     {
-        if (Monay < pearprice)
+        if (Monay < 5)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= pearprice;
+            Monay -= 5;
             pearseed++;
         }
         t_pear.text = pearseed.ToString();
     }
     public void buysunflower()
     {
-        if (Monay < sunflowerprice)
+        if (Monay < 10)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= sunflowerprice;
+            Monay -= 10;
             sunflowerseed++;
         }
         t_sunflower.text = sunflowerseed.ToString();
@@ -341,11 +331,11 @@ public class BagScript : MonoBehaviour
         t_kiwi.text = kiwiseed.ToString();
     }
 
-    public void Sliderwheat()
+    public void Slider()
     {
-        WheatSlider.maxValue = Monay;
-        WheatSlider.value = Monay / wheatprice;
-        WheatSlider.maxValue = WheatSlider.value;
+        BuySlider.maxValue = Monay;
+        BuySlider.value = Monay / 5;
+        BuySlider.maxValue = BuySlider.value;
     }
 
     IEnumerator errr()
