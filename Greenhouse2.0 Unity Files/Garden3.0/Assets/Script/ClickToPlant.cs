@@ -331,7 +331,8 @@ public class ClickToPlant : MonoBehaviour
         {
             Debug.Log(targetTimeBle3 - CurrentTime);
             remainingTime = targetTimeBle3 - CurrentTime;
-            timeRemainingText.text = remainingTime.ToString();
+            timeRemainingText.text = remainingTime.Hours.ToString() + " : " + remainingTime.Minutes.ToString() + " : " + remainingTime.Seconds.ToString() + "left to final evolve";
+
             if (DateTime.Compare(CurrentTime, targetTimeBle3) == 1)
             {
                 canWater = false;
@@ -382,7 +383,7 @@ public class ClickToPlant : MonoBehaviour
         {
             Debug.Log(remainingTime);
             remainingTime = targetTimeApple3 - CurrentTime;
-            timeRemainingText.text = remainingTime.ToString();
+            timeRemainingText.text = remainingTime.Hours.ToString() + " : " + remainingTime.Minutes.ToString() + " : " + remainingTime.Seconds.ToString() + "left to final evolve";
             if (DateTime.Compare(CurrentTime, targetTimeApple3) == 1)
             {
                 canWater = false;
@@ -433,7 +434,7 @@ public class ClickToPlant : MonoBehaviour
         {
             Debug.Log(remainingTime);
             remainingTime = targetTimeTomato3 - CurrentTime;
-            timeRemainingText.text = remainingTime.ToString();
+            timeRemainingText.text = remainingTime.Hours.ToString() + " : " + remainingTime.Minutes.ToString() + " : " + remainingTime.Seconds.ToString() + "left to final evolve";
             if (DateTime.Compare(CurrentTime, targetTimeTomato3) == 1)
             {
                 canWater = false;
@@ -481,7 +482,7 @@ public class ClickToPlant : MonoBehaviour
 
         if (eggplantPlanted)
         {
-            remainingTime = targetTimeEggplant3 - CurrentTime;
+            timeRemainingText.text = remainingTime.Hours.ToString() + " : " + remainingTime.Minutes.ToString() + " : " + remainingTime.Seconds.ToString() + "left to final evolve";
             timeRemainingText.text = remainingTime.ToString();
             Debug.Log(remainingTime);
             if (DateTime.Compare(CurrentTime, targetTimeEggplant3) == 1)
@@ -534,7 +535,7 @@ public class ClickToPlant : MonoBehaviour
         if (pearPlanted)
         {
             remainingTime = targetTimePear3 - CurrentTime;
-            timeRemainingText.text = remainingTime.ToString();
+            timeRemainingText.text = remainingTime.Hours.ToString() + " : " + remainingTime.Minutes.ToString() + " : " + remainingTime.Seconds.ToString() + "left to final evolve";
             Debug.Log(remainingTime);
             if (DateTime.Compare(CurrentTime, targetTimePear3) == 1)
             {
@@ -586,7 +587,7 @@ public class ClickToPlant : MonoBehaviour
         if (sunflowerPlanted)
         {
             remainingTime = targetTimeSunflower3 - CurrentTime;
-            timeRemainingText.text = remainingTime.ToString();
+            timeRemainingText.text = remainingTime.Hours.ToString() + " : " + remainingTime.Minutes.ToString() + " : " + remainingTime.Seconds.ToString() + "left to final evolve";
             Debug.Log(remainingTime);
             if (DateTime.Compare(CurrentTime, targetTimeSunflower3) == 1)
             {
@@ -635,7 +636,7 @@ public class ClickToPlant : MonoBehaviour
         if (cherryPlanted)
         {
             remainingTime = targetTimeCherry3 - CurrentTime;
-            timeRemainingText.text = remainingTime.ToString();
+            timeRemainingText.text = remainingTime.Hours.ToString() + " : " + remainingTime.Minutes.ToString() + " : " + remainingTime.Seconds.ToString() + "left to final evolve";
             Debug.Log(remainingTime);
             if (DateTime.Compare(CurrentTime, targetTimeCherry3) == 1)
            {
@@ -681,7 +682,7 @@ public class ClickToPlant : MonoBehaviour
         if (avocadoPlanted)
         {
             remainingTime = targetTimeAvocado3 - CurrentTime;
-            timeRemainingText.text = remainingTime.ToString();
+            timeRemainingText.text = remainingTime.Hours.ToString() + " : " + remainingTime.Minutes.ToString() + " : " + remainingTime.Seconds.ToString() + "left to final evolve";
             Debug.Log(remainingTime);
             if (DateTime.Compare(CurrentTime, targetTimeAvocado3) == 1)
             {
@@ -732,7 +733,7 @@ public class ClickToPlant : MonoBehaviour
         if (kiwiPlanted)
         {
             remainingTime = targetTimeKiwi3 - CurrentTime;
-            timeRemainingText.text = remainingTime.ToString();
+            timeRemainingText.text = remainingTime.Hours.ToString() + " : " + remainingTime.Minutes.ToString() + " : " + remainingTime.Seconds.ToString() + "left to final evolve";
             Debug.Log(remainingTime);
             if (DateTime.Compare(CurrentTime, targetTimeKiwi3) == 1)
             {
