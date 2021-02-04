@@ -10,6 +10,7 @@ public class BagScript : MonoBehaviour
     public TextMeshProUGUI SliderValue;
 
     public int plantingseed;
+    public int wheatprice, appleprice, tomatoprice, eggplantprice, pearprice, sunflowerprice, cherryprice, avoprice, kiwiprice;
     public int wheatseed, appleseed, tomatoseed, eggplantseed, pearseed, sunflowerseed, cherryseed, avoseed, kiwiseed;
     public GameObject error;
     public TMP_Text t_wheat, t_apple, t_tomato, t_eggplant, t_pear, t_sunflower, t_cherry, t_avo, t_kiwi, t_monay, t_gem;
@@ -26,7 +27,15 @@ public class BagScript : MonoBehaviour
         Gems = 100;
         canOpenPannel = true;
         MakePotsShine = false;
-       
+        wheatprice = 5;
+        appleprice = 15;
+        cherryprice = 9;
+        tomatoprice = 7;
+        eggplantprice = 5;
+        pearprice = 5;
+        sunflowerprice = 10;
+        avoprice = 3;
+        kiwiprice = 8;
 
     }
 
@@ -84,13 +93,13 @@ public class BagScript : MonoBehaviour
     }
     public void buywheat()
     {
-        if (Monay < 5)
+        if (Monay < wheatprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 5 * (int)BuySlider.value;
+            Monay -= wheatprice * (int)BuySlider.value;
             wheatseed = wheatseed + (int)BuySlider.value;
         }
         t_wheat.text = wheatseed.ToString();
@@ -331,10 +340,10 @@ public class BagScript : MonoBehaviour
         t_kiwi.text = kiwiseed.ToString();
     }
 
-    public void Slider()
+    public void WheatSlider()
     {
         BuySlider.maxValue = Monay;
-        BuySlider.value = Monay / 5;
+        BuySlider.value = Monay / wheatprice;
         BuySlider.maxValue = BuySlider.value;
     }
 
