@@ -6,9 +6,11 @@ using TMPro;
 
 public class BagScript : MonoBehaviour
 {
-    public Slider BuySlider;
+    public Slider WheatSlider;
+    public TextMeshProUGUI SliderValue;
 
     public int plantingseed;
+    public int wheatprice, appleprice, tomatoprice, eggplantprice, pearprice, sunflowerprice, cherryprice, avoprice, kiwiprice;
     public int wheatseed, appleseed, tomatoseed, eggplantseed, pearseed, sunflowerseed, cherryseed, avoseed, kiwiseed;
     public GameObject error;
     public TMP_Text t_wheat, t_apple, t_tomato, t_eggplant, t_pear, t_sunflower, t_cherry, t_avo, t_kiwi, t_monay, t_gem;
@@ -25,14 +27,26 @@ public class BagScript : MonoBehaviour
         Gems = 100;
         canOpenPannel = true;
         MakePotsShine = false;
-        BuySlider.maxValue = Monay;
+        wheatprice = 5;
+        appleprice = 15;
+        tomatoprice = 7;
+        eggplantprice = 5;
+        pearprice = 5;
+        sunflowerprice = 10;
+        cherryprice = 9;
+        avoprice = 3;
+        kiwiprice = 3;
+       
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        SliderValue.text = WheatSlider.value.ToString();
+
         //Debug.Log(plantingseed);
-        if(plantingseed == 1)
+        if (plantingseed == 1)
         {
 
         }
@@ -65,13 +79,13 @@ public class BagScript : MonoBehaviour
     //Seed Shop 
     public void buyApple()
     {
-        if (Monay < 15)
+        if (Monay < appleprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 15;
+            Monay -= appleprice;
             appleseed++;
         }
 
@@ -80,26 +94,26 @@ public class BagScript : MonoBehaviour
     }
     public void buywheat()
     {
-        if (Monay < 5)
+        if (Monay < wheatprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 5;
-            wheatseed++;
+            Monay -= wheatprice * (int)WheatSlider.value;
+            wheatseed = wheatseed + (int)WheatSlider.value;
         }
         t_wheat.text = wheatseed.ToString();
     }
     public void buycherry()
     {
-        if (Monay < 9)
+        if (Monay < cherryprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 9;
+            Monay -= cherryprice;
             cherryseed++;
         }
         t_cherry.text = cherryseed.ToString();
@@ -107,7 +121,7 @@ public class BagScript : MonoBehaviour
     }
     public void buytomato()
     {
-        if (Monay < 7)
+        if (Monay < tomatoprice)
         {
             StartCoroutine("errr");
         }
@@ -325,6 +339,13 @@ public class BagScript : MonoBehaviour
             //kiwiseed--;
         }
         t_kiwi.text = kiwiseed.ToString();
+    }
+
+    public void Sliderwheat()
+    {
+        WheatSlider.maxValue = Monay;
+        WheatSlider.value = Monay / wheatprice;
+        WheatSlider.maxValue = WheatSlider.value;
     }
 
     IEnumerator errr()
