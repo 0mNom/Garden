@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class BagScript : MonoBehaviour
 {
+    public Slider BuySlider;
+
     public int plantingseed;
     public int wheatseed, appleseed, tomatoseed, eggplantseed, pearseed, sunflowerseed, cherryseed, avoseed, kiwiseed;
     public GameObject error;
@@ -22,6 +25,7 @@ public class BagScript : MonoBehaviour
         Gems = 100;
         canOpenPannel = true;
         MakePotsShine = false;
+        BuySlider.maxValue = Monay;
     }
 
     // Update is called once per frame
