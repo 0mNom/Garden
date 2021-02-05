@@ -6,9 +6,27 @@ using TMPro;
 
 public class BagScript : MonoBehaviour
 {
-    public Slider BuySlider;
+    public Slider SliderWheat;
+    public Slider SliderApple;
+    public Slider SliderTomato;
+    public Slider SliderEggplant;
+    public Slider SliderPear;
+    public Slider SliderSunflower;
+    public Slider SliderCherry;
+    public Slider SliderAvo;
+    public Slider SliderKiwi;
+    public TextMeshProUGUI SliderValueWheat;
+    public TextMeshProUGUI SliderValueApple;
+    public TextMeshProUGUI SliderValueTomato;
+    public TextMeshProUGUI SliderValueEggplant;
+    public TextMeshProUGUI SliderValuePear;
+    public TextMeshProUGUI SliderValueSunflower;
+    public TextMeshProUGUI SliderValueCherry;
+    public TextMeshProUGUI SliderValueAvo;
+    public TextMeshProUGUI SliderValueKiwi;
 
     public int plantingseed;
+    public int wheatprice, appleprice, tomatoprice, eggplantprice, pearprice, sunflowerprice, cherryprice, avoprice, kiwiprice;
     public int wheatseed, appleseed, tomatoseed, eggplantseed, pearseed, sunflowerseed, cherryseed, avoseed, kiwiseed;
     public GameObject error;
     public TMP_Text t_wheat, t_apple, t_tomato, t_eggplant, t_pear, t_sunflower, t_cherry, t_avo, t_kiwi, t_monay, t_gem;
@@ -25,14 +43,33 @@ public class BagScript : MonoBehaviour
         Gems = 100;
         canOpenPannel = true;
         MakePotsShine = false;
-        BuySlider.maxValue = Monay;
+        wheatprice = 5;
+        appleprice = 15;
+        cherryprice = 9;
+        tomatoprice = 7;
+        eggplantprice = 5;
+        pearprice = 5;
+        sunflowerprice = 10;
+        avoprice = 3;
+        kiwiprice = 8;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        SliderValueWheat.text = SliderWheat.value.ToString();
+        SliderValueApple.text = SliderApple.value.ToString();
+        SliderValueCherry.text = SliderCherry.value.ToString();
+        SliderValueTomato.text = SliderTomato.value.ToString();
+        SliderValueEggplant.text = SliderEggplant.value.ToString();
+        SliderValuePear.text = SliderPear.value.ToString();
+        SliderValueSunflower.text = SliderSunflower.value.ToString();
+        SliderValueAvo.text = SliderAvo.value.ToString();
+        SliderValueKiwi.text = SliderKiwi.value.ToString();
+
         //Debug.Log(plantingseed);
-        if(plantingseed == 1)
+        if (plantingseed == 1)
         {
 
         }
@@ -65,14 +102,14 @@ public class BagScript : MonoBehaviour
     //Seed Shop 
     public void buyApple()
     {
-        if (Monay < 15)
+        if (Monay < appleprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 15;
-            appleseed++;
+            Monay -= appleprice * (int)SliderApple.value;
+            appleseed = appleseed + (int)SliderApple.value;
         }
 
         t_apple.text = appleseed.ToString();
@@ -80,106 +117,106 @@ public class BagScript : MonoBehaviour
     }
     public void buywheat()
     {
-        if (Monay < 5)
+        if (Monay < wheatprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 5;
-            wheatseed++;
+            Monay -= wheatprice * (int)SliderWheat.value;
+            wheatseed = wheatseed + (int)SliderWheat.value;
         }
         t_wheat.text = wheatseed.ToString();
     }
     public void buycherry()
     {
-        if (Monay < 9)
+        if (Monay < cherryprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 9;
-            cherryseed++;
+            Monay -= cherryprice * (int)SliderCherry.value;
+            cherryseed = cherryseed + (int)SliderCherry.value;
         }
         t_cherry.text = cherryseed.ToString();
 
     }
     public void buytomato()
     {
-        if (Monay < 7)
+        if (Monay < tomatoprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 7;
-            tomatoseed++;
+            Monay -= tomatoprice * (int)SliderTomato.value;
+            tomatoseed = tomatoseed + (int)SliderTomato.value;
         }
         t_tomato.text = tomatoseed.ToString();
     }
     public void buyeggplant()
     {
-        if (Monay < 5)
+        if (Monay < eggplantprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 5;
-            eggplantseed++;
+            Monay -= eggplantprice * (int)SliderEggplant.value;
+            eggplantseed = eggplantseed + (int)SliderEggplant.value;
         }
         t_eggplant.text = eggplantseed.ToString();
     }
     public void buypears()
     {
-        if (Monay < 5)
+        if (Monay < pearprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 5;
-            pearseed++;
+            Monay -= pearprice * (int)SliderPear.value;
+            pearseed = pearseed + (int)SliderPear.value;
         }
         t_pear.text = pearseed.ToString();
     }
     public void buysunflower()
     {
-        if (Monay < 10)
+        if (Monay < sunflowerprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 10;
-            sunflowerseed++;
+            Monay -= sunflowerprice * (int)SliderSunflower.value;
+            sunflowerseed = sunflowerseed * (int)SliderSunflower.value;
         }
         t_sunflower.text = sunflowerseed.ToString();
     }
     public void buyavo()
     {
-        if (Monay < 3)
+        if (Monay < avoprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 3;
-            avoseed++;
+            Monay -= avoprice * (int)SliderAvo.value;
+            avoseed = avoseed * (int)SliderAvo.value;
         }
         t_avo.text = avoseed.ToString();
     }
     public void buykiwi()
     {
-        if (Monay < 3)
+        if (Monay < kiwiprice)
         {
             StartCoroutine("errr");
         }
         else
         {
-            Monay -= 3;
-            kiwiseed++;
+            Monay -= kiwiprice * (int)SliderKiwi.value;
+            kiwiseed = kiwiseed * (int)SliderKiwi.value; 
         }
         t_kiwi.text = kiwiseed.ToString();
     }
@@ -325,6 +362,69 @@ public class BagScript : MonoBehaviour
             //kiwiseed--;
         }
         t_kiwi.text = kiwiseed.ToString();
+    }
+
+    public void WheatSlider()
+    {
+        SliderWheat.maxValue = Monay;
+        SliderWheat.value = Monay / wheatprice;
+        SliderWheat.maxValue = SliderWheat.value;
+    }
+
+    public void AppleSlider()
+    {
+        SliderApple.maxValue = Monay;
+        SliderApple.value = Monay / appleprice;
+        SliderApple.maxValue = SliderApple.value;
+    }
+
+    public void CherrySlider()
+    {
+        SliderCherry.maxValue = Monay;
+        SliderCherry.value = Monay / cherryprice;
+        SliderCherry.maxValue = SliderCherry.value;
+    }
+
+    public void SunflowerSlider()
+    {
+        SliderSunflower.maxValue = Monay;
+        SliderSunflower.value = Monay / sunflowerprice;
+        SliderSunflower.maxValue = SliderSunflower.value;
+    }
+
+    public void EggplantSlider()
+    {
+        SliderEggplant.maxValue = Monay;
+        SliderEggplant.value = Monay / eggplantprice;
+        SliderEggplant.maxValue = SliderEggplant.value;
+    }
+
+    public void PearSlider()
+    {
+        SliderPear.maxValue = Monay;
+        SliderPear.value = Monay / pearprice;
+        SliderPear.maxValue = SliderPear.value;
+    }
+
+    public void KiwiSlider()
+    {
+        SliderKiwi.maxValue = Monay;
+        SliderKiwi.value = Monay / kiwiprice;
+        SliderKiwi.maxValue = SliderKiwi.value;
+    }
+
+    public void AvoSlider()
+    {
+        SliderAvo.maxValue = Monay;
+        SliderAvo.value = Monay / avoprice;
+        SliderAvo.maxValue = SliderAvo.value;
+    }
+
+    public void TomatoSlider()
+    {
+        SliderTomato.maxValue = Monay;
+        SliderTomato.value = Monay / tomatoprice;
+        SliderTomato.maxValue = SliderTomato.value;
     }
 
     IEnumerator errr()
