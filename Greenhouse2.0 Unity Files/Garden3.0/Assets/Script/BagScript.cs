@@ -190,7 +190,7 @@ public class BagScript : MonoBehaviour
         else
         {
             Monay -= sunflowerprice * (int)SliderSunflower.value;
-            sunflowerseed = sunflowerseed * (int)SliderSunflower.value;
+            sunflowerseed = sunflowerseed + (int)SliderSunflower.value;
         }
         t_sunflower.text = sunflowerseed.ToString();
     }
@@ -203,7 +203,7 @@ public class BagScript : MonoBehaviour
         else
         {
             Monay -= avoprice * (int)SliderAvo.value;
-            avoseed = avoseed * (int)SliderAvo.value;
+            avoseed = avoseed + (int)SliderAvo.value;
         }
         t_avo.text = avoseed.ToString();
     }
@@ -216,7 +216,7 @@ public class BagScript : MonoBehaviour
         else
         {
             Monay -= kiwiprice * (int)SliderKiwi.value;
-            kiwiseed = kiwiseed * (int)SliderKiwi.value; 
+            kiwiseed = kiwiseed + (int)SliderKiwi.value; 
         }
         t_kiwi.text = kiwiseed.ToString();
     }
