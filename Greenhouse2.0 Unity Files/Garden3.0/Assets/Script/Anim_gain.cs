@@ -21,10 +21,13 @@ public class Anim_gain : MonoBehaviour
         WaitForAnim();
         GetComponent<Animator>().SetBool("isClicked", true);
     }
-
+    public void StopAnimation()
+    {
+        WaitForAnim();
+        GetComponent<Animator>().SetBool("isClicked", false);
+    }
     IEnumerator WaitForAnim()
     {
-        GetComponent<Animator>().SetBool("isClicked", false);
         Debug.Log("set to false");
         yield return new WaitForSeconds(1);
     }
