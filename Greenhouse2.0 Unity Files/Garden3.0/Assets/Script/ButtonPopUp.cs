@@ -186,8 +186,8 @@ public class ButtonPopUp : MonoBehaviour
         buttonSkin1.onClick.RemoveListener(potSkins.skin1);
         buttonSkin2.onClick.RemoveListener(potSkins.skin2);
         buttonSkin3.onClick.RemoveListener(potSkins.skin3);
-        Debug.Log("pannelactive = " + pannelActive);
-        Debug.Log(Tag);
+        //Debug.Log("pannelactive = " + pannelActive);
+        //Debug.Log(Tag);
         
     }
 
@@ -214,7 +214,7 @@ public class ButtonPopUp : MonoBehaviour
             ImagePlantDuPopUp.sprite = null;
             clickToPlantScript.EnvoyerVariable(Tag);
 
-            Debug.Log(clickToPlantScript.plantFinished);
+            //Debug.Log(clickToPlantScript.plantFinished);
             canSell = false;
             Tag = null;
             Button btn = sellButton.GetComponent<Button>();
@@ -245,12 +245,12 @@ public class ButtonPopUp : MonoBehaviour
         ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
         if (clickToPlantScript.canWater == true)
         {
-            Debug.Log(clickToPlantScript.canWater);
+            //Debug.Log(clickToPlantScript.canWater);
             water.water();
             clickToPlantScript.canWater = false;
             clickToPlantScript.sellingPrice = (int)((float)clickToPlantScript.sellingPrice * 1.1);
         }
         //Debug.Log(clickToPlantScript.canWater);
-        Debug.Log(clickToPlantScript.sellingPrice);
+        //Debug.Log(clickToPlantScript.sellingPrice);
     }
 }

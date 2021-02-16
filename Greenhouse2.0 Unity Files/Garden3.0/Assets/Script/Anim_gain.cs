@@ -28,7 +28,7 @@ public class Anim_gain : MonoBehaviour
     }
     IEnumerator WaitForAnim()
     {
-        Debug.Log("set to false");
+        //Debug.Log("set to false");
         yield return new WaitForSeconds(1);
     }
 }
