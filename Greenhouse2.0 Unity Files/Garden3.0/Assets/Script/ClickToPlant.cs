@@ -42,7 +42,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimeBle1;
     DateTime targetTimeBle2;
     DateTime targetTimeBle3;
-    float growingTimeBle = 12;
+    float growingTimeBle = 300;
     public bool finishedBle = false;
 
     //specific to apple
@@ -798,15 +798,21 @@ public class ClickToPlant : MonoBehaviour
         BagScript bagScript = bagObject.GetComponent<BagScript>();
         bagScript.canOpenPannel = true;
     }
-
-    /*
-    public void watering()
+    
+    public void PayedToFinishPlant()
     {
-        water.water();
-        canWater = false;
-        sellingPrice = (int)((float) sellingPrice * 1.1) ;
-        Debug.Log(sellingPrice);
-
+        ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+        //Debug.Log(buttonPopUpScript.GemPrice);
+        BagScript bagScript = bagObject.GetComponent<BagScript>();
+        bagScript.Gems = bagScript.Gems - buttonPopUpScript.GemPrice;
+        targetTimeApple3 = CurrentTime;
+        targetTimeAvocado3 = CurrentTime;
+        targetTimeBle3 = CurrentTime;
+        targetTimeCherry3 = CurrentTime;
+        targetTimeEggplant3 = CurrentTime;
+        targetTimeKiwi3 = CurrentTime;
+        targetTimePear3 = CurrentTime;
+        targetTimeSunflower3 = CurrentTime;
+        targetTimeTomato3 = CurrentTime;
     }
-    */
 }

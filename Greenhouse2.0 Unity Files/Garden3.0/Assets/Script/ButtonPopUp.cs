@@ -7,6 +7,12 @@ using UnityEngine.Events;
 
 public class ButtonPopUp : MonoBehaviour
 {
+    public int GemPrice;
+
+    public GameObject Pot1;
+    public GameObject Pot2;
+    public GameObject Pot3;
+
     public Button buttonSkin1;
     public Button buttonSkin2;
     public Button buttonSkin3;
@@ -14,6 +20,11 @@ public class ButtonPopUp : MonoBehaviour
     public GameObject timeTextPot1;
     public GameObject timeTextPot2;
     public GameObject timeTextPot3;
+
+    public GameObject Pay2FastButtonPot1;
+    public GameObject Pay2FastButtonPot2;
+    public GameObject Pay2FastButtonPot3;
+    //public GameObject Pay2FastButtonPot;
     //public GameObject timeTextPot4;
     //public GameObject timeTextPot5;
     //public GameObject timeTextPot6;
@@ -114,13 +125,89 @@ public class ButtonPopUp : MonoBehaviour
                 //Debug.Log(gameObject);
                 Button btn = sellButton.GetComponent<Button>();
 
-                btn.onClick.AddListener(SellPlant);
+                    btn.onClick.AddListener(SellPlant);
             }
 
             if (!clickToPlantScript.plantFinished)
             {
                 // Debug.Log("yess ");
                 sellButton.gameObject.SetActive(false);
+            }
+            
+            if (clickToPlantScript.gotPlant)
+            {
+                if (Tag == "1")
+                {
+                    Pay2FastButtonPot1.SetActive(true);
+                    Pay2FastButtonPot2.SetActive(false);
+                    Pay2FastButtonPot3.SetActive(false);
+                }
+
+                Tag = col.tag;
+                if (Tag == "2")
+                {
+                    Pay2FastButtonPot1.SetActive(false);
+                    Pay2FastButtonPot2.SetActive(true);
+                    Pay2FastButtonPot3.SetActive(false);
+                }
+
+                Tag = col.tag;
+                if (Tag == "3")
+                {
+                    Pay2FastButtonPot1.SetActive(false);
+                    Pay2FastButtonPot2.SetActive(false);
+                    Pay2FastButtonPot3.SetActive(true);
+                }
+            }
+
+            if (clickToPlantScript.gotPlant == false)
+            {
+                Pay2FastButtonPot1.SetActive(false);
+                Pay2FastButtonPot2.SetActive(false);
+                Pay2FastButtonPot3.SetActive(false);
+            }
+
+
+                //PAY TO FAST PART
+                GemPrice = clickToPlantScript.remainingTime.Minutes;
+            if (GemPrice == 0 && clickToPlantScript.gotPlant)
+            {
+                GemPrice = 1;
+            }
+            
+
+
+            // yessai works
+            if (Tag == "1")
+            {
+                int GemPrice1 = clickToPlantScript.remainingTime.Minutes;
+                if (GemPrice1 == 0 && clickToPlantScript.plantFinished == false)
+                {
+                    GemPrice1 = 1;
+                }
+                Pay2FastButtonPot1.GetComponentInChildren<TMP_Text>().text = "USE " + GemPrice1.ToString() + " GEMS";
+            }
+
+            Tag = col.tag;
+            if (Tag == "2")
+            {
+                int GemPrice2 = clickToPlantScript.remainingTime.Minutes;
+                if (GemPrice2 == 0 && clickToPlantScript.plantFinished == false)
+                {
+                    GemPrice2 = 1;
+                }
+                Pay2FastButtonPot2.GetComponentInChildren<TMP_Text>().text = "USE " + GemPrice2.ToString() + " GEMS";
+            }
+
+            Tag = col.tag;
+            if (Tag == "3")
+            {
+                int GemPrice3 = clickToPlantScript.remainingTime.Minutes;
+                if (GemPrice3 == 0 && clickToPlantScript.plantFinished == false)
+                {
+                    GemPrice3 = 1;
+                }
+                Pay2FastButtonPot3.GetComponentInChildren<TMP_Text>().text = "USE " + GemPrice3.ToString() + " GEMS";
             }
         }
         
@@ -156,6 +243,8 @@ public class ButtonPopUp : MonoBehaviour
         ImagePlantDuPopUp.sprite = spritePlant.sprite;
 
         wateringButton.onClick.AddListener(WaterOnClick);
+
+        DisableBoxColliders();
         //Debug.Log(tag);
     }
 
@@ -188,7 +277,8 @@ public class ButtonPopUp : MonoBehaviour
         buttonSkin3.onClick.RemoveListener(potSkins.skin3);
         //Debug.Log("pannelactive = " + pannelActive);
         //Debug.Log(Tag);
-        
+
+        EnableBoxCollider();
     }
 
 
@@ -252,5 +342,19 @@ public class ButtonPopUp : MonoBehaviour
         }
         //Debug.Log(clickToPlantScript.canWater);
         //Debug.Log(clickToPlantScript.sellingPrice);
+    }
+
+    public void DisableBoxColliders()
+    {
+        Pot1.GetComponent<BoxCollider2D>().enabled = false;
+        Pot2.GetComponent<BoxCollider2D>().enabled = false;
+        Pot3.GetComponent<BoxCollider2D>().enabled = false;
+    }
+
+    public void EnableBoxCollider()
+    {
+        Pot1.GetComponent<BoxCollider2D>().enabled = true;
+        Pot2.GetComponent<BoxCollider2D>().enabled = true;
+        Pot3.GetComponent<BoxCollider2D>().enabled = true;
     }
 }
