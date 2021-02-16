@@ -190,7 +190,7 @@ public class BagScript : MonoBehaviour
         else
         {
             Monay -= sunflowerprice * (int)SliderSunflower.value;
-            sunflowerseed = sunflowerseed * (int)SliderSunflower.value;
+            sunflowerseed = sunflowerseed + (int)SliderSunflower.value;
         }
         t_sunflower.text = sunflowerseed.ToString();
     }
@@ -203,7 +203,7 @@ public class BagScript : MonoBehaviour
         else
         {
             Monay -= avoprice * (int)SliderAvo.value;
-            avoseed = avoseed * (int)SliderAvo.value;
+            avoseed = avoseed + (int)SliderAvo.value;
         }
         t_avo.text = avoseed.ToString();
     }
@@ -216,7 +216,7 @@ public class BagScript : MonoBehaviour
         else
         {
             Monay -= kiwiprice * (int)SliderKiwi.value;
-            kiwiseed = kiwiseed * (int)SliderKiwi.value; 
+            kiwiseed = kiwiseed + (int)SliderKiwi.value; 
         }
         t_kiwi.text = kiwiseed.ToString();
     }
@@ -366,65 +366,129 @@ public class BagScript : MonoBehaviour
 
     public void WheatSlider()
     {
-        SliderWheat.maxValue = Monay;
+        SliderWheat.maxValue = Monay; 
         SliderWheat.value = Monay / wheatprice;
-        SliderWheat.maxValue = SliderWheat.value;
+        if (SliderWheat.value > 10)
+        {
+            SliderWheat.maxValue = 10;
+        }
+        else
+        {
+            SliderWheat.maxValue = SliderWheat.value;
+        }
+        
     }
 
     public void AppleSlider()
     {
         SliderApple.maxValue = Monay;
         SliderApple.value = Monay / appleprice;
-        SliderApple.maxValue = SliderApple.value;
+        if (SliderApple.value > 10)
+        {
+            SliderApple.maxValue = 10;
+        }
+        else
+        {
+            SliderApple.maxValue = SliderApple.value;
+        }
     }
 
     public void CherrySlider()
     {
         SliderCherry.maxValue = Monay;
         SliderCherry.value = Monay / cherryprice;
-        SliderCherry.maxValue = SliderCherry.value;
+        if (SliderCherry.value > 10)
+        {
+            SliderCherry.maxValue = 10;
+        }
+        else
+        {
+            SliderCherry.maxValue = SliderCherry.value;
+        }
     }
 
     public void SunflowerSlider()
     {
         SliderSunflower.maxValue = Monay;
         SliderSunflower.value = Monay / sunflowerprice;
-        SliderSunflower.maxValue = SliderSunflower.value;
+        if (SliderSunflower.value > 10)
+        {
+            SliderSunflower.maxValue = 10;
+        }
+        else
+        {
+            SliderSunflower.maxValue = SliderSunflower.value;
+        }
     }
 
     public void EggplantSlider()
     {
         SliderEggplant.maxValue = Monay;
         SliderEggplant.value = Monay / eggplantprice;
-        SliderEggplant.maxValue = SliderEggplant.value;
+        if (SliderEggplant.value > 10)
+        {
+            SliderEggplant.maxValue = 10;
+        }
+        else
+        {
+            SliderEggplant.maxValue = SliderEggplant.value;
+        }
     }
 
     public void PearSlider()
     {
         SliderPear.maxValue = Monay;
         SliderPear.value = Monay / pearprice;
-        SliderPear.maxValue = SliderPear.value;
+        if (SliderPear.value > 10)
+        {
+            SliderPear.maxValue = 10;
+        }
+        else
+        {
+            SliderPear.maxValue = SliderPear.value;
+        }
     }
 
     public void KiwiSlider()
     {
         SliderKiwi.maxValue = Monay;
         SliderKiwi.value = Monay / kiwiprice;
-        SliderKiwi.maxValue = SliderKiwi.value;
+        if (SliderKiwi.value > 10)
+        {
+            SliderKiwi.maxValue = 10;
+        }
+        else
+        {
+            SliderKiwi.maxValue = SliderKiwi.value;
+        }
     }
 
     public void AvoSlider()
     {
         SliderAvo.maxValue = Monay;
         SliderAvo.value = Monay / avoprice;
-        SliderAvo.maxValue = SliderAvo.value;
+        if (SliderAvo.value > 10)
+        {
+            SliderAvo.maxValue = 10;
+        }
+        else
+        {
+            SliderAvo.maxValue = SliderAvo.value;
+        }
     }
 
     public void TomatoSlider()
     {
         SliderTomato.maxValue = Monay;
         SliderTomato.value = Monay / tomatoprice;
-        SliderTomato.maxValue = SliderTomato.value;
+        if (SliderTomato.value > 10)
+        {
+            SliderTomato.maxValue = 10;
+        }
+        else
+        {
+            SliderTomato.maxValue = SliderTomato.value;
+        }
     }
 
     IEnumerator errr()
