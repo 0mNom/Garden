@@ -2080,8 +2080,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c8d6e3f7a889b46bb3e69fdc3a4a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuySlider: {fileID: 0}
+  SliderWheat: {fileID: 0}
+  SliderApple: {fileID: 0}
+  SliderTomato: {fileID: 0}
+  SliderEggplant: {fileID: 0}
+  SliderPear: {fileID: 0}
+  SliderSunflower: {fileID: 0}
+  SliderCherry: {fileID: 0}
+  SliderAvo: {fileID: 0}
+  SliderKiwi: {fileID: 0}
+  SliderValueWheat: {fileID: 0}
+  SliderValueApple: {fileID: 0}
+  SliderValueTomato: {fileID: 0}
+  SliderValueEggplant: {fileID: 0}
+  SliderValuePear: {fileID: 0}
+  SliderValueSunflower: {fileID: 0}
+  SliderValueCherry: {fileID: 0}
+  SliderValueAvo: {fileID: 0}
+  SliderValueKiwi: {fileID: 0}
   plantingseed: 0
+  wheatprice: 0
+  appleprice: 0
+  tomatoprice: 0
+  eggplantprice: 0
+  pearprice: 0
+  sunflowerprice: 0
+  cherryprice: 0
+  avoprice: 0
+  kiwiprice: 0
   wheatseed: 0
   appleseed: 0
   tomatoseed: 0
@@ -13169,9 +13195,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GemPrice: 0
+  Pot1: {fileID: 0}
+  Pot2: {fileID: 0}
+  Pot3: {fileID: 0}
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
+  Pay2FastButtonPot1: {fileID: 0}
+  Pay2FastButtonPot2: {fileID: 0}
+  Pay2FastButtonPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -15031,9 +15067,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GemPrice: 0
+  Pot1: {fileID: 0}
+  Pot2: {fileID: 0}
+  Pot3: {fileID: 0}
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
+  Pay2FastButtonPot1: {fileID: 0}
+  Pay2FastButtonPot2: {fileID: 0}
+  Pay2FastButtonPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -16730,9 +16776,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GemPrice: 0
+  Pot1: {fileID: 0}
+  Pot2: {fileID: 0}
+  Pot3: {fileID: 0}
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
+  Pay2FastButtonPot1: {fileID: 0}
+  Pay2FastButtonPot2: {fileID: 0}
+  Pay2FastButtonPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -19199,9 +19255,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GemPrice: 0
+  Pot1: {fileID: 0}
+  Pot2: {fileID: 0}
+  Pot3: {fileID: 0}
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
+  Pay2FastButtonPot1: {fileID: 0}
+  Pay2FastButtonPot2: {fileID: 0}
+  Pay2FastButtonPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -24993,9 +25059,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GemPrice: 0
+  Pot1: {fileID: 0}
+  Pot2: {fileID: 0}
+  Pot3: {fileID: 0}
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
+  Pay2FastButtonPot1: {fileID: 0}
+  Pay2FastButtonPot2: {fileID: 0}
+  Pay2FastButtonPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -27163,8 +27239,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c8d6e3f7a889b46bb3e69fdc3a4a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuySlider: {fileID: 0}
+  SliderWheat: {fileID: 0}
+  SliderApple: {fileID: 0}
+  SliderTomato: {fileID: 0}
+  SliderEggplant: {fileID: 0}
+  SliderPear: {fileID: 0}
+  SliderSunflower: {fileID: 0}
+  SliderCherry: {fileID: 0}
+  SliderAvo: {fileID: 0}
+  SliderKiwi: {fileID: 0}
+  SliderValueWheat: {fileID: 0}
+  SliderValueApple: {fileID: 0}
+  SliderValueTomato: {fileID: 0}
+  SliderValueEggplant: {fileID: 0}
+  SliderValuePear: {fileID: 0}
+  SliderValueSunflower: {fileID: 0}
+  SliderValueCherry: {fileID: 0}
+  SliderValueAvo: {fileID: 0}
+  SliderValueKiwi: {fileID: 0}
   plantingseed: 0
+  wheatprice: 0
+  appleprice: 0
+  tomatoprice: 0
+  eggplantprice: 0
+  pearprice: 0
+  sunflowerprice: 0
+  cherryprice: 0
+  avoprice: 0
+  kiwiprice: 0
   wheatseed: 0
   appleseed: 0
   tomatoseed: 0
@@ -28608,7 +28710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1990847052
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29074,9 +29176,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GemPrice: 0
+  Pot1: {fileID: 0}
+  Pot2: {fileID: 0}
+  Pot3: {fileID: 0}
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
+  Pay2FastButtonPot1: {fileID: 0}
+  Pay2FastButtonPot2: {fileID: 0}
+  Pay2FastButtonPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -29652,9 +29764,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GemPrice: 0
+  Pot1: {fileID: 0}
+  Pot2: {fileID: 0}
+  Pot3: {fileID: 0}
   buttonSkin1: {fileID: 0}
   buttonSkin2: {fileID: 0}
   buttonSkin3: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
+  Pay2FastButtonPot1: {fileID: 0}
+  Pay2FastButtonPot2: {fileID: 0}
+  Pay2FastButtonPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
