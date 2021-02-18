@@ -170,7 +170,7 @@ public class ButtonPopUp : MonoBehaviour
 
                 //PAY TO FAST PART
                 GemPrice = clickToPlantScript.remainingTime.Minutes;
-            if (GemPrice == 0 && clickToPlantScript.gotPlant)
+            if (GemPrice == 0 && clickToPlantScript.gotPlant && clickToPlantScript.plantFinished == false)
             {
                 GemPrice = 1;
             }
@@ -181,7 +181,7 @@ public class ButtonPopUp : MonoBehaviour
             if (Tag == "1")
             {
                 int GemPrice1 = clickToPlantScript.remainingTime.Minutes;
-                if (GemPrice1 == 0 && clickToPlantScript.plantFinished == false)
+                if (GemPrice1 == 0 && clickToPlantScript.plantFinished == false && clickToPlantScript.plantFinished == false)
                 {
                     GemPrice1 = 1;
                 }
@@ -192,7 +192,7 @@ public class ButtonPopUp : MonoBehaviour
             if (Tag == "2")
             {
                 int GemPrice2 = clickToPlantScript.remainingTime.Minutes;
-                if (GemPrice2 == 0 && clickToPlantScript.plantFinished == false)
+                if (GemPrice2 == 0 && clickToPlantScript.plantFinished == false && clickToPlantScript.plantFinished == false)
                 {
                     GemPrice2 = 1;
                 }
@@ -203,7 +203,7 @@ public class ButtonPopUp : MonoBehaviour
             if (Tag == "3")
             {
                 int GemPrice3 = clickToPlantScript.remainingTime.Minutes;
-                if (GemPrice3 == 0 && clickToPlantScript.plantFinished == false)
+                if (GemPrice3 == 0 && clickToPlantScript.plantFinished == false && clickToPlantScript.plantFinished == false)
                 {
                     GemPrice3 = 1;
                 }
@@ -222,7 +222,7 @@ public class ButtonPopUp : MonoBehaviour
         ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
         if (clickToPlantScript.plantFinished)
         {
-            // Debug.Log(Tag);
+            //Debug.Log(Tag);
             sellButton.gameObject.SetActive(true);
             //Debug.Log(gameObject);
             Button btn = sellButton.GetComponent<Button>();
@@ -232,6 +232,7 @@ public class ButtonPopUp : MonoBehaviour
         }
         animator.SetBool("IsOpen", true);
         pannelActive = true;
+        Debug.Log(pannelActive);
         if (tag == "1" ) nameText.text = Name1;
         if (tag == "2" ) nameText.text = Name2;
         if (tag == "3" ) nameText.text = Name3;
