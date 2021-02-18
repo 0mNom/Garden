@@ -232,7 +232,6 @@ public class ButtonPopUp : MonoBehaviour
         }
         animator.SetBool("IsOpen", true);
         pannelActive = true;
-        Debug.Log(pannelActive);
         if (tag == "1" ) nameText.text = Name1;
         if (tag == "2" ) nameText.text = Name2;
         if (tag == "3" ) nameText.text = Name3;
