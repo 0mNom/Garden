@@ -27148,6 +27148,7 @@ GameObject:
   - component: {fileID: 1403264363}
   - component: {fileID: 1403264362}
   - component: {fileID: 1403264364}
+  - component: {fileID: 1403264365}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -27320,6 +27321,27 @@ MonoBehaviour:
   bag: {fileID: 1860585979}
   invent: {fileID: 1403264363}
   places: {fileID: 1403264362}
+--- !u!114 &1403264365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403264360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 979e0bc2d3ee7464a93a243ccab59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s_PotPlaced: {fileID: 8300000, guid: e2714ae7640ef4b43b3a34d0d4ddd93b, type: 3}
+  s_buy: {fileID: 8300000, guid: e650d8c8dd218404eb7ab355a3e2f4b6, type: 3}
+  s_buyMoney: {fileID: 8300000, guid: 858303ee5a183224d84ee1f8f3fa07aa, type: 3}
+  s_buySeeds: {fileID: 8300000, guid: 9c7958f081d4dff4a9fddb83d1dcc2e3, type: 3}
+  s_ScreenSwosh: {fileID: 8300000, guid: d002a881c8ef5e44aa7ee69de7ba737e, type: 3}
+  BG_music: {fileID: 8300000, guid: 897afeffecf622b4db8e86faa00cb48f, type: 3}
+  s_pop: {fileID: 8300000, guid: dfd1f06799bc04c49ae7223b4cf72e22, type: 3}
+  s_openBag: {fileID: 8300000, guid: 91ad93162a75de646a0ae27eadcba05e, type: 3}
+  s_water: {fileID: 8300000, guid: 5d68b3f176adc9940b4cd5d1849994f6, type: 3}
 --- !u!114 &1409496419 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7154368241924471956, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}

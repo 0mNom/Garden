@@ -65,10 +65,16 @@ public class Sounds : MonoBehaviour
     }
 
 
-     public void pop()
+     public void openBag()
     {
         source.clip = s_pop;
         source.PlayOneShot(s_pop);
+    }
+
+       public void water()
+    {
+        source.clip = s_water;
+        source.PlayOneShot(s_water);
     }
 
 
