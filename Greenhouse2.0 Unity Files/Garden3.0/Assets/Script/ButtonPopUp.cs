@@ -127,6 +127,14 @@ public class ButtonPopUp : MonoBehaviour
 
                     btn.onClick.AddListener(SellPlant);
             }
+            if (clickToPlantScript.canWater == true)
+            {
+                wateringButton.gameObject.SetActive(true);
+            }
+            if (clickToPlantScript.canWater == false)
+            {
+                wateringButton.gameObject.SetActive(false);
+            }
 
             if (!clickToPlantScript.plantFinished)
             {
