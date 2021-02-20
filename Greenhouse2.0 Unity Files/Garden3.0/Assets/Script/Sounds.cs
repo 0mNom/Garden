@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sounds : MonoBehaviour
 {
-    public AudioClip s_PotPlaced, s_buy, s_buyMoney, s_buySeeds, s_ScreenSwosh, BG_music, s_pop, s_openBag, s_water, s_close, s_sellPlant;
+    public AudioClip s_PotPlaced, s_buy, s_buyMoney, s_buySeeds, s_ScreenSwosh, BG_music, s_pop, s_openBag, s_water, s_close, s_sellPlant, s_openSeedBag;
 
     private AudioSource source { get { return GetComponent<AudioSource>(); } }
 
@@ -90,6 +90,10 @@ public class Sounds : MonoBehaviour
         source.PlayOneShot(s_sellPlant);
     }
 
-
+    public void openSeedBag()
+    {
+        source.clip = s_openSeedBag;
+        source.PlayOneShot(s_openSeedBag);
+    }
 
 }
