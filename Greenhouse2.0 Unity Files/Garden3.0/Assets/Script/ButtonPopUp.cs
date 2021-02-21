@@ -277,6 +277,17 @@ public class ButtonPopUp : MonoBehaviour
         
     }
 
+    public void loadpannelDelayed()
+    {
+        StartCoroutine("waitpannel");
+    }
+
+    IEnumerator waitpannel()
+    {
+        yield return new WaitForSeconds(0.1f);
+        LoadPannel();
+    }
+
     public void ClosePanel()
     {
         ImagePotDuPopUp.sprite = null;
