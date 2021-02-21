@@ -826,6 +826,11 @@ public class PotPlaces : MonoBehaviour
                 spriteRendererP3.sprite = evolutionKiwi3;
 
             }
+
+
         }
+
+
+        Debug.Log("plants loaded");
     }
 }

@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 7154368241924471959}
   - component: {fileID: 7154368241924471956}
   - component: {fileID: 5623601556407766487}
+  - component: {fileID: 885457691}
   m_Layer: 0
   m_Name: Pot_2
   m_TagString: 2
@@ -185,6 +186,7 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 0}
+  potAnim: {fileID: 0}
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
@@ -194,6 +196,7 @@ MonoBehaviour:
   bagObject: {fileID: 0}
   spriteRenderer: {fileID: 7154368242788675734}
   gotPlant: 0
+  timeRemainingText: {fileID: 0}
   finishedBle: 0
   finishedApple: 0
   finishedTomato: 0
@@ -216,7 +219,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.032101035, y: -1.6050493}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.50004506, y: 0.9557097}
@@ -227,7 +230,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.92, y: 3.5}
+  m_Size: {x: 3.4978178, y: 3.4999964}
   m_EdgeRadius: 0
 --- !u!114 &7154368241924471956
 MonoBehaviour:
@@ -241,6 +244,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GemPrice: 0
+  Pot1: {fileID: 0}
+  Pot2: {fileID: 7154368241924471946}
+  Pot3: {fileID: 0}
+  buttonSkin1: {fileID: 0}
+  buttonSkin2: {fileID: 0}
+  buttonSkin3: {fileID: 0}
+  buttonSkin4: {fileID: 0}
+  buttonSkin5: {fileID: 0}
+  buttonSkin6: {fileID: 0}
+  buttonSkin7: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
+  Pay2FastButtonPot1: {fileID: 0}
+  Pay2FastButtonPot2: {fileID: 0}
+  Pay2FastButtonPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -275,6 +295,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &885457691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7154368241924471946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3660a42dc0ab77144896ed53c69e5bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  places: {fileID: 0}
+  inv: {fileID: 0}
 --- !u!1 &7154368242788675732
 GameObject:
   m_ObjectHideFlags: 0
