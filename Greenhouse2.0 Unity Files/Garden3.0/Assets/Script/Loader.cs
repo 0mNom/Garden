@@ -8,8 +8,16 @@ public class Loader : MonoBehaviour
     public Inventory invent;
     public PotPlaces places;
 
+    public bool auto = false;
 
-   
+    public void Update()
+    {
+        if (!auto) StartCoroutine("AutoSave");
+
+    }
+
+
+
 
     public void LoadGame()
     {
@@ -34,7 +42,7 @@ public class Loader : MonoBehaviour
         //Pot places 
 
         //active pots? collectioin load
- 
+
         places.p1 = dataP.s_p1;
         places.p2 = dataP.s_p2;
         places.p3 = dataP.s_p3;
@@ -107,5 +115,14 @@ public class Loader : MonoBehaviour
         SaveManager.SaveGameP(places);
         SaveManager.SaveGameI(invent);
 
+    }
+
+
+    IEnumerator AutoSave()
+    {
+        auto = true;
+        SaveGame();
+        yield return new WaitForSeconds(30f);
+        auto = false;
     }
 }
