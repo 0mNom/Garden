@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 2885881521936281487}
   - component: {fileID: 2885881521936281483}
   - component: {fileID: 2885881521507213800}
+  - component: {fileID: 2885881521507213799}
   m_Layer: 0
   m_Name: Pot_1
   m_TagString: 1
@@ -267,6 +268,7 @@ MonoBehaviour:
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 0}
+  potAnim: {fileID: 0}
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
@@ -276,6 +278,7 @@ MonoBehaviour:
   bagObject: {fileID: 0}
   spriteRenderer: {fileID: 2885881521463263910}
   gotPlant: 0
+  timeRemainingText: {fileID: 0}
   finishedBle: 0
   finishedApple: 0
   finishedTomato: 0
@@ -298,7 +301,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -1.5343605}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.49582973, y: 0.94413304}
@@ -309,7 +312,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.92, y: 3.5}
+  m_Size: {x: 2.92, y: 3.553837}
   m_EdgeRadius: 0
 --- !u!114 &2885881521936281483
 MonoBehaviour:
@@ -323,6 +326,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GemPrice: 0
+  Pot1: {fileID: 2885881521936281484}
+  Pot2: {fileID: 0}
+  Pot3: {fileID: 0}
+  buttonSkin1: {fileID: 0}
+  buttonSkin2: {fileID: 0}
+  buttonSkin3: {fileID: 0}
+  buttonSkin4: {fileID: 0}
+  buttonSkin5: {fileID: 0}
+  buttonSkin6: {fileID: 0}
+  buttonSkin7: {fileID: 0}
+  timeTextPot1: {fileID: 0}
+  timeTextPot2: {fileID: 0}
+  timeTextPot3: {fileID: 0}
+  Pay2FastButtonPot1: {fileID: 0}
+  Pay2FastButtonPot2: {fileID: 0}
+  Pay2FastButtonPot3: {fileID: 0}
   water: {fileID: 0}
   waterIncrease: 1.1
   pannelActive: 0
@@ -357,3 +377,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2885881521507213799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2885881521936281484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3660a42dc0ab77144896ed53c69e5bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  places: {fileID: 0}
+  inv: {fileID: 0}

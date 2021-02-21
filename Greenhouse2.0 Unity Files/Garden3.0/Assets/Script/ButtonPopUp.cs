@@ -16,6 +16,11 @@ public class ButtonPopUp : MonoBehaviour
     public Button buttonSkin1;
     public Button buttonSkin2;
     public Button buttonSkin3;
+    public Button buttonSkin4;
+    public Button buttonSkin5;
+    public Button buttonSkin6;
+    public Button buttonSkin7;
+
     PotSkins potSkins;
     public GameObject timeTextPot1;
     public GameObject timeTextPot2;
@@ -111,6 +116,10 @@ public class ButtonPopUp : MonoBehaviour
                     buttonSkin1.onClick.AddListener(potSkins.skin1);
                     buttonSkin2.onClick.AddListener(potSkins.skin2);
                     buttonSkin3.onClick.AddListener(potSkins.skin3);
+                    buttonSkin4.onClick.AddListener(potSkins.skin4);
+                    buttonSkin5.onClick.AddListener(potSkins.skin5);
+                    buttonSkin6.onClick.AddListener(potSkins.skin6);
+                    buttonSkin7.onClick.AddListener(potSkins.skin7);
                 }
             }
         }

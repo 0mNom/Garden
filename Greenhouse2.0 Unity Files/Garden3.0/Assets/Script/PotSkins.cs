@@ -131,6 +131,55 @@ public class PotSkins : MonoBehaviour
         sendinfo();
 
 
+    } 
+
+    public void skin5()
+    {
+        if (popUp.Tag == "1") places.sp1 = 5;
+        if (popUp.Tag == "2") places.sp2 = 5;
+        if (popUp.Tag == "3") places.sp3 = 5;
+        if (popUp.Tag == "4") places.sp4 = 5;
+        if (popUp.Tag == "5") places.sp5 = 5;
+        if (popUp.Tag == "6") places.sp6 = 5;
+        if (popUp.Tag == "7") places.sp7 = 5;
+        if (popUp.Tag == "8") places.sp8 = 5;
+        if (popUp.Tag == "9") places.sp9 = 5;
+        if (popUp.Tag == "10") places.sp10 = 5;
+        sendinfo();
+
+
+    }
+    public void skin6()
+    {
+        if (popUp.Tag == "1") places.sp1 = 6;
+        if (popUp.Tag == "2") places.sp2 = 6;
+        if (popUp.Tag == "3") places.sp3 = 6;
+        if (popUp.Tag == "4") places.sp4 = 6;
+        if (popUp.Tag == "5") places.sp5 = 6;
+        if (popUp.Tag == "6") places.sp6 = 6;
+        if (popUp.Tag == "7") places.sp7 = 6;
+        if (popUp.Tag == "8") places.sp8 = 6;
+        if (popUp.Tag == "9") places.sp9 = 6;
+        if (popUp.Tag == "10") places.sp10 = 6;
+        sendinfo();
+
+
+    }
+    public void skin7()
+    {
+        if (popUp.Tag == "1") places.sp1 = 7;
+        if (popUp.Tag == "2") places.sp2 = 7;
+        if (popUp.Tag == "3") places.sp3 = 7;
+        if (popUp.Tag == "4") places.sp4 = 7;
+        if (popUp.Tag == "5") places.sp5 = 7;
+        if (popUp.Tag == "6") places.sp6 = 7;
+        if (popUp.Tag == "7") places.sp7 = 7;
+        if (popUp.Tag == "8") places.sp8 = 7;
+        if (popUp.Tag == "9") places.sp9 = 7;
+        if (popUp.Tag == "10") places.sp10 = 7;
+        sendinfo();
+
+
     }
     public void sendinfo()
     {
