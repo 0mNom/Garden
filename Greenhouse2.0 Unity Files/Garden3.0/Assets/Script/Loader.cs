@@ -122,6 +122,7 @@ public class Loader : MonoBehaviour
     {
         auto = true;
         SaveGame();
+        Debug.Log("Saved");
         yield return new WaitForSeconds(30f);
         auto = false;
     }
