@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class DotANIM : MonoBehaviour
 {
-    public RectTransform menu, gamePannel, menuCanvus, logo, blackpannel, seedBag, seeds;
+    public RectTransform menu, gamePannel, menuCanvus, logo, blackpannel, seedBag, seeds,marketButton, market, Pmarket, PmarketButton;
     public GameObject conti,popUp ;
 
     void Start()
@@ -43,12 +43,59 @@ public class DotANIM : MonoBehaviour
     
     public void seedbagClose()
     {
-        seeds.DOAnchorPos(new Vector2(320, 0), 0.25f);
-        seedBag.DOAnchorPos(new Vector2(-120,120), 0.25f);
+        
+
+        StartCoroutine("closebag");
 
     }
 
-   
+    IEnumerator closebag()
+    {
+        seeds.DOAnchorPos(new Vector2(320, 0), 0.25f);
+        seedBag.DOAnchorPos(new Vector2(-120, 120), 0.25f);
+        yield return new WaitForSeconds(0.25f);
+        seeds.gameObject.SetActive(false);
+    }
+
+    public void marketOpen()
+    {
+        marketButton.DOAnchorPos(new Vector2(-120, 120), 0.25f);
+        market.DOAnchorPos(new Vector2(0, 0), 0.25f);
+    }
+    
+    public void marketClose()
+    {
+        StartCoroutine("closeMarket");
+    }
+
+    IEnumerator closeMarket()
+    {
+        marketButton.DOAnchorPos(new Vector2(-120, -120), 0.25f);
+        market.DOAnchorPos(new Vector2(00, 2500), 0.25f);
+        yield return new WaitForSeconds(0.25f);
+        market.gameObject.SetActive(false);
+
+    }
+
+    public void pmarketOpen()
+    {
+        PmarketButton.DOAnchorPos(new Vector2(-120, 120), 0.25f);
+        Pmarket.DOAnchorPos(new Vector2(0, 0), 0.25f);
+    }
+
+    public void pmarketClose()
+    {
+        StartCoroutine("pcloseMarket");
+    }
+
+    IEnumerator pcloseMarket()
+    {
+        PmarketButton.DOAnchorPos(new Vector2(-120, -280), 0.25f);
+        Pmarket.DOAnchorPos(new Vector2(2500,0 ), 0.25f);
+        yield return new WaitForSeconds(0.25f);
+        Pmarket.gameObject.SetActive(false);
+
+    }
 
     public void startermenu()
     {
