@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class DotANIM : MonoBehaviour
 {
-    public RectTransform menu, gamePannel, menuCanvus, logo, blackpannel;
+    public RectTransform menu, gamePannel, menuCanvus, logo, blackpannel, seedBag, seeds;
     public GameObject conti,popUp ;
 
     void Start()
@@ -35,15 +35,20 @@ public class DotANIM : MonoBehaviour
         }*/
     }
 
-    public void punch()
+    public void seedbagOpen()
     {
-        this.transform.DOPunchScale(new Vector3(1, 1, 1), 1f, 2, 1);
+        seedBag.DOAnchorPos(new Vector2(-120,-250), 0.25f);
+        seeds.DOAnchorPos(new Vector2(0, 0), 0.25f);
+    }
+    
+    public void seedbagClose()
+    {
+        seeds.DOAnchorPos(new Vector2(320, 0), 0.25f);
+        seedBag.DOAnchorPos(new Vector2(-120,120), 0.25f);
+
     }
 
-    public void buttonshake()
-    {
-        // this.DOShakeAnchorPos(1f, 1f, 2, 0.8f, false, false);
-    }
+   
 
     public void startermenu()
     {
