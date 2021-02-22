@@ -10,6 +10,8 @@ using UnityEngine.UI;
 public class DotANIM : MonoBehaviour
 {
     public RectTransform menu, gamePannel, menuCanvus, logo, blackpannel;
+    public GameObject conti;
+
     void Start()
     {
         // menu.DOAnchorPos(Vector2.zero,0.25f);
@@ -22,17 +24,25 @@ public class DotANIM : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                menuback();
+                Debug.Log("back");
+                return;
+            }
+        }
     }
 
     public void punch()
     {
-        this.transform.DOPunchScale(new Vector3 ( 1,1,1), 1f,2,1);
+        this.transform.DOPunchScale(new Vector3(1, 1, 1), 1f, 2, 1);
     }
 
     public void buttonshake()
     {
-       // this.DOShakeAnchorPos(1f, 1f, 2, 0.8f, false, false);
+        // this.DOShakeAnchorPos(1f, 1f, 2, 0.8f, false, false);
     }
 
     public void startermenu()
@@ -50,6 +60,7 @@ public class DotANIM : MonoBehaviour
     public void offmenu()
     {
         menuCanvus.DOAnchorPos(new Vector2(-1200, 0), 0.25f);
+        conti.SetActive(true);
         gamePannel.DOAnchorPos(new Vector2(0, 0), 0.25f);
     }
 
@@ -70,4 +81,11 @@ public class DotANIM : MonoBehaviour
         yield return new WaitForSeconds(0.25f);
         startermenu();
     }
+
+    public void menuback()
+    {
+        menu.DOAnchorPos(Vector2.zero, 0.25f);
+    }
+
+   
 }

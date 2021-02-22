@@ -10,9 +10,16 @@ public class Loader : MonoBehaviour
 
     public bool auto = false;
 
+    public void Start()
+    {
+       // auto = true; 
+    }
+
     public void Update()
     {
-        if (!auto) StartCoroutine("AutoSave");
+
+        //StartCoroutine("Start");
+       // if (!auto) StartCoroutine("AutoSave");
 
     }
 
@@ -117,6 +124,10 @@ public class Loader : MonoBehaviour
 
     }
 
+    IEnumerator start()
+    {
+        yield return new WaitForSeconds(30f);
+    }
 
     IEnumerator AutoSave()
     {
