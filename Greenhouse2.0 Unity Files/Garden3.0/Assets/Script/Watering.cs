@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Watering : MonoBehaviour
 {
-    public GameObject particle;
+    public GameObject particle, particle1;
     public bool deadleaves;
 
     void Start()
@@ -21,6 +21,7 @@ public class Watering : MonoBehaviour
     public void water()
     {
         Instantiate(particle);
-        if (deadleaves) deadleaves = !deadleaves;
+        Instantiate(particle1);
+        //if (deadleaves) deadleaves = !deadleaves;
     }
 }

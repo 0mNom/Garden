@@ -9,6 +9,8 @@ public class ButtonPopUp : MonoBehaviour
 {
     public int GemPrice;
 
+    public GameObject particle;
+
     public GameObject Pot1;
     public GameObject Pot2;
     public GameObject Pot3;
@@ -322,6 +324,8 @@ public class ButtonPopUp : MonoBehaviour
             // add money
             BagScript bagScript = bagObject.GetComponent<BagScript>();
             bagScript.Monay = bagScript.Monay + addedMoney;
+
+            Instantiate(particle);
 
 
             // delete the plant

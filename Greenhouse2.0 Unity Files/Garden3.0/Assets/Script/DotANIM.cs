@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class DotANIM : MonoBehaviour
 {
-    public RectTransform menu, gamePannel, menuCanvus, logo, blackpannel, seedBag, seeds,marketButton, market, Pmarket, PmarketButton;
+    public RectTransform menu, gamePannel, menuCanvus, logo, blackpannel, seedBag, seeds,marketButton, market, Pmarket, PmarketButton, nowP;
     public GameObject conti,popUp ;
 
     void Start()
@@ -54,6 +54,7 @@ public class DotANIM : MonoBehaviour
         seeds.DOAnchorPos(new Vector2(320, 0), 0.25f);
         seedBag.DOAnchorPos(new Vector2(-120, 120), 0.25f);
         yield return new WaitForSeconds(0.25f);
+        popUp.SetActive(true);
         seeds.gameObject.SetActive(false);
     }
 
@@ -95,6 +96,15 @@ public class DotANIM : MonoBehaviour
         yield return new WaitForSeconds(0.25f);
         Pmarket.gameObject.SetActive(false);
 
+    }
+
+    public void planting()
+    {
+        nowP.DOAnchorPos(new Vector2(0,-350), 0.5f);
+    }
+    public void NOplanting()
+    {
+        nowP.DOAnchorPos(new Vector2(0, 350), 0.5f);
     }
 
     public void startermenu()

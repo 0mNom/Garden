@@ -13,6 +13,10 @@ public class ClickToPlant : MonoBehaviour
 
     public Animator potAnim;
 
+    public DotANIM dot;
+
+    public bool sendN = false;
+
 
     //watering
     //public Watering water;
@@ -128,12 +132,17 @@ public class ClickToPlant : MonoBehaviour
             else if (gotPlant)
             {
                 ShineSprite.SetActive(false);
+               
+
+
+
             }
         }
 
         if (bagScript2.MakePotsShine == false)
         {
             ShineSprite.SetActive(false);
+           
         }
 
 
@@ -157,7 +166,7 @@ public class ClickToPlant : MonoBehaviour
 
                     potAnim = GameObject.FindGameObjectWithTag(tag).GetComponent<Animator>();
                     potAnim.SetTrigger("POP");
-
+                    dot.NOplanting();
 
 
                     if (bagScript1.plantingseed == 1)
@@ -345,6 +354,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 plantFinished = true;
+                sendN = true;
                 blePlanted = false;
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
@@ -399,6 +409,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
+                sendN = true;
                 applePlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeApple2) == 1)
@@ -450,6 +461,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
+                sendN = true;
                 tomatoPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeTomato2) == 1)
@@ -500,6 +512,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
+                sendN = true;
                 eggplantPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeEggplant2) == 1)
@@ -552,6 +565,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
+                sendN = true;
                 pearPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimePear2) == 1)
@@ -604,6 +618,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
+                sendN = true;
                 sunflowerPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeSunflower2) == 1)
@@ -652,6 +667,7 @@ public class ClickToPlant : MonoBehaviour
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
                 plantFinished = true;
+                sendN = true;
                 cherryPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeCherry2) == 1)
@@ -699,6 +715,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
+                sendN = true;
                 avocadoPlanted = false;
 
             }
@@ -749,6 +766,7 @@ public class ClickToPlant : MonoBehaviour
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
                 plantFinished = true;
+                sendN = true;
                 kiwiPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeKiwi2) == 1)

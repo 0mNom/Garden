@@ -36,6 +36,9 @@ public class BagScript : MonoBehaviour
     public bool canOpenPannel;
     public bool MakePotsShine;
 
+    public DotANIM dot;
+    public TMP_Text t_planting;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,7 +74,7 @@ public class BagScript : MonoBehaviour
         //Debug.Log(plantingseed);
         if (plantingseed == 1)
         {
-
+           
         }
 
         t_monay.text = Monay.ToString();
@@ -95,7 +98,12 @@ public class BagScript : MonoBehaviour
     //Premium shop 
     //Pot shop 
 
-   
+   public void stopShine()
+    {
+        MakePotsShine = false;
+        plantingseed = 0;
+        canOpenPannel = true;
+    }
 
 
 
@@ -235,6 +243,8 @@ public class BagScript : MonoBehaviour
         {
             canOpenPannel = false;
             MakePotsShine = true;
+            t_planting.text = "Now planting an Apple seed!";
+            dot.planting();
             //appleseed--;
             plantingseed = 2;
         }
@@ -252,6 +262,8 @@ public class BagScript : MonoBehaviour
         {
             canOpenPannel = false;
             MakePotsShine = true;
+            dot.planting();
+            t_planting.text = "Now planting a Wheat seed!";
             plantingseed = 1;
             //wheatseed--;
         }
@@ -267,6 +279,8 @@ public class BagScript : MonoBehaviour
         {
             canOpenPannel = false;
             MakePotsShine = true;
+            dot.planting();
+            t_planting.text = "Now planting a Cherry seed!";
             plantingseed = 7;
             //cherryseed--;
         }
@@ -283,6 +297,8 @@ public class BagScript : MonoBehaviour
         {
             canOpenPannel = false;
             MakePotsShine = true;
+            dot.planting();
+            t_planting.text = "Now planting an Tomato seed!";
             plantingseed = 3;
             //tomatoseed--;
         }
@@ -298,6 +314,8 @@ public class BagScript : MonoBehaviour
         {
             canOpenPannel = false;
             MakePotsShine = true;
+            dot.planting();
+            t_planting.text = "Now planting an Eggplant seed!";
             plantingseed = 4;
             //eggplantseed--;
         }
@@ -313,6 +331,8 @@ public class BagScript : MonoBehaviour
         {
             canOpenPannel = false;
             MakePotsShine = true;
+            dot.planting();
+            t_planting.text = "Now planting a Pear seed!";
             plantingseed = 5;
             //pearseed--;
         }
@@ -328,6 +348,8 @@ public class BagScript : MonoBehaviour
         {
             canOpenPannel = false;
             MakePotsShine = true;
+            dot.planting();
+            t_planting.text = "Now planting a Sunflower seed!";
             plantingseed = 6;
             //sunflowerseed--;
         }
@@ -343,6 +365,8 @@ public class BagScript : MonoBehaviour
         {
             canOpenPannel = false;
             MakePotsShine = true;
+            dot.planting();
+            t_planting.text = "Now planting an Avocado seed!";
             plantingseed = 8;
             //avoseed--;
         }
@@ -358,6 +382,8 @@ public class BagScript : MonoBehaviour
         {
             canOpenPannel = false;
             MakePotsShine = true;
+            dot.planting();
+            t_planting.text = "Now planting a Kiwi seed!";
             plantingseed = 9;
             //kiwiseed--;
         }
@@ -489,6 +515,12 @@ public class BagScript : MonoBehaviour
         {
             SliderTomato.maxValue = SliderTomato.value;
         }
+    }
+
+    public void cancelPlanting()
+    {
+        plantingseed = 8;
+        dot.NOplanting();
     }
 
     IEnumerator errr()
