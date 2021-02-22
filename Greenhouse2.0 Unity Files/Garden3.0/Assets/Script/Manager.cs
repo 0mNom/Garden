@@ -6,7 +6,7 @@ public class Manager : MonoBehaviour
 {
     // Start is called before the first frame update
     public DotANIM dot;
-    public GameObject ahh;
+    
 
     void Start()
     {
@@ -20,11 +20,14 @@ public class Manager : MonoBehaviour
         {
             if (Input.GetKeyUp(KeyCode.Escape))
             {
-                //Application.Quit();
-               // ahh.SetActive(true);
+                
+              
                 dot.menuback();
                 return;
             }
         }
     }
+
+
+    
 }

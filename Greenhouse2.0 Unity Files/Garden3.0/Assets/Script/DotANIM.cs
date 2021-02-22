@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class DotANIM : MonoBehaviour
 {
     public RectTransform menu, gamePannel, menuCanvus, logo, blackpannel;
-    public GameObject conti, ahh;
+    public GameObject conti ;
 
     void Start()
     {
@@ -67,9 +67,16 @@ public class DotANIM : MonoBehaviour
     public void exit()
     {
         blackpannel.DOAnchorPos(new Vector2(0, 0), 0.5f);
+        StartCoroutine("bye");
+
 
     }
 
+    IEnumerator bye()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Application.Quit();
+    }
 
     IEnumerator logoshaker()
     {
@@ -84,6 +91,7 @@ public class DotANIM : MonoBehaviour
 
     public void menuback()
     {
+        gamePannel.DOAnchorPos(new Vector2(3000, 0), 0.25f);
         menuCanvus.DOAnchorPos(Vector2.zero, 0.25f);
        // ahh.SetActive(true);
     }
