@@ -5030,11 +5030,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162542925}
   m_CullTransparentMesh: 0
---- !u!61 &163565138 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 2844716468914934950, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
-  m_PrefabInstance: {fileID: 684364853}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &172176016
 GameObject:
   m_ObjectHideFlags: 0
@@ -17331,11 +17326,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531102015}
   m_CullTransparentMesh: 0
---- !u!61 &536521909 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 2885881521936281487, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
-  m_PrefabInstance: {fileID: 2885881521507213797}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &537154188
 GameObject:
   m_ObjectHideFlags: 0
@@ -18319,10 +18309,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 536521909}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 1806503534}
+        m_TargetAssemblyTypeName: ButtonPopUp, Assembly-CSharp
+        m_MethodName: EnableBoxCollider
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18331,10 +18321,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1439806667}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 1409496419}
+        m_TargetAssemblyTypeName: ButtonPopUp, Assembly-CSharp
+        m_MethodName: EnableBoxCollider
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18343,10 +18333,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 163565138}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 968508217}
+        m_TargetAssemblyTypeName: ButtonPopUp, Assembly-CSharp
+        m_MethodName: EnableBoxCollider
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18403,10 +18393,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1690913555}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1806503534}
+        m_TargetAssemblyTypeName: ButtonPopUp, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1409496419}
+        m_TargetAssemblyTypeName: ButtonPopUp, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 968508217}
+        m_TargetAssemblyTypeName: ButtonPopUp, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -23192,10 +23206,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 536521909}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 1806503534}
+        m_TargetAssemblyTypeName: ButtonPopUp, Assembly-CSharp
+        m_MethodName: DisableBoxColliders
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -23204,10 +23218,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1439806667}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 1409496419}
+        m_TargetAssemblyTypeName: ButtonPopUp, Assembly-CSharp
+        m_MethodName: DisableBoxColliders
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -23216,10 +23230,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 163565138}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 968508217}
+        m_TargetAssemblyTypeName: ButtonPopUp, Assembly-CSharp
+        m_MethodName: DisableBoxColliders
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -46661,11 +46675,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428370208}
   m_CullTransparentMesh: 0
---- !u!61 &1439806667 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 7154368241924471959, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
-  m_PrefabInstance: {fileID: 885457689}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1448289098
 GameObject:
   m_ObjectHideFlags: 0
@@ -67047,6 +67056,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1403264365}
+    - target: {fileID: 249788677, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bfe901eec071a8488f3f0e622944ae6, type: 2}
+    - target: {fileID: 249788677, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 362597525, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -67079,6 +67096,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
+    - target: {fileID: 508048437, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bfe901eec071a8488f3f0e622944ae6, type: 2}
+    - target: {fileID: 508048437, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3025671133508278223, guid: 7bfe901eec071a8488f3f0e622944ae6, type: 2}
+    - target: {fileID: 508048437, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_fontSize
+      value: 29.75
+      objectReference: {fileID: 0}
     - target: {fileID: 587067086, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -67110,6 +67139,14 @@ PrefabInstance:
     - target: {fileID: 587067086, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 624138844, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bfe901eec071a8488f3f0e622944ae6, type: 2}
+    - target: {fileID: 624138844, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 673124486, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -67183,6 +67220,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
+    - target: {fileID: 884702462, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bfe901eec071a8488f3f0e622944ae6, type: 2}
+    - target: {fileID: 884702462, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3025671133508278223, guid: 7bfe901eec071a8488f3f0e622944ae6, type: 2}
+    - target: {fileID: 884702462, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_fontSize
+      value: 29.75
+      objectReference: {fileID: 0}
     - target: {fileID: 927592337, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -67191,6 +67240,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1403264365}
+    - target: {fileID: 1319458508, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bfe901eec071a8488f3f0e622944ae6, type: 2}
+    - target: {fileID: 1319458508, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1502931622, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bfe901eec071a8488f3f0e622944ae6, type: 2}
+    - target: {fileID: 1502931622, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3025671133508278223, guid: 7bfe901eec071a8488f3f0e622944ae6, type: 2}
+    - target: {fileID: 1502931622, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_fontSize
+      value: 29.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575123125, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bfe901eec071a8488f3f0e622944ae6, type: 2}
+    - target: {fileID: 1575123125, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3025671133508278223, guid: 7bfe901eec071a8488f3f0e622944ae6, type: 2}
     - target: {fileID: 858267333794599302, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_IsActive
       value: 0
