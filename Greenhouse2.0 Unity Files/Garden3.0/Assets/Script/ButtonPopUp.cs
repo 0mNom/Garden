@@ -112,7 +112,7 @@ public class ButtonPopUp : MonoBehaviour
                         timeTextPot3.SetActive(true);
                     }
 
-                    //Debug.Log(Tag);
+                    Debug.Log(Tag);
 
                     OpenPanel(Tag);
                     buttonSkin1.onClick.AddListener(potSkins.skin1);
