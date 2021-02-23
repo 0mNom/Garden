@@ -333,6 +333,7 @@ public class ButtonPopUp : MonoBehaviour
             bagScript.Monay = bagScript.Monay + addedMoney;
 
             Instantiate(particle);
+            Handheld.Vibrate();
 
 
             // delete the plant
