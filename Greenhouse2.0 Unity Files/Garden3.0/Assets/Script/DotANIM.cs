@@ -40,6 +40,11 @@ public class DotANIM : MonoBehaviour
         seedBag.DOAnchorPos(new Vector2(-120,-250), 0.25f);
         seeds.DOAnchorPos(new Vector2(0, 0), 0.25f);
     }
+
+    public void seedbagUP()
+    {
+        seedBag.DOAnchorPos(new Vector2(-120, 120), 0.25f);
+    }
     
     public void seedbagClose()
     {
@@ -52,7 +57,7 @@ public class DotANIM : MonoBehaviour
     IEnumerator closebag()
     {
         seeds.DOAnchorPos(new Vector2(320, 0), 0.25f);
-        seedBag.DOAnchorPos(new Vector2(-120, 120), 0.25f);
+       
         yield return new WaitForSeconds(0.25f);
         popUp.SetActive(true);
         seeds.gameObject.SetActive(false);

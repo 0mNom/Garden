@@ -167,6 +167,7 @@ public class ClickToPlant : MonoBehaviour
                     potAnim = GameObject.FindGameObjectWithTag(tag).GetComponent<Animator>();
                     potAnim.SetTrigger("POP");
                     dot.NOplanting();
+                    dot.seedbagUP();
 
 
                     if (bagScript1.plantingseed == 1)

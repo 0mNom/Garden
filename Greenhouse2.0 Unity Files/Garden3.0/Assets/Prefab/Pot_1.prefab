@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 2885881521507213799}
   m_Layer: 0
   m_Name: Pot_1
-  m_TagString: 1
+  m_TagString: 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,6 +269,8 @@ MonoBehaviour:
   plantInPot: 0
   potPlace: {fileID: 0}
   potAnim: {fileID: 0}
+  dot: {fileID: 0}
+  sendN: 0
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
@@ -327,6 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GemPrice: 0
+  particle: {fileID: 5376025009439605039, guid: 123f039ac47d5784488aef24990356c8, type: 3}
   Pot1: {fileID: 2885881521936281484}
   Pot2: {fileID: 0}
   Pot3: {fileID: 0}
