@@ -46,7 +46,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimeBle1;
     DateTime targetTimeBle2;
     DateTime targetTimeBle3;
-    float growingTimeBle = 300;
+    float growingTimeBle = 12;
     public bool finishedBle = false;
 
     //specific to apple
@@ -346,6 +346,7 @@ public class ClickToPlant : MonoBehaviour
         {
             //Debug.Log(targetTimeBle3 - CurrentTime);
             remainingTime = targetTimeBle3 - CurrentTime;
+            Debug.Log(remainingTime);
             timeRemainingText.text = remainingTime.Hours.ToString() + "h : " + remainingTime.Minutes.ToString() + "m : " + remainingTime.Seconds.ToString() + "s";
 
             if (DateTime.Compare(CurrentTime, targetTimeBle3) == 1)
