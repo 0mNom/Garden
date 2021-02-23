@@ -39,6 +39,10 @@ public class DotANIM : MonoBehaviour
     {
         error.DOAnchorPos(new Vector2(0, 0), 0.25f);
     }
+    public void errorOff()
+    {
+        error.DOAnchorPos(new Vector2(2000, 0), 0.25f);
+    }
 
     public void seedbagOpen()
     {
@@ -132,7 +136,7 @@ public class DotANIM : MonoBehaviour
     public void offmenu()
     {
         popUp.SetActive(true);
-        menuCanvus.DOAnchorPos(new Vector2(-200, 0), 0.25f);
+        menuCanvus.DOAnchorPos(new Vector2(-2000, 0), 0.25f);
         conti.SetActive(true);
 
         gamePannel.DOAnchorPos(new Vector2(0, 0), 0.25f);
@@ -140,7 +144,7 @@ public class DotANIM : MonoBehaviour
 
     public void exit()
     {
-        menuCanvus.DOAnchorPos(new Vector2(-1200, 0), 0.25f);
+        menuCanvus.DOAnchorPos(new Vector2(-2000, 0), 0.25f);
         blackpannel.DOAnchorPos(new Vector2(0, 0), 0.5f);
         StartCoroutine("bye");
 

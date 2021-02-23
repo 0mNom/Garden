@@ -642,7 +642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &303324777
 RectTransform:
   m_ObjectHideFlags: 0
@@ -658,11 +658,11 @@ RectTransform:
   - {fileID: 1651635659}
   - {fileID: 2010508125}
   m_Father: {fileID: 2018115735}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1265, y: 0}
   m_SizeDelta: {x: 810, y: 605}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &303324778
@@ -5020,6 +5020,10 @@ PrefabInstance:
       propertyPath: popUp
       value: 
       objectReference: {fileID: 1690913555}
+    - target: {fileID: 1755434061187842858, guid: 965bad36d653aea4d8abee0bccdc3ddd, type: 3}
+      propertyPath: error
+      value: 
+      objectReference: {fileID: 303324777}
     - target: {fileID: 1755434061187842859, guid: 965bad36d653aea4d8abee0bccdc3ddd, type: 3}
       propertyPath: m_Name
       value: UI manager
@@ -6901,11 +6905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4d028d3ab902346b05f13a121555fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2018115738 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2498715305696707013, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
-  m_PrefabInstance: {fileID: 2018115729}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2018115739 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2498715305776743592, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
@@ -7613,7 +7612,7 @@ PrefabInstance:
     - target: {fileID: 5051124592867937831, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2018115738}
+      objectReference: {fileID: 0}
     - target: {fileID: 5051124592867937831, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -7641,7 +7640,7 @@ PrefabInstance:
     - target: {fileID: 5051124592952071697, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
-      objectReference: {fileID: 2018115738}
+      objectReference: {fileID: 0}
     - target: {fileID: 5051124593289584029, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
