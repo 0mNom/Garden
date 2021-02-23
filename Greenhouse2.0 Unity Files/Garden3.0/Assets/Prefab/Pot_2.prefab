@@ -157,8 +157,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -302756321
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 3047777607093885583, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -183,10 +183,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d009c18fa9b4374c9d4b623d9e39833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hours: 0
+  minutes: 0
+  seconds: 0
   isActive: 0
   plantInPot: 0
   potPlace: {fileID: 0}
   potAnim: {fileID: 0}
+  dot: {fileID: 0}
+  sendN: 0
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
@@ -245,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GemPrice: 0
+  particle: {fileID: 5376025009439605039, guid: 123f039ac47d5784488aef24990356c8, type: 3}
   Pot1: {fileID: 0}
   Pot2: {fileID: 7154368241924471946}
   Pot3: {fileID: 0}
@@ -307,6 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3660a42dc0ab77144896ed53c69e5bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dot: {fileID: 0}
   places: {fileID: 0}
   inv: {fileID: 0}
 --- !u!1 &7154368242788675732
