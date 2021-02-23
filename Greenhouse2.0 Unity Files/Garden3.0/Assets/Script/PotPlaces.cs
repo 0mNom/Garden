@@ -983,7 +983,5 @@ public class PotPlaces : MonoBehaviour
 
         }
 
-
-        Debug.Log("plants loaded");
     }
 }
