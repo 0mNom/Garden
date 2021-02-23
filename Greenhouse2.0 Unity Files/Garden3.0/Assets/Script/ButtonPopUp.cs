@@ -188,7 +188,7 @@ public class ButtonPopUp : MonoBehaviour
 
 
                 //PAY TO FAST PART
-                GemPrice = clickToPlantScript.minutes;
+                GemPrice = clickToPlantScript.minutes + (clickToPlantScript.hours*60);
             if (GemPrice == 0 && clickToPlantScript.gotPlant && clickToPlantScript.plantFinished == false)
             {
                 GemPrice = 1;
@@ -199,7 +199,7 @@ public class ButtonPopUp : MonoBehaviour
             // yessai works
             if (Tag == "4")
             {
-                int GemPrice1 = clickToPlantScript.minutes;
+                int GemPrice1 = clickToPlantScript.minutes + (clickToPlantScript.hours * 60);
                 if (GemPrice1 == 0 && clickToPlantScript.plantFinished == false && clickToPlantScript.plantFinished == false)
                 {
                     GemPrice1 = 1;
@@ -210,7 +210,7 @@ public class ButtonPopUp : MonoBehaviour
             Tag = col.tag;
             if (Tag == "2")
             {
-                int GemPrice2 = clickToPlantScript.minutes;
+                int GemPrice2 = clickToPlantScript.minutes + (clickToPlantScript.hours * 60);
                 if (GemPrice2 == 0 && clickToPlantScript.plantFinished == false && clickToPlantScript.plantFinished == false)
                 {
                     GemPrice2 = 1;
@@ -221,7 +221,7 @@ public class ButtonPopUp : MonoBehaviour
             Tag = col.tag;
             if (Tag == "3")
             {
-                int GemPrice3 = clickToPlantScript.minutes;
+                int GemPrice3 = clickToPlantScript.minutes + (clickToPlantScript.hours * 60);
                 if (GemPrice3 == 0 && clickToPlantScript.plantFinished == false && clickToPlantScript.plantFinished == false)
                 {
                     GemPrice3 = 1;

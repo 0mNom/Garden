@@ -57,7 +57,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimeApple1;
     DateTime targetTimeApple2;
     DateTime targetTimeApple3;
-    float growingTimeApple = 9;
+    float growingTimeApple = 30;
     public bool finishedApple = false;
 
     //specific to Tomato
@@ -65,7 +65,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimeTomato1;
     DateTime targetTimeTomato2;
     DateTime targetTimeTomato3;
-    float growingTimeTomato = 9;
+    float growingTimeTomato = 45;
     public bool finishedTomato = false;
 
     //specific to Eggplant
@@ -73,7 +73,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimeEggplant1;
     DateTime targetTimeEggplant2;
     DateTime targetTimeEggplant3;
-    float growingTimeEggplant = 9;
+    float growingTimeEggplant = 90;
     public bool finishedEggplant = false;
 
     //specific to Pear
@@ -81,7 +81,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimePear1;
     DateTime targetTimePear2;
     DateTime targetTimePear3;
-    float growingTimePear = 90;
+    float growingTimePear = 180;
     public bool finishedPear = false;
 
     //specific to Sunflower
@@ -89,7 +89,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimeSunflower1;
     DateTime targetTimeSunflower2;
     DateTime targetTimeSunflower3;
-    float growingTimeSunflower = 9;
+    float growingTimeSunflower = 420;
     public bool finishedSunflower = false;
 
     //specific to Cherry
@@ -97,7 +97,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimeCherry1;
     DateTime targetTimeCherry2;
     DateTime targetTimeCherry3;
-    float growingTimeCherry = 9;
+    float growingTimeCherry = 900;
     public bool finishedCherry = false;
 
     //specific to Avocado
@@ -105,7 +105,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimeAvocado1;
     DateTime targetTimeAvocado2;
     DateTime targetTimeAvocado3;
-    float growingTimeAvocado = 9;
+    float growingTimeAvocado = 2400;
     public bool finishedAvocado = false;
 
     //specific to Kiwi
@@ -113,7 +113,7 @@ public class ClickToPlant : MonoBehaviour
     DateTime targetTimeKiwi1;
     DateTime targetTimeKiwi2;
     DateTime targetTimeKiwi3;
-    float growingTimeKiwi = 9;
+    float growingTimeKiwi = 5400;
     public bool finishedKiwi = false;
 
     void Start()

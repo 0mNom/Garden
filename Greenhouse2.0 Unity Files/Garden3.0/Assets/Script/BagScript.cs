@@ -42,19 +42,19 @@ public class BagScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Monay = 748;
+        Monay = 30000;
         Gems = 100;
         canOpenPannel = true;
         MakePotsShine = false;
-        wheatprice = 5;
-        appleprice = 15;
-        cherryprice = 9;
-        tomatoprice = 7;
-        eggplantprice = 5;
-        pearprice = 5;
-        sunflowerprice = 10;
-        avoprice = 3;
-        kiwiprice = 8;
+        wheatprice = 10;
+        appleprice = 30;
+        tomatoprice = 60;
+        eggplantprice = 120;
+        pearprice = 300;
+        sunflowerprice = 750;
+        cherryprice = 2250;
+        avoprice = 7500;
+        kiwiprice = 20000;
 
     }
 
@@ -397,6 +397,7 @@ public class BagScript : MonoBehaviour
         if (SliderWheat.value > 10)
         {
             SliderWheat.maxValue = 10;
+            SliderWheat.value = 1;
         }
         else
         {
@@ -412,6 +413,7 @@ public class BagScript : MonoBehaviour
         if (SliderApple.value > 10)
         {
             SliderApple.maxValue = 10;
+            SliderApple.value = 1;
         }
         else
         {
@@ -426,6 +428,7 @@ public class BagScript : MonoBehaviour
         if (SliderCherry.value > 10)
         {
             SliderCherry.maxValue = 10;
+            SliderCherry.value = 1;
         }
         else
         {
@@ -440,6 +443,7 @@ public class BagScript : MonoBehaviour
         if (SliderSunflower.value > 10)
         {
             SliderSunflower.maxValue = 10;
+            SliderSunflower.value = 1;
         }
         else
         {
@@ -454,6 +458,7 @@ public class BagScript : MonoBehaviour
         if (SliderEggplant.value > 10)
         {
             SliderEggplant.maxValue = 10;
+            SliderEggplant.value = 1;
         }
         else
         {
@@ -468,6 +473,7 @@ public class BagScript : MonoBehaviour
         if (SliderPear.value > 10)
         {
             SliderPear.maxValue = 10;
+            SliderPear.value = 1;
         }
         else
         {
@@ -482,6 +488,7 @@ public class BagScript : MonoBehaviour
         if (SliderKiwi.value > 10)
         {
             SliderKiwi.maxValue = 10;
+            SliderKiwi.value = 1;
         }
         else
         {
@@ -496,6 +503,7 @@ public class BagScript : MonoBehaviour
         if (SliderAvo.value > 10)
         {
             SliderAvo.maxValue = 10;
+            SliderAvo.value = 1;
         }
         else
         {
@@ -510,6 +518,7 @@ public class BagScript : MonoBehaviour
         if (SliderTomato.value > 10)
         {
             SliderTomato.maxValue = 10;
+            SliderTomato.value = 1;
         }
         else
         {
