@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
     public int pot1, pot2, pot3, pot4, pot5, pot6, pot7, pot8, pot9, pot10, pot11, pot12, pot13, pot14, pot15, pot16; //number of each kind of pot
     public BagScript bag;
     public GameObject error;
+    public DotANIM dot;
     public TMP_Text t_pot1, t_pot2, t_pot3, t_pot4, t_pot5, t_pot6, t_pot7, t_pot8, t_pot9, t_pot10, t_pot11, t_pot12, t_pot13, t_pot14, t_pot15, t_pot16;
 
     void Start()
@@ -228,10 +229,15 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void stoperror()
+    {
+        StopCoroutine("errr");
+    }
+
     IEnumerator errr()
     {
-        error.SetActive(true);
+        dot.errorOff();
         yield return new WaitForSeconds(5);
-        error.SetActive(false);
+        dot.errorOn();
     }
 }

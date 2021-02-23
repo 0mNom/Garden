@@ -5,10 +5,7 @@ using UnityEngine.UI;
 
 public class PotSkins : MonoBehaviour
 {
-    /*public Button buttonSkin1;
-    public Button buttonSkin2;
-    public Button buttonSkin3;*/
-    // public string tag;
+    public DotANIM dot;
     public PotPlaces places;
     ButtonPopUp popUp;
     public Inventory inv;

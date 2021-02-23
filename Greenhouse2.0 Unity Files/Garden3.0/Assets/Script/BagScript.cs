@@ -532,10 +532,16 @@ public class BagScript : MonoBehaviour
         dot.NOplanting();
     }
 
+    public void stoperror()
+    {
+        StopCoroutine("errr");
+    }
+
     IEnumerator errr()
     {
-        error.SetActive(true);
+        dot.errorOn();
         yield return new WaitForSeconds(5);
-        error.SetActive(false);
+        dot.errorOff();
+        dot.seedbagUP();
     }
 }
