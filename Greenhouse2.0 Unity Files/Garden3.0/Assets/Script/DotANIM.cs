@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class DotANIM : MonoBehaviour
 {
-    public RectTransform menu, gamePannel, menuCanvus, logo, blackpannel, seedBag, seeds,marketButton, market, Pmarket, PmarketButton, nowP, error;
+    public RectTransform wow, menu, gamePannel, menuCanvus, logo, blackpannel, seedBag, seeds,marketButton, market, Pmarket, PmarketButton, nowP, error;
     public GameObject conti,popUp ;
 
     public RectTransform WheatScreen, AppleScreen, TomatoScreen, EggplantScreen, PearScreen, SunflowerScreen, CherryScreen, AvoScreen, KiwiScreen;
@@ -428,5 +428,18 @@ public class DotANIM : MonoBehaviour
        // ahh.SetActive(true);
     }
 
-   
+
+    public void wowBig()
+    {
+
+
+        StartCoroutine("woow");
+    }
+    IEnumerator woow()
+    {
+        wow.DOAnchorPos(new Vector2(0, 620), 1f);
+        yield return new WaitForSeconds(2f);
+        wow.DOAnchorPos(new Vector2(0, 1860), 1f);
+    }
+
 }

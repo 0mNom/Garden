@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Sounds : MonoBehaviour
 {
-    public AudioClip s_PotPlaced, s_buy, s_buyMoney, s_buySeeds, s_ScreenSwosh, BG_music, s_pop, s_openBag, s_water, s_close, s_sellPlant, s_openSeedBag;
+    public AudioClip s_PotPlaced, s_buy, s_start, s_upgrade, s_evolution, s_planted, s_inventO, s_inventC, s_market, s_tab, 
+        BG_music, s_pop, s_closeSeedBag, s_water, s_close, s_sellPlant, s_error,  s_openSeedBag;
+    
 
     private AudioSource source { get { return GetComponent<AudioSource>(); } }
 
@@ -28,6 +30,8 @@ public class Sounds : MonoBehaviour
     }
 
 
+
+
     public void potPlaced()
     {
         source.clip = s_PotPlaced;
@@ -40,23 +44,7 @@ public class Sounds : MonoBehaviour
         source.PlayOneShot(s_buy);
     }
 
-    public void BuyMoney()
-    {
-        source.clip = s_buyMoney;
-        source.PlayOneShot(s_buyMoney);
-    }
-
-    public void BuySeeds()
-    {
-        source.clip = s_buySeeds;
-        source.PlayOneShot(s_buySeeds);
-    }
-
-    public void Swoosh()
-    {
-        source.clip = s_ScreenSwosh;
-        source.PlayOneShot(s_ScreenSwosh);
-    }
+  
 
      public void pop()
     {
@@ -65,10 +53,10 @@ public class Sounds : MonoBehaviour
     }
 
 
-     public void openBag()
+     public void closeSeedBag()
     {
-        source.clip = s_pop;
-        source.PlayOneShot(s_pop);
+        source.clip = s_closeSeedBag;
+        source.PlayOneShot(s_closeSeedBag);
     }
 
        public void water()
@@ -96,4 +84,62 @@ public class Sounds : MonoBehaviour
         source.PlayOneShot(s_openSeedBag);
     }
 
+    public void startgame()
+    {
+        source.clip = s_start;
+        source.PlayOneShot(s_start);
+    }
+
+    public void levelUp()
+    {
+        source.clip = s_upgrade;
+        source.PlayOneShot(s_upgrade);
+    }
+
+    public void planting()
+    {
+        source.clip = s_planted;
+        source.PlayOneShot(s_planted);
+    }
+
+    public void changeTab()
+    {
+        source.clip = s_tab;
+        source.PlayOneShot(s_tab);
+    }
+
+    public void inventO()
+    {
+        source.clip = s_inventO;
+        source.PlayOneShot(s_inventO);
+    }
+
+    public void inventC()
+    {
+        source.clip = s_inventC;
+        source.PlayOneShot(s_inventC);
+    }
+    
+
+    public void market()
+    {
+        source.clip = s_market;
+        source.PlayOneShot(s_market);
+    }
+
+    public void error()
+    {
+        source.clip = s_error;
+        source.PlayOneShot(s_error);
+    }
+
+    public void evol()
+    {
+        source.clip = s_evolution;
+        source.PlayOneShot(s_evolution);
+    }
+
+
 }
+
+
