@@ -199,7 +199,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1925043683
-  m_SortingLayer: 1
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8b84817a40db6dd45ae2dcbe7ace986c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -897,6 +897,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2159182220587599389, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
   m_PrefabInstance: {fileID: 2018115729}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &519297505 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1193182933140928007, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+  m_PrefabInstance: {fileID: 5051124593875790418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &522294587 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2159182220420858815, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
@@ -1887,6 +1898,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spendGemsPot1: {fileID: 0}
+  spendGemsPot2: {fileID: 0}
+  spendGemsPot3: {fileID: 0}
   GemPrice: 0
   particle: {fileID: 0}
   Pot1: {fileID: 0}
@@ -2024,7 +2038,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -302756321
-  m_SortingLayer: 2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 5450997762466904680, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2193,6 +2207,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spendGemsPot1: {fileID: 0}
+  spendGemsPot2: {fileID: 0}
+  spendGemsPot3: {fileID: 0}
   GemPrice: 0
   particle: {fileID: 0}
   Pot1: {fileID: 0}
@@ -2330,7 +2347,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -302756321
-  m_SortingLayer: 2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 5450997762466904680, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2587,6 +2604,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spendGemsPot1: {fileID: 0}
+  spendGemsPot2: {fileID: 0}
+  spendGemsPot3: {fileID: 0}
   GemPrice: 0
   particle: {fileID: 0}
   Pot1: {fileID: 0}
@@ -2724,7 +2744,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -302756321
-  m_SortingLayer: 2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 5450997762466904680, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3247,6 +3267,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spendGemsPot1: {fileID: 0}
+  spendGemsPot2: {fileID: 0}
+  spendGemsPot3: {fileID: 0}
   GemPrice: 0
   particle: {fileID: 0}
   Pot1: {fileID: 0}
@@ -3384,7 +3407,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -302756321
-  m_SortingLayer: 2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 5450997762466904680, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4150,6 +4173,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5370407630714537284, guid: c87a215f557724647b5bbd137aa54ff7, type: 3}
   m_PrefabInstance: {fileID: 1583488935}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1590624418 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2907941812993902477, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+  m_PrefabInstance: {fileID: 5051124593875790418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1620371936 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2159182221893758923, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
@@ -4318,6 +4352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spendGemsPot1: {fileID: 0}
+  spendGemsPot2: {fileID: 0}
+  spendGemsPot3: {fileID: 0}
   GemPrice: 0
   particle: {fileID: 0}
   Pot1: {fileID: 0}
@@ -4455,7 +4492,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -302756321
-  m_SortingLayer: 2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 5450997762466904680, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9098,6 +9135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spendGemsPot1: {fileID: 0}
+  spendGemsPot2: {fileID: 0}
+  spendGemsPot3: {fileID: 0}
   GemPrice: 0
   particle: {fileID: 0}
   Pot1: {fileID: 0}
@@ -9235,7 +9275,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -302756321
-  m_SortingLayer: 2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 5450997762466904680, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9306,6 +9346,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55846d19633e9e42acabbfa7296a848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spendGemsPot1: {fileID: 0}
+  spendGemsPot2: {fileID: 0}
+  spendGemsPot3: {fileID: 0}
   GemPrice: 0
   particle: {fileID: 0}
   Pot1: {fileID: 0}
@@ -9443,7 +9486,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -302756321
-  m_SortingLayer: 2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 5450997762466904680, guid: c7641d8954d2f1d46a825d2ec0b561d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9456,6 +9499,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2059771604 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3170400673138849375, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+  m_PrefabInstance: {fileID: 5051124593875790418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2136898948 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2159182221185894637, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
@@ -9618,6 +9672,18 @@ PrefabInstance:
       propertyPath: wateringButton
       value: 
       objectReference: {fileID: 1232243432}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: spendGemsPot1
+      value: 
+      objectReference: {fileID: 519297505}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: spendGemsPot2
+      value: 
+      objectReference: {fileID: 1590624418}
+    - target: {fileID: 2885881521936281483, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: spendGemsPot3
+      value: 
+      objectReference: {fileID: 2059771604}
     - target: {fileID: 2885881521936281484, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
       propertyPath: m_Name
       value: Pot_1
@@ -9820,6 +9886,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.39
       objectReference: {fileID: 0}
+    - target: {fileID: 1193182933140928007, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1283695770126926786, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_AnchorMin.y
       value: 1
@@ -9924,9 +9994,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.39
       objectReference: {fileID: 0}
+    - target: {fileID: 2907941812993902477, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3101303853878060105, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_Name
       value: ConfirmationPanelPot3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170400673138849375, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3244027686985752940, guid: 7e48f62595dfcf740b9c0238f695a9fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
