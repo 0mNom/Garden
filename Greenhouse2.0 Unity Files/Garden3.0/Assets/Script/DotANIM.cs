@@ -338,7 +338,7 @@ public class DotANIM : MonoBehaviour
     IEnumerator closeMarket()
     {
         marketButton.DOAnchorPos(new Vector2(-120, -120), 0.25f);
-        market.DOAnchorPos(new Vector2(00, 2500), 0.25f);
+        market.DOAnchorPos(new Vector2(00, 3000), 0.25f);
         yield return new WaitForSeconds(0.25f);
         market.gameObject.SetActive(false);
 
