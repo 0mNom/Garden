@@ -38,7 +38,7 @@ public class PotPlaces : MonoBehaviour
 
     public void loadpot(string tag)
     {
-        if( tag == "1")
+        if( tag == "4")
         {
             potAnim = GameObject.FindGameObjectWithTag(tag).GetComponent<Animator>();
             potAnim.SetTrigger("POP");

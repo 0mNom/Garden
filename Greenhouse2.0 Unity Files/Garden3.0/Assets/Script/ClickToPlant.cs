@@ -802,7 +802,7 @@ public class ClickToPlant : MonoBehaviour
 
     public void EnvoyerVariable(String tag)
     {
-        if (tag == "1") potPlace.pp1 = plantInPot;
+        if (tag == "4") potPlace.pp1 = plantInPot;
         // if (tag == "1") Debug.Log("POT 1");
         if (tag == "2") potPlace.pp2 = plantInPot;
         //if (tag == "2") Debug.Log("POT 2");

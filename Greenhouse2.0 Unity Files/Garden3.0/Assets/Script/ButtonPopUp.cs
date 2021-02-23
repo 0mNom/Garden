@@ -89,7 +89,7 @@ public class ButtonPopUp : MonoBehaviour
                 if (col == touchedCollider && bagScript.canOpenPannel == true)
                 {
                     Tag = col.tag;
-                    if (Tag == "1")
+                    if (Tag == "4")
                     {
                         timeTextPot1.SetActive(true);
                         timeTextPot2.SetActive(false);
@@ -155,7 +155,7 @@ public class ButtonPopUp : MonoBehaviour
             
             if (clickToPlantScript.gotPlant)
             {
-                if (Tag == "1")
+                if (Tag == "4")
                 {
                     Pay2FastButtonPot1.SetActive(true);
                     Pay2FastButtonPot2.SetActive(false);
@@ -197,7 +197,7 @@ public class ButtonPopUp : MonoBehaviour
 
 
             // yessai works
-            if (Tag == "1")
+            if (Tag == "4")
             {
                 int GemPrice1 = clickToPlantScript.remainingTime.Minutes;
                 if (GemPrice1 == 0 && clickToPlantScript.plantFinished == false && clickToPlantScript.plantFinished == false)
@@ -251,7 +251,7 @@ public class ButtonPopUp : MonoBehaviour
         }
         animator.SetBool("IsOpen", true);
         pannelActive = true;
-        if (tag == "1" ) nameText.text = Name1;
+        if (tag == "4" ) nameText.text = Name1;
         if (tag == "2" ) nameText.text = Name2;
         if (tag == "3" ) nameText.text = Name3;
 
