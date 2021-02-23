@@ -381,6 +381,7 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterFirstEvo = false;
+                    
                 }
                 //canWater = true;
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
