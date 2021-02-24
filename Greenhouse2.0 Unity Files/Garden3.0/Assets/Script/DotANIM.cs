@@ -33,7 +33,7 @@ public class DotANIM : MonoBehaviour
     }
     public void payout()
     {
-        paymentpannel.DOAnchorPos(new Vector2(-2000, 0), 0.25f);
+        paymentpannel.DOAnchorPos(new Vector2(-3000, 0), 0.25f);
     }
 
     public void gemshopin()
@@ -42,8 +42,13 @@ public class DotANIM : MonoBehaviour
     }
     public void gemshopout()
     {
-        gemshop.DOAnchorPos(new Vector2(-2000, 0), 0.25f);
+        gemshop.DOAnchorPos(new Vector2(-3000, 0), 0.25f);
         paymentpannel.DOAnchorPos(new Vector2(-2000, 0), 0.25f);
+    }
+
+    public void destroytuto()
+    {
+        Destroy(tutorial);
     }
 
     public void tuto1()
