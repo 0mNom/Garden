@@ -70,6 +70,9 @@ public class ButtonPopUp : MonoBehaviour
     public GameObject thePotClicked;
     Collider2D col;
     public string Name1, Name2, Name3;
+
+    public GameObject nameIn1, nameIn2, nameIn3;
+
     public TextMeshProUGUI nameText;
     public Animator animator;
 
@@ -400,6 +403,11 @@ public class ButtonPopUp : MonoBehaviour
         }
         animator.SetBool("IsOpen", true);
         pannelActive = true;
+        if (tag == "4") nameIn1.SetActive(true);
+        if (tag == "2") nameIn2.SetActive(true);
+        if (tag == "3") nameIn3.SetActive(true);
+
+
         if (tag == "4" ) nameText.text = Name1;
         if (tag == "2" ) nameText.text = Name2;
         if (tag == "3" ) nameText.text = Name3;
@@ -415,6 +423,23 @@ public class ButtonPopUp : MonoBehaviour
         DisableBoxColliders();
         //Debug.Log(tag);
     }
+
+    public void name1change(string nom)
+    {
+        Name1 = nom;
+        nameText.text = Name1;
+    }
+    public void name2change(string nom)
+    {
+        Name2 = nom;
+        nameText.text = Name2;
+    }
+    public void name3change(string nom)
+    {
+        Name3 = nom;
+        nameText.text = Name3;
+    }
+
 
     public void LoadPannel()
     {
