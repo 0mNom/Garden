@@ -43,7 +43,7 @@ namespace Assets.SimpleAndroidNotifications
 
         public void sendNotifPlantfinished(TimeSpan time)
         {
-            NotificationManager.Send(time, "I'm Done!", "Your Plant has finisihed growing, come take a look", Color.green, NotificationIcon.Star);
+            NotificationManager.Send(time, "I'm Done!", "Your Plant has finished growing, come take a look", Color.green, NotificationIcon.Star);
         }
 
         public void sendNotif24h()
