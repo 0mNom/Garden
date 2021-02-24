@@ -9,13 +9,87 @@ using UnityEngine.UI;
 
 public class DotANIM : MonoBehaviour
 {
+
+    public RectTransform welcome, T1, T2, wheatarrow, T3, T4, T5, T6, T7, T8;
+    public Text txt1, btxt1, txt2, btxt2, txt3, btxt3, txt4, btxt4;
+
+
     public RectTransform gem1, gem2, gem3, wow, menu, gamePannel, menuCanvus, logo, blackpannel, seedBag, seeds,marketButton, market, Pmarket, PmarketButton, nowP, error, inv, invbutton;
     public GameObject conti,popUp ;
+
+    
 
     public RectTransform WheatScreen, AppleScreen, TomatoScreen, EggplantScreen, PearScreen, SunflowerScreen, CherryScreen, AvoScreen, KiwiScreen;
     public RectTransform p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16;
 
-    void Start()
+
+    public void tuto1()
+    {
+        StartCoroutine("tut1");
+
+    }
+
+    IEnumerator tut1()
+    {
+        welcome.DOAnchorPos(new Vector2(30, 593), 0.25f);
+        txt1.DOText("Welcome to your greenhouse. " , 3f, false, ScrambleMode.None, null);
+        btxt1.DOText("Welcome to your greenhouse. ", 3f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(3f);
+        txt1.DOText("Welcome to your greenhouse. " +
+            "Here you can watch your plants grow and look after them ", 10f, false, ScrambleMode.None, null);
+        btxt1.DOText("Welcome to your greenhouse. " +
+            "Here you can watch your plants grow and look after them ", 10f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(11f);
+        welcome.DOAnchorPos(new Vector2(1500, 593), 0.25f);
+        T1.DOAnchorPos(new Vector2(265 , 685), 0.25f);
+        txt2.DOText("Here you can buy seeds to plant in your pots.", 5f, false, ScrambleMode.None, null);
+        btxt2.DOText("Here you can buy seeds to plant in your pots.", 5f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(6f);
+        //T1.DOAnchorPos(new Vector2(1400, 685), 0.25f);
+        T2.DOAnchorPos(new Vector2(522.61f, 1278.27f), 0.25f);
+        txt3.DOText("This is where your seeds are stored for easy acess and for planting, try opening it", 5f, false, ScrambleMode.None, null);
+        btxt3.DOText("This is where your seeds are stored for easy acess and for planting, try opening it", 5f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(6f);
+        T1.DOAnchorPos(new Vector2(1400, 685), 0.25f);
+
+    }
+
+    public void tuto2()
+    {
+        StartCoroutine("tut2");
+    }
+
+    IEnumerator tut2()
+    {
+        seedbagOpen();
+        T3.DOAnchorPos(new Vector2(-140, -497.6f), 0.25f);
+        txt4.DOText("to plant simply select on a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
+        btxt4.DOText("to plant simply select on a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(3f);
+        txt4.DOText("to plant simply select on a seed in your bag and then on a glowing pot. Try now with this wheat seed.", 5f, false, ScrambleMode.None, null);
+        btxt4.DOText("to plant simply select on a seed in your bag and then on a glowing pot. Try now with this wheat seed.", 5f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(1f);
+        wheatarrow.DOAnchorPos(new Vector2(101.82f, 616.34f), 0.25f);
+
+    }
+
+    public void tutoEnd()
+    {
+        wheatarrow.gameObject.transform.DOScale(0, 0.25f);
+        T3.DOAnchorPos(new Vector2(-1400, -497.6f), 0.25f);
+
+    }
+    public void tuto3()
+    {
+        StartCoroutine("tut3");
+
+    }
+    IEnumerator tut3()
+    {
+        
+        yield return new WaitForSeconds(3f);
+    }
+        void Start()
     {
         // menu.DOAnchorPos(Vector2.zero,0.25f);
 
