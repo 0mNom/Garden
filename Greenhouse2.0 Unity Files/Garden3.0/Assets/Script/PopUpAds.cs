@@ -22,7 +22,7 @@ public class PopUpAds : MonoBehaviour
     IEnumerator PopUp()
     {
         adOn = true;
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(120);
         ad1.SetActive(true);
     }
 
