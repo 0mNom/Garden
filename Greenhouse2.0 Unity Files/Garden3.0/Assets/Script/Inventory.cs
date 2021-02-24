@@ -5,6 +5,8 @@ using TMPro;
 
 public class Inventory : MonoBehaviour
 {
+    public Sounds sound;
+
     public int pot1, pot2, pot3, pot4, pot5, pot6, pot7, pot8, pot9, pot10, pot11, pot12, pot13, pot14, pot15, pot16; //number of each kind of pot
     public BagScript bag;
     public GameObject error;
@@ -236,8 +238,9 @@ public class Inventory : MonoBehaviour
 
     IEnumerator errr()
     {
-        dot.errorOff();
-        yield return new WaitForSeconds(5);
         dot.errorOn();
+        sound.error();
+        yield return new WaitForSeconds(5);
+        dot.errorOff();
     }
 }

@@ -6,6 +6,9 @@ using TMPro;
 
 public class BagScript : MonoBehaviour
 {
+
+    public Sounds sound;
+
     public Slider SliderWheat;
     public Slider SliderApple;
     public Slider SliderTomato;
@@ -540,6 +543,7 @@ public class BagScript : MonoBehaviour
     IEnumerator errr()
     {
         dot.errorOn();
+        sound.error();
         yield return new WaitForSeconds(5);
         dot.errorOff();
         dot.seedbagUP();

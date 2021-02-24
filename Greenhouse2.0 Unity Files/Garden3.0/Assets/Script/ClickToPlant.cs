@@ -174,6 +174,8 @@ public class ClickToPlant : MonoBehaviour
                     dot.NOplanting();
                     dot.seedbagUP();
 
+                    sound.planting();
+
 
                     if (bagScript1.plantingseed == 1)
                     {
@@ -378,6 +380,7 @@ public class ClickToPlant : MonoBehaviour
                 
                 blePlanted = false;
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -393,6 +396,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
             }
             else if (DateTime.Compare(CurrentTime, targetTimeBle1) == 1)
@@ -408,6 +412,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
                 plantInPot = 1.1f;
                 EnvoyerVariable(tag);
+                sound.evol();
                 potPlace.loadplants();
                 sendN = true;
 
@@ -444,6 +449,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -462,6 +468,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -477,6 +484,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
                 sendN = true;
 
@@ -512,6 +520,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -530,6 +539,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -545,6 +555,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
                 sendN = true;
 
@@ -579,6 +590,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -597,6 +609,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -612,6 +625,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
                 sendN = true;
 
@@ -648,6 +662,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -666,6 +681,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -681,6 +697,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
                 sendN = true;
 
@@ -717,6 +734,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -735,6 +753,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -750,6 +769,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
                 sendN = true;
 
@@ -783,6 +803,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
                 plantFinished = true;
                
@@ -800,6 +821,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
             }
             else if (DateTime.Compare(CurrentTime, targetTimeCherry1) == 1)
@@ -814,6 +836,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
                 sendN = true;
             }            
@@ -846,6 +869,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -865,6 +889,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel(); 
                
             }
@@ -880,6 +905,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
                 sendN = true;
 
@@ -914,6 +940,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
                 plantFinished = true;
                
@@ -931,6 +958,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
             }
             else if (DateTime.Compare(CurrentTime, targetTimeKiwi1) == 1)
@@ -945,6 +973,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
+                sound.evol();
                 buttonPopUpScript.LoadPannel();
                 sendN = true;
             }
