@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class DotANIM : MonoBehaviour
 {
-    public RectTransform wow, menu, gamePannel, menuCanvus, logo, blackpannel, seedBag, seeds,marketButton, market, Pmarket, PmarketButton, nowP, error;
+    public RectTransform gem1, gem2, gem3, wow, menu, gamePannel, menuCanvus, logo, blackpannel, seedBag, seeds,marketButton, market, Pmarket, PmarketButton, nowP, error, inv, invbutton;
     public GameObject conti,popUp ;
 
     public RectTransform WheatScreen, AppleScreen, TomatoScreen, EggplantScreen, PearScreen, SunflowerScreen, CherryScreen, AvoScreen, KiwiScreen;
@@ -441,5 +441,56 @@ public class DotANIM : MonoBehaviour
         yield return new WaitForSeconds(2f);
         wow.DOAnchorPos(new Vector2(0, 1860), 1f);
     }
+
+    public void invin()
+    {
+        inv.DOAnchorPos(new Vector2(0, 160), 1f);
+    }
+
+    public void invout()
+    {
+        inv.DOAnchorPos(new Vector2(-2000, 160), 1f);
+    }
+
+    public void invBin()
+    {
+        invbutton.DOAnchorPos(new Vector2(190, -440), 1f);
+    }
+
+    public void invBout()
+    {
+        invbutton.DOAnchorPos(new Vector2(-1000, -440), 1f);
+    }
+    public void gem1in()
+    {
+        gem1.DOAnchorPos(new Vector2(176, 45), 1f);
+    }
+
+    public void gem1out()
+    {
+        gem1.DOAnchorPos(new Vector2(1000, 45), 1f);
+    }
+
+    public void gem2in()
+    {
+        gem2.DOAnchorPos(new Vector2(176, 45), 1f);
+    }
+
+    public void gem2out()
+    {
+        gem2.DOAnchorPos(new Vector2(1000, 45), 1f);
+    }
+
+    public void gem3in()
+    {
+        gem3.DOAnchorPos(new Vector2(176, 45), 1f);
+    }
+
+    public void gem3out()
+    {
+        gem3.DOAnchorPos(new Vector2(1000, 45), 1f);
+    }
+
+
 
 }

@@ -6,6 +6,8 @@ using TMPro;
 
 public class ClickToPlant : MonoBehaviour
 {
+    public Sounds sound;
+    
     public int hours;
     public int minutes;
     public int seconds;
@@ -373,7 +375,7 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 plantFinished = true;
-                sendN = true;
+                
                 blePlanted = false;
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
@@ -407,7 +409,8 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 1.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
-              
+                sendN = true;
+
             }
 
              
@@ -444,7 +447,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
-                sendN = true;
+                
                 applePlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeApple2) == 1)
@@ -475,6 +478,7 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
+                sendN = true;
 
             }
              
@@ -511,7 +515,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
-                sendN = true;
+               
                 tomatoPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeTomato2) == 1)
@@ -542,6 +546,7 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
+                sendN = true;
 
             }
             
@@ -577,7 +582,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
-                sendN = true;
+                
                 eggplantPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeEggplant2) == 1)
@@ -608,6 +613,7 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
+                sendN = true;
 
             }
             
@@ -645,7 +651,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
-                sendN = true;
+               
                 pearPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimePear2) == 1)
@@ -676,6 +682,7 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
+                sendN = true;
 
             }
             
@@ -713,7 +720,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
-                sendN = true;
+                
                 sunflowerPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeSunflower2) == 1)
@@ -744,6 +751,7 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
+                sendN = true;
 
             }            
         }
@@ -777,7 +785,7 @@ public class ClickToPlant : MonoBehaviour
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
                 plantFinished = true;
-                sendN = true;
+               
                 cherryPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeCherry2) == 1)
@@ -807,6 +815,7 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
+                sendN = true;
             }            
         }
 
@@ -840,7 +849,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
-                sendN = true;
+               
                 avocadoPlanted = false;
 
             }
@@ -872,6 +881,7 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
+                sendN = true;
 
             }
             
@@ -906,7 +916,7 @@ public class ClickToPlant : MonoBehaviour
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
                 plantFinished = true;
-                sendN = true;
+               
                 kiwiPlanted = false;
             }
             else if (DateTime.Compare(CurrentTime, targetTimeKiwi2) == 1)
@@ -936,6 +946,7 @@ public class ClickToPlant : MonoBehaviour
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 buttonPopUpScript.LoadPannel();
+                sendN = true;
             }
         }
     }

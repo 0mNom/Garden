@@ -21,17 +21,17 @@ namespace Assets.SimpleAndroidNotifications
     {
         if (click.sendN)
             {
-                sendNotifPlantfinished();
+                sendNotifPlantfinished(click.remainingTime);
                 click.sendN = false;
             }
             if (click1.sendN)
             {
-                sendNotifPlantfinished();
+                sendNotifPlantfinished(click1.remainingTime);
                 click1.sendN = false;
             }
             if (click2.sendN)
             {
-                sendNotifPlantfinished();
+                sendNotifPlantfinished(click2.remainingTime);
                 click2.sendN = false;
             }
         }
@@ -41,9 +41,9 @@ namespace Assets.SimpleAndroidNotifications
             NotificationManager.Send(TimeSpan.FromSeconds(5), "BoopBoop", "this is your garden speaking, thank you for coming to see me ", Color.green, NotificationIcon.Star);
         }
 
-        public void sendNotifPlantfinished()
+        public void sendNotifPlantfinished(TimeSpan time)
         {
-            NotificationManager.Send(TimeSpan.FromSeconds(0.5), "I'm Done!", "Your Plant has finisihed growing, come take a look", Color.green, NotificationIcon.Star);
+            NotificationManager.Send(time, "I'm Done!", "Your Plant has finisihed growing, come take a look", Color.green, NotificationIcon.Star);
         }
 
         public void sendNotif24h()
