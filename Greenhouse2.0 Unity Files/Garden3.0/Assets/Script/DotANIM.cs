@@ -9,10 +9,11 @@ using UnityEngine.UI;
 
 public class DotANIM : MonoBehaviour
 {
+    public GameObject tutorial;
+    public RectTransform welcome, T1, T2, wheatarrow, T3, T4, T5, T6,nameArrow, waterArrow,potArrow,sellArrow,GemArrow, marketarrow;
+    public Text txt1, btxt1, txt2, btxt2, txt3, btxt3, txt4, btxt4, txt5, btxt5, txt6, btxt6, txt7, btxt7;
 
-    public RectTransform welcome, T1, T2, wheatarrow, T3, T4, T5, T6, T7, T8;
-    public Text txt1, btxt1, txt2, btxt2, txt3, btxt3, txt4, btxt4;
-
+    public ButtonPopUp pot1;
 
     public RectTransform gem1, gem2, gem3, wow, menu, gamePannel, menuCanvus, logo, blackpannel, seedBag, seeds,marketButton, market, Pmarket, PmarketButton, nowP, error, inv, invbutton;
     public GameObject conti,popUp ;
@@ -50,7 +51,7 @@ public class DotANIM : MonoBehaviour
         txt3.DOText("This is where your seeds are stored for easy acess and for planting, try opening it", 5f, false, ScrambleMode.None, null);
         btxt3.DOText("This is where your seeds are stored for easy acess and for planting, try opening it", 5f, false, ScrambleMode.None, null);
         yield return new WaitForSeconds(6f);
-        T1.DOAnchorPos(new Vector2(1400, 685), 0.25f);
+        //T1.DOAnchorPos(new Vector2(1400, 685), 0.25f);
 
     }
 
@@ -62,22 +63,24 @@ public class DotANIM : MonoBehaviour
     IEnumerator tut2()
     {
         seedbagOpen();
+        T1.DOAnchorPos(new Vector2(1400, 685), 0.25f);
         T3.DOAnchorPos(new Vector2(-140, -497.6f), 0.25f);
-        txt4.DOText("to plant simply select on a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
-        btxt4.DOText("to plant simply select on a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
-        yield return new WaitForSeconds(3f);
-        txt4.DOText("to plant simply select on a seed in your bag and then on a glowing pot. Try now with this wheat seed.", 5f, false, ScrambleMode.None, null);
-        btxt4.DOText("to plant simply select on a seed in your bag and then on a glowing pot. Try now with this wheat seed.", 5f, false, ScrambleMode.None, null);
+        txt4.DOText("to plant simply select a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
+        btxt4.DOText("to plant simply select a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(5f);
+        txt4.DOText("to plant simply select a seed in your bag and then on a glowing pot. Try now with this apple seed.", 5f, false, ScrambleMode.None, null);
+        btxt4.DOText("to plant simply select a seed in your bag and then on a glowing pot. Try now with this apple seed.", 5f, false, ScrambleMode.None, null);
         yield return new WaitForSeconds(1f);
-        wheatarrow.DOAnchorPos(new Vector2(101.82f, 616.34f), 0.25f);
+        wheatarrow.DOAnchorPos(new Vector2(101.82f, 382.5f), 0.25f);
 
     }
 
     public void tutoEnd()
     {
         wheatarrow.gameObject.transform.DOScale(0, 0.25f);
+        wheatarrow.DOAnchorPos(new Vector2(901.82f, 382.5f), 0.25f);
         T3.DOAnchorPos(new Vector2(-1400, -497.6f), 0.25f);
-
+       
     }
     public void tuto3()
     {
@@ -87,9 +90,81 @@ public class DotANIM : MonoBehaviour
     IEnumerator tut3()
     {
         
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
+        T4.DOAnchorPos(new Vector2(29.7f, 593), 0.25f);
+        txt5.DOText("Nice, now that you've planted your first plant you can tap it to see him close up!", 5f, false, ScrambleMode.None, null);
+        btxt5.DOText("Nice, now that you've planted your first plant you can tap it to see him close up!", 5f, false, ScrambleMode.None, null);
+
+
     }
-        void Start()
+    public void tuto4()
+    {
+        StartCoroutine("tut4");
+
+    }
+    IEnumerator tut4()
+    {
+        
+        T4.DOAnchorPos(new Vector2(1400, 593), 0.25f);
+        yield return new WaitForSeconds(1f);
+        T5.DOAnchorPos(new Vector2(0, -770), 0.25f);
+        txt6.DOText("Here you can find a whole bunch of information like how long you plant will take to grow.", 5f, false, ScrambleMode.None, null);
+        btxt6.DOText("Here you can find a whole bunch of information like how long you plant will take to grow.", 5f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(6f);
+        txt6.DOText("", 1f, false, ScrambleMode.None, null);
+        btxt6.DOText("", 1f, false, ScrambleMode.None, null);
+        waterArrow.DOAnchorPos(new Vector2(-58, 870), 0.25f);
+        txt6.DOText("Twice per plant growth you will have the chance to water your plant, this will make its selling price higher so come and check on them often.", 6f, false, ScrambleMode.None, null);
+        btxt6.DOText("Twice per plant growth you will have the chance to water your plant, this will make its selling price higher so come and check on them often.", 6f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(7f);
+        waterArrow.gameObject.transform.DOScale(0, 0.25f);
+        txt6.DOText("", 1f, false, ScrambleMode.None, null);
+        btxt6.DOText("", 1f, false, ScrambleMode.None, null);
+        potArrow.DOAnchorPos(new Vector2(-42, 1050), 0.25f);
+        txt6.DOText("this button is the store room of pots that you buy up here, to change a pot, open the store room and selet the pot you want to use.", 5f, false, ScrambleMode.None, null);
+        btxt6.DOText("this button is the store room of pots that you buy up here, to change a pot, open the store room and selet the pot you want to use.", 5f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(2f);
+        marketarrow.DOAnchorPos(new Vector2(245, 1340), 0.25f);
+        yield return new WaitForSeconds(4f);
+        txt6.DOText("", 1f, false, ScrambleMode.None, null);
+        btxt6.DOText("", 1f, false, ScrambleMode.None, null);
+        txt6.DOText("Attention, once a pot has been placed you cannot put it back in the store room.", 4f, false, ScrambleMode.None, null);
+        btxt6.DOText("Attention, once a pot has been placed you cannot put it back in the store room.", 4f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(5f);
+        marketarrow.gameObject.transform.DOScale(0, 0.25f);
+        potArrow.gameObject.transform.DOScale(0, 0.25f);
+        txt6.DOText("", 1f, false, ScrambleMode.None, null);
+        btxt6.DOText("", 1f, false, ScrambleMode.None, null);
+        sellArrow.DOAnchorPos(new Vector2(254, 425), 0.25f);
+        txt6.DOText("When the plant has finished growing you can sell it to gain leaves to spend buying more seeds...", 4f, false, ScrambleMode.None, null);
+        btxt6.DOText("When the plant has finished growing you can sell it to gain leaves to spend buying more seeds...", 4f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(5f);
+        txt6.DOText("", 1f, false, ScrambleMode.None, null);
+        btxt6.DOText("", 1f, false, ScrambleMode.None, null);
+        txt6.DOText("or you can leave it in the pot to make your greenhouse look good", 3f, false, ScrambleMode.None, null);
+        btxt6.DOText("or you can leave it in the pot to make your greenhouse look good", 3f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(4f);
+        sellArrow.gameObject.transform.DOScale(0, 0.25f);
+        txt6.DOText("", 1f, false, ScrambleMode.None, null);
+        btxt6.DOText("", 1f, false, ScrambleMode.None, null);
+        nameArrow.DOAnchorPos(new Vector2(-12, 1090), 0.25f);
+        txt6.DOText("and finally you can change the name of you plant by tapping on the name up top.", 3f, false, ScrambleMode.None, null);
+        btxt6.DOText("and finally you can change the name of you plant by tapping on the name up top.", 3f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(4f);
+        nameArrow.gameObject.transform.DOScale(0, 0.25f);
+        pot1.ClosePanel();
+        T5.DOAnchorPos(new Vector2(0, -2500), 0.25f);
+        T6.DOAnchorPos(new Vector2(0, 620), 0.25f);
+        txt7.DOText("now you can do it all! have fun using those green thumbs of yours", 3f, false, ScrambleMode.None, null);
+        btxt7.DOText("now you can do it all! have fun using those green thumbs of yours", 3f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(4f);
+        T6.DOAnchorPos(new Vector2(0, 1500), 0.25f);
+        yield return new WaitForSeconds(0.5f);
+        Destroy(tutorial);
+
+
+    }
+    void Start()
     {
         // menu.DOAnchorPos(Vector2.zero,0.25f);
 
