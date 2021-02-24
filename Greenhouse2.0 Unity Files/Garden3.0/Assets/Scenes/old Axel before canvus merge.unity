@@ -16942,7 +16942,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.50508434, y: 0.845655}
     oldSize: {x: 2.75, y: 2.69}
     newSize: {x: 2.75, y: 2.69}
     adaptiveTilingThreshold: 0.5
@@ -18768,7 +18768,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.50508434, y: 0.845655}
     oldSize: {x: 2.75, y: 2.69}
     newSize: {x: 2.75, y: 2.69}
     adaptiveTilingThreshold: 0.5
@@ -20218,7 +20218,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.50508434, y: 0.845655}
     oldSize: {x: 2.75, y: 2.69}
     newSize: {x: 2.75, y: 2.69}
     adaptiveTilingThreshold: 0.5
@@ -23696,7 +23696,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.50508434, y: 0.845655}
     oldSize: {x: 2.75, y: 2.69}
     newSize: {x: 2.75, y: 2.69}
     adaptiveTilingThreshold: 0.5
@@ -30343,7 +30343,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.50508434, y: 0.845655}
     oldSize: {x: 2.75, y: 2.69}
     newSize: {x: 2.75, y: 2.69}
     adaptiveTilingThreshold: 0.5
@@ -35240,7 +35240,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.50508434, y: 0.845655}
     oldSize: {x: 2.75, y: 2.69}
     newSize: {x: 2.75, y: 2.69}
     adaptiveTilingThreshold: 0.5
@@ -35595,7 +35595,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.50508434, y: 0.845655}
     oldSize: {x: 2.75, y: 2.69}
     newSize: {x: 2.75, y: 2.69}
     adaptiveTilingThreshold: 0.5
@@ -38993,9 +38993,53 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2498715303930618382, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -91.97097
+      objectReference: {fileID: 0}
     - target: {fileID: 2498715304067484658, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715304119889924, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6882
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715304119889924, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6882
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715304119889924, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6882
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715304119889924, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -74
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715304119889924, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -74
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715304119889930, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 68401580019d2bf498c32b698428d96f, type: 3}
+    - target: {fileID: 2498715304119889930, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715304119889930, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715304119889930, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715304119889930, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2498715304187787293, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
       propertyPath: m_AnchorMax.y
@@ -39137,9 +39181,17 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2498715305579615555, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 298
+      objectReference: {fileID: 0}
     - target: {fileID: 2498715305720955954, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715305745985159, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -513
       objectReference: {fileID: 0}
     - target: {fileID: 2498715305827780864, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
       propertyPath: m_AnchorMax.y
