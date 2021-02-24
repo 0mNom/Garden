@@ -61,6 +61,73 @@ public class BagScript : MonoBehaviour
 
     }
 
+    public void starterPack()
+    {
+        Monay += 2500;
+        Gems += 500;
+        randomseed(20);
+    }
+
+    public void Leaves100()
+    {
+        Monay += 100;
+    }
+    public void Leaves2500()
+    {
+        Monay += 2500;
+    }
+    public void Leaves10000()
+    {
+        Monay += 10000;
+    }
+
+    public void amber70()
+    {
+        Gems += 70;
+    }
+    public void amber1000()
+    {
+        Gems += 1000;
+    }
+    public void amber6000()
+    {
+        Gems += 6000;
+    }
+
+    public void randSeed5()
+    {
+        randomseed(5);
+    }
+    public void randSeed30()
+    {
+        randomseed(30);
+    }
+    public void randSeed50()
+    {
+        randomseed(50);
+    }
+
+    public void randomseed(int amount)
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            int rand = Random.Range(1, 9);
+            //Debug.Log(rand);
+
+            if (rand == 1) wheatseed++; 
+            if (rand == 2) appleseed++; 
+            if (rand == 3) tomatoseed++; 
+            if (rand == 4) eggplantseed++; 
+            if (rand == 5) pearseed++; 
+            if (rand == 6) sunflowerseed++; 
+            if (rand == 7) cherryseed++; 
+            if (rand == 8) avoseed++; 
+            if (rand == 9) kiwiseed++; 
+
+        }
+
+    }
+
     // Update is called once per frame
     void Update()
     {
