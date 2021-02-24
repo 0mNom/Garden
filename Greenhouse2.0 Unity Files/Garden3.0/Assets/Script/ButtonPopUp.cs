@@ -11,6 +11,11 @@ public class ButtonPopUp : MonoBehaviour
     public TextMeshProUGUI spendGemsPot1;
     public TextMeshProUGUI spendGemsPot2;
     public TextMeshProUGUI spendGemsPot3;
+
+    public TextMeshProUGUI seedTypePot1;
+    public TextMeshProUGUI seedTypePot2;
+    public TextMeshProUGUI seedTypePot3;
+
     public int GemPrice;
 
     public GameObject particle;
@@ -164,6 +169,46 @@ public class ButtonPopUp : MonoBehaviour
                     Pay2FastButtonPot1.SetActive(true);
                     Pay2FastButtonPot2.SetActive(false);
                     Pay2FastButtonPot3.SetActive(false);
+                    seedTypePot1.gameObject.SetActive(true);
+                    seedTypePot2.gameObject.SetActive(false);
+                    seedTypePot3.gameObject.SetActive(false);
+
+                    if (clickToPlantScript.blePlanted)
+                    {
+                        seedTypePot1.text = "Seed planted: Wheat";
+                    }
+                    else if (clickToPlantScript.applePlanted)
+                    {
+                        seedTypePot1.text = "Seed planted: Apple";
+                    }
+                    else if (clickToPlantScript.tomatoPlanted)
+                    {
+                        seedTypePot1.text = "Seed planted: Tomato";
+                    }
+                    else if (clickToPlantScript.eggplantPlanted)
+                    {
+                        seedTypePot1.text = "Seed planted: Eggplant";
+                    }
+                    else if (clickToPlantScript.pearPlanted)
+                    {
+                        seedTypePot1.text = "Seed planted: Pear";
+                    }
+                    else if (clickToPlantScript.sunflowerPlanted)
+                    {
+                        seedTypePot1.text = "Seed planted: Sunflower";
+                    }
+                    else if (clickToPlantScript.cherryPlanted)
+                    {
+                        seedTypePot1.text = "Seed planted: Cherry";
+                    }
+                    else if (clickToPlantScript.avocadoPlanted)
+                    {
+                        seedTypePot1.text = "Seed planted: Avocado";
+                    }
+                    else if (clickToPlantScript.kiwiPlanted)
+                    {
+                        seedTypePot1.text = "Seed planted: Kiwi";
+                    }
                 }
 
                 Tag = col.tag;
@@ -172,6 +217,45 @@ public class ButtonPopUp : MonoBehaviour
                     Pay2FastButtonPot1.SetActive(false);
                     Pay2FastButtonPot2.SetActive(true);
                     Pay2FastButtonPot3.SetActive(false);
+                    seedTypePot1.gameObject.SetActive(false);
+                    seedTypePot2.gameObject.SetActive(true);
+                    seedTypePot3.gameObject.SetActive(false);
+                    if (clickToPlantScript.blePlanted)
+                    {
+                        seedTypePot2.text = "Seed planted: Wheat";
+                    }
+                    else if (clickToPlantScript.applePlanted)
+                    {
+                        seedTypePot2.text = "Seed planted: Apple";
+                    }
+                    else if (clickToPlantScript.tomatoPlanted)
+                    {
+                        seedTypePot2.text = "Seed planted: Tomato";
+                    }
+                    else if (clickToPlantScript.eggplantPlanted)
+                    {
+                        seedTypePot2.text = "Seed planted: Eggplant";
+                    }
+                    else if (clickToPlantScript.pearPlanted)
+                    {
+                        seedTypePot2.text = "Seed planted: Pear";
+                    }
+                    else if (clickToPlantScript.sunflowerPlanted)
+                    {
+                        seedTypePot2.text = "Seed planted: Sunflower";
+                    }
+                    else if (clickToPlantScript.cherryPlanted)
+                    {
+                        seedTypePot2.text = "Seed planted: Cherry";
+                    }
+                    else if (clickToPlantScript.avocadoPlanted)
+                    {
+                        seedTypePot2.text = "Seed planted: Avocado";
+                    }
+                    else if (clickToPlantScript.kiwiPlanted)
+                    {
+                        seedTypePot2.text = "Seed planted: Kiwi";
+                    }
                 }
 
                 Tag = col.tag;
@@ -180,6 +264,45 @@ public class ButtonPopUp : MonoBehaviour
                     Pay2FastButtonPot1.SetActive(false);
                     Pay2FastButtonPot2.SetActive(false);
                     Pay2FastButtonPot3.SetActive(true);
+                    seedTypePot1.gameObject.SetActive(false);
+                    seedTypePot2.gameObject.SetActive(false);
+                    seedTypePot3.gameObject.SetActive(true);
+                    if (clickToPlantScript.blePlanted)
+                    {
+                        seedTypePot3.text = "Seed planted: Wheat";
+                    }
+                    else if (clickToPlantScript.applePlanted)
+                    {
+                        seedTypePot3.text = "Seed planted: Apple";
+                    }
+                    else if (clickToPlantScript.tomatoPlanted)
+                    {
+                        seedTypePot3.text = "Seed planted: Tomato";
+                    }
+                    else if (clickToPlantScript.eggplantPlanted)
+                    {
+                        seedTypePot3.text = "Seed planted: Eggplant";
+                    }
+                    else if (clickToPlantScript.pearPlanted)
+                    {
+                        seedTypePot3.text = "Seed planted: Pear";
+                    }
+                    else if (clickToPlantScript.sunflowerPlanted)
+                    {
+                        seedTypePot3.text = "Seed planted: Sunflower";
+                    }
+                    else if (clickToPlantScript.cherryPlanted)
+                    {
+                        seedTypePot3.text = "Seed planted: Cherry";
+                    }
+                    else if (clickToPlantScript.avocadoPlanted)
+                    {
+                        seedTypePot3.text = "Seed planted: Avocado";
+                    }
+                    else if (clickToPlantScript.kiwiPlanted)
+                    {
+                        seedTypePot3.text = "Seed planted: Kiwi";
+                    }
                 }
             }
 

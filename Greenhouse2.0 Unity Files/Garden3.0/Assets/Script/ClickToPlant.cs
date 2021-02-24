@@ -45,7 +45,7 @@ public class ClickToPlant : MonoBehaviour
 
 
     //specific to ble
-    bool blePlanted = false;
+    public bool blePlanted = false;
     DateTime targetTimeBle1;
     DateTime targetTimeBle2;
     DateTime targetTimeBle3;
@@ -53,7 +53,7 @@ public class ClickToPlant : MonoBehaviour
     public bool finishedBle = false;
 
     //specific to apple
-    bool applePlanted = false;
+    public bool applePlanted = false;
     DateTime targetTimeApple1;
     DateTime targetTimeApple2;
     DateTime targetTimeApple3;
@@ -61,7 +61,7 @@ public class ClickToPlant : MonoBehaviour
     public bool finishedApple = false;
 
     //specific to Tomato
-    bool tomatoPlanted = false;
+    public bool tomatoPlanted = false;
     DateTime targetTimeTomato1;
     DateTime targetTimeTomato2;
     DateTime targetTimeTomato3;
@@ -69,7 +69,7 @@ public class ClickToPlant : MonoBehaviour
     public bool finishedTomato = false;
 
     //specific to Eggplant
-    bool eggplantPlanted = false;
+    public bool eggplantPlanted = false;
     DateTime targetTimeEggplant1;
     DateTime targetTimeEggplant2;
     DateTime targetTimeEggplant3;
@@ -77,7 +77,7 @@ public class ClickToPlant : MonoBehaviour
     public bool finishedEggplant = false;
 
     //specific to Pear
-    bool pearPlanted = false;
+    public bool pearPlanted = false;
     DateTime targetTimePear1;
     DateTime targetTimePear2;
     DateTime targetTimePear3;
@@ -85,7 +85,7 @@ public class ClickToPlant : MonoBehaviour
     public bool finishedPear = false;
 
     //specific to Sunflower
-    bool sunflowerPlanted = false;
+    public bool sunflowerPlanted = false;
     DateTime targetTimeSunflower1;
     DateTime targetTimeSunflower2;
     DateTime targetTimeSunflower3;
@@ -93,7 +93,7 @@ public class ClickToPlant : MonoBehaviour
     public bool finishedSunflower = false;
 
     //specific to Cherry
-    bool cherryPlanted = false;
+    public bool cherryPlanted = false;
     DateTime targetTimeCherry1;
     DateTime targetTimeCherry2;
     DateTime targetTimeCherry3;
@@ -101,7 +101,7 @@ public class ClickToPlant : MonoBehaviour
     public bool finishedCherry = false;
 
     //specific to Avocado
-    bool avocadoPlanted = false;
+    public bool avocadoPlanted = false;
     DateTime targetTimeAvocado1;
     DateTime targetTimeAvocado2;
     DateTime targetTimeAvocado3;
@@ -109,7 +109,7 @@ public class ClickToPlant : MonoBehaviour
     public bool finishedAvocado = false;
 
     //specific to Kiwi
-    bool kiwiPlanted = false;
+    public bool kiwiPlanted = false;
     DateTime targetTimeKiwi1;
     DateTime targetTimeKiwi2;
     DateTime targetTimeKiwi3;
