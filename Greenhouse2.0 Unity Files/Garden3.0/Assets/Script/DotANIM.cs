@@ -9,6 +9,9 @@ using UnityEngine.UI;
 
 public class DotANIM : MonoBehaviour
 {
+
+    public RectTransform paymentpannel, gemshop;
+
     public GameObject tutorial;
     public RectTransform welcome, T1, T2, wheatarrow, T3, T4, T5, T6,nameArrow, waterArrow,potArrow,sellArrow,GemArrow, marketarrow;
     public Text txt1, btxt1, txt2, btxt2, txt3, btxt3, txt4, btxt4, txt5, btxt5, txt6, btxt6, txt7, btxt7;
@@ -23,6 +26,25 @@ public class DotANIM : MonoBehaviour
     public RectTransform WheatScreen, AppleScreen, TomatoScreen, EggplantScreen, PearScreen, SunflowerScreen, CherryScreen, AvoScreen, KiwiScreen;
     public RectTransform p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16;
 
+
+    public void payin()
+    {
+        paymentpannel.DOAnchorPos(new Vector2(-12, 0), 0.25f);
+    }
+    public void payout()
+    {
+        paymentpannel.DOAnchorPos(new Vector2(-2000, 0), 0.25f);
+    }
+
+    public void gemshopin()
+    {
+        gemshop.DOAnchorPos(new Vector2(0, 0), 0.25f);
+    }
+    public void gemshopout()
+    {
+        gemshop.DOAnchorPos(new Vector2(-2000, 0), 0.25f);
+        paymentpannel.DOAnchorPos(new Vector2(-2000, 0), 0.25f);
+    }
 
     public void tuto1()
     {
