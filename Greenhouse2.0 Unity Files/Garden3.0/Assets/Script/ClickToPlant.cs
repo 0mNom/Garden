@@ -1002,15 +1002,24 @@ public class ClickToPlant : MonoBehaviour
         ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
         //Debug.Log(buttonPopUpScript.GemPrice);
         BagScript bagScript = bagObject.GetComponent<BagScript>();
-        bagScript.Gems = bagScript.Gems - buttonPopUpScript.GemPrice;
-        targetTimeApple3 = CurrentTime;
-        targetTimeAvocado3 = CurrentTime;
-        targetTimeBle3 = CurrentTime;
-        targetTimeCherry3 = CurrentTime;
-        targetTimeEggplant3 = CurrentTime;
-        targetTimeKiwi3 = CurrentTime;
-        targetTimePear3 = CurrentTime;
-        targetTimeSunflower3 = CurrentTime;
-        targetTimeTomato3 = CurrentTime;
+        if (bagScript.Gems - buttonPopUpScript.GemPrice < 0)
+        {
+            //FAIRE UN TRUC AVEC UN PANEL ICI
+            Debug.Log("t'as pas la tune lol");
+        }
+
+        else
+        {
+            bagScript.Gems = bagScript.Gems - buttonPopUpScript.GemPrice;
+            targetTimeApple3 = CurrentTime;
+            targetTimeAvocado3 = CurrentTime;
+            targetTimeBle3 = CurrentTime;
+            targetTimeCherry3 = CurrentTime;
+            targetTimeEggplant3 = CurrentTime;
+            targetTimeKiwi3 = CurrentTime;
+            targetTimePear3 = CurrentTime;
+            targetTimeSunflower3 = CurrentTime;
+            targetTimeTomato3 = CurrentTime;
+        }
     }
 }
