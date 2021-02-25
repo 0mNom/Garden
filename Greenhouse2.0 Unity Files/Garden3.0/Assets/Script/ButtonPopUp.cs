@@ -134,7 +134,7 @@ public class ButtonPopUp : MonoBehaviour
                         timeTextPot3.SetActive(true);
                     }
 
-                    Debug.Log(Tag);
+                    //Debug.Log(Tag);
 
                     OpenPanel(Tag);
                     buttonSkin1.onClick.AddListener(potSkins.skin1);
@@ -479,6 +479,19 @@ public class ButtonPopUp : MonoBehaviour
         buttonSkin1.onClick.RemoveListener(potSkins.skin1);
         buttonSkin2.onClick.RemoveListener(potSkins.skin2);
         buttonSkin3.onClick.RemoveListener(potSkins.skin3);
+        buttonSkin4.onClick.RemoveListener(potSkins.skin4);
+        buttonSkin5.onClick.RemoveListener(potSkins.skin5);
+        buttonSkin6.onClick.RemoveListener(potSkins.skin6);
+        buttonSkin7.onClick.RemoveListener(potSkins.skin7);
+        buttonSkin8.onClick.RemoveListener(potSkins.skin8);
+        buttonSkin9.onClick.RemoveListener(potSkins.skin9);
+        buttonSkin10.onClick.RemoveListener(potSkins.skin10);
+        buttonSkin11.onClick.RemoveListener(potSkins.skin11);
+        buttonSkin12.onClick.RemoveListener(potSkins.skin12);
+        buttonSkin13.onClick.RemoveListener(potSkins.skin13);
+        buttonSkin14.onClick.RemoveListener(potSkins.skin14);
+        buttonSkin15.onClick.RemoveListener(potSkins.skin15);
+        buttonSkin16.onClick.RemoveListener(potSkins.skin16);
         //Debug.Log("pannelactive = " + pannelActive);
         //Debug.Log(Tag);
 
