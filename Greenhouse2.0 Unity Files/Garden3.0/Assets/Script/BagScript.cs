@@ -472,6 +472,7 @@ public class BagScript : MonoBehaviour
         else
         {
             SliderWheat.maxValue = SliderWheat.value;
+            SliderWheat.value = 1;
         }
         
     }
@@ -488,6 +489,7 @@ public class BagScript : MonoBehaviour
         else
         {
             SliderApple.maxValue = SliderApple.value;
+            SliderApple.value = 1;
         }
     }
 
@@ -503,6 +505,7 @@ public class BagScript : MonoBehaviour
         else
         {
             SliderCherry.maxValue = SliderCherry.value;
+            SliderCherry.value = 1;
         }
     }
 
@@ -518,6 +521,7 @@ public class BagScript : MonoBehaviour
         else
         {
             SliderSunflower.maxValue = SliderSunflower.value;
+            SliderSunflower.value = 1;
         }
     }
 
@@ -533,6 +537,7 @@ public class BagScript : MonoBehaviour
         else
         {
             SliderEggplant.maxValue = SliderEggplant.value;
+            SliderEggplant.value = 1;
         }
     }
 
@@ -548,6 +553,7 @@ public class BagScript : MonoBehaviour
         else
         {
             SliderPear.maxValue = SliderPear.value;
+            SliderPear.value = 1;
         }
     }
 
@@ -563,6 +569,7 @@ public class BagScript : MonoBehaviour
         else
         {
             SliderKiwi.maxValue = SliderKiwi.value;
+            SliderKiwi.value = 1;
         }
     }
 
@@ -578,6 +585,7 @@ public class BagScript : MonoBehaviour
         else
         {
             SliderAvo.maxValue = SliderAvo.value;
+            SliderAvo.value = 1;
         }
     }
 
@@ -593,6 +601,7 @@ public class BagScript : MonoBehaviour
         else
         {
             SliderTomato.maxValue = SliderTomato.value;
+            SliderTomato.value = 1;
         }
     }
 

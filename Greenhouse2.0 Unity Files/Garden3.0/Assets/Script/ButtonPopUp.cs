@@ -353,8 +353,8 @@ public class ButtonPopUp : MonoBehaviour
                 {
                     GemPrice1 = 1;
                 }
-                Pay2FastButtonPot1.GetComponentInChildren<TMP_Text>().text = "USE " + GemPrice1.ToString() + " GEMS";
-                spendGemsPot1.text = "Do you want to spend " + GemPrice1.ToString() + " gems to speed up the growth?";
+                Pay2FastButtonPot1.GetComponentInChildren<TMP_Text>().text = "USE " + GemPrice1.ToString() + " AMBERS";
+                spendGemsPot1.text = "Do you want to spend " + GemPrice1.ToString() + " amber(s) to speed up the growth?";
             }
 
             Tag = col.tag;
@@ -365,8 +365,8 @@ public class ButtonPopUp : MonoBehaviour
                 {
                     GemPrice2 = 1;
                 }
-                Pay2FastButtonPot2.GetComponentInChildren<TMP_Text>().text = "USE " + GemPrice2.ToString() + " GEMS";
-                spendGemsPot2.text = "Do you want to spend " + GemPrice2.ToString() + " gems to speed up the growth?";
+                Pay2FastButtonPot2.GetComponentInChildren<TMP_Text>().text = "USE " + GemPrice2.ToString() + " AMBERS";
+                spendGemsPot2.text = "Do you want to spend " + GemPrice2.ToString() + " amber(s) to speed up the growth?";
             }
 
             Tag = col.tag;
@@ -377,8 +377,8 @@ public class ButtonPopUp : MonoBehaviour
                 {
                     GemPrice3 = 1;
                 }
-                Pay2FastButtonPot3.GetComponentInChildren<TMP_Text>().text = "USE " + GemPrice3.ToString() + " GEMS";
-                spendGemsPot3.text = "Do you want to spend " + GemPrice3.ToString() + " gems to speed up the growth?";
+                Pay2FastButtonPot3.GetComponentInChildren<TMP_Text>().text = "USE " + GemPrice3.ToString() + " AMBERS";
+                spendGemsPot3.text = "Do you want to spend " + GemPrice3.ToString() + " amber(s) to speed up the growth?";
             }
         }
         

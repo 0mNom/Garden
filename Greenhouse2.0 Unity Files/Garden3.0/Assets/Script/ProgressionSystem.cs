@@ -5,11 +5,20 @@ using TMPro;
 
 public class ProgressionSystem : MonoBehaviour
 {
+    public GameObject tomatoBuyButton;
+    public GameObject eggplantBuyButton;
+    public GameObject pearBuyButton;
+    public GameObject sunflowerBuyButton;
+    public GameObject cherryBuyButton;
+    public GameObject avocadoBuyButton;
+    public GameObject kiwiBuyButton;
+
     public GameObject NoMoneyToLvlUpPanel;
     public GameObject bagObject;
 
     public int playerLevel;
 
+    /*
     public bool canBuyTomato;
     public bool canBuyEggplant;
     public bool canBuyPear;
@@ -17,6 +26,7 @@ public class ProgressionSystem : MonoBehaviour
     public bool canBuyCherry;
     public bool canBuyAvocado;
     public bool canBuyKiwi;
+    */
 
     public TextMeshProUGUI playerLevelText;
     public TextMeshProUGUI priceToLevelUpText;
@@ -34,6 +44,15 @@ public class ProgressionSystem : MonoBehaviour
         {
             playerLevelText.text = "Level 1";
             priceToLevelUpText.text = "Spend 250 leaves to level up and get a new pot, access to the Tomato seed, and 10 free amber?";
+            tomatoBuyButton.SetActive(false);
+            eggplantBuyButton.SetActive(false);
+            pearBuyButton.SetActive(false);
+            sunflowerBuyButton.SetActive(false);
+            cherryBuyButton.SetActive(false);
+            avocadoBuyButton.SetActive(false);
+            kiwiBuyButton.SetActive(false);
+
+            /*
             canBuyTomato = false;
             canBuyEggplant = false;
             canBuyPear = false;
@@ -41,12 +60,22 @@ public class ProgressionSystem : MonoBehaviour
             canBuyCherry = false;
             canBuyAvocado = false;
             canBuyKiwi = false;
+            */
         }
 
         if (playerLevel == 2)
         {
             playerLevelText.text = "Level 2";
-            priceToLevelUpText.text = "Spend 750 leaves to level up and get a new pot, access to the Eggplant seed and 20 free amber?";
+            priceToLevelUpText.text = "Spend 750 leaves to level up and get a new pot and 20 free amber?";
+            tomatoBuyButton.SetActive(true);
+            eggplantBuyButton.SetActive(false);
+            pearBuyButton.SetActive(false);
+            sunflowerBuyButton.SetActive(false);
+            cherryBuyButton.SetActive(false);
+            avocadoBuyButton.SetActive(false);
+            kiwiBuyButton.SetActive(false);
+
+            /*
             canBuyTomato = true;
             canBuyEggplant = false;
             canBuyPear = false;
@@ -54,11 +83,21 @@ public class ProgressionSystem : MonoBehaviour
             canBuyCherry = false;
             canBuyAvocado = false;
             canBuyKiwi = false;
+            */
         }
         else if (playerLevel == 3)
         {
             playerLevelText.text = "Level 3";
             priceToLevelUpText.text = "Spend 1500 leaves to level up and get access to the Eggplant seed and 30 free amber?";
+            tomatoBuyButton.SetActive(true);
+            eggplantBuyButton.SetActive(false);
+            pearBuyButton.SetActive(false);
+            sunflowerBuyButton.SetActive(false);
+            cherryBuyButton.SetActive(false);
+            avocadoBuyButton.SetActive(false);
+            kiwiBuyButton.SetActive(false);
+
+            /*
             canBuyTomato = true;
             canBuyEggplant = false;
             canBuyPear = false;
@@ -66,11 +105,21 @@ public class ProgressionSystem : MonoBehaviour
             canBuyCherry = false;
             canBuyAvocado = false;
             canBuyKiwi = false;
+            */
         }
         else if (playerLevel == 4)
         {
             playerLevelText.text = "Level 4";
             priceToLevelUpText.text = "Spend 3500 leaves to level up and get access to the Pear seed and 40 free amber?";
+            tomatoBuyButton.SetActive(true);
+            eggplantBuyButton.SetActive(true);
+            pearBuyButton.SetActive(false);
+            sunflowerBuyButton.SetActive(false);
+            cherryBuyButton.SetActive(false);
+            avocadoBuyButton.SetActive(false);
+            kiwiBuyButton.SetActive(false);
+
+            /*
             canBuyTomato = true;
             canBuyEggplant = true;
             canBuyPear = false;
@@ -78,11 +127,21 @@ public class ProgressionSystem : MonoBehaviour
             canBuyCherry = false;
             canBuyAvocado = false;
             canBuyKiwi = false;
+            */
         }
         else if (playerLevel == 5)
         {
             playerLevelText.text = "Level 5";
             priceToLevelUpText.text = "Spend 7500 leaves to level up and get access to the Sunflower seed and 50 free amber?";
+            tomatoBuyButton.SetActive(true);
+            eggplantBuyButton.SetActive(true);
+            pearBuyButton.SetActive(true);
+            sunflowerBuyButton.SetActive(false);
+            cherryBuyButton.SetActive(false);
+            avocadoBuyButton.SetActive(false);
+            kiwiBuyButton.SetActive(false);
+
+            /*
             canBuyTomato = true;
             canBuyEggplant = true;
             canBuyPear = true;
@@ -90,11 +149,21 @@ public class ProgressionSystem : MonoBehaviour
             canBuyCherry = false;
             canBuyAvocado = false;
             canBuyKiwi = false;
+            */
         }
         else if (playerLevel == 6)
         {
             playerLevelText.text = "Level 6";
             priceToLevelUpText.text = "Spend 15000 leaves to level up and get access to the Cherry seed and 60 free amber?";
+            tomatoBuyButton.SetActive(true);
+            eggplantBuyButton.SetActive(true);
+            pearBuyButton.SetActive(true);
+            sunflowerBuyButton.SetActive(true);
+            cherryBuyButton.SetActive(false);
+            avocadoBuyButton.SetActive(false);
+            kiwiBuyButton.SetActive(false);
+
+            /*
             canBuyTomato = true;
             canBuyEggplant = true;
             canBuyPear = true;
@@ -102,11 +171,21 @@ public class ProgressionSystem : MonoBehaviour
             canBuyCherry = false;
             canBuyAvocado = false;
             canBuyKiwi = false;
+            */
         }
         else if (playerLevel == 7)
         {
             playerLevelText.text = "Level 7";
             priceToLevelUpText.text = "Spend 22500 leaves to level up and get access to the Avocado seed and 70 free amber?";
+            tomatoBuyButton.SetActive(true);
+            eggplantBuyButton.SetActive(true);
+            pearBuyButton.SetActive(true);
+            sunflowerBuyButton.SetActive(true);
+            cherryBuyButton.SetActive(true);
+            avocadoBuyButton.SetActive(false);
+            kiwiBuyButton.SetActive(false);
+
+            /*
             canBuyTomato = true;
             canBuyEggplant = true;
             canBuyPear = true;
@@ -114,11 +193,21 @@ public class ProgressionSystem : MonoBehaviour
             canBuyCherry = true;
             canBuyAvocado = false;
             canBuyKiwi = false;
+            */
         }
         else if (playerLevel == 8)
         {
             playerLevelText.text = "Level 8";
             priceToLevelUpText.text = "Spend 55000 leaves to level up and get access to the Kiwi seed and 80 free amber?";
+            tomatoBuyButton.SetActive(true);
+            eggplantBuyButton.SetActive(true);
+            pearBuyButton.SetActive(true);
+            sunflowerBuyButton.SetActive(true);
+            cherryBuyButton.SetActive(true);
+            avocadoBuyButton.SetActive(true);
+            kiwiBuyButton.SetActive(false);
+
+            /*
             canBuyTomato = true;
             canBuyEggplant = true;
             canBuyPear = true;
@@ -126,10 +215,20 @@ public class ProgressionSystem : MonoBehaviour
             canBuyCherry = true;
             canBuyAvocado = true;
             canBuyKiwi = false;
+            */
         }
         else if (playerLevel == 9)
         {
             playerLevelText.text = "Level 9";
+            tomatoBuyButton.SetActive(true);
+            eggplantBuyButton.SetActive(true);
+            pearBuyButton.SetActive(true);
+            sunflowerBuyButton.SetActive(true);
+            cherryBuyButton.SetActive(true);
+            avocadoBuyButton.SetActive(true);
+            kiwiBuyButton.SetActive(true);
+
+            /*
             canBuyTomato = true;
             canBuyEggplant = true;
             canBuyPear = true;
@@ -138,6 +237,7 @@ public class ProgressionSystem : MonoBehaviour
             canBuyCherry = true;
             canBuyAvocado = true;
             canBuyKiwi = true;
+            */
         }
     }
 
