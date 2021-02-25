@@ -4,24 +4,22 @@ using UnityEngine;
 
 public class Sounds : MonoBehaviour
 {
-    public AudioClip s_PotPlaced, s_buy, s_start, s_upgrade, s_evolution, s_planted, s_inventO, s_inventC, s_market, s_tab, 
-        BG_music, s_pop, s_closeSeedBag, s_water, s_close, s_sellPlant, s_error,  s_openSeedBag;
+    public AudioClip s_PotPlaced, s_buy, s_start, s_upgrade, s_evolution, s_planted, s_inventO, s_inventC, s_market, s_tab, s_pop, s_closeSeedBag, s_water, s_close, s_sellPlant, s_error,  s_openSeedBag;
+    
 
-    AudioSource musicAudioSource;
     private AudioSource source { get { return GetComponent<AudioSource>(); } }
 
 
     void Start()
     {
-        musicAudioSource = gameObject.AddComponent<AudioSource>();
-        source.clip = BG_music;
-        musicAudioSource.loop = true;
+        gameObject.AddComponent<AudioSource>();
+        //source.clip = BG_music;
         source.playOnAwake = false;
 
-        source.volume = 0.5f;
+        source.volume = 0.4f;
 
-        source.clip = BG_music;
-        source.PlayOneShot(BG_music);
+        //source.clip = BG_music;
+        //source.PlayOneShot(BG_music);
     }
 
     // Update is called once per frame
