@@ -66,7 +66,7 @@ public class ProgressionSystem : MonoBehaviour
         if (playerLevel == 2)
         {
             playerLevelText.text = "Level 2";
-            priceToLevelUpText.text = "Spend 750 leaves to level up and get a new pot and 20 free amber?";
+            priceToLevelUpText.text = "Spend 750 leaves to level up and get a new pot and 15 free amber?";
 
             pot3.GetComponent<Collider2D>().enabled = false;
             pot3.GetComponent<SpriteRenderer>().enabled = false;
@@ -86,7 +86,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 3)
         {
             playerLevelText.text = "Level 3";
-            priceToLevelUpText.text = "Spend 1500 leaves to level up and get access to the Eggplant seed and 30 free amber?";
+            priceToLevelUpText.text = "Spend 1500 leaves to level up and get access to the Eggplant seed and 20 free amber?";
             tomatoBuyButton.SetActive(true);
             eggplantBuyButton.SetActive(false);
             pearBuyButton.SetActive(false);
@@ -98,7 +98,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 4)
         {
             playerLevelText.text = "Level 4";
-            priceToLevelUpText.text = "Spend 3500 leaves to level up and get access to the Pear seed and 40 free amber?";
+            priceToLevelUpText.text = "Spend 3500 leaves to level up and get access to the Pear seed and 25 free amber?";
             tomatoBuyButton.SetActive(true);
             eggplantBuyButton.SetActive(true);
             pearBuyButton.SetActive(false);
@@ -110,7 +110,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 5)
         {
             playerLevelText.text = "Level 5";
-            priceToLevelUpText.text = "Spend 7500 leaves to level up and get access to the Sunflower seed and 50 free amber?";
+            priceToLevelUpText.text = "Spend 7500 leaves to level up and get access to the Sunflower seed and 30 free amber?";
             tomatoBuyButton.SetActive(true);
             eggplantBuyButton.SetActive(true);
             pearBuyButton.SetActive(true);
@@ -122,7 +122,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 6)
         {
             playerLevelText.text = "Level 6";
-            priceToLevelUpText.text = "Spend 15000 leaves to level up and get access to the Cherry seed and 60 free amber?";
+            priceToLevelUpText.text = "Spend 15000 leaves to level up and get access to the Cherry seed and 35 free amber?";
             tomatoBuyButton.SetActive(true);
             eggplantBuyButton.SetActive(true);
             pearBuyButton.SetActive(true);
@@ -134,7 +134,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 7)
         {
             playerLevelText.text = "Level 7";
-            priceToLevelUpText.text = "Spend 22500 leaves to level up and get access to the Avocado seed and 70 free amber?";
+            priceToLevelUpText.text = "Spend 22500 leaves to level up and get access to the Avocado seed and 40 free amber?";
             tomatoBuyButton.SetActive(true);
             eggplantBuyButton.SetActive(true);
             pearBuyButton.SetActive(true);
@@ -146,7 +146,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 8)
         {
             playerLevelText.text = "Level 8";
-            priceToLevelUpText.text = "Spend 55000 leaves to level up and get access to the Kiwi seed and 80 free amber?";
+            priceToLevelUpText.text = "Spend 55000 leaves to level up and get access to the Kiwi seed and 45 free amber?";
             tomatoBuyButton.SetActive(true);
             eggplantBuyButton.SetActive(true);
             pearBuyButton.SetActive(true);
@@ -196,7 +196,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 750)
             {
                 playerLevel = 3;
-                bagScript.Gems = bagScript.Gems + 20;
+                bagScript.Gems = bagScript.Gems + 15;
                 bagScript.Monay = bagScript.Monay - 750;
                 pot3.GetComponent<Collider2D>().enabled = true;
                 pot3.GetComponent<SpriteRenderer>().enabled = true;
@@ -214,7 +214,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 1500)
             {
                 playerLevel = 4;
-                bagScript.Gems = bagScript.Gems + 30;
+                bagScript.Gems = bagScript.Gems + 20;
                 bagScript.Monay = bagScript.Monay - 1500;
             }
             else
@@ -227,7 +227,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 3500)
             {
                 playerLevel = 5;
-                bagScript.Gems = bagScript.Gems + 40;
+                bagScript.Gems = bagScript.Gems + 25;
                 bagScript.Monay = bagScript.Monay - 3500;
             }
             else
@@ -240,7 +240,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 7500)
             {
                 playerLevel = 6;
-                bagScript.Gems = bagScript.Gems + 50;
+                bagScript.Gems = bagScript.Gems + 30;
                 bagScript.Monay = bagScript.Monay - 7500;
             }
             else
@@ -253,7 +253,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 15000)
             {
                 playerLevel = 7;
-                bagScript.Gems = bagScript.Gems + 60;
+                bagScript.Gems = bagScript.Gems + 35;
                 bagScript.Monay = bagScript.Monay - 15000;
             }
             else
@@ -266,7 +266,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 22500)
             {
                 playerLevel = 8;
-                bagScript.Gems = bagScript.Gems + 70;
+                bagScript.Gems = bagScript.Gems + 40;
                 bagScript.Monay = bagScript.Monay - 22500;
             }
             else
@@ -279,7 +279,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 55000)
             {
                 playerLevel = 9;
-                bagScript.Gems = bagScript.Gems + 80;
+                bagScript.Gems = bagScript.Gems + 45;
                 bagScript.Monay = bagScript.Monay - 55000;
             }
             else

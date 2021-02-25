@@ -40,193 +40,193 @@ public class Inventory : MonoBehaviour
     }
     public void buyP1()
     {
-        if (bag.Gems < 10)
+        if (bag.Gems < 200)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 10;
+            bag.Gems -= 200;
             pot1++;
         }
     }
     public void buyP2()
     {
-        if (bag.Gems < 2)
+        if (bag.Gems < 200)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 2;
+            bag.Gems -= 200;
             pot2++;
         }
     }
     public void buyP3()
     {
-        if (bag.Gems < 1)
+        if (bag.Gems < 350)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 1;
+            bag.Gems -= 350;
             pot3++;
         }
     }
     public void buyP4()
     {
-        if (bag.Gems < 2)
+        if (bag.Gems < 350)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 2;
+            bag.Gems -= 350;
             pot4++;
         }
     }
     public void buyP5()
     {
-        if (bag.Gems < 30)
+        if (bag.Gems < 500)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 30;
+            bag.Gems -= 500;
             pot5++;
         }
     }
     public void buyP6()
     {
-        if (bag.Gems < 1)
+        if (bag.Gems < 350)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 1;
+            bag.Gems -= 350;
             pot6++;
         }
     }
     public void buyP7()
     {
-        if (bag.Gems < 4)
+        if (bag.Gems < 350)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 4;
+            bag.Gems -= 350;
             pot7++;
         }
     }
      public void buyP8()
     {
-        if (bag.Gems < 4)
+        if (bag.Gems < 500)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 4;
+            bag.Gems -= 500;
             pot8++;
         }
     }
      public void buyP9()
     {
-        if (bag.Gems < 4)
+        if (bag.Gems < 500)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 4;
+            bag.Gems -= 500;
             pot9++;
         }
     }
      public void buyP10()
     {
-        if (bag.Gems < 4)
+        if (bag.Gems < 200)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 4;
+            bag.Gems -= 200;
             pot10++;
         }
     }
      public void buyP11()
     {
-        if (bag.Gems < 4)
+        if (bag.Gems < 200)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 4;
+            bag.Gems -= 200;
             pot11++;
         }
     }
      public void buyP12()
     {
-        if (bag.Gems < 4)
+        if (bag.Gems < 750)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 4;
+            bag.Gems -= 750;
             pot12++;
         }
     }
      public void buyP13()
     {
-        if (bag.Gems < 4)
+        if (bag.Gems < 750)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 4;
+            bag.Gems -= 750;
             pot13++;
         }
     }
      public void buyP14()
     {
-        if (bag.Gems < 4)
+        if (bag.Gems < 750)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 4;
+            bag.Gems -= 750;
             pot14++;
         }
     }
      public void buyP15()
     {
-        if (bag.Gems < 4)
+        if (bag.Gems < 500)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 4;
+            bag.Gems -= 500;
             pot15++;
         }
     }
      public void buyP16()
     {
-        if (bag.Gems < 4)
+        if (bag.Gems < 750)
         {
             StartCoroutine("errr");
         }
         else
         {
-            bag.Gems -= 4;
+            bag.Gems -= 750;
             pot16++;
         }
     }

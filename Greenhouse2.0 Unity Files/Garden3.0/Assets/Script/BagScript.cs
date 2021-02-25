@@ -46,7 +46,7 @@ public class BagScript : MonoBehaviour
     void Start()
     {
         Monay = 30000;
-        Gems = 10;
+        Gems = 10000;
         canOpenPannel = true;
         MakePotsShine = false;
         wheatprice = 10;
@@ -63,8 +63,8 @@ public class BagScript : MonoBehaviour
 
     public void starterPack()
     {
-        Monay += 2500;
-        Gems += 500;
+        Monay += 1250;
+        Gems += 250;
         randomseed(20);
     }
 
@@ -83,35 +83,59 @@ public class BagScript : MonoBehaviour
 
     public void amber70()
     {
-        Gems += 70;
+        Gems += 35;
     }
     public void amber1000()
     {
-        Gems += 1000;
+        Gems += 500;
     }
     public void amber6000()
     {
-        Gems += 6000;
+        Gems += 3000;
     }
 
     public void randSeed5()
     {
-        randomseed(5);
+        if (Gems < 500)
+        {
+            StartCoroutine("errr");
+        }
+        else
+        {
+            Gems = Gems - 500;
+            randomseed(5);
+        }
     }
     public void randSeed30()
     {
-        randomseed(30);
+        if (Gems < 2665)
+        {
+            StartCoroutine("errr");
+        }
+        else
+        {
+            Gems = Gems - 2665;
+            randomseed(30);
+        }
     }
     public void randSeed50()
     {
-        randomseed(50);
+        if (Gems < 4300)
+        {
+            StartCoroutine("errr");
+        }
+        else
+        {
+            Gems = Gems - 4300;
+            randomseed(50);
+        }
     }
 
     public void randomseed(int amount)
     {
         for (int i = 0; i < amount; i++)
         {
-            int rand = Random.Range(1, 9);
+            int rand = Random.Range(1, 10);
             //Debug.Log(rand);
 
             if (rand == 1) wheatseed++; 
