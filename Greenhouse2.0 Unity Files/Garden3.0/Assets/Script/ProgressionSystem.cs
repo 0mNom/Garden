@@ -13,20 +13,16 @@ public class ProgressionSystem : MonoBehaviour
     public GameObject avocadoBuyButton;
     public GameObject kiwiBuyButton;
 
+    public GameObject pot2;
+    public GameObject pot3;
+
+    public GameObject pot2Shine;
+    public GameObject pot3Shine;
+
     public GameObject NoMoneyToLvlUpPanel;
     public GameObject bagObject;
 
     public int playerLevel;
-
-    /*
-    public bool canBuyTomato;
-    public bool canBuyEggplant;
-    public bool canBuyPear;
-    public bool canBuySunflower;
-    public bool canBuyCherry;
-    public bool canBuyAvocado;
-    public bool canBuyKiwi;
-    */
 
     public TextMeshProUGUI playerLevelText;
     public TextMeshProUGUI priceToLevelUpText;
@@ -44,6 +40,20 @@ public class ProgressionSystem : MonoBehaviour
         {
             playerLevelText.text = "Level 1";
             priceToLevelUpText.text = "Spend 250 leaves to level up and get a new pot, access to the Tomato seed, and 10 free amber?";
+
+            pot2.GetComponent<Collider2D>().enabled = false;
+            pot2.GetComponent<SpriteRenderer>().enabled = false;
+            pot2Shine.GetComponent<SpriteRenderer>().enabled = false;
+
+            pot3.GetComponent<Collider2D>().enabled = false;
+            pot3.GetComponent<SpriteRenderer>().enabled = false;
+            pot3Shine.GetComponent<SpriteRenderer>().enabled = false;
+
+            // clickToPlantScriptPot2 = pot2.GetComponent<ClickToPlant>();
+            //clickToPlantScriptPot2.gotPlant = true;
+            //ClickToPlant clickToPlantScriptPot3 = pot3.GetComponent<ClickToPlant>();
+            //clickToPlantScriptPot3.gotPlant = true;
+
             tomatoBuyButton.SetActive(false);
             eggplantBuyButton.SetActive(false);
             pearBuyButton.SetActive(false);
@@ -51,22 +61,20 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.SetActive(false);
             avocadoBuyButton.SetActive(false);
             kiwiBuyButton.SetActive(false);
-
-            /*
-            canBuyTomato = false;
-            canBuyEggplant = false;
-            canBuyPear = false;
-            canBuySunflower = false;
-            canBuyCherry = false;
-            canBuyAvocado = false;
-            canBuyKiwi = false;
-            */
         }
 
         if (playerLevel == 2)
         {
             playerLevelText.text = "Level 2";
             priceToLevelUpText.text = "Spend 750 leaves to level up and get a new pot and 20 free amber?";
+
+            pot3.GetComponent<Collider2D>().enabled = false;
+            pot3.GetComponent<SpriteRenderer>().enabled = false;
+            pot3Shine.GetComponent<SpriteRenderer>().enabled = false;
+
+            //ClickToPlant clickToPlantScriptPot3 = pot3.GetComponent<ClickToPlant>();
+            //clickToPlantScriptPot3.gotPlant = true;
+
             tomatoBuyButton.SetActive(true);
             eggplantBuyButton.SetActive(false);
             pearBuyButton.SetActive(false);
@@ -74,16 +82,6 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.SetActive(false);
             avocadoBuyButton.SetActive(false);
             kiwiBuyButton.SetActive(false);
-
-            /*
-            canBuyTomato = true;
-            canBuyEggplant = false;
-            canBuyPear = false;
-            canBuySunflower = false;
-            canBuyCherry = false;
-            canBuyAvocado = false;
-            canBuyKiwi = false;
-            */
         }
         else if (playerLevel == 3)
         {
@@ -96,16 +94,6 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.SetActive(false);
             avocadoBuyButton.SetActive(false);
             kiwiBuyButton.SetActive(false);
-
-            /*
-            canBuyTomato = true;
-            canBuyEggplant = false;
-            canBuyPear = false;
-            canBuySunflower = false;
-            canBuyCherry = false;
-            canBuyAvocado = false;
-            canBuyKiwi = false;
-            */
         }
         else if (playerLevel == 4)
         {
@@ -118,16 +106,6 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.SetActive(false);
             avocadoBuyButton.SetActive(false);
             kiwiBuyButton.SetActive(false);
-
-            /*
-            canBuyTomato = true;
-            canBuyEggplant = true;
-            canBuyPear = false;
-            canBuySunflower = false;
-            canBuyCherry = false;
-            canBuyAvocado = false;
-            canBuyKiwi = false;
-            */
         }
         else if (playerLevel == 5)
         {
@@ -140,16 +118,6 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.SetActive(false);
             avocadoBuyButton.SetActive(false);
             kiwiBuyButton.SetActive(false);
-
-            /*
-            canBuyTomato = true;
-            canBuyEggplant = true;
-            canBuyPear = true;
-            canBuySunflower = false;
-            canBuyCherry = false;
-            canBuyAvocado = false;
-            canBuyKiwi = false;
-            */
         }
         else if (playerLevel == 6)
         {
@@ -162,16 +130,6 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.SetActive(false);
             avocadoBuyButton.SetActive(false);
             kiwiBuyButton.SetActive(false);
-
-            /*
-            canBuyTomato = true;
-            canBuyEggplant = true;
-            canBuyPear = true;
-            canBuySunflower = true;
-            canBuyCherry = false;
-            canBuyAvocado = false;
-            canBuyKiwi = false;
-            */
         }
         else if (playerLevel == 7)
         {
@@ -184,16 +142,6 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.SetActive(true);
             avocadoBuyButton.SetActive(false);
             kiwiBuyButton.SetActive(false);
-
-            /*
-            canBuyTomato = true;
-            canBuyEggplant = true;
-            canBuyPear = true;
-            canBuySunflower = true;
-            canBuyCherry = true;
-            canBuyAvocado = false;
-            canBuyKiwi = false;
-            */
         }
         else if (playerLevel == 8)
         {
@@ -206,16 +154,6 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.SetActive(true);
             avocadoBuyButton.SetActive(true);
             kiwiBuyButton.SetActive(false);
-
-            /*
-            canBuyTomato = true;
-            canBuyEggplant = true;
-            canBuyPear = true;
-            canBuySunflower = true;
-            canBuyCherry = true;
-            canBuyAvocado = true;
-            canBuyKiwi = false;
-            */
         }
         else if (playerLevel == 9)
         {
@@ -227,17 +165,6 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.SetActive(true);
             avocadoBuyButton.SetActive(true);
             kiwiBuyButton.SetActive(true);
-
-            /*
-            canBuyTomato = true;
-            canBuyEggplant = true;
-            canBuyPear = true;
-            canBuyPear = true;
-            canBuySunflower = true;
-            canBuyCherry = true;
-            canBuyAvocado = true;
-            canBuyKiwi = true;
-            */
         }
     }
 
@@ -253,6 +180,11 @@ public class ProgressionSystem : MonoBehaviour
                 playerLevel = 2;
                 bagScript.Gems = bagScript.Gems + 10;
                 bagScript.Monay = bagScript.Monay - 250;
+                pot2.GetComponent<Collider2D>().enabled = true;
+                pot2.GetComponent<SpriteRenderer>().enabled = true;
+                pot2Shine.GetComponent<SpriteRenderer>().enabled = true;
+                //ClickToPlant clickToPlantScriptPot2 = pot2.GetComponent<ClickToPlant>();
+                //clickToPlantScriptPot2.gotPlant = false;
             }
             else
             {
@@ -266,6 +198,11 @@ public class ProgressionSystem : MonoBehaviour
                 playerLevel = 3;
                 bagScript.Gems = bagScript.Gems + 20;
                 bagScript.Monay = bagScript.Monay - 750;
+                pot3.GetComponent<Collider2D>().enabled = true;
+                pot3.GetComponent<SpriteRenderer>().enabled = true;
+                pot3Shine.GetComponent<SpriteRenderer>().enabled = true;
+                // clickToPlantScriptPot3 = pot3.GetComponent<ClickToPlant>();
+                //clickToPlantScriptPot3.gotPlant = false;
             }
             else
             {
