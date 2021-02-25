@@ -7,6 +7,10 @@ using TMPro;
 public class ClickToPlant : MonoBehaviour
 {
     public Sounds sound;
+
+    public bool ev = true ;
+
+    public GameObject sparks;
     
     public int hours;
     public int minutes;
@@ -28,6 +32,7 @@ public class ClickToPlant : MonoBehaviour
     public bool canWater = false;
     public bool canWaterFirstEvo = false;
     public bool canWaterSecondEvo = false;
+    public bool canWaterThirdEvo = false;
     //public float waterIncrease = 1.1f;
 
     //the end 
@@ -138,7 +143,6 @@ public class ClickToPlant : MonoBehaviour
             {
                 ShineSprite.SetActive(false);
                
-
 
 
             }
@@ -336,6 +340,7 @@ public class ClickToPlant : MonoBehaviour
                     //Debug.Log(tag);
                     canWaterFirstEvo = true;
                     canWaterSecondEvo = true;
+                    canWaterThirdEvo = true;
                     //Debug.Log(canWaterFirstEvo);
                     //Debug.Log(canWaterSecondEvo);
                 }
@@ -377,10 +382,21 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 plantFinished = true;
-                
+                if (canWaterThirdEvo == true)
+                {
+                    canWaterThirdEvo = false;
+                    ev = true;
+                }
+
                 blePlanted = false;
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                   
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -390,13 +406,21 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterSecondEvo = false;
+                    ev = true;
                 }
                 //canWater = true;
                 plantInPot = 1.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
+               
                 buttonPopUpScript.LoadPannel();
             }
             else if (DateTime.Compare(CurrentTime, targetTimeBle1) == 1)
@@ -405,6 +429,7 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterFirstEvo = false;
+                    ev = true;
                     
                 }
                 //canWater = true;
@@ -412,10 +437,17 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
                 plantInPot = 1.1f;
                 EnvoyerVariable(tag);
-                Debug.Log("soounddd");
-                sound.evol();
+
+                if (ev)
+                {
+                    sendN = true;
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
+
                 potPlace.loadplants();
-                sendN = true;
+               
 
             }
 
@@ -449,8 +481,19 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 2.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                if (canWaterThirdEvo == true)
+                {
+                    canWaterThirdEvo = false;
+                    ev = true;
+                }
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -462,6 +505,7 @@ public class ClickToPlant : MonoBehaviour
                 if (canWaterSecondEvo == true)
                 {
                     canWater = true;
+                    ev = true;
                     canWaterSecondEvo = false;
                 }
                 //canWater = true;
@@ -469,7 +513,13 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -478,6 +528,7 @@ public class ClickToPlant : MonoBehaviour
                 if (canWaterFirstEvo == true)
                 {
                     canWater = true;
+                    ev = true;
                     canWaterFirstEvo = false;
                 }
                 //canWater = true;
@@ -485,9 +536,15 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    sendN = true;
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
-                sendN = true;
+               
 
             }
              
@@ -520,8 +577,19 @@ public class ClickToPlant : MonoBehaviour
                 plantInPot = 3.3f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
+                if (canWaterThirdEvo == true)
+                {
+                    canWaterThirdEvo = false;
+                    ev = true;
+                }
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -533,6 +601,7 @@ public class ClickToPlant : MonoBehaviour
                 if (canWaterSecondEvo == true)
                 {
                     canWater = true;
+                    ev = true;
                     canWaterSecondEvo = false;
                 }
                 //canWater = true;
@@ -540,7 +609,13 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -550,15 +625,22 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterFirstEvo = false;
+                    ev = true;
                 }
                 //canWater = true;
                 plantInPot = 3.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    sendN = true;
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
-                sendN = true;
+               
 
             }
             
@@ -591,7 +673,18 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (canWaterThirdEvo == true)
+                {
+                    canWaterThirdEvo = false;
+                    ev = true;
+                }
+                if (ev)
+                {
+                    
+                    sound.evol();
+
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -604,13 +697,20 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterSecondEvo = false;
+                    ev = true;
                 }
                 //canWater = true;
                 plantInPot = 4.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -620,15 +720,22 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterFirstEvo = false;
+                    ev = true;
                 }
                 //canWater = true;
                 plantInPot = 4.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    sendN = true;
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
-                sendN = true;
+                
 
             }
             
@@ -663,7 +770,18 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (canWaterThirdEvo == true)
+                {
+                    canWaterThirdEvo = false;
+                    ev = true;
+                }
+                if (ev)
+                {
+                    
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -676,13 +794,20 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterSecondEvo = false;
+                    ev = true;
                 }
                 //canWater = true;
                 plantInPot = 5.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                   
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -692,15 +817,22 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterFirstEvo = false;
+                    ev = true;
                 }
                 //canWater = true;
                 plantInPot = 5.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    sendN = true;
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
-                sendN = true;
+               
 
             }
             
@@ -735,7 +867,18 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (canWaterThirdEvo == true)
+                {
+                    canWaterThirdEvo = false;
+                    ev = true;
+                }
+                if (ev)
+                {
+                    
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -748,13 +891,20 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterSecondEvo = false;
+                    ev = true;
                 }
                 //canWater = true;
                 plantInPot = 6.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                   
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
             }
@@ -764,15 +914,22 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterFirstEvo = false;
+                    ev = true;
                 }
                 //canWater = true;
                 plantInPot = 6.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    sendN = true;
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
-                sendN = true;
+                
 
             }            
         }
@@ -804,7 +961,18 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (canWaterThirdEvo == true)
+                {
+                    canWaterThirdEvo = false;
+                    ev = true;
+                }
+                if (ev)
+                {
+                   
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
                 plantFinished = true;
                
@@ -815,6 +983,7 @@ public class ClickToPlant : MonoBehaviour
                 if (canWaterSecondEvo == true)
                 {
                     canWater = true;
+                    ev = true;
                     canWaterSecondEvo = false;
                 }
                 //canWater = true;
@@ -822,7 +991,13 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                   
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
             }
             else if (DateTime.Compare(CurrentTime, targetTimeCherry1) == 1)
@@ -830,6 +1005,7 @@ public class ClickToPlant : MonoBehaviour
                 if (canWaterFirstEvo == true)
                 {
                     canWater = true;
+                    ev = true;
                     canWaterFirstEvo = false;
                 }
                 //canWater = true;
@@ -837,9 +1013,15 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    sendN = true;
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
-                sendN = true;
+               
             }            
         }
 
@@ -870,7 +1052,18 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (canWaterThirdEvo == true)
+                {
+                    canWaterThirdEvo = false;
+                    ev = true;
+                }
+                if (ev)
+                {
+                   
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
 
                 plantFinished = true;
@@ -883,6 +1076,7 @@ public class ClickToPlant : MonoBehaviour
                 if (canWaterSecondEvo == true)
                 {
                     canWater = true;
+                    ev = true;
                     canWaterSecondEvo = false;
                 }
                 //canWater = true;
@@ -890,7 +1084,13 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel(); 
                
             }
@@ -899,6 +1099,7 @@ public class ClickToPlant : MonoBehaviour
                 if(canWaterFirstEvo == true)
                 {
                     canWater = true;
+                    ev = true;
                     canWaterFirstEvo = false;
                 }
                 //canWater = true;
@@ -906,9 +1107,15 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    sendN = true;
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
-                sendN = true;
+               
 
             }
             
@@ -941,7 +1148,18 @@ public class ClickToPlant : MonoBehaviour
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (canWaterThirdEvo == true)
+                {
+                    canWaterThirdEvo = false;
+                    ev = true;
+                }
+                if (ev)
+                {
+                    
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
                 plantFinished = true;
                
@@ -953,13 +1171,20 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterSecondEvo = false;
+                    ev = true;
                 }
                 //canWater = true;
                 plantInPot = 9.2f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
             }
             else if (DateTime.Compare(CurrentTime, targetTimeKiwi1) == 1)
@@ -968,15 +1193,22 @@ public class ClickToPlant : MonoBehaviour
                 {
                     canWater = true;
                     canWaterFirstEvo = false;
+                    ev = true;
                 }
                 //canWater = true;
                 plantInPot = 9.1f;
                 EnvoyerVariable(tag);
                 potPlace.loadplants();
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
-                sound.evol();
+                if (ev)
+                {
+                    sendN = true;
+                    sound.evol();
+                    Instantiate(sparks);
+                    ev = false;
+                }
                 buttonPopUpScript.LoadPannel();
-                sendN = true;
+                
             }
         }
     }
