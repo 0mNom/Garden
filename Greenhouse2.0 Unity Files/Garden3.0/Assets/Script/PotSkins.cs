@@ -46,6 +46,7 @@ public class PotSkins : MonoBehaviour
             if (popUp.Tag == "8") places.sp8 = 1;
             if (popUp.Tag == "9") places.sp9 = 1;
             if (popUp.Tag == "10") places.sp10 = 1;
+            Debug.Log(places.sp1);
             sendinfo();
         }
         
@@ -77,6 +78,7 @@ public class PotSkins : MonoBehaviour
             if (popUp.Tag == "8") places.sp8 = 2;
             if (popUp.Tag == "9") places.sp9 = 2;
             if (popUp.Tag == "10") places.sp10 = 2;
+            Debug.Log(places.sp1);
             sendinfo();
         }
        
@@ -108,6 +110,7 @@ public class PotSkins : MonoBehaviour
             if (popUp.Tag == "8") places.sp8 = 3;
             if (popUp.Tag == "9") places.sp9 = 3;
             if (popUp.Tag == "10") places.sp10 = 3;
+            Debug.Log(places.sp1);
             sendinfo();
         }
 
@@ -115,115 +118,200 @@ public class PotSkins : MonoBehaviour
     }
      public void skin4()
     {
-        if (popUp.Tag == "4") places.sp1 = 4;
-        if (popUp.Tag == "2") places.sp2 = 4;
-        if (popUp.Tag == "3") places.sp3 = 4;
-        if (popUp.Tag == "14") places.sp4 = 4;
-        if (popUp.Tag == "5") places.sp5 = 4;
-        if (popUp.Tag == "6") places.sp6 = 4;
-        if (popUp.Tag == "7") places.sp7 = 4;
-        if (popUp.Tag == "8") places.sp8 = 4;
-        if (popUp.Tag == "9") places.sp9 = 4;
-        if (popUp.Tag == "10") places.sp10 = 4;
-        sendinfo();
+        if (inv.pot4 < 1)
+        {
+            inv.StartCoroutine("errr");
 
+        }
+        else
+        {
+            inv.pot4--;
 
+            Debug.Log(popUp.Tag);
+            if (popUp.Tag == "4") places.sp1 = 4;
+            if (popUp.Tag == "2") places.sp2 = 4;
+            if (popUp.Tag == "3") places.sp3 = 4;
+            if (popUp.Tag == "14") places.sp4 = 4;
+            if (popUp.Tag == "5") places.sp5 = 4;
+            if (popUp.Tag == "6") places.sp6 = 4;
+            if (popUp.Tag == "7") places.sp7 = 4;
+            if (popUp.Tag == "8") places.sp8 = 4;
+            if (popUp.Tag == "9") places.sp9 = 4;
+            if (popUp.Tag == "10") places.sp10 = 4;
+            Debug.Log(places.sp1);
+            sendinfo();
+        }
     } 
 
     public void skin5()
     {
-        if (popUp.Tag == "1") places.sp1 = 5;
-        if (popUp.Tag == "2") places.sp2 = 5;
-        if (popUp.Tag == "3") places.sp3 = 5;
-        if (popUp.Tag == "4") places.sp4 = 5;
-        if (popUp.Tag == "5") places.sp5 = 5;
-        if (popUp.Tag == "6") places.sp6 = 5;
-        if (popUp.Tag == "7") places.sp7 = 5;
-        if (popUp.Tag == "8") places.sp8 = 5;
-        if (popUp.Tag == "9") places.sp9 = 5;
-        if (popUp.Tag == "10") places.sp10 = 5;
-        sendinfo();
+        if (inv.pot5 < 1)
+        {
+            inv.StartCoroutine("errr");
+
+        }
+        else
+        {
+            inv.pot5--;
+
+            Debug.Log(popUp.Tag);
+            if (popUp.Tag == "4") places.sp1 = 5;
+            if (popUp.Tag == "2") places.sp2 = 5;
+            if (popUp.Tag == "3") places.sp3 = 5;
+            if (popUp.Tag == "14") places.sp4 = 5;
+            if (popUp.Tag == "5") places.sp5 = 5;
+            if (popUp.Tag == "6") places.sp6 = 5;
+            if (popUp.Tag == "7") places.sp7 = 5;
+            if (popUp.Tag == "8") places.sp8 = 5;
+            if (popUp.Tag == "9") places.sp9 = 5;
+            if (popUp.Tag == "10") places.sp10 = 5;
+            Debug.Log(places.sp1);
+            sendinfo();
+        }
 
 
     }
     public void skin6()
     {
-        if (popUp.Tag == "1") places.sp1 = 6;
-        if (popUp.Tag == "2") places.sp2 = 6;
-        if (popUp.Tag == "3") places.sp3 = 6;
-        if (popUp.Tag == "4") places.sp4 = 6;
-        if (popUp.Tag == "5") places.sp5 = 6;
-        if (popUp.Tag == "6") places.sp6 = 6;
-        if (popUp.Tag == "7") places.sp7 = 6;
-        if (popUp.Tag == "8") places.sp8 = 6;
-        if (popUp.Tag == "9") places.sp9 = 6;
-        if (popUp.Tag == "10") places.sp10 = 6;
-        sendinfo();
+        if (inv.pot6 < 1)
+        {
+            inv.StartCoroutine("errr");
+
+        }
+        else
+        {
+            inv.pot6--;
+
+            Debug.Log(popUp.Tag);
+            if (popUp.Tag == "4") places.sp1 = 6;
+            if (popUp.Tag == "2") places.sp2 = 6;
+            if (popUp.Tag == "3") places.sp3 = 6;
+            if (popUp.Tag == "14") places.sp4 = 6;
+            if (popUp.Tag == "5") places.sp5 = 6;
+            if (popUp.Tag == "6") places.sp6 = 6;
+            if (popUp.Tag == "7") places.sp7 = 6;
+            if (popUp.Tag == "8") places.sp8 = 6;
+            if (popUp.Tag == "9") places.sp9 = 6;
+            if (popUp.Tag == "10") places.sp10 = 6;
+            Debug.Log(places.sp1);
+            sendinfo();
+        }
 
 
     }
 
     public void skin7()
     {
-        if (popUp.Tag == "1") places.sp1 = 7;
-        if (popUp.Tag == "2") places.sp2 = 7;
-        if (popUp.Tag == "3") places.sp3 = 7;
-        if (popUp.Tag == "4") places.sp4 = 7;
-        if (popUp.Tag == "5") places.sp5 = 7;
-        if (popUp.Tag == "6") places.sp6 = 7;
-        if (popUp.Tag == "7") places.sp7 = 7;
-        if (popUp.Tag == "8") places.sp8 = 7;
-        if (popUp.Tag == "9") places.sp9 = 7;
-        if (popUp.Tag == "10") places.sp10 = 7;
-        sendinfo();
+        if (inv.pot7 < 1)
+        {
+            inv.StartCoroutine("errr");
+
+        }
+
+        else
+        {
+            inv.pot7--;
+
+            Debug.Log(popUp.Tag);
+            if (popUp.Tag == "4") places.sp1 = 7;
+            if (popUp.Tag == "2") places.sp2 = 7;
+            if (popUp.Tag == "3") places.sp3 = 7;
+            if (popUp.Tag == "14") places.sp4 = 7;
+            if (popUp.Tag == "5") places.sp5 = 7;
+            if (popUp.Tag == "6") places.sp6 = 7;
+            if (popUp.Tag == "7") places.sp7 = 7;
+            if (popUp.Tag == "8") places.sp8 = 7;
+            if (popUp.Tag == "9") places.sp9 = 7;
+            if (popUp.Tag == "10") places.sp10 = 7;
+            Debug.Log(places.sp1);
+            sendinfo();
+        }
 
 
     }
     public void skin8()
     {
-        if (popUp.Tag == "1") places.sp1 = 8;
-        if (popUp.Tag == "2") places.sp2 = 8;
-        if (popUp.Tag == "3") places.sp3 = 8;
-        if (popUp.Tag == "4") places.sp4 = 8;
-        if (popUp.Tag == "5") places.sp5 = 8;
-        if (popUp.Tag == "6") places.sp6 = 8;
-        if (popUp.Tag == "7") places.sp7 = 8;
-        if (popUp.Tag == "8") places.sp8 = 8;
-        if (popUp.Tag == "9") places.sp9 = 8;
-        if (popUp.Tag == "10") places.sp10 = 8;
-        sendinfo();
+        if (inv.pot8 < 1)
+        {
+            inv.StartCoroutine("errr");
 
+        }
+
+        else
+        {
+            inv.pot8--;
+
+            Debug.Log(popUp.Tag);
+            if (popUp.Tag == "4") places.sp1 = 8;
+            if (popUp.Tag == "2") places.sp2 = 8;
+            if (popUp.Tag == "3") places.sp3 = 8;
+            if (popUp.Tag == "14") places.sp4 = 8;
+            if (popUp.Tag == "5") places.sp5 = 8;
+            if (popUp.Tag == "6") places.sp6 = 8;
+            if (popUp.Tag == "7") places.sp7 = 8;
+            if (popUp.Tag == "8") places.sp8 = 8;
+            if (popUp.Tag == "9") places.sp9 = 8;
+            if (popUp.Tag == "10") places.sp10 = 8;
+            Debug.Log(places.sp1);
+            sendinfo();
+        }
 
     }
     public void skin9()
     {
-        if (popUp.Tag == "1") places.sp1 = 9;
-        if (popUp.Tag == "2") places.sp2 = 9;
-        if (popUp.Tag == "3") places.sp3 = 9;
-        if (popUp.Tag == "4") places.sp4 = 9;
-        if (popUp.Tag == "5") places.sp5 = 9;
-        if (popUp.Tag == "6") places.sp6 = 9;
-        if (popUp.Tag == "7") places.sp7 = 9;
-        if (popUp.Tag == "8") places.sp8 = 9;
-        if (popUp.Tag == "9") places.sp9 = 9;
-        if (popUp.Tag == "10") places.sp10 = 9;
-        sendinfo();
+        if (inv.pot9 < 1)
+        {
+            inv.StartCoroutine("errr");
+
+        }
+
+        else
+        {
+            inv.pot9--;
+
+            Debug.Log(popUp.Tag);
+            if (popUp.Tag == "4") places.sp1 = 9;
+            if (popUp.Tag == "2") places.sp2 = 9;
+            if (popUp.Tag == "3") places.sp3 = 9;
+            if (popUp.Tag == "14") places.sp4 = 9;
+            if (popUp.Tag == "5") places.sp5 = 9;
+            if (popUp.Tag == "6") places.sp6 = 9;
+            if (popUp.Tag == "7") places.sp7 = 9;
+            if (popUp.Tag == "8") places.sp8 = 9;
+            if (popUp.Tag == "9") places.sp9 = 9;
+            if (popUp.Tag == "10") places.sp10 = 9;
+            Debug.Log(places.sp1);
+            sendinfo();
+        }
 
 
     }
     public void skin10()
     {
-        if (popUp.Tag == "1") places.sp1 = 10;
-        if (popUp.Tag == "2") places.sp2 = 10;
-        if (popUp.Tag == "3") places.sp3 = 10;
-        if (popUp.Tag == "4") places.sp4 = 10;
-        if (popUp.Tag == "5") places.sp5 = 10;
-        if (popUp.Tag == "6") places.sp6 = 10;
-        if (popUp.Tag == "7") places.sp7 = 10;
-        if (popUp.Tag == "8") places.sp8 = 10;
-        if (popUp.Tag == "9") places.sp9 = 10;
-        if (popUp.Tag == "10") places.sp10 = 10;
-        sendinfo();
+        if (inv.pot10 < 1)
+        {
+            inv.StartCoroutine("errr");
+
+        }
+
+        else
+        {
+            inv.pot10--;
+
+            Debug.Log(popUp.Tag);
+            if (popUp.Tag == "4") places.sp1 = 10;
+            if (popUp.Tag == "2") places.sp2 = 10;
+            if (popUp.Tag == "3") places.sp3 = 10;
+            if (popUp.Tag == "14") places.sp4 = 10;
+            if (popUp.Tag == "5") places.sp5 = 10;
+            if (popUp.Tag == "6") places.sp6 = 10;
+            if (popUp.Tag == "7") places.sp7 = 10;
+            if (popUp.Tag == "8") places.sp8 = 10;
+            if (popUp.Tag == "9") places.sp9 = 10;
+            if (popUp.Tag == "10") places.sp10 = 10;
+            Debug.Log(places.sp1);
+            sendinfo();
+        }
 
 
     }
@@ -232,7 +320,7 @@ public class PotSkins : MonoBehaviour
 
     public void skin11()
     {
-        if (inv.pot1 < 1)
+        if (inv.pot11 < 1)
         {
             inv.StartCoroutine("errr");
 
@@ -242,16 +330,17 @@ public class PotSkins : MonoBehaviour
             inv.pot11--;
 
             Debug.Log(popUp.Tag);
-            if (popUp.Tag == "1") places.sp1 = 11;
+            if (popUp.Tag == "4") places.sp1 = 11;
             if (popUp.Tag == "2") places.sp2 = 11;
             if (popUp.Tag == "3") places.sp3 = 11;
-            if (popUp.Tag == "4") places.sp4 = 11;
+            if (popUp.Tag == "14") places.sp4 = 11;
             if (popUp.Tag == "5") places.sp5 = 11;
             if (popUp.Tag == "6") places.sp6 = 11;
             if (popUp.Tag == "7") places.sp7 = 11;
             if (popUp.Tag == "8") places.sp8 = 11;
             if (popUp.Tag == "9") places.sp9 = 11;
             if (popUp.Tag == "10") places.sp10 = 11;
+            Debug.Log(places.sp1);
             sendinfo();
         }
         
@@ -263,7 +352,7 @@ public class PotSkins : MonoBehaviour
     public void skin12()
     {
 
-        if (inv.pot2 < 1)
+        if (inv.pot12 < 1)
         {
             inv.StartCoroutine("errr");
 
@@ -273,16 +362,17 @@ public class PotSkins : MonoBehaviour
             inv.pot12--;
 
             Debug.Log(popUp.Tag);
-            if (popUp.Tag == "1") places.sp1 = 12;
+            if (popUp.Tag == "4") places.sp1 = 12;
             if (popUp.Tag == "2") places.sp2 = 12;
             if (popUp.Tag == "3") places.sp3 = 12;
-            if (popUp.Tag == "4") places.sp4 = 12;
+            if (popUp.Tag == "14") places.sp4 = 12;
             if (popUp.Tag == "5") places.sp5 = 12;
             if (popUp.Tag == "6") places.sp6 = 12;
             if (popUp.Tag == "7") places.sp7 = 12;
             if (popUp.Tag == "8") places.sp8 = 12;
             if (popUp.Tag == "9") places.sp9 = 12;
             if (popUp.Tag == "10") places.sp10 = 12;
+            Debug.Log(places.sp1);
             sendinfo();
         }
        
@@ -304,16 +394,17 @@ public class PotSkins : MonoBehaviour
             inv.pot13--;
 
             Debug.Log(popUp.Tag);
-            if (popUp.Tag == "1") places.sp1 = 13;
+            if (popUp.Tag == "4") places.sp1 = 13;
             if (popUp.Tag == "2") places.sp2 = 13;
             if (popUp.Tag == "3") places.sp3 = 13;
-            if (popUp.Tag == "4") places.sp4 = 13;
+            if (popUp.Tag == "14") places.sp4 = 13;
             if (popUp.Tag == "5") places.sp5 = 13;
             if (popUp.Tag == "6") places.sp6 = 13;
             if (popUp.Tag == "7") places.sp7 = 13;
             if (popUp.Tag == "8") places.sp8 = 13;
             if (popUp.Tag == "9") places.sp9 = 13;
             if (popUp.Tag == "10") places.sp10 = 13;
+            Debug.Log(places.sp1);
             sendinfo();
         }
 
@@ -321,50 +412,91 @@ public class PotSkins : MonoBehaviour
     }
      public void skin14()
     {
-        if (popUp.Tag == "1") places.sp1 = 14;
-        if (popUp.Tag == "2") places.sp2 = 14;
-        if (popUp.Tag == "3") places.sp3 = 14;
-        if (popUp.Tag == "4") places.sp4 = 14;
-        if (popUp.Tag == "5") places.sp5 = 14;
-        if (popUp.Tag == "6") places.sp6 = 14;
-        if (popUp.Tag == "7") places.sp7 = 14;
-        if (popUp.Tag == "8") places.sp8 = 14;
-        if (popUp.Tag == "9") places.sp9 = 14;
-        if (popUp.Tag == "10") places.sp10 = 14;
-        sendinfo();
+        if (inv.pot14 < 1)
+        {
 
+            inv.StartCoroutine("errr");
+
+
+        }
+        else
+        {
+            inv.pot14--;
+
+            Debug.Log(popUp.Tag);
+            if (popUp.Tag == "4") places.sp1 = 14;
+            if (popUp.Tag == "2") places.sp2 = 14;
+            if (popUp.Tag == "3") places.sp3 = 14;
+            if (popUp.Tag == "14") places.sp4 = 14;
+            if (popUp.Tag == "5") places.sp5 = 14;
+            if (popUp.Tag == "6") places.sp6 = 14;
+            if (popUp.Tag == "7") places.sp7 = 14;
+            if (popUp.Tag == "8") places.sp8 = 14;
+            if (popUp.Tag == "9") places.sp9 = 14;
+            if (popUp.Tag == "10") places.sp10 = 14;
+            Debug.Log(places.sp1);
+            sendinfo();
+        }
 
     } 
 
     public void skin15()
     {
-        if (popUp.Tag == "1") places.sp1 = 15;
-        if (popUp.Tag == "2") places.sp2 = 15;
-        if (popUp.Tag == "3") places.sp3 = 15;
-        if (popUp.Tag == "4") places.sp4 = 15;
-        if (popUp.Tag == "5") places.sp5 = 15;
-        if (popUp.Tag == "6") places.sp6 = 15;
-        if (popUp.Tag == "7") places.sp7 = 15;
-        if (popUp.Tag == "8") places.sp8 = 15;
-        if (popUp.Tag == "9") places.sp9 = 15;
-        if (popUp.Tag == "10") places.sp10 = 15;
-        sendinfo();
+        if (inv.pot15 < 1)
+        {
+
+            inv.StartCoroutine("errr");
+
+
+        }
+        else
+        {
+            inv.pot15--;
+
+            Debug.Log(popUp.Tag);
+            if (popUp.Tag == "4") places.sp1 = 15;
+            if (popUp.Tag == "2") places.sp2 = 15;
+            if (popUp.Tag == "3") places.sp3 = 15;
+            if (popUp.Tag == "14") places.sp4 = 15;
+            if (popUp.Tag == "5") places.sp5 = 15;
+            if (popUp.Tag == "6") places.sp6 = 15;
+            if (popUp.Tag == "7") places.sp7 = 15;
+            if (popUp.Tag == "8") places.sp8 = 15;
+            if (popUp.Tag == "9") places.sp9 = 15;
+            if (popUp.Tag == "10") places.sp10 = 15;
+            Debug.Log(places.sp1);
+            sendinfo();
+        }
 
 
     }
     public void skin16()
     {
-        if (popUp.Tag == "1") places.sp1 = 16;
-        if (popUp.Tag == "2") places.sp2 = 16;
-        if (popUp.Tag == "3") places.sp3 = 16;
-        if (popUp.Tag == "4") places.sp4 = 16;
-        if (popUp.Tag == "5") places.sp5 = 16;
-        if (popUp.Tag == "6") places.sp6 = 16;
-        if (popUp.Tag == "7") places.sp7 = 16;
-        if (popUp.Tag == "8") places.sp8 = 16;
-        if (popUp.Tag == "9") places.sp9 = 16;
-        if (popUp.Tag == "10") places.sp10 = 16;
-        sendinfo();
+        if (inv.pot16 < 1)
+        {
+
+            inv.StartCoroutine("errr");
+
+
+        }
+        else
+        {
+            inv.pot16--;
+
+            Debug.Log(popUp.Tag);
+            if (popUp.Tag == "4") places.sp1 = 16;
+            if (popUp.Tag == "2") places.sp2 = 16;
+            if (popUp.Tag == "3") places.sp3 = 16;
+            if (popUp.Tag == "14") places.sp4 = 16;
+            if (popUp.Tag == "5") places.sp5 = 16;
+            if (popUp.Tag == "6") places.sp6 = 16;
+            if (popUp.Tag == "7") places.sp7 = 16;
+            if (popUp.Tag == "8") places.sp8 = 16;
+            if (popUp.Tag == "9") places.sp9 = 16;
+            if (popUp.Tag == "10") places.sp10 = 16;
+            Debug.Log(places.sp1);
+            sendinfo();
+        }
 
 
     }
