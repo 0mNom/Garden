@@ -73,7 +73,9 @@ public class ButtonPopUp : MonoBehaviour
 
     public GameObject nameIn1, nameIn2, nameIn3;
 
-    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI nameText1;
+    public TextMeshProUGUI nameText2;
+    public TextMeshProUGUI nameText3;
     public Animator animator;
 
     public Button sellButton;
@@ -408,9 +410,9 @@ public class ButtonPopUp : MonoBehaviour
         if (tag == "3") nameIn3.SetActive(true);
 
 
-        if (tag == "4" ) nameText.text = Name1;
-        if (tag == "2" ) nameText.text = Name2;
-        if (tag == "3" ) nameText.text = Name3;
+        if (tag == "4" ) nameText1.text = Name1;
+        if (tag == "2" ) nameText2.text = Name2;
+        if (tag == "3" ) nameText3.text = Name3;
 
 
         SpriteRenderer spritePot = gameObject.GetComponent<SpriteRenderer>();
@@ -427,17 +429,17 @@ public class ButtonPopUp : MonoBehaviour
     public void name1change(string nom)
     {
         Name1 = nom;
-        nameText.text = Name1;
+        nameText1.text = Name1;
     }
     public void name2change(string nom)
     {
         Name2 = nom;
-        nameText.text = Name2;
+        nameText2.text = Name2;
     }
     public void name3change(string nom)
     {
         Name3 = nom;
-        nameText.text = Name3;
+        nameText3.text = Name3;
     }
 
 
