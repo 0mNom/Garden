@@ -13,8 +13,8 @@ public class DotANIM : MonoBehaviour
     public RectTransform paymentpannel, gemshop;
 
     public GameObject tutorial;
-    public RectTransform welcome, T1, T2, wheatarrow, T3, T4, T5, T6,nameArrow, waterArrow,potArrow,sellArrow,GemArrow, marketarrow;
-    public Text txt1, btxt1, txt2, btxt2, txt3, btxt3, txt4, btxt4, txt5, btxt5, txt6, btxt6, txt7, btxt7;
+    public RectTransform welcome, T1, T2, wheatarrow, T3,T31, T4, T5, T6,nameArrow, waterArrow,potArrow,sellArrow,GemArrow, marketarrow;
+    public Text txt1, btxt1, txt2, btxt2, txt3, btxt3, txt4, btxt4, txt5, btxt5, txt6, btxt6, txt7, btxt7, txt8, btxt8;
 
     public ButtonPopUp pot1;
 
@@ -122,6 +122,20 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         wheatarrow.DOAnchorPos(new Vector2(101.82f, 382.5f), 0.25f);
         if (tutorial == null) yield break;
+
+    }
+
+    public void tut31()
+    {
+        T3.DOAnchorPos(new Vector2(-140, 97.6f), 0.25f);
+        txt8.DOText("to plant simply select a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
+        btxt8.DOText("to plant simply select a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
+    }
+    public void tutoEnd1()
+    {
+       
+        
+        T31.DOAnchorPos(new Vector2(-1400, -497.6f), 0.25f);
 
     }
 
@@ -659,7 +673,7 @@ public class DotANIM : MonoBehaviour
     {
         logo.DOAnchorPos(Vector2.zero, 0.5f);
         yield return new WaitForSeconds(0.5f);
-        logo.DOShakeAnchorPos(5f, 50f, 5, 60, false, true);
+       // logo.DOShakeAnchorPos(5f, 50f, 5, 60, false, true);
         yield return new WaitForSeconds(5f);
         menustartpos();
         yield return new WaitForSeconds(0.25f);
