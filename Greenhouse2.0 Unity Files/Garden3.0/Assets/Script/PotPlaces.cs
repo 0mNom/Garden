@@ -78,47 +78,47 @@ public class PotPlaces : MonoBehaviour
                 spriteRendererPot1.sprite = Skin7;
                 spriteRendererPot1Shine.sprite = Skin7Shine;
             }
-            if (sp3 == 8)
+            if (sp1 == 8)
             {
                 spriteRendererPot1.sprite = Skin8;
                 spriteRendererPot1Shine.sprite = Skin8Shine;
             }
-            if (sp3 == 9)
+            if (sp1 == 9)
             {
                 spriteRendererPot1.sprite = Skin9;
                 spriteRendererPot1Shine.sprite = Skin9Shine;
             }
-            if (sp3 == 10)
+            if (sp1 == 10)
             {
                 spriteRendererPot1.sprite = Skin10;
                 spriteRendererPot1Shine.sprite = Skin10Shine;
             }
-            if (sp3 == 11)
+            if (sp1 == 11)
             {
                 spriteRendererPot1.sprite = Skin11;
                 spriteRendererPot1Shine.sprite = Skin11Shine;
             }
-            if (sp3 == 12)
+            if (sp1 == 12)
             {
                 spriteRendererPot1.sprite = Skin12;
                 spriteRendererPot1Shine.sprite = Skin12Shine;
             }
-            if (sp3 == 13)
+            if (sp1 == 13)
             {
                 spriteRendererPot1.sprite = Skin13;
                 spriteRendererPot1Shine.sprite = Skin13Shine;
             }
-            if (sp3 == 14)
+            if (sp1 == 14)
             {
                 spriteRendererPot1.sprite = Skin14;
                 spriteRendererPot1Shine.sprite = Skin14Shine;
             }
-            if (sp3 == 15)
+            if (sp1 == 15)
             {
                 spriteRendererPot1.sprite = Skin15;
                 spriteRendererPot1Shine.sprite = Skin15Shine;
             }
-            if (sp3 == 16)
+            if (sp1 == 16)
             {
                 spriteRendererPot1.sprite = Skin16;
                 spriteRendererPot1Shine.sprite = Skin16Shine;
@@ -165,47 +165,47 @@ public class PotPlaces : MonoBehaviour
                 spriteRendererPot2.sprite = Skin7;
                 spriteRendererPot2Shine.sprite = Skin7Shine;
             }
-            if (sp3 == 8)
+            if (sp2 == 8)
             {
                 spriteRendererPot2.sprite = Skin8;
                 spriteRendererPot2Shine.sprite = Skin8Shine;
             }
-            if (sp3 == 9)
+            if (sp2 == 9)
             {
                 spriteRendererPot2.sprite = Skin9;
                 spriteRendererPot2Shine.sprite = Skin9Shine;
             }
-            if (sp3 == 10)
+            if (sp2 == 10)
             {
                 spriteRendererPot2.sprite = Skin10;
                 spriteRendererPot2Shine.sprite = Skin10Shine;
             }
-            if (sp3 == 11)
+            if (sp2 == 11)
             {
                 spriteRendererPot2.sprite = Skin11;
                 spriteRendererPot2Shine.sprite = Skin11Shine;
             }
-            if (sp3 == 12)
+            if (sp2 == 12)
             {
                 spriteRendererPot2.sprite = Skin12;
                 spriteRendererPot2Shine.sprite = Skin12Shine;
             }
-            if (sp3 == 13)
+            if (sp2 == 13)
             {
                 spriteRendererPot2.sprite = Skin13;
                 spriteRendererPot2Shine.sprite = Skin13Shine;
             }
-            if (sp3 == 14)
+            if (sp2 == 14)
             {
                 spriteRendererPot2.sprite = Skin14;
                 spriteRendererPot2Shine.sprite = Skin14Shine;
             }
-            if (sp3 == 15)
+            if (sp2 == 15)
             {
                 spriteRendererPot2.sprite = Skin15;
                 spriteRendererPot2Shine.sprite = Skin15Shine;
             }
-            if (sp3 == 16)
+            if (sp2 == 16)
             {
                 spriteRendererPot2.sprite = Skin16;
                 spriteRendererPot2Shine.sprite = Skin16Shine;

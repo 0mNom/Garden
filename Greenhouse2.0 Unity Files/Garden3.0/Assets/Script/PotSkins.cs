@@ -29,7 +29,7 @@ public class PotSkins : MonoBehaviour
         if (inv.pot1 < 1)
         {
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
         }
         else
         {
@@ -61,7 +61,7 @@ public class PotSkins : MonoBehaviour
         if (inv.pot2 < 1)
         {
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
         }
         else
         {
@@ -92,7 +92,7 @@ public class PotSkins : MonoBehaviour
         {
 
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
 
         }
         else
@@ -121,7 +121,7 @@ public class PotSkins : MonoBehaviour
         if (inv.pot4 < 1)
         {
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
         }
         else
         {
@@ -148,7 +148,7 @@ public class PotSkins : MonoBehaviour
         if (inv.pot5 < 1)
         {
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
         }
         else
         {
@@ -176,7 +176,7 @@ public class PotSkins : MonoBehaviour
         if (inv.pot6 < 1)
         {
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
         }
         else
         {
@@ -205,7 +205,7 @@ public class PotSkins : MonoBehaviour
         if (inv.pot7 < 1)
         {
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
         }
 
         else
@@ -234,7 +234,7 @@ public class PotSkins : MonoBehaviour
         if (inv.pot8 < 1)
         {
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
         }
 
         else
@@ -262,7 +262,7 @@ public class PotSkins : MonoBehaviour
         if (inv.pot9 < 1)
         {
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
         }
 
         else
@@ -291,7 +291,7 @@ public class PotSkins : MonoBehaviour
         if (inv.pot10 < 1)
         {
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
         }
 
         else
@@ -323,7 +323,7 @@ public class PotSkins : MonoBehaviour
         if (inv.pot11 < 1)
         {
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
         }
         else
         {
@@ -355,7 +355,7 @@ public class PotSkins : MonoBehaviour
         if (inv.pot12 < 1)
         {
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
         }
         else
         {
@@ -386,7 +386,7 @@ public class PotSkins : MonoBehaviour
         {
 
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
 
         }
         else
@@ -416,7 +416,7 @@ public class PotSkins : MonoBehaviour
         {
 
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
 
         }
         else
@@ -446,7 +446,7 @@ public class PotSkins : MonoBehaviour
         {
 
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
 
         }
         else
@@ -476,7 +476,7 @@ public class PotSkins : MonoBehaviour
         {
 
             inv.StartCoroutine("errr");
-
+            Debug.Log("wtf");
 
         }
         else
