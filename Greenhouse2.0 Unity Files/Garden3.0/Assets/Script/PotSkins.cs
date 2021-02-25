@@ -292,7 +292,7 @@ public class PotSkins : MonoBehaviour
     }
     public void skin13()
     {
-        if (inv.pot3 < 1)
+        if (inv.pot13 < 1)
         {
 
             inv.StartCoroutine("errr");
