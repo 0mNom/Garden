@@ -108,7 +108,7 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         T1.DOAnchorPos(new Vector2(1400, 685), 0.25f);
         if (tutorial == null) yield break;
-        T3.DOAnchorPos(new Vector2(-140, -497.6f), 0.25f);
+        T3.DOAnchorPos(new Vector2(-140, 97.6f), 0.25f);
         if (tutorial == null) yield break;
         txt4.DOText("to plant simply select a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
         btxt4.DOText("to plant simply select a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
