@@ -291,39 +291,39 @@ public class ButtonPopUp : MonoBehaviour
                     seedTypePot3.gameObject.SetActive(true);
                     if (clickToPlantScript.blePlanted)
                     {
-                        seedTypePot3.text = "Seed planted: Wheat";
+                        seedTypePot3.text = "Wheat is growing";
                     }
                     else if (clickToPlantScript.applePlanted)
                     {
-                        seedTypePot3.text = "Seed planted: Apple";
+                        seedTypePot3.text = "Apple is growing";
                     }
                     else if (clickToPlantScript.tomatoPlanted)
                     {
-                        seedTypePot3.text = "Seed planted: Tomato";
+                        seedTypePot3.text = "Tomato is growing";
                     }
                     else if (clickToPlantScript.eggplantPlanted)
                     {
-                        seedTypePot3.text = "Seed planted: Eggplant";
+                        seedTypePot3.text = "Eggplant is growing";
                     }
                     else if (clickToPlantScript.pearPlanted)
                     {
-                        seedTypePot3.text = "Seed planted: Pear";
+                        seedTypePot3.text = "Pear is growing";
                     }
                     else if (clickToPlantScript.sunflowerPlanted)
                     {
-                        seedTypePot3.text = "Seed planted: Sunflower";
+                        seedTypePot3.text = "Sunflower is growing";
                     }
                     else if (clickToPlantScript.cherryPlanted)
                     {
-                        seedTypePot3.text = "Seed planted: Cherry";
+                        seedTypePot3.text = "Cherry is growing";
                     }
                     else if (clickToPlantScript.avocadoPlanted)
                     {
-                        seedTypePot3.text = "Seed planted: Avocado";
+                        seedTypePot3.text = "Avocado is growing";
                     }
                     else if (clickToPlantScript.kiwiPlanted)
                     {
-                        seedTypePot3.text = "Seed planted: Kiwi";
+                        seedTypePot3.text = "Kiwi is growing";
                     }
                 }
             }
