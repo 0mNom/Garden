@@ -1399,6 +1399,10 @@ PrefabInstance:
       propertyPath: sound
       value: 
       objectReference: {fileID: 1403264365}
+    - target: {fileID: 2844716468914934949, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
+      propertyPath: sparks
+      value: 
+      objectReference: {fileID: 8757466464086289569, guid: 7f67ae03f74472a42b1945d20d2f8af3, type: 3}
     - target: {fileID: 2844716468914934950, guid: 63dabaeff118c42479c7e2cc34f0ad68, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.50508434
@@ -2164,6 +2168,10 @@ PrefabInstance:
       propertyPath: sound
       value: 
       objectReference: {fileID: 1403264365}
+    - target: {fileID: 7154368241924471958, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
+      propertyPath: sparks
+      value: 
+      objectReference: {fileID: 1025124564427790244, guid: d197c2092abb28748bda8f2deb8393cc, type: 3}
     - target: {fileID: 7154368241924471959, guid: 0438193b3c8e83f4aa6fb0d0170be8f2, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.50508434
@@ -2342,6 +2350,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  ev: 1
+  sparks: {fileID: 0}
   hours: 0
   minutes: 0
   seconds: 0
@@ -2354,6 +2364,7 @@ MonoBehaviour:
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
+  canWaterThirdEvo: 0
   ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
@@ -2692,6 +2703,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  ev: 1
+  sparks: {fileID: 0}
   hours: 0
   minutes: 0
   seconds: 0
@@ -2704,6 +2717,7 @@ MonoBehaviour:
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
+  canWaterThirdEvo: 0
   ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
@@ -3135,6 +3149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  ev: 1
+  sparks: {fileID: 0}
   hours: 0
   minutes: 0
   seconds: 0
@@ -3147,6 +3163,7 @@ MonoBehaviour:
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
+  canWaterThirdEvo: 0
   ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
@@ -3971,6 +3988,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  ev: 1
+  sparks: {fileID: 0}
   hours: 0
   minutes: 0
   seconds: 0
@@ -3983,6 +4002,7 @@ MonoBehaviour:
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
+  canWaterThirdEvo: 0
   ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
@@ -5199,6 +5219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  ev: 1
+  sparks: {fileID: 0}
   hours: 0
   minutes: 0
   seconds: 0
@@ -5211,6 +5233,7 @@ MonoBehaviour:
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
+  canWaterThirdEvo: 0
   ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
@@ -8578,6 +8601,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  ev: 1
+  sparks: {fileID: 0}
   hours: 0
   minutes: 0
   seconds: 0
@@ -8590,6 +8615,7 @@ MonoBehaviour:
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
+  canWaterThirdEvo: 0
   ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
@@ -8814,6 +8840,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
+  ev: 1
+  sparks: {fileID: 0}
   hours: 0
   minutes: 0
   seconds: 0
@@ -8826,6 +8854,7 @@ MonoBehaviour:
   canWater: 0
   canWaterFirstEvo: 0
   canWaterSecondEvo: 0
+  canWaterThirdEvo: 0
   ShineSprite: {fileID: 0}
   plantFinished: 0
   sellingPrice: 0
@@ -9203,6 +9232,10 @@ PrefabInstance:
       propertyPath: sound
       value: 
       objectReference: {fileID: 1403264365}
+    - target: {fileID: 2885881521936281486, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
+      propertyPath: sparks
+      value: 
+      objectReference: {fileID: 5641376951722739678, guid: db354cf1344f83641b5e9893db1a3003, type: 3}
     - target: {fileID: 2885881521936281487, guid: 41ea670ae7bb31540a901113e5f74f4f, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.50508434
