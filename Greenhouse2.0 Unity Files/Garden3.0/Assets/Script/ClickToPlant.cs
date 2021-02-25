@@ -412,6 +412,7 @@ public class ClickToPlant : MonoBehaviour
                 buttonPopUpScript.LoadPannel();
                 plantInPot = 1.1f;
                 EnvoyerVariable(tag);
+                Debug.Log("soounddd");
                 sound.evol();
                 potPlace.loadplants();
                 sendN = true;
