@@ -385,7 +385,7 @@ public class ClickToPlant : MonoBehaviour
                             potPlacesScript.TT2P1 = targetTimeTomato2.ToString();
                             potPlacesScript.TT3P1 = targetTimeTomato3.ToString();
                             potPlacesScript.tomato1 = true;
-                            potPlacesScript.sell = sellingPrice;
+                            potPlacesScript.sell1 = sellingPrice;
                             potPlacesScript.got1 = true;
                         }
                         if (tag == "2")
