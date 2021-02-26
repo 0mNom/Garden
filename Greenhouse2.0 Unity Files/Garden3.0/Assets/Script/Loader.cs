@@ -39,7 +39,17 @@ public class Loader : MonoBehaviour
         invent.pot5 = dataI.s_pot5;
         invent.pot6 = dataI.s_pot6;
         invent.pot7 = dataI.s_pot7;
-      
+        invent.pot8 = dataI.s_pot8;
+        invent.pot9 = dataI.s_pot9;
+        invent.pot10 = dataI.s_pot10;
+
+        invent.pot11 = dataI.s_pot11;
+        invent.pot12 = dataI.s_pot12;
+        invent.pot13 = dataI.s_pot13;
+        invent.pot14 = dataI.s_pot14;
+        invent.pot15 = dataI.s_pot15;
+        invent.pot16 = dataI.s_pot16;
+
 
 
         //Bag,money and Seeds
