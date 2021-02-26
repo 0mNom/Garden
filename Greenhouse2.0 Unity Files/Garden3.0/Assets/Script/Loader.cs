@@ -48,6 +48,12 @@ public class Loader : MonoBehaviour
 
         //Pot places 
 
+        //load date time 
+        places.TT1P1 = dataP.s_TT1P1;
+        places.TT2P1 = dataP.s_TT2P1;
+        places.TT3P1 = dataP.s_TT3P1;
+
+
         //active pots? collectioin load
 
         places.p1 = dataP.s_p1;
