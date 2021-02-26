@@ -101,7 +101,13 @@ public class Loader : MonoBehaviour
         places.cherry3 = dataP.s_cherry3;
         places.avocado3 = dataP.s_avocado3;
         places.kiwi3 = dataP.s_kiwi3;
-         
+
+
+      
+
+        places.PF1 = dataP.s_PF1;
+        places.PF2 = dataP.s_PF2;
+        places.PF3 = dataP.s_PF3;
 
 
 
