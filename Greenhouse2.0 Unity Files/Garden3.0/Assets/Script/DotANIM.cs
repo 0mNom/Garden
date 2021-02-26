@@ -516,7 +516,7 @@ public class DotANIM : MonoBehaviour
         anim7.SetBool("talking", false);
         if (tutorial == null) yield break;
         if (tutorial == null) yield break;
-        T6.DOAnchorPos(new Vector2(0, 1500), 0.25f);
+      //  T6.DOAnchorPos(new Vector2(0, 1500), 0.25f);
         if (tutorial == null) yield break;
         
        
