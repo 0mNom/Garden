@@ -6,6 +6,7 @@ using TMPro;
 
 public class ClickToPlant : MonoBehaviour
 {
+    public PotPlaces potPlacesScript;
     public Sounds sound;
 
     public bool ev = true ;
@@ -196,6 +197,27 @@ public class ClickToPlant : MonoBehaviour
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 15;
                         bagScript1.MakePotsShine = false;
+
+                        if (tag == "4")
+                        {
+                            potPlacesScript.TT1P1 = targetTimeBle1.ToString();
+                            potPlacesScript.TT2P1 = targetTimeBle2.ToString();
+                            potPlacesScript.TT3P1 = targetTimeBle3.ToString();
+                        }
+                        if (tag == "2")
+                        {
+                            potPlacesScript.TT1P2 = targetTimeBle1.ToString();
+                            potPlacesScript.TT2P2 = targetTimeBle2.ToString();
+                            potPlacesScript.TT3P2 = targetTimeBle3.ToString();
+                        }
+                        if (tag == "3")
+                        {
+                            potPlacesScript.TT1P3 = targetTimeBle1.ToString();
+                            potPlacesScript.TT2P3 = targetTimeBle2.ToString();
+                            potPlacesScript.TT3P3 = targetTimeBle3.ToString();
+                        }
+
+                        
                     }
 
                     else if (bagScript1.plantingseed == 2)
