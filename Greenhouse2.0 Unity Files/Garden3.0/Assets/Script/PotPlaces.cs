@@ -24,6 +24,7 @@ public class PotPlaces : MonoBehaviour
     public SpriteRenderer spriteRendererPot1Shine, spriteRendererPot2Shine, spriteRendererPot3Shine;
     public Animator potAnim;
 
+    public string TT1P1, TT2P1, TT3P1, TT1P2, TT2P2, TT3P2, TT1P3, TT2P3, TT3P3;
 
     void Start()
     {

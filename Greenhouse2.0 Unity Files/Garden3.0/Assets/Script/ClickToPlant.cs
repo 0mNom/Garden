@@ -206,6 +206,10 @@ public class ClickToPlant : MonoBehaviour
                         targetTimeApple1 = CurrentTime.AddSeconds(growingTimeApple/3);
                         targetTimeApple2 = CurrentTime.AddSeconds(growingTimeApple * 2 / 3);
                         targetTimeApple3 = CurrentTime.AddSeconds(growingTimeApple);
+
+                        string str = targetTimeApple1.ToString();
+
+                        targetTimeApple1 = DateTime.Parse(str);
                       
                         applePlanted = true;
                         gotPlant = true;
