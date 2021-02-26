@@ -165,9 +165,10 @@ public class ButtonPopUp : MonoBehaviour
         if (pannelActive == true)
         {
             ClickToPlant clickToPlantScript = GameObject.FindGameObjectWithTag(Tag).GetComponent<ClickToPlant>();
+            Debug.Log(clickToPlantScript.plantFinished);
             if (clickToPlantScript.plantFinished)
             {
-                Debug.Log(clickToPlantScript.plantFinished);
+                
                 sellButton.gameObject.SetActive(true);
                 //Debug.Log(gameObject);
                 Button btn = sellButton.GetComponent<Button>();
