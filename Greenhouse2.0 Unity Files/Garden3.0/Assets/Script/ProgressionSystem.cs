@@ -37,6 +37,11 @@ public class ProgressionSystem : MonoBehaviour
         playerLevel = 1;
     }
 
+    public void lvlLoad()
+    {
+        playerLevel = pot.lvl;
+    }
+
     // Update is called once per frame
     void Update()
     {

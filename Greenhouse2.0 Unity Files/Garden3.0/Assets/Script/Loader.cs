@@ -108,6 +108,8 @@ public class Loader : MonoBehaviour
         places.sell2 = dataP.s_sell2;
         places.sell3 = dataP.s_sell3;
 
+        places.lvl = dataP.s_lvl;
+
 
 
 
