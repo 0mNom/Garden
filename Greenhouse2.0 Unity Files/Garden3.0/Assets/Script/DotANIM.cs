@@ -306,7 +306,7 @@ public class DotANIM : MonoBehaviour
         txt6.DOText("", 1f, false, ScrambleMode.None, null);
         btxt6.DOText("", 1f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        potArrow.DOAnchorPos(new Vector2(-498, 1050), 0.25f);
+        potArrow.DOAnchorPos(new Vector2(-35, 1050), 0.25f);
         if (tutorial == null) yield break;
         sound.tutPlay();
         txt6.DOText("this button is the store room of pots that you buy up here...", 5f, false, ScrambleMode.None, null);
