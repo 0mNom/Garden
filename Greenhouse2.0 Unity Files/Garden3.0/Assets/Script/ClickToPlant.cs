@@ -131,11 +131,15 @@ public class ClickToPlant : MonoBehaviour
     }
     public void loaddate()
     {
-        blePlanted = potPlacesScript.ble;
-        targetTimeBle1 = DateTime.Parse(potPlacesScript.TT1P1);
-        targetTimeBle2 = DateTime.Parse(potPlacesScript.TT2P1);
-        targetTimeBle3 = DateTime.Parse(potPlacesScript.TT3P1);
-        Debug.Log(targetTimeBle1);
+        if (tag == "4")
+        {
+            blePlanted = potPlacesScript.ble;
+            targetTimeBle1 = DateTime.Parse(potPlacesScript.TT1P1);
+            targetTimeBle2 = DateTime.Parse(potPlacesScript.TT2P1);
+            targetTimeBle3 = DateTime.Parse(potPlacesScript.TT3P1);
+            Debug.Log(targetTimeBle1);
+        }
+     
     }
 
     // Update is called once per frame
