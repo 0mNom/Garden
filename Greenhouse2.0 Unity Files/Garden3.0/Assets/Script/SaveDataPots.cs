@@ -8,7 +8,7 @@ public class SaveDataPots
     public bool s_p1, s_p2, s_p3, s_p4, s_p5, s_p6, s_p7, s_p8, s_p9, s_p10; //pot places activated
     public int s_sp1, s_sp2, s_sp3, s_sp4, s_sp5, s_sp6, s_sp7, s_sp8, s_sp9, s_sp10; //skins on the active pots 
     public float s_pp1, s_pp2, s_pp3, s_pp4, s_pp5, s_pp6, s_pp7, s_pp8, s_pp9, s_pp10; //Plant in active pot
-
+    public string s_TT1P1, s_TT2P1, s_TT3P1;
 
     public SaveDataPots(PotPlaces places)
     {
@@ -24,6 +24,11 @@ public class SaveDataPots
         s_p8 = places.p8;
         s_p9 = places.p9;
         s_p10 = places.p10;
+
+        //target times
+        s_TT1P1 = places.TT1P1;
+        s_TT2P1 = places.TT2P1;
+        s_TT3P1 = places.TT3P1;
 
         //if the pot has been activated, what pot skin and which plant
         if (s_p1)
