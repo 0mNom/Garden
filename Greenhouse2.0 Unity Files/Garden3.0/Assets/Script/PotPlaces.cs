@@ -32,6 +32,10 @@ public class PotPlaces : MonoBehaviour
     public bool got1,got2,got3;
     public int sell1, sell2, sell3;
 
+    public bool PF1, PF2, PF3;
+
+    public int lvl;
+
 
     void Start()
     {
