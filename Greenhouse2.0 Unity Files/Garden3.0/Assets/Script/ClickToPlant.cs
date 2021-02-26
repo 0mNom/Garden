@@ -133,6 +133,8 @@ public class ClickToPlant : MonoBehaviour
     {
         if (tag == "4")
         {
+            gotPlant = potPlacesScript.got1;
+            sellingPrice = potPlacesScript.sell1;
             blePlanted = potPlacesScript.ble1;
             if (blePlanted == true)
             {
