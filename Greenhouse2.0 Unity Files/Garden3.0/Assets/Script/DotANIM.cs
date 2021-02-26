@@ -38,13 +38,14 @@ public class DotANIM : MonoBehaviour
     {
         sell.text = add;
         sell.rectTransform.DOAnchorPos(new Vector2(-110, -240), 0.25f);
+        sell.gameObject.SetActive(true);
         StartCoroutine("add");
     }
 
     IEnumerator add()
     {
         sell.gameObject.SetActive(true);
-        sell.rectTransform.DOAnchorPos(new Vector2(0, 240), 0.25f);
+        sell.rectTransform.DOAnchorPos(new Vector2(0, 240), 5f);
         yield return new WaitForSeconds(2f);
 
         sell.gameObject.SetActive(false);
