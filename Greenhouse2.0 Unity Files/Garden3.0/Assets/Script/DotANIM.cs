@@ -19,7 +19,7 @@ public class DotANIM : MonoBehaviour
     public RectTransform paymentpannel, gemshop, gemshopB;
 
     public GameObject tutorial;
-    public RectTransform welcome, T1, T2, wheatarrow, T3,T31, T4, T5, T6,nameArrow,gemarrow, waterArrow,potArrow,sellArrow,GemArrow, marketarrow;
+    public RectTransform welcome, T1, T2, wheatarrow, T3,T31, T4, T5, T6,T7,nameArrow,gemarrow, waterArrow,potArrow,sellArrow,GemArrow, marketarrow;
     public Text txt1, btxt1, txt2, btxt2, txt3, btxt3, txt4, btxt4, txt5, btxt5, txt6, btxt6, txt7, btxt7, txt8, btxt8;
 
     public ButtonPopUp pot1;
@@ -503,6 +503,20 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         T5.DOAnchorPos(new Vector2(0, -2500), 0.25f);
         if (tutorial == null) yield break;
+        
+        T7.DOAnchorPos(new Vector2(0, 0), 0.25f);
+
+
+
+    }
+    public void enderdragon()
+    {
+        StartCoroutine("ender");
+    }
+
+    IEnumerator ender()
+    {
+        T7.DOAnchorPos(new Vector2(3000, 0), 0.25f);
         T6.DOAnchorPos(new Vector2(0, 620), 0.25f);
         if (tutorial == null) yield break;
         sound.tutPlay();
@@ -516,11 +530,8 @@ public class DotANIM : MonoBehaviour
         anim7.SetBool("talking", false);
         if (tutorial == null) yield break;
         if (tutorial == null) yield break;
-      //  T6.DOAnchorPos(new Vector2(0, 1500), 0.25f);
+        //  T6.DOAnchorPos(new Vector2(0, 1500), 0.25f);
         if (tutorial == null) yield break;
-        
-       
-
 
     }
 
