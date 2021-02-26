@@ -858,7 +858,7 @@ public class DotANIM : MonoBehaviour
         logo.DOAnchorPos(Vector2.zero, 0.5f);
         yield return new WaitForSeconds(0.5f);
        // logo.DOShakeAnchorPos(5f, 50f, 5, 60, false, true);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1.6f);
         menustartpos();
         yield return new WaitForSeconds(0.25f);
         startermenu();
