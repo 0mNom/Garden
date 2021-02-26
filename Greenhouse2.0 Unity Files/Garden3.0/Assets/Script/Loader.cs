@@ -30,6 +30,16 @@ public class Loader : MonoBehaviour
     {
         SaveData data = SaveManager.LoadGame();
         SaveDataPots dataP = SaveManager.LoadGameP();
+        SaveDataInv dataI = SaveManager.LoadGameI();
+
+        invent.pot1= dataI.s_pot1;
+        invent.pot2= dataI.s_pot2;
+        invent.pot3 = dataI.s_pot3;
+        invent.pot4 = dataI.s_pot4;
+        invent.pot5 = dataI.s_pot5;
+        invent.pot6 = dataI.s_pot6;
+        invent.pot7 = dataI.s_pot7;
+      
 
 
         //Bag,money and Seeds

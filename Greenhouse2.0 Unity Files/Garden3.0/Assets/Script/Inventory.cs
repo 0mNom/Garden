@@ -18,6 +18,11 @@ public class Inventory : MonoBehaviour
         
     }
 
+    public void loadinv()
+    {
+
+    }
+
     // Update is called once per frame
     void Update()
     {
