@@ -127,9 +127,15 @@ public class ClickToPlant : MonoBehaviour
     void Start()
     {
         col = GetComponent<Collider2D>();
+       
+    }
+    public void loaddate()
+    {
+        blePlanted = potPlacesScript.ble;
         targetTimeBle1 = DateTime.Parse(potPlacesScript.TT1P1);
         targetTimeBle2 = DateTime.Parse(potPlacesScript.TT2P1);
         targetTimeBle3 = DateTime.Parse(potPlacesScript.TT3P1);
+        Debug.Log(targetTimeBle1);
     }
 
     // Update is called once per frame
@@ -194,6 +200,7 @@ public class ClickToPlant : MonoBehaviour
                         targetTimeBle2 = CurrentTime.AddSeconds(growingTimeBle * 2 / 3);
                         targetTimeBle3 = CurrentTime.AddSeconds(growingTimeBle);
                         blePlanted = true;
+                        potPlacesScript.ble = true;
                         gotPlant = true;
                         bagScript1.wheatseed--;
                         bagScript1.plantingseed = 0;
