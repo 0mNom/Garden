@@ -9,7 +9,11 @@ public class SaveDataPots
     public int s_sp1, s_sp2, s_sp3, s_sp4, s_sp5, s_sp6, s_sp7, s_sp8, s_sp9, s_sp10; //skins on the active pots 
     public float s_pp1, s_pp2, s_pp3, s_pp4, s_pp5, s_pp6, s_pp7, s_pp8, s_pp9, s_pp10; //Plant in active pot
     public string s_TT1P1, s_TT2P1, s_TT3P1;
-    public bool s_ble;
+    public string s_TT1P2, s_TT2P2, s_TT3P2;
+    public string s_TT1P3, s_TT2P3, s_TT3P3;
+    public bool s_ble1,s_apple1, s_tomato1, s_eggplant1, s_pear1, s_sunflower1, s_cherry1, s_avocado1, s_kiwi1;
+    public bool s_ble2,s_apple2, s_tomato2, s_eggplant2, s_pear2, s_sunflower2, s_cherry2, s_avocado2, s_kiwi2;
+    public bool s_ble3,s_apple3, s_tomato3, s_eggplant3, s_pear3, s_sunflower3, s_cherry3, s_avocado3, s_kiwi3;
 
     public SaveDataPots(PotPlaces places)
     {
@@ -31,8 +35,48 @@ public class SaveDataPots
         s_TT2P1 = places.TT2P1;
         s_TT3P1 = places.TT3P1;
 
+        s_TT1P2 = places.TT1P2;
+        s_TT2P2 = places.TT2P2;
+        s_TT3P2 = places.TT3P2;
+
+        s_TT1P3 = places.TT1P3;
+        s_TT2P3 = places.TT2P3;
+        s_TT3P3 = places.TT3P3;
+
         //fruit planted
-        s_ble = places.ble;
+        s_ble1 = places.ble1;
+        s_apple1 = places.apple1;
+        s_tomato1 = places.tomato1;
+        s_eggplant1 = places.eggplant1;
+        s_pear1 = places.pear1;
+        s_sunflower1 = places.sunflower1;
+        s_cherry1 = places.cherry1;
+        s_avocado1 = places.avocado1;
+        s_kiwi1 = places.kiwi1;
+
+
+        s_ble2 = places.ble2;
+        s_apple2 = places.apple2;
+        s_tomato2 = places.tomato2;
+        s_eggplant2 = places.eggplant2;
+        s_pear2 = places.pear2;
+        s_sunflower2 = places.sunflower2;
+        s_cherry2 = places.cherry2;
+        s_avocado2 = places.avocado2;
+        s_kiwi2 = places.kiwi2;
+
+
+
+        s_ble3 = places.ble3;
+        s_apple3 = places.apple3;
+        s_tomato3 = places.tomato3;
+        s_eggplant3 = places.eggplant3;
+        s_pear3 = places.pear3;
+        s_sunflower3 = places.sunflower3;
+        s_cherry3 = places.cherry3;
+        s_avocado3 = places.avocado3;
+        s_kiwi3 = places.kiwi3;
+
 
         //if the pot has been activated, what pot skin and which plant
         if (s_p1)
