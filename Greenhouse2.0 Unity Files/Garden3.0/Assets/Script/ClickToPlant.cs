@@ -135,6 +135,7 @@ public class ClickToPlant : MonoBehaviour
         {
             gotPlant = potPlacesScript.got1;
             sellingPrice = potPlacesScript.sell1;
+
             blePlanted = potPlacesScript.ble1;
             if (blePlanted == true)
             {
@@ -205,6 +206,165 @@ public class ClickToPlant : MonoBehaviour
                 targetTimeKiwi1 = DateTime.Parse(potPlacesScript.TT1P1);
                 targetTimeKiwi2 = DateTime.Parse(potPlacesScript.TT2P1);
                 targetTimeKiwi3 = DateTime.Parse(potPlacesScript.TT3P1);
+            }
+
+
+        }
+        
+        if (tag == "2")
+        {
+            gotPlant = potPlacesScript.got2;
+            sellingPrice = potPlacesScript.sell2;
+
+            blePlanted = potPlacesScript.ble2;
+            if (blePlanted == true)
+            {
+                targetTimeBle1 = DateTime.Parse(potPlacesScript.TT1P2);
+                targetTimeBle2 = DateTime.Parse(potPlacesScript.TT2P2);
+                targetTimeBle3 = DateTime.Parse(potPlacesScript.TT3P2);
+            }
+
+            applePlanted = potPlacesScript.apple2;
+            if (applePlanted == true)
+            {
+                targetTimeApple1 = DateTime.Parse(potPlacesScript.TT1P2);
+                targetTimeApple2 = DateTime.Parse(potPlacesScript.TT2P2);
+                targetTimeApple3 = DateTime.Parse(potPlacesScript.TT3P2);
+            }
+
+            tomatoPlanted = potPlacesScript.tomato2;
+            if (tomatoPlanted == true)
+            {
+                targetTimeTomato1 = DateTime.Parse(potPlacesScript.TT1P2);
+                targetTimeTomato2 = DateTime.Parse(potPlacesScript.TT2P2);
+                targetTimeTomato3 = DateTime.Parse(potPlacesScript.TT3P2);
+            }
+
+            eggplantPlanted = potPlacesScript.eggplant2;
+            if (eggplantPlanted == true)
+            {
+                targetTimeEggplant1 = DateTime.Parse(potPlacesScript.TT1P2);
+                targetTimeEggplant2 = DateTime.Parse(potPlacesScript.TT2P2);
+                targetTimeEggplant3 = DateTime.Parse(potPlacesScript.TT3P2);
+            }
+
+            pearPlanted = potPlacesScript.pear2;
+            if (pearPlanted == true)
+            {
+                targetTimePear1 = DateTime.Parse(potPlacesScript.TT1P2);
+                targetTimePear2 = DateTime.Parse(potPlacesScript.TT2P2);
+                targetTimePear3 = DateTime.Parse(potPlacesScript.TT3P2);
+            }
+
+            sunflowerPlanted = potPlacesScript.sunflower2;
+            if (sunflowerPlanted == true)
+            {
+                targetTimeSunflower1 = DateTime.Parse(potPlacesScript.TT1P2);
+                targetTimeSunflower2 = DateTime.Parse(potPlacesScript.TT2P2);
+                targetTimeSunflower3 = DateTime.Parse(potPlacesScript.TT3P2);
+            }
+
+            cherryPlanted = potPlacesScript.cherry2;
+            if (cherryPlanted == true)
+            {
+                targetTimeCherry1 = DateTime.Parse(potPlacesScript.TT1P2);
+                targetTimeCherry2 = DateTime.Parse(potPlacesScript.TT2P2);
+                targetTimeCherry3 = DateTime.Parse(potPlacesScript.TT3P2);
+            }
+
+            avocadoPlanted = potPlacesScript.avocado2;
+            if (avocadoPlanted == true)
+            {
+                targetTimeAvocado1 = DateTime.Parse(potPlacesScript.TT1P2);
+                targetTimeAvocado2 = DateTime.Parse(potPlacesScript.TT2P2);
+                targetTimeAvocado3 = DateTime.Parse(potPlacesScript.TT3P2);
+            }
+
+            kiwiPlanted = potPlacesScript.kiwi2;
+            if (kiwiPlanted == true)
+            {
+                targetTimeKiwi1 = DateTime.Parse(potPlacesScript.TT1P2);
+                targetTimeKiwi2 = DateTime.Parse(potPlacesScript.TT2P2);
+                targetTimeKiwi3 = DateTime.Parse(potPlacesScript.TT3P2);
+            }
+
+
+        }
+        if (tag == "3")
+        {
+            gotPlant = potPlacesScript.got3;
+            sellingPrice = potPlacesScript.sell3;
+
+            blePlanted = potPlacesScript.ble3;
+            if (blePlanted == true)
+            {
+                targetTimeBle1 = DateTime.Parse(potPlacesScript.TT1P3);
+                targetTimeBle2 = DateTime.Parse(potPlacesScript.TT2P3);
+                targetTimeBle3 = DateTime.Parse(potPlacesScript.TT3P3);
+            }
+
+            applePlanted = potPlacesScript.apple3;
+            if (applePlanted == true)
+            {
+                targetTimeApple1 = DateTime.Parse(potPlacesScript.TT1P3);
+                targetTimeApple2 = DateTime.Parse(potPlacesScript.TT2P3);
+                targetTimeApple3 = DateTime.Parse(potPlacesScript.TT3P3);
+            }
+
+            tomatoPlanted = potPlacesScript.tomato3;
+            if (tomatoPlanted == true)
+            {
+                targetTimeTomato1 = DateTime.Parse(potPlacesScript.TT1P3);
+                targetTimeTomato2 = DateTime.Parse(potPlacesScript.TT2P3);
+                targetTimeTomato3 = DateTime.Parse(potPlacesScript.TT3P3);
+            }
+
+            eggplantPlanted = potPlacesScript.eggplant3;
+            if (eggplantPlanted == true)
+            {
+                targetTimeEggplant1 = DateTime.Parse(potPlacesScript.TT1P3);
+                targetTimeEggplant2 = DateTime.Parse(potPlacesScript.TT2P3);
+                targetTimeEggplant3 = DateTime.Parse(potPlacesScript.TT3P3);
+            }
+
+            pearPlanted = potPlacesScript.pear3;
+            if (pearPlanted == true)
+            {
+                targetTimePear1 = DateTime.Parse(potPlacesScript.TT1P3);
+                targetTimePear2 = DateTime.Parse(potPlacesScript.TT2P3);
+                targetTimePear3 = DateTime.Parse(potPlacesScript.TT3P3);
+            }
+
+            sunflowerPlanted = potPlacesScript.sunflower3;
+            if (sunflowerPlanted == true)
+            {
+                targetTimeSunflower1 = DateTime.Parse(potPlacesScript.TT1P3);
+                targetTimeSunflower2 = DateTime.Parse(potPlacesScript.TT2P3);
+                targetTimeSunflower3 = DateTime.Parse(potPlacesScript.TT3P3);
+            }
+
+            cherryPlanted = potPlacesScript.cherry3;
+            if (cherryPlanted == true)
+            {
+                targetTimeCherry1 = DateTime.Parse(potPlacesScript.TT1P3);
+                targetTimeCherry2 = DateTime.Parse(potPlacesScript.TT2P3);
+                targetTimeCherry3 = DateTime.Parse(potPlacesScript.TT3P3);
+            }
+
+            avocadoPlanted = potPlacesScript.avocado3;
+            if (avocadoPlanted == true)
+            {
+                targetTimeAvocado1 = DateTime.Parse(potPlacesScript.TT1P3);
+                targetTimeAvocado2 = DateTime.Parse(potPlacesScript.TT2P3);
+                targetTimeAvocado3 = DateTime.Parse(potPlacesScript.TT3P3);
+            }
+
+            kiwiPlanted = potPlacesScript.kiwi3;
+            if (kiwiPlanted == true)
+            {
+                targetTimeKiwi1 = DateTime.Parse(potPlacesScript.TT1P3);
+                targetTimeKiwi2 = DateTime.Parse(potPlacesScript.TT2P3);
+                targetTimeKiwi3 = DateTime.Parse(potPlacesScript.TT3P3);
             }
 
 
