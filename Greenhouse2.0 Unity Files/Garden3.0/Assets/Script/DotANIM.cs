@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public class DotANIM : MonoBehaviour
 {
+    public Animator anim;
 
     public tutoSound sound;
 
@@ -67,10 +68,12 @@ public class DotANIM : MonoBehaviour
         sound.tutPlay();
 
         welcome.DOAnchorPos(new Vector2(0, 593), 0.25f);
+        anim.SetBool("talking",true);
         txt1.DOText("Welcome to your greenhouse. " , 3f, false, ScrambleMode.None, null);
         btxt1.DOText("Welcome to your greenhouse. ", 3f, false, ScrambleMode.None, null);
         yield return new WaitForSeconds(3f);
         sound.tutPause();
+        anim.SetBool("talking", false);
         if (tutorial == null) yield break;
         txt1.DOText("Welcome to your greenhouse. " +
             "Here you can watch your plants grow and look after them ", 10f, false, ScrambleMode.None, null);
@@ -79,8 +82,10 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         yield return new WaitForSeconds(2f);
         sound.tutPlay();
+        anim.SetBool("talking", true);
         yield return new WaitForSeconds(8f);
         sound.tutPause();
+        anim.SetBool("talking", false);
         yield return new WaitForSeconds(1f);
         if (tutorial == null) yield break;
         welcome.DOAnchorPos(new Vector2(1500, 593), 0.25f);
