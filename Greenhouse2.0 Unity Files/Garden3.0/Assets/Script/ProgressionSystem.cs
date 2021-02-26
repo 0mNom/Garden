@@ -5,6 +5,7 @@ using TMPro;
 
 public class ProgressionSystem : MonoBehaviour
 {
+    public GameObject levelUpButton;
     public GameObject tomatoBuyButton;
     public GameObject eggplantBuyButton;
     public GameObject pearBuyButton;
@@ -54,13 +55,13 @@ public class ProgressionSystem : MonoBehaviour
             //ClickToPlant clickToPlantScriptPot3 = pot3.GetComponent<ClickToPlant>();
             //clickToPlantScriptPot3.gotPlant = true;
 
-            tomatoBuyButton.SetActive(false);
-            eggplantBuyButton.SetActive(false);
-            pearBuyButton.SetActive(false);
-            sunflowerBuyButton.SetActive(false);
-            cherryBuyButton.SetActive(false);
-            avocadoBuyButton.SetActive(false);
-            kiwiBuyButton.SetActive(false);
+            tomatoBuyButton.GetComponent<Button>().interactable = false;
+            eggplantBuyButton.GetComponent<Button>().interactable = false;
+            pearBuyButton.GetComponent<Button>().interactable = false;
+            sunflowerBuyButton.GetComponent<Button>().interactable = false;
+            cherryBuyButton.GetComponent<Button>().interactable = false;
+            avocadoBuyButton.GetComponent<Button>().interactable = false;
+            kiwiBuyButton.GetComponent<Button>().interactable = false;
         }
 
         if (playerLevel == 2)
@@ -75,96 +76,97 @@ public class ProgressionSystem : MonoBehaviour
             //ClickToPlant clickToPlantScriptPot3 = pot3.GetComponent<ClickToPlant>();
             //clickToPlantScriptPot3.gotPlant = true;
 
-            tomatoBuyButton.SetActive(true);
-            eggplantBuyButton.SetActive(false);
-            pearBuyButton.SetActive(false);
-            sunflowerBuyButton.SetActive(false);
-            cherryBuyButton.SetActive(false);
-            avocadoBuyButton.SetActive(false);
-            kiwiBuyButton.SetActive(false);
+            tomatoBuyButton.GetComponent<Button>().interactable = true;
+            eggplantBuyButton.GetComponent<Button>().interactable = false;
+            pearBuyButton.GetComponent<Button>().interactable = false;
+            sunflowerBuyButton.GetComponent<Button>().interactable = false;
+            cherryBuyButton.GetComponent<Button>().interactable = false;
+            avocadoBuyButton.GetComponent<Button>().interactable = false;
+            kiwiBuyButton.GetComponent<Button>().interactable = false;
         }
         else if (playerLevel == 3)
         {
             playerLevelText.text = "Level 3";
             priceToLevelUpText.text = "Spend 1500 leaves to level up and get access to the Eggplant seed and 20 free amber?";
-            tomatoBuyButton.SetActive(true);
-            eggplantBuyButton.SetActive(false);
-            pearBuyButton.SetActive(false);
-            sunflowerBuyButton.SetActive(false);
-            cherryBuyButton.SetActive(false);
-            avocadoBuyButton.SetActive(false);
-            kiwiBuyButton.SetActive(false);
+            tomatoBuyButton.GetComponent<Button>().interactable = true;
+            eggplantBuyButton.GetComponent<Button>().interactable = false;
+            pearBuyButton.GetComponent<Button>().interactable = false;
+            sunflowerBuyButton.GetComponent<Button>().interactable = false;
+            cherryBuyButton.GetComponent<Button>().interactable = false;
+            avocadoBuyButton.GetComponent<Button>().interactable = false;
+            kiwiBuyButton.GetComponent<Button>().interactable = false;
         }
         else if (playerLevel == 4)
         {
             playerLevelText.text = "Level 4";
             priceToLevelUpText.text = "Spend 3500 leaves to level up and get access to the Pear seed and 25 free amber?";
-            tomatoBuyButton.SetActive(true);
-            eggplantBuyButton.SetActive(true);
-            pearBuyButton.SetActive(false);
-            sunflowerBuyButton.SetActive(false);
-            cherryBuyButton.SetActive(false);
-            avocadoBuyButton.SetActive(false);
-            kiwiBuyButton.SetActive(false);
+            tomatoBuyButton.GetComponent<Button>().interactable = true;
+            eggplantBuyButton.GetComponent<Button>().interactable = true;
+            pearBuyButton.GetComponent<Button>().interactable = false;
+            sunflowerBuyButton.GetComponent<Button>().interactable = false;
+            cherryBuyButton.GetComponent<Button>().interactable = false;
+            avocadoBuyButton.GetComponent<Button>().interactable = false;
+            kiwiBuyButton.GetComponent<Button>().interactable = false;
         }
         else if (playerLevel == 5)
         {
             playerLevelText.text = "Level 5";
             priceToLevelUpText.text = "Spend 7500 leaves to level up and get access to the Sunflower seed and 30 free amber?";
-            tomatoBuyButton.SetActive(true);
-            eggplantBuyButton.SetActive(true);
-            pearBuyButton.SetActive(true);
-            sunflowerBuyButton.SetActive(false);
-            cherryBuyButton.SetActive(false);
-            avocadoBuyButton.SetActive(false);
-            kiwiBuyButton.SetActive(false);
+            tomatoBuyButton.GetComponent<Button>().interactable = true;
+            eggplantBuyButton.GetComponent<Button>().interactable = true;
+            pearBuyButton.GetComponent<Button>().interactable = true;
+            sunflowerBuyButton.GetComponent<Button>().interactable = false;
+            cherryBuyButton.GetComponent<Button>().interactable = false;
+            avocadoBuyButton.GetComponent<Button>().interactable = false;
+            kiwiBuyButton.GetComponent<Button>().interactable = false;
         }
         else if (playerLevel == 6)
         {
             playerLevelText.text = "Level 6";
             priceToLevelUpText.text = "Spend 15000 leaves to level up and get access to the Cherry seed and 35 free amber?";
-            tomatoBuyButton.SetActive(true);
-            eggplantBuyButton.SetActive(true);
-            pearBuyButton.SetActive(true);
-            sunflowerBuyButton.SetActive(true);
-            cherryBuyButton.SetActive(false);
-            avocadoBuyButton.SetActive(false);
-            kiwiBuyButton.SetActive(false);
+            tomatoBuyButton.GetComponent<Button>().interactable = true;
+            eggplantBuyButton.GetComponent<Button>().interactable = true;
+            pearBuyButton.GetComponent<Button>().interactable = true;
+            sunflowerBuyButton.GetComponent<Button>().interactable = true;
+            cherryBuyButton.GetComponent<Button>().interactable = false;
+            avocadoBuyButton.GetComponent<Button>().interactable = false;
+            kiwiBuyButton.GetComponent<Button>().interactable = false;
         }
         else if (playerLevel == 7)
         {
             playerLevelText.text = "Level 7";
             priceToLevelUpText.text = "Spend 22500 leaves to level up and get access to the Avocado seed and 40 free amber?";
-            tomatoBuyButton.SetActive(true);
-            eggplantBuyButton.SetActive(true);
-            pearBuyButton.SetActive(true);
-            sunflowerBuyButton.SetActive(true);
-            cherryBuyButton.SetActive(true);
-            avocadoBuyButton.SetActive(false);
-            kiwiBuyButton.SetActive(false);
+            tomatoBuyButton.GetComponent<Button>().interactable = true;
+            eggplantBuyButton.GetComponent<Button>().interactable = true;
+            pearBuyButton.GetComponent<Button>().interactable = true;
+            sunflowerBuyButton.GetComponent<Button>().interactable = true;
+            cherryBuyButton.GetComponent<Button>().interactable = true;
+            avocadoBuyButton.GetComponent<Button>().interactable = false;
+            kiwiBuyButton.GetComponent<Button>().interactable = false;
         }
         else if (playerLevel == 8)
         {
             playerLevelText.text = "Level 8";
             priceToLevelUpText.text = "Spend 55000 leaves to level up and get access to the Kiwi seed and 45 free amber?";
-            tomatoBuyButton.SetActive(true);
-            eggplantBuyButton.SetActive(true);
-            pearBuyButton.SetActive(true);
-            sunflowerBuyButton.SetActive(true);
-            cherryBuyButton.SetActive(true);
-            avocadoBuyButton.SetActive(true);
-            kiwiBuyButton.SetActive(false);
+            tomatoBuyButton.GetComponent<Button>().interactable = true;
+            eggplantBuyButton.GetComponent<Button>().interactable = true;
+            pearBuyButton.GetComponent<Button>().interactable = true;
+            sunflowerBuyButton.GetComponent<Button>().interactable = true;
+            cherryBuyButton.GetComponent<Button>().interactable = true;
+            avocadoBuyButton.GetComponent<Button>().interactable = true;
+            kiwiBuyButton.GetComponent<Button>().interactable = false;
         }
         else if (playerLevel == 9)
         {
             playerLevelText.text = "Level 9";
-            tomatoBuyButton.SetActive(true);
-            eggplantBuyButton.SetActive(true);
-            pearBuyButton.SetActive(true);
-            sunflowerBuyButton.SetActive(true);
-            cherryBuyButton.SetActive(true);
-            avocadoBuyButton.SetActive(true);
-            kiwiBuyButton.SetActive(true);
+            levelUpButton.SetActive(false);
+            tomatoBuyButton.GetComponent<Button>().interactable = true;
+            eggplantBuyButton.GetComponent<Button>().interactable = true;
+            pearBuyButton.GetComponent<Button>().interactable = true;
+            sunflowerBuyButton.GetComponent<Button>().interactable = true;
+            cherryBuyButton.GetComponent<Button>().interactable = true;
+            avocadoBuyButton.GetComponent<Button>().interactable = true;
+            kiwiBuyButton.GetComponent<Button>().interactable = true;
         }
     }
 
