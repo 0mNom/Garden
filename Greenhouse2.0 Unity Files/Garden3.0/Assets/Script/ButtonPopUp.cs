@@ -173,11 +173,11 @@ public class ButtonPopUp : MonoBehaviour
             }
             if (clickToPlantScript.canWater == true)
             {
-                wateringButton.gameObject.SetActive(true);
+                wateringButton.GetComponent<Button>().interactable = true;
             }
             if (clickToPlantScript.canWater == false)
             {
-                wateringButton.gameObject.SetActive(false);
+                wateringButton.GetComponent<Button>().interactable = false;
             }
 
             if (!clickToPlantScript.plantFinished)

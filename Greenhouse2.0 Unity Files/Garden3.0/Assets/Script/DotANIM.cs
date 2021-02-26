@@ -10,10 +10,12 @@ using UnityEngine.UI;
 public class DotANIM : MonoBehaviour
 {
 
+    public tutoSound sound;
+
     public RectTransform paymentpannel, gemshop;
 
     public GameObject tutorial;
-    public RectTransform welcome, T1, T2, wheatarrow, T3,T31, T4, T5, T6,nameArrow, waterArrow,potArrow,sellArrow,GemArrow, marketarrow;
+    public RectTransform welcome, T1, T2, wheatarrow, T3,T31, T4, T5, T6,nameArrow,gemarrow, waterArrow,potArrow,sellArrow,GemArrow, marketarrow;
     public Text txt1, btxt1, txt2, btxt2, txt3, btxt3, txt4, btxt4, txt5, btxt5, txt6, btxt6, txt7, btxt7, txt8, btxt8;
 
     public ButtonPopUp pot1;
@@ -60,37 +62,49 @@ public class DotANIM : MonoBehaviour
     IEnumerator tut1()
     {
         if (tutorial == null) yield break;
+        sound.tutPlay();
 
         welcome.DOAnchorPos(new Vector2(30, 593), 0.25f);
         txt1.DOText("Welcome to your greenhouse. " , 3f, false, ScrambleMode.None, null);
         btxt1.DOText("Welcome to your greenhouse. ", 3f, false, ScrambleMode.None, null);
         yield return new WaitForSeconds(3f);
+        sound.tutPause();
         if (tutorial == null) yield break;
         txt1.DOText("Welcome to your greenhouse. " +
             "Here you can watch your plants grow and look after them ", 10f, false, ScrambleMode.None, null);
         btxt1.DOText("Welcome to your greenhouse. " +
             "Here you can watch your plants grow and look after them ", 10f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(11f);
+        yield return new WaitForSeconds(2f);
+        sound.tutPlay();
+        yield return new WaitForSeconds(8f);
+        sound.tutPause();
+        yield return new WaitForSeconds(1f);
         if (tutorial == null) yield break;
         welcome.DOAnchorPos(new Vector2(1500, 593), 0.25f);
         if (tutorial == null) yield break;
         T1.DOAnchorPos(new Vector2(265 , 685), 0.25f);
         if (tutorial == null) yield break;
+        sound.tutPlay();
         txt2.DOText("Here you can buy seeds to plant in your pots.", 5f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
         btxt2.DOText("Here you can buy seeds to plant in your pots.", 5f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(5f);
+        sound.tutPause();
+        yield return new WaitForSeconds(1f);
         if (tutorial == null) yield break;
         //T1.DOAnchorPos(new Vector2(1400, 685), 0.25f);
         T2.DOAnchorPos(new Vector2(522.61f, 1278.27f), 0.25f);
         if (tutorial == null) yield break;
+        sound.tutPlay();
         txt3.DOText("This is where your seeds are stored for easy acess and for planting, try opening it", 5f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
         btxt3.DOText("This is where your seeds are stored for easy acess and for planting, try opening it", 5f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(5f);
+        sound.tutPause();
+        yield return new WaitForSeconds(1f);
         if (tutorial == null) yield break;
         //T1.DOAnchorPos(new Vector2(1400, 685), 0.25f);
 
@@ -103,6 +117,7 @@ public class DotANIM : MonoBehaviour
 
     IEnumerator tut2()
     {
+        StopCoroutine("tut1");
         if (tutorial == null) yield break;
         seedbagOpen();
         if (tutorial == null) yield break;
@@ -110,26 +125,45 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         T3.DOAnchorPos(new Vector2(-140, 97.6f), 0.25f);
         if (tutorial == null) yield break;
+        sound.tutPlay();
         txt4.DOText("to plant simply select a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
         btxt4.DOText("to plant simply select a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
         yield return new WaitForSeconds(5f);
+        sound.tutPause();
         if (tutorial == null) yield break;
+        
         txt4.DOText("to plant simply select a seed in your bag and then on a glowing pot. Try now with this apple seed.", 5f, false, ScrambleMode.None, null);
         btxt4.DOText("to plant simply select a seed in your bag and then on a glowing pot. Try now with this apple seed.", 5f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
         yield return new WaitForSeconds(1f);
+        
         if (tutorial == null) yield break;
         wheatarrow.DOAnchorPos(new Vector2(101.82f, 382.5f), 0.25f);
+        yield return new WaitForSeconds(1f);
+        sound.tutPlay();
+        yield return new WaitForSeconds(3f);
+
+        sound.tutPause();
         if (tutorial == null) yield break;
 
     }
 
     public void tut31()
     {
-        T3.DOAnchorPos(new Vector2(-140, 97.6f), 0.25f);
-        txt8.DOText("to plant simply select a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
-        btxt8.DOText("to plant simply select a seed in your bag and then on a glowing pot.", 5f, false, ScrambleMode.None, null);
+        StartCoroutine("tuto31");
+        }
+
+    IEnumerator tuto31()
+    {
+        StopCoroutine("tut2");
+        wheatarrow.DOAnchorPos(new Vector2(101.82f, 382.5f), 0.25f);
+        T31.DOAnchorPos(new Vector2(-140, 97.6f), 0.25f);
+        sound.tutPlay();
+        txt8.DOText("now that you have a seed in your hand you can click on a glowing pot to plant it.", 5f, false, ScrambleMode.None, null);
+        btxt8.DOText("now that you have a seed in your hand you can click on a glowing pot to plant it.", 5f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(5f);
+        sound.tutPause();
     }
     public void tutoEnd1()
     {
@@ -153,14 +187,21 @@ public class DotANIM : MonoBehaviour
     }
     IEnumerator tut3()
     {
-        
-        yield return new WaitForSeconds(1f);
+        StopCoroutine("tuto31");
+
+        Debug.Log("stttoooppppp tuto31");
+
         if (tutorial == null) yield break;
-        T4.DOAnchorPos(new Vector2(29.7f, 593), 0.25f);
+        T4.DOAnchorPos(new Vector2(29.7f, 193), 0.25f);
         if (tutorial == null) yield break;
+        sound.tutPlay();
         txt5.DOText("Nice, now that you've planted your first plant you can tap it to see him close up!", 5f, false, ScrambleMode.None, null);
         btxt5.DOText("Nice, now that you've planted your first plant you can tap it to see him close up!", 5f, false, ScrambleMode.None, null);
+        Debug.Log("i restaredddd");
         if (tutorial == null) yield break;
+        yield return new WaitForSeconds(5f);
+        sound.tutPause();
+
 
 
     }
@@ -172,16 +213,56 @@ public class DotANIM : MonoBehaviour
     IEnumerator tut4()
     {
         if (tutorial == null) yield break;
-
+        StopCoroutine("tut3");
         T4.DOAnchorPos(new Vector2(1400, 593), 0.25f);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(1f);
+      
         if (tutorial == null) yield break;
         T5.DOAnchorPos(new Vector2(0, -770), 0.25f);
+        sound.tutPlay();
         txt6.DOText("Here you can find a whole bunch of information like how long you plant will take to grow.", 5f, false, ScrambleMode.None, null);
         btxt6.DOText("Here you can find a whole bunch of information like how long you plant will take to grow.", 5f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(5f);
+        sound.tutPause();
+    }
+    public void tuto41()
+    {
+        StartCoroutine("tut41");
+
+    }
+    IEnumerator tut41()
+    {
+        if (tutorial == null) yield break;
+        StopCoroutine("tut4");
+        if (tutorial == null) yield break;
+        txt6.DOText("", 1f, false, ScrambleMode.None, null);
+        if (tutorial == null) yield break;
+        btxt6.DOText("", 1f, false, ScrambleMode.None, null);
+      
+        if (tutorial == null) yield break;
+        
+        if (tutorial == null) yield break;
+        gemarrow.DOAnchorPos(new Vector2(-98, 720), 0.25f);
+        sound.tutPlay();
+        txt6.DOText("you can speed up the growing process by using your amber.", 4f, false, ScrambleMode.None, null);
+        btxt6.DOText("you can speed up the growing process by using your amber.", 4f, false, ScrambleMode.None, null);
+        if (tutorial == null) yield break;
+        yield return new WaitForSeconds(4f);
+        sound.tutPause();
+    }
+
+        public void tuto5()
+    {
+        StartCoroutine("tut5");
+
+    }
+    IEnumerator tut5()
+    {
+        gemarrow.gameObject.transform.DOScale(0, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        gemarrow.gameObject.SetActive(false);
+        StopCoroutine("tut41");
         if (tutorial == null) yield break;
         txt6.DOText("", 1f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
@@ -189,38 +270,97 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         waterArrow.DOAnchorPos(new Vector2(-58, 870), 0.25f);
         if (tutorial == null) yield break;
-        txt6.DOText("Twice per plant growth you will have the chance to water your plant, this will make its selling price higher so come and check on them often.", 6f, false, ScrambleMode.None, null);
-        btxt6.DOText("Twice per plant growth you will have the chance to water your plant, this will make its selling price higher so come and check on them often.", 6f, false, ScrambleMode.None, null);
+        sound.tutPlay();
+        txt6.DOText("Twice per plant growth you will have the chance to water your plant...", 6f, false, ScrambleMode.None, null);
+        btxt6.DOText("Twice per plant growth you will have the chance to water your plant...", 6f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(6f);
+        txt6.DOText("", 1f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(7f);
+        btxt6.DOText("", 1f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        waterArrow.gameObject.transform.DOScale(0, 0.25f);
+        
+        txt6.DOText("this will make its selling price higher so come and check on them often.", 5f, false, ScrambleMode.None, null);
+        btxt6.DOText("this will make its selling price higher so come and check on them often.", 5f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(5f);
+        sound.tutPause();
+        if (tutorial == null) yield break;
+    }
+    public void tuto6()
+    {
+        StartCoroutine("tut6");
+
+    }
+    IEnumerator tut6()
+    {
+        StopCoroutine("tut5");
+        waterArrow.gameObject.transform.DOScale(0, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        waterArrow.gameObject.SetActive(false);
+
+        if (tutorial == null) yield break;
+       
         if (tutorial == null) yield break;
         txt6.DOText("", 1f, false, ScrambleMode.None, null);
         btxt6.DOText("", 1f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
         potArrow.DOAnchorPos(new Vector2(-42, 1050), 0.25f);
         if (tutorial == null) yield break;
-        txt6.DOText("this button is the store room of pots that you buy up here, to change a pot, open the store room and selet the pot you want to use.", 5f, false, ScrambleMode.None, null);
-        btxt6.DOText("this button is the store room of pots that you buy up here, to change a pot, open the store room and selet the pot you want to use.", 5f, false, ScrambleMode.None, null);
+        sound.tutPlay();
+        txt6.DOText("this button is the store room of pots that you buy up here...", 5f, false, ScrambleMode.None, null);
+        btxt6.DOText("this button is the store room of pots that you buy up here...", 5f, false, ScrambleMode.None, null);
 
         if (tutorial == null) yield break;
         yield return new WaitForSeconds(2f);
         if (tutorial == null) yield break;
         marketarrow.DOAnchorPos(new Vector2(245, 1340), 0.25f);
+        yield return new WaitForSeconds(6f);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(4f);
+        txt6.DOText("", 1f, false, ScrambleMode.None, null);
+        btxt6.DOText("", 1f, false, ScrambleMode.None, null);
+       
+        txt6.DOText("to change a pot, open the store room and selet the pot you want to use.", 5f, false, ScrambleMode.None, null);
+        btxt6.DOText("to change a pot, open the store room and selet the pot you want to use.", 5f, false, ScrambleMode.None, null);
+        yield return new WaitForSeconds(5f);
+        sound.tutPause();
+    }
+    public void tuto7()
+    {
+        StartCoroutine("tut7");
+
+    }
+    IEnumerator tut7()
+    {
+        StopCoroutine("tut6");
+      
+
         if (tutorial == null) yield break;
         txt6.DOText("", 1f, false, ScrambleMode.None, null);
         btxt6.DOText("", 1f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
+        sound.tutPlay();
         txt6.DOText("Attention, once a pot has been placed you cannot put it back in the store room.", 4f, false, ScrambleMode.None, null);
         btxt6.DOText("Attention, once a pot has been placed you cannot put it back in the store room.", 4f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
+        sound.tutPause();
+    }
+    public void tuto8()
+    {
+        StartCoroutine("tut8");
+
+    }
+    IEnumerator tut8()
+    {
+        StopCoroutine("tut7");
+        marketarrow.gameObject.transform.DOScale(0, 0.5f);
+        potArrow.gameObject.transform.DOScale(0, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        marketarrow.gameObject.SetActive(false);
+        potArrow.gameObject.SetActive(false);
+
         if (tutorial == null) yield break;
-        marketarrow.gameObject.transform.DOScale(0, 0.25f);
-        potArrow.gameObject.transform.DOScale(0, 0.25f);
+       
+        
         if (tutorial == null) yield break;
         txt6.DOText("", 1f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
@@ -228,32 +368,72 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         sellArrow.DOAnchorPos(new Vector2(254, 425), 0.25f);
         if (tutorial == null) yield break;
+        sound.tutPlay();
         txt6.DOText("When the plant has finished growing you can sell it to gain leaves to spend buying more seeds...", 4f, false, ScrambleMode.None, null);
         btxt6.DOText("When the plant has finished growing you can sell it to gain leaves to spend buying more seeds...", 4f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
+        sound.tutPause();
+    }
+    public void tuto9()
+    {
+        StartCoroutine("tut9");
+
+    }
+    IEnumerator tut9()
+    {
+        StopCoroutine("tut8");
         if (tutorial == null) yield break;
         txt6.DOText("", 1f, false, ScrambleMode.None, null);
         btxt6.DOText("", 1f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
+        sound.tutPlay();
         txt6.DOText("or you can leave it in the pot to make your greenhouse look good", 3f, false, ScrambleMode.None, null);
         btxt6.DOText("or you can leave it in the pot to make your greenhouse look good", 3f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3f);
+        sound.tutPause();
+    }
+    public void tuto10()
+    {
+        StartCoroutine("tut10");
+
+    }
+    IEnumerator tut10()
+    {
+        StopCoroutine("tut9");
         if (tutorial == null) yield break;
-        sellArrow.gameObject.transform.DOScale(0, 0.25f);
+        sellArrow.gameObject.transform.DOScale(0, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        sellArrow.gameObject.SetActive(false);
+
         if (tutorial == null) yield break;
         txt6.DOText("", 1f, false, ScrambleMode.None, null);
         btxt6.DOText("", 1f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
         nameArrow.DOAnchorPos(new Vector2(-12, 1090), 0.25f);
         if (tutorial == null) yield break;
-        txt6.DOText("and finally you can change the name of you plant by tapping on the name up top.", 3f, false, ScrambleMode.None, null);
-        btxt6.DOText("and finally you can change the name of you plant by tapping on the name up top.", 3f, false, ScrambleMode.None, null);
+        sound.tutPlay();
+        txt6.DOText("and finally you can change the name of your plant by tapping on the name up top.", 3f, false, ScrambleMode.None, null);
+        btxt6.DOText("and finally you can change the name of your plant by tapping on the name up top.", 3f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3f);
+        sound.tutPause();
+    }
+    public void tuto11()
+    {
+        StartCoroutine("tut11");
+
+    }
+    IEnumerator tut11()
+    {
+        StopCoroutine("tut10");
         if (tutorial == null) yield break;
-        nameArrow.gameObject.transform.DOScale(0, 0.25f);
+        if (tutorial == null) yield break;
+        nameArrow.gameObject.transform.DOScale(0, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        nameArrow.gameObject.SetActive(false);
+
         if (tutorial == null) yield break;
         pot1.ClosePanel();
         if (tutorial == null) yield break;
@@ -261,11 +441,13 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         T6.DOAnchorPos(new Vector2(0, 620), 0.25f);
         if (tutorial == null) yield break;
+        sound.tutPlay();
         txt7.DOText("now you can do it all! have fun using those green thumbs of yours", 3f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
         btxt7.DOText("now you can do it all! have fun using those green thumbs of yours", 3f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3f);
+        sound.tutPause();
         if (tutorial == null) yield break;
         if (tutorial == null) yield break;
         T6.DOAnchorPos(new Vector2(0, 1500), 0.25f);
@@ -275,6 +457,8 @@ public class DotANIM : MonoBehaviour
 
 
     }
+
+
     void Start()
     {
         // menu.DOAnchorPos(Vector2.zero,0.25f);
