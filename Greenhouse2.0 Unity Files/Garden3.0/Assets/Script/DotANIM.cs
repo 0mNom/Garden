@@ -12,7 +12,7 @@ public class DotANIM : MonoBehaviour
 
     public tutoSound sound;
 
-    public RectTransform paymentpannel, gemshop;
+    public RectTransform paymentpannel, gemshop, gemshopB;
 
     public GameObject tutorial;
     public RectTransform welcome, T1, T2, wheatarrow, T3,T31, T4, T5, T6,nameArrow,gemarrow, waterArrow,potArrow,sellArrow,GemArrow, marketarrow;
@@ -40,10 +40,12 @@ public class DotANIM : MonoBehaviour
 
     public void gemshopin()
     {
+        gemshopB.DOAnchorPos(new Vector2(-120, 120), 0.25f);
         gemshop.DOAnchorPos(new Vector2(0, 0), 0.25f);
     }
     public void gemshopout()
     {
+        gemshopB.DOAnchorPos(new Vector2(120, 120), 0.25f);
         gemshop.DOAnchorPos(new Vector2(-3000, 0), 0.25f);
         paymentpannel.DOAnchorPos(new Vector2(-2000, 0), 0.25f);
     }
@@ -64,7 +66,7 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         sound.tutPlay();
 
-        welcome.DOAnchorPos(new Vector2(30, 593), 0.25f);
+        welcome.DOAnchorPos(new Vector2(0, 593), 0.25f);
         txt1.DOText("Welcome to your greenhouse. " , 3f, false, ScrambleMode.None, null);
         btxt1.DOText("Welcome to your greenhouse. ", 3f, false, ScrambleMode.None, null);
         yield return new WaitForSeconds(3f);
@@ -83,7 +85,7 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         welcome.DOAnchorPos(new Vector2(1500, 593), 0.25f);
         if (tutorial == null) yield break;
-        T1.DOAnchorPos(new Vector2(265 , 685), 0.25f);
+        T1.DOAnchorPos(new Vector2(-265 , -285), 0.25f);
         if (tutorial == null) yield break;
         sound.tutPlay();
         txt2.DOText("Here you can buy seeds to plant in your pots.", 5f, false, ScrambleMode.None, null);
@@ -95,7 +97,7 @@ public class DotANIM : MonoBehaviour
         yield return new WaitForSeconds(1f);
         if (tutorial == null) yield break;
         //T1.DOAnchorPos(new Vector2(1400, 685), 0.25f);
-        T2.DOAnchorPos(new Vector2(522.61f, 1278.27f), 0.25f);
+        T2.DOAnchorPos(new Vector2(-363, 289), 0.25f);
         if (tutorial == null) yield break;
         sound.tutPlay();
         txt3.DOText("This is where your seeds are stored for easy acess and for planting, try opening it", 5f, false, ScrambleMode.None, null);
@@ -122,6 +124,7 @@ public class DotANIM : MonoBehaviour
         seedbagOpen();
         if (tutorial == null) yield break;
         T1.DOAnchorPos(new Vector2(1400, 685), 0.25f);
+        T2.DOAnchorPos(new Vector2(-3063, 289), 0.25f);
         if (tutorial == null) yield break;
         T3.DOAnchorPos(new Vector2(-140, 97.6f), 0.25f);
         if (tutorial == null) yield break;
@@ -303,7 +306,7 @@ public class DotANIM : MonoBehaviour
         txt6.DOText("", 1f, false, ScrambleMode.None, null);
         btxt6.DOText("", 1f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        potArrow.DOAnchorPos(new Vector2(-42, 1050), 0.25f);
+        potArrow.DOAnchorPos(new Vector2(-498, 1050), 0.25f);
         if (tutorial == null) yield break;
         sound.tutPlay();
         txt6.DOText("this button is the store room of pots that you buy up here...", 5f, false, ScrambleMode.None, null);
@@ -312,7 +315,7 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         yield return new WaitForSeconds(2f);
         if (tutorial == null) yield break;
-        marketarrow.DOAnchorPos(new Vector2(245, 1340), 0.25f);
+        marketarrow.DOAnchorPos(new Vector2(-287.8f, -381.6f), 0.25f);
         yield return new WaitForSeconds(6f);
         if (tutorial == null) yield break;
         txt6.DOText("", 1f, false, ScrambleMode.None, null);
@@ -742,12 +745,15 @@ public class DotANIM : MonoBehaviour
 
     public void seedbagOpen()
     {
+        seeds.gameObject.SetActive(true);
         seedBag.DOAnchorPos(new Vector2(-120,-250), 0.25f);
+        seedBag.gameObject.SetActive(false);
         seeds.DOAnchorPos(new Vector2(0, 0), 0.25f);
     }
 
     public void seedbagUP()
     {
+        seedBag.gameObject.SetActive(true);
         seedBag.DOAnchorPos(new Vector2(-120, 120), 0.25f);
     }
     
@@ -771,6 +777,7 @@ public class DotANIM : MonoBehaviour
     public void marketOpen()
     {
         marketButton.DOAnchorPos(new Vector2(-120, 120), 0.25f);
+        marketButton.gameObject.SetActive(false);
         market.DOAnchorPos(new Vector2(0, 0), 0.25f);
     }
     
@@ -781,9 +788,11 @@ public class DotANIM : MonoBehaviour
 
     IEnumerator closeMarket()
     {
+      
         marketButton.DOAnchorPos(new Vector2(-120, -120), 0.25f);
         market.DOAnchorPos(new Vector2(00, 4000), 0.25f);
         yield return new WaitForSeconds(0.25f);
+        marketButton.gameObject.SetActive(true);
         market.gameObject.SetActive(false);
 
     }
@@ -898,11 +907,13 @@ public class DotANIM : MonoBehaviour
 
     public void invBin()
     {
+        invbutton.gameObject.SetActive(true);
         invbutton.DOAnchorPos(new Vector2(190, -440), 1f);
     }
 
     public void invBout()
     {
+        invbutton.gameObject.SetActive(false);
         invbutton.DOAnchorPos(new Vector2(-1000, -440), 1f);
     }
     public void gem1in()

@@ -16,7 +16,7 @@ public class Sounds : MonoBehaviour
         //source.clip = BG_music;
         source.playOnAwake = false;
 
-        source.volume = 0.4f;
+        source.volume = 0.3f;
 
         //source.clip = BG_music;
         //source.PlayOneShot(BG_music);
