@@ -134,7 +134,7 @@ public class ClickToPlant : MonoBehaviour
         if (tag == "4")
         {
             plantFinished = potPlacesScript.PF1;
-            Debug.Log(potPlacesScript.PF1);
+            Debug.Log("Load " + potPlacesScript.PF1);
 
             gotPlant = potPlacesScript.got1;
             sellingPrice = potPlacesScript.sell1;
@@ -217,7 +217,7 @@ public class ClickToPlant : MonoBehaviour
         if (tag == "2")
         {
             plantFinished = potPlacesScript.PF2;
-            Debug.Log(potPlacesScript.PF2);
+            Debug.Log("Load " + potPlacesScript.PF2);
 
             gotPlant = potPlacesScript.got2;
             sellingPrice = potPlacesScript.sell2;
@@ -299,7 +299,7 @@ public class ClickToPlant : MonoBehaviour
         if (tag == "3")
         {
             plantFinished = potPlacesScript.PF3;
-            Debug.Log(potPlacesScript.PF3);
+            Debug.Log("Load " + potPlacesScript.PF3);
 
             gotPlant = potPlacesScript.got3;
             sellingPrice = potPlacesScript.sell3;
