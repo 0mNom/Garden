@@ -29,6 +29,9 @@ public class PotPlaces : MonoBehaviour
     public bool ble2, apple2,tomato2,eggplant2,pear2,sunflower2,cherry2,avocado2,kiwi2;
     public bool ble3, apple3,tomato3,eggplant3,pear3,sunflower3,cherry3,avocado3,kiwi3;
 
+    public bool got1,got2,got3;
+    public int sell1, sell2, sell3;
+
 
     void Start()
     {

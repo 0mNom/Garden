@@ -102,6 +102,12 @@ public class Loader : MonoBehaviour
         places.TT3P3 = dataP.s_TT3P3;
         Debug.Log(places.TT1P3);
 
+        //selling price
+
+        places.sell1 = dataP.s_sell1;
+        places.sell2 = dataP.s_sell2;
+        places.sell3 = dataP.s_sell3;
+
 
 
 

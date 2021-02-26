@@ -15,6 +15,8 @@ public class SaveDataPots
     public bool s_ble2,s_apple2, s_tomato2, s_eggplant2, s_pear2, s_sunflower2, s_cherry2, s_avocado2, s_kiwi2;
     public bool s_ble3,s_apple3, s_tomato3, s_eggplant3, s_pear3, s_sunflower3, s_cherry3, s_avocado3, s_kiwi3;
 
+    public int s_sell1, s_sell2, s_sell3;
+
     public SaveDataPots(PotPlaces places)
     {
 
@@ -76,6 +78,12 @@ public class SaveDataPots
         s_cherry3 = places.cherry3;
         s_avocado3 = places.avocado3;
         s_kiwi3 = places.kiwi3;
+
+        //selling price
+
+        s_sell1 = places.sell1;
+        s_sell2 = places.sell2;
+        s_sell3 = places.sell3;
 
 
         //if the pot has been activated, what pot skin and which plant
