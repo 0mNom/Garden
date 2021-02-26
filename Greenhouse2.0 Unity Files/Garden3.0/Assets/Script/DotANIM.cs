@@ -37,16 +37,18 @@ public class DotANIM : MonoBehaviour
     public void addMoney(string add)
     {
         sell.text = add;
-        sell.rectTransform.DOAnchorPos(new Vector2(-110, -240), 0.25f);
-        sell.gameObject.SetActive(true);
+       
+        //sell.gameObject.SetActive(true);
         StartCoroutine("add");
     }
 
     IEnumerator add()
     {
+        sell.rectTransform.DOAnchorPos(new Vector2(-110, -240), 0.25f);
+        yield return new WaitForSeconds(0.25f);
         sell.gameObject.SetActive(true);
-        sell.rectTransform.DOAnchorPos(new Vector2(0, 240), 5f);
-        yield return new WaitForSeconds(2f);
+        sell.rectTransform.DOAnchorPos(new Vector2(-152, -100), 1f);
+        yield return new WaitForSeconds(1f);
 
         sell.gameObject.SetActive(false);
 
