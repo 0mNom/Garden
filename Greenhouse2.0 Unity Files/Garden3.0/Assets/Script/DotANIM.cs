@@ -9,6 +9,9 @@ using UnityEngine.UI;
 
 public class DotANIM : MonoBehaviour
 {
+
+    public Text sell;
+
     public Animator anim, anim1, anim2,anim3, anim4, anim5,anim6, anim7;
 
     public tutoSound sound;
@@ -29,6 +32,24 @@ public class DotANIM : MonoBehaviour
     public RectTransform WheatScreen, AppleScreen, TomatoScreen, EggplantScreen, PearScreen, SunflowerScreen, CherryScreen, AvoScreen, KiwiScreen;
     public RectTransform p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16;
 
+
+
+    public void addMoney(string add)
+    {
+        sell.text = add;
+        sell.rectTransform.DOAnchorPos(new Vector2(-110, -240), 0.25f);
+        StartCoroutine("add");
+    }
+
+    IEnumerator add()
+    {
+        sell.gameObject.SetActive(true);
+        sell.rectTransform.DOAnchorPos(new Vector2(0, 240), 0.25f);
+        yield return new WaitForSeconds(2f);
+
+        sell.gameObject.SetActive(false);
+
+    }
 
     public void payin()
     {
@@ -53,6 +74,10 @@ public class DotANIM : MonoBehaviour
 
     public void destroytuto()
     {
+
+        T6.DOAnchorPos(new Vector2(0, 1500), 0.25f);
+        
+
         Destroy(tutorial);
     }
 
@@ -214,8 +239,8 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         sound.tutPlay();
         anim5.SetBool("talking", true);
-        txt5.DOText("Nice, now that you've planted your first plant you can tap it to see him close up!", 5f, false, ScrambleMode.None, null);
-        btxt5.DOText("Nice, now that you've planted your first plant you can tap it to see him close up!", 5f, false, ScrambleMode.None, null);
+        txt5.DOText("Nice, now that you've planted your first plant you can tap him to see him close up!", 5f, false, ScrambleMode.None, null);
+        btxt5.DOText("Nice, now that you've planted your first plant you can tap him to see him close up!", 5f, false, ScrambleMode.None, null);
         Debug.Log("i restaredddd");
         if (tutorial == null) yield break;
         yield return new WaitForSeconds(5f);
@@ -241,8 +266,8 @@ public class DotANIM : MonoBehaviour
         T5.DOAnchorPos(new Vector2(0, -770), 0.25f);
         sound.tutPlay();
         anim6.SetBool("talking", true);
-        txt6.DOText("Here you can find a whole bunch of information like how long you plant will take to grow.", 5f, false, ScrambleMode.None, null);
-        btxt6.DOText("Here you can find a whole bunch of information like how long you plant will take to grow.", 5f, false, ScrambleMode.None, null);
+        txt6.DOText("Here you can find a whole bunch of information like how long your plant will take to grow.", 5f, false, ScrambleMode.None, null);
+        btxt6.DOText("Here you can find a whole bunch of information like how long your plant will take to grow.", 5f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
         yield return new WaitForSeconds(5f);
         sound.tutPause();
@@ -490,8 +515,8 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         T6.DOAnchorPos(new Vector2(0, 1500), 0.25f);
         if (tutorial == null) yield break;
-        yield return new WaitForSeconds(0.5f);
-        Destroy(tutorial);
+        
+       
 
 
     }

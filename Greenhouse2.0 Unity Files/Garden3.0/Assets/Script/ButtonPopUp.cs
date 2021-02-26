@@ -8,6 +8,8 @@ using UnityEngine.Events;
 public class ButtonPopUp : MonoBehaviour
 {
 
+    public DotANIM dot;
+
     public TextMeshProUGUI spendGemsPot1;
     public TextMeshProUGUI spendGemsPot2;
     public TextMeshProUGUI spendGemsPot3;
@@ -514,6 +516,7 @@ public class ButtonPopUp : MonoBehaviour
             BagScript bagScript = bagObject.GetComponent<BagScript>();
             bagScript.Monay = bagScript.Monay + addedMoney;
 
+            dot.addMoney("+" + addedMoney.ToString());
             Instantiate(particle);
             Handheld.Vibrate();
 

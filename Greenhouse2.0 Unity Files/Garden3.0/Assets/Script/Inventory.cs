@@ -240,7 +240,7 @@ public class Inventory : MonoBehaviour
     {
         dot.errorOn();
         sound.error();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         dot.errorOff();
     }
 }

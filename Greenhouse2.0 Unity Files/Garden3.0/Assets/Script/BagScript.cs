@@ -45,8 +45,8 @@ public class BagScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Monay = 30000;
-        Gems = 10000;
+        Monay = 30;
+        Gems = 5;
         canOpenPannel = true;
         MakePotsShine = false;
         wheatprice = 10;
@@ -644,7 +644,7 @@ public class BagScript : MonoBehaviour
     {
         dot.errorOn();
         sound.error();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         dot.errorOff();
         dot.seedbagUP();
     }
