@@ -25,7 +25,7 @@ public class PotPlaces : MonoBehaviour
     public Animator potAnim;
 
     public string TT1P1, TT2P1, TT3P1, TT1P2, TT2P2, TT3P2, TT1P3, TT2P3, TT3P3;
-    public bool ble;
+    public bool ble, apple,tomato,eggplant,pear,sunflower,cherry,avocado,kiwi;
 
 
     void Start()
