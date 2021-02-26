@@ -9,6 +9,7 @@ public class SaveDataPots
     public int s_sp1, s_sp2, s_sp3, s_sp4, s_sp5, s_sp6, s_sp7, s_sp8, s_sp9, s_sp10; //skins on the active pots 
     public float s_pp1, s_pp2, s_pp3, s_pp4, s_pp5, s_pp6, s_pp7, s_pp8, s_pp9, s_pp10; //Plant in active pot
     public string s_TT1P1, s_TT2P1, s_TT3P1;
+    public bool s_ble;
 
     public SaveDataPots(PotPlaces places)
     {
@@ -29,6 +30,9 @@ public class SaveDataPots
         s_TT1P1 = places.TT1P1;
         s_TT2P1 = places.TT2P1;
         s_TT3P1 = places.TT3P1;
+
+        //fruit planted
+        s_ble = places.ble;
 
         //if the pot has been activated, what pot skin and which plant
         if (s_p1)
