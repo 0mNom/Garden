@@ -127,6 +127,9 @@ public class ClickToPlant : MonoBehaviour
     void Start()
     {
         col = GetComponent<Collider2D>();
+        targetTimeBle1 = DateTime.Parse(potPlacesScript.TT1P1);
+        targetTimeBle2 = DateTime.Parse(potPlacesScript.TT2P1);
+        targetTimeBle3 = DateTime.Parse(potPlacesScript.TT3P1);
     }
 
     // Update is called once per frame
