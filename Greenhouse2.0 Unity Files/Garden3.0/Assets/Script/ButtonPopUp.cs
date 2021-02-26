@@ -8,6 +8,7 @@ using UnityEngine.Events;
 public class ButtonPopUp : MonoBehaviour
 {
 
+    public PotPlaces potPlacesScript;
     public DotANIM dot;
 
     public TextMeshProUGUI spendGemsPot1;
@@ -525,6 +526,21 @@ public class ButtonPopUp : MonoBehaviour
             clickToPlantScript.spriteRenderer.sprite = null;
             clickToPlantScript.gotPlant = false;
             clickToPlantScript.plantFinished = false;
+            if(Tag == "4")
+            {
+                potPlacesScript.PF1 = false;
+            }
+
+            if(Tag == "2")
+            {
+                potPlacesScript.PF2 = false;
+            }
+
+            if(Tag == "3")
+            {
+                potPlacesScript.PF3 = false;
+            }
+
             clickToPlantScript.plantInPot = 0f;
             ImagePlantDuPopUp.sprite = null;
             clickToPlantScript.EnvoyerVariable(Tag);
