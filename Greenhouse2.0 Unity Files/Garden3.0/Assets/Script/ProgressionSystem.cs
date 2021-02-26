@@ -98,6 +98,15 @@ public class ProgressionSystem : MonoBehaviour
         {
             playerLevelText.text = "Level 3";
             priceToLevelUpText.text = "Spend 1500 leaves to level up, get access to the Eggplant seed, 20 ambers, and a free Tomato seed?";
+
+            pot2.GetComponent<Collider2D>().enabled = true;
+            pot2.GetComponent<SpriteRenderer>().enabled = true;
+            pot2Shine.GetComponent<SpriteRenderer>().enabled = true;
+
+            pot3.GetComponent<Collider2D>().enabled = true;
+            pot3.GetComponent<SpriteRenderer>().enabled = true;
+            pot3Shine.GetComponent<SpriteRenderer>().enabled = true;
+
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = false;
             pearBuyButton.GetComponent<Button>().interactable = false;
@@ -111,6 +120,15 @@ public class ProgressionSystem : MonoBehaviour
         {
             playerLevelText.text = "Level 4";
             priceToLevelUpText.text = "Spend 3500 leaves to level up, get access to the Pear seed, 25 ambers, and a free Eggplant seed?";
+
+            pot2.GetComponent<Collider2D>().enabled = true;
+            pot2.GetComponent<SpriteRenderer>().enabled = true;
+            pot2Shine.GetComponent<SpriteRenderer>().enabled = true;
+
+            pot3.GetComponent<Collider2D>().enabled = true;
+            pot3.GetComponent<SpriteRenderer>().enabled = true;
+            pot3Shine.GetComponent<SpriteRenderer>().enabled = true;
+
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = false;
@@ -124,6 +142,15 @@ public class ProgressionSystem : MonoBehaviour
         {
             playerLevelText.text = "Level 5";
             priceToLevelUpText.text = "Spend 7500 leaves to level up, get access to the Sunflower seed, 30 ambers, and a free Pear seed?";
+
+            pot2.GetComponent<Collider2D>().enabled = true;
+            pot2.GetComponent<SpriteRenderer>().enabled = true;
+            pot2Shine.GetComponent<SpriteRenderer>().enabled = true;
+
+            pot3.GetComponent<Collider2D>().enabled = true;
+            pot3.GetComponent<SpriteRenderer>().enabled = true;
+            pot3Shine.GetComponent<SpriteRenderer>().enabled = true;
+
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
@@ -137,6 +164,15 @@ public class ProgressionSystem : MonoBehaviour
         {
             playerLevelText.text = "Level 6";
             priceToLevelUpText.text = "Spend 15000 leaves to level up, get access to the Cherry seed, 35 ambers, and a free Sunflower seed?";
+
+            pot2.GetComponent<Collider2D>().enabled = true;
+            pot2.GetComponent<SpriteRenderer>().enabled = true;
+            pot2Shine.GetComponent<SpriteRenderer>().enabled = true;
+
+            pot3.GetComponent<Collider2D>().enabled = true;
+            pot3.GetComponent<SpriteRenderer>().enabled = true;
+            pot3Shine.GetComponent<SpriteRenderer>().enabled = true;
+
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
@@ -150,6 +186,15 @@ public class ProgressionSystem : MonoBehaviour
         {
             playerLevelText.text = "Level 7";
             priceToLevelUpText.text = "Spend 22500 leaves to level up, get access to the Avocado seed, 40 ambers, and a free Cherry seed?";
+
+            pot2.GetComponent<Collider2D>().enabled = true;
+            pot2.GetComponent<SpriteRenderer>().enabled = true;
+            pot2Shine.GetComponent<SpriteRenderer>().enabled = true;
+
+            pot3.GetComponent<Collider2D>().enabled = true;
+            pot3.GetComponent<SpriteRenderer>().enabled = true;
+            pot3Shine.GetComponent<SpriteRenderer>().enabled = true;
+
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
@@ -163,6 +208,15 @@ public class ProgressionSystem : MonoBehaviour
         {
             playerLevelText.text = "Level 8";
             priceToLevelUpText.text = "Spend 55000 leaves to level up, get access to the Kiwi seed, 45 ambers, and a free Avocado seed?";
+
+            pot2.GetComponent<Collider2D>().enabled = true;
+            pot2.GetComponent<SpriteRenderer>().enabled = true;
+            pot2Shine.GetComponent<SpriteRenderer>().enabled = true;
+
+            pot3.GetComponent<Collider2D>().enabled = true;
+            pot3.GetComponent<SpriteRenderer>().enabled = true;
+            pot3Shine.GetComponent<SpriteRenderer>().enabled = true;
+
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
@@ -175,6 +229,15 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 9)
         {
             playerLevelText.text = "Level 9";
+
+            pot2.GetComponent<Collider2D>().enabled = true;
+            pot2.GetComponent<SpriteRenderer>().enabled = true;
+            pot2Shine.GetComponent<SpriteRenderer>().enabled = true;
+
+            pot3.GetComponent<Collider2D>().enabled = true;
+            pot3.GetComponent<SpriteRenderer>().enabled = true;
+            pot3Shine.GetComponent<SpriteRenderer>().enabled = true;
+
             levelUpButton.SetActive(false);
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
