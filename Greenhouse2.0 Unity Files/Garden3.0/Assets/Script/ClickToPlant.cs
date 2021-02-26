@@ -898,14 +898,17 @@ public class ClickToPlant : MonoBehaviour
                 if (tag == "4")
                 {
                     potPlacesScript.PF1 = plantFinished;
+                    Debug.Log("SAVING pot1 " + potPlacesScript.PF1);
                 }
                 if (tag == "2")
                 {
                     potPlacesScript.PF2 = plantFinished;
+                    Debug.Log("SAVING pot2 " + potPlacesScript.PF2);
                 }
                 if (tag == "3")
                 {
                     potPlacesScript.PF3 = plantFinished;
+                    Debug.Log("SAVING pot3 " + potPlacesScript.PF3);
                 }
 
                 if (canWaterThirdEvo == true)
