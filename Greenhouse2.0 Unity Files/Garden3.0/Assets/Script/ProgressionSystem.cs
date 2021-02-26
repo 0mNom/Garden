@@ -41,7 +41,7 @@ public class ProgressionSystem : MonoBehaviour
         if (playerLevel == 1)
         {
             playerLevelText.text = "Level 1";
-            priceToLevelUpText.text = "Spend 250 leaves to level up and get a new pot, access to the Tomato seed, and 10 free amber?";
+            priceToLevelUpText.text = "Spend 250 leaves to level up, get a new pot, access to the Tomato seed, and 10 ambers?";
 
             pot2.GetComponent<Collider2D>().enabled = false;
             pot2.GetComponent<SpriteRenderer>().enabled = false;
@@ -68,7 +68,7 @@ public class ProgressionSystem : MonoBehaviour
         if (playerLevel == 2)
         {
             playerLevelText.text = "Level 2";
-            priceToLevelUpText.text = "Spend 750 leaves to level up and get a new pot and 15 free amber?";
+            priceToLevelUpText.text = "Spend 750 leaves to level up, get a new pot and 15 ambers?";
 
             pot3.GetComponent<Collider2D>().enabled = false;
             pot3.GetComponent<SpriteRenderer>().enabled = false;
@@ -88,7 +88,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 3)
         {
             playerLevelText.text = "Level 3";
-            priceToLevelUpText.text = "Spend 1500 leaves to level up and get access to the Eggplant seed and 20 free amber?";
+            priceToLevelUpText.text = "Spend 1500 leaves to level up, get access to the Eggplant seed and 20 ambers?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = false;
             pearBuyButton.GetComponent<Button>().interactable = false;
@@ -100,7 +100,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 4)
         {
             playerLevelText.text = "Level 4";
-            priceToLevelUpText.text = "Spend 3500 leaves to level up and get access to the Pear seed and 25 free amber?";
+            priceToLevelUpText.text = "Spend 3500 leaves to level up, get access to the Pear seed and 25 ambers?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = false;
@@ -112,7 +112,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 5)
         {
             playerLevelText.text = "Level 5";
-            priceToLevelUpText.text = "Spend 7500 leaves to level up and get access to the Sunflower seed and 30 free amber?";
+            priceToLevelUpText.text = "Spend 7500 leaves to level up, get access to the Sunflower seed and 30 ambers?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
@@ -124,7 +124,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 6)
         {
             playerLevelText.text = "Level 6";
-            priceToLevelUpText.text = "Spend 15000 leaves to level up and get access to the Cherry seed and 35 free amber?";
+            priceToLevelUpText.text = "Spend 15000 leaves to level up, get access to the Cherry seed and 35 ambers?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
@@ -136,7 +136,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 7)
         {
             playerLevelText.text = "Level 7";
-            priceToLevelUpText.text = "Spend 22500 leaves to level up and get access to the Avocado seed and 40 free amber?";
+            priceToLevelUpText.text = "Spend 22500 leaves to level up, get access to the Avocado seed and 40 ambers?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
@@ -148,7 +148,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 8)
         {
             playerLevelText.text = "Level 8";
-            priceToLevelUpText.text = "Spend 55000 leaves to level up and get access to the Kiwi seed and 45 free amber?";
+            priceToLevelUpText.text = "Spend 55000 leaves to level up, get access to the Kiwi seed and 45 ambers?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
