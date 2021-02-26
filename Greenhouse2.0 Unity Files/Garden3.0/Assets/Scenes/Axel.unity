@@ -4524,15 +4524,43 @@ MonoBehaviour:
   TT1P3: 
   TT2P3: 
   TT3P3: 
-  ble: 0
-  apple: 0
-  tomato: 0
-  eggplant: 0
-  pear: 0
-  sunflower: 0
-  cherry: 0
-  avocado: 0
-  kiwi: 0
+  ble1: 0
+  apple1: 0
+  tomato1: 0
+  eggplant1: 0
+  pear1: 0
+  sunflower1: 0
+  cherry1: 0
+  avocado1: 0
+  kiwi1: 0
+  ble2: 0
+  apple2: 0
+  tomato2: 0
+  eggplant2: 0
+  pear2: 0
+  sunflower2: 0
+  cherry2: 0
+  avocado2: 0
+  kiwi2: 0
+  ble3: 0
+  apple3: 0
+  tomato3: 0
+  eggplant3: 0
+  pear3: 0
+  sunflower3: 0
+  cherry3: 0
+  avocado3: 0
+  kiwi3: 0
+  got1: 0
+  got2: 0
+  got3: 0
+  sell1: 0
+  sell2: 0
+  sell3: 0
+  PF1: 0
+  PF2: 0
+  PF3: 0
+  lvl: 0
 --- !u!114 &1403264363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4680,6 +4708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a9d5a57e84c6b418fce13d7538f58c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pot: {fileID: 0}
   levelUpButton: {fileID: 185492442}
   tomatoBuyButton: {fileID: 1806139982}
   eggplantBuyButton: {fileID: 1490662437}
@@ -8222,6 +8251,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1403264365}
     - target: {fileID: 2498715305747123594, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715305747123594, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1841970952}
@@ -8249,6 +8282,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_Target
       value: 
       objectReference: {fileID: 684364857}
+    - target: {fileID: 2498715305747123594, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[7].m_TargetAssemblyTypeName
+      value: ProgressionSystem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715305747123594, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[7].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715305747123594, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[7].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715305747123594, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[7].m_Target
+      value: 
+      objectReference: {fileID: 1403264369}
+    - target: {fileID: 2498715305747123594, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[7].m_MethodName
+      value: lvlLoad
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498715305747123594, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[7].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2498715305776743592, guid: 5e09281489b710949b36f82ba3bbd96b, type: 3}
       propertyPath: sound
       value: 

@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class ProgressionSystem : MonoBehaviour
 {
+    public PotPlaces pot;
+     
     public GameObject levelUpButton;
     public GameObject tomatoBuyButton;
     public GameObject eggplantBuyButton;
@@ -35,6 +37,11 @@ public class ProgressionSystem : MonoBehaviour
         playerLevel = 1;
     }
 
+    public void lvlLoad()
+    {
+        playerLevel = pot.lvl;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -56,6 +63,8 @@ public class ProgressionSystem : MonoBehaviour
             //ClickToPlant clickToPlantScriptPot3 = pot3.GetComponent<ClickToPlant>();
             //clickToPlantScriptPot3.gotPlant = true;
 
+            pot.lvl = 1;
+
             tomatoBuyButton.GetComponent<Button>().interactable = false;
             eggplantBuyButton.GetComponent<Button>().interactable = false;
             pearBuyButton.GetComponent<Button>().interactable = false;
@@ -76,7 +85,7 @@ public class ProgressionSystem : MonoBehaviour
 
             //ClickToPlant clickToPlantScriptPot3 = pot3.GetComponent<ClickToPlant>();
             //clickToPlantScriptPot3.gotPlant = true;
-
+            pot.lvl = 2;
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = false;
             pearBuyButton.GetComponent<Button>().interactable = false;
@@ -96,6 +105,7 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.GetComponent<Button>().interactable = false;
             avocadoBuyButton.GetComponent<Button>().interactable = false;
             kiwiBuyButton.GetComponent<Button>().interactable = false;
+            pot.lvl = 3;
         }
         else if (playerLevel == 4)
         {
@@ -108,6 +118,7 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.GetComponent<Button>().interactable = false;
             avocadoBuyButton.GetComponent<Button>().interactable = false;
             kiwiBuyButton.GetComponent<Button>().interactable = false;
+            pot.lvl = 4;
         }
         else if (playerLevel == 5)
         {
@@ -120,6 +131,7 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.GetComponent<Button>().interactable = false;
             avocadoBuyButton.GetComponent<Button>().interactable = false;
             kiwiBuyButton.GetComponent<Button>().interactable = false;
+            pot.lvl = 5;
         }
         else if (playerLevel == 6)
         {
@@ -132,6 +144,7 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.GetComponent<Button>().interactable = false;
             avocadoBuyButton.GetComponent<Button>().interactable = false;
             kiwiBuyButton.GetComponent<Button>().interactable = false;
+            pot.lvl = 6;
         }
         else if (playerLevel == 7)
         {
@@ -144,6 +157,7 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.GetComponent<Button>().interactable = true;
             avocadoBuyButton.GetComponent<Button>().interactable = false;
             kiwiBuyButton.GetComponent<Button>().interactable = false;
+            pot.lvl = 7;
         }
         else if (playerLevel == 8)
         {
@@ -156,6 +170,7 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.GetComponent<Button>().interactable = true;
             avocadoBuyButton.GetComponent<Button>().interactable = true;
             kiwiBuyButton.GetComponent<Button>().interactable = false;
+            pot.lvl = 8;
         }
         else if (playerLevel == 9)
         {
@@ -168,6 +183,7 @@ public class ProgressionSystem : MonoBehaviour
             cherryBuyButton.GetComponent<Button>().interactable = true;
             avocadoBuyButton.GetComponent<Button>().interactable = true;
             kiwiBuyButton.GetComponent<Button>().interactable = true;
+            pot.lvl = 9;
         }
     }
 
