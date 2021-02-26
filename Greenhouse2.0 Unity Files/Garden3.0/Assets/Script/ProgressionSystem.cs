@@ -41,7 +41,7 @@ public class ProgressionSystem : MonoBehaviour
         if (playerLevel == 1)
         {
             playerLevelText.text = "Level 1";
-            priceToLevelUpText.text = "Spend 250 leaves to level up, get a new pot, access to the Tomato seed, and 10 ambers?";
+            priceToLevelUpText.text = "Spend 250 leaves to level up, get a new pot, access to the Tomato seed, 10 ambers and a free Wheat seed?";
 
             pot2.GetComponent<Collider2D>().enabled = false;
             pot2.GetComponent<SpriteRenderer>().enabled = false;
@@ -68,7 +68,7 @@ public class ProgressionSystem : MonoBehaviour
         if (playerLevel == 2)
         {
             playerLevelText.text = "Level 2";
-            priceToLevelUpText.text = "Spend 750 leaves to level up, get a new pot and 15 ambers?";
+            priceToLevelUpText.text = "Spend 750 leaves to level up, get a new pot, 15 ambers, and a free Apple seed?";
 
             pot3.GetComponent<Collider2D>().enabled = false;
             pot3.GetComponent<SpriteRenderer>().enabled = false;
@@ -88,7 +88,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 3)
         {
             playerLevelText.text = "Level 3";
-            priceToLevelUpText.text = "Spend 1500 leaves to level up, get access to the Eggplant seed and 20 ambers?";
+            priceToLevelUpText.text = "Spend 1500 leaves to level up, get access to the Eggplant seed, 20 ambers, and a free Tomato seed?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = false;
             pearBuyButton.GetComponent<Button>().interactable = false;
@@ -100,7 +100,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 4)
         {
             playerLevelText.text = "Level 4";
-            priceToLevelUpText.text = "Spend 3500 leaves to level up, get access to the Pear seed and 25 ambers?";
+            priceToLevelUpText.text = "Spend 3500 leaves to level up, get access to the Pear seed, 25 ambers, and a free Eggplant seed?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = false;
@@ -112,7 +112,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 5)
         {
             playerLevelText.text = "Level 5";
-            priceToLevelUpText.text = "Spend 7500 leaves to level up, get access to the Sunflower seed and 30 ambers?";
+            priceToLevelUpText.text = "Spend 7500 leaves to level up, get access to the Sunflower seed, 30 ambers, and a free Pear seed?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
@@ -124,7 +124,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 6)
         {
             playerLevelText.text = "Level 6";
-            priceToLevelUpText.text = "Spend 15000 leaves to level up, get access to the Cherry seed and 35 ambers?";
+            priceToLevelUpText.text = "Spend 15000 leaves to level up, get access to the Cherry seed, 35 ambers, and a free Sunflower seed?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
@@ -136,7 +136,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 7)
         {
             playerLevelText.text = "Level 7";
-            priceToLevelUpText.text = "Spend 22500 leaves to level up, get access to the Avocado seed and 40 ambers?";
+            priceToLevelUpText.text = "Spend 22500 leaves to level up, get access to the Avocado seed, 40 ambers, and a free Cherry seed?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
@@ -148,7 +148,7 @@ public class ProgressionSystem : MonoBehaviour
         else if (playerLevel == 8)
         {
             playerLevelText.text = "Level 8";
-            priceToLevelUpText.text = "Spend 55000 leaves to level up, get access to the Kiwi seed and 45 ambers?";
+            priceToLevelUpText.text = "Spend 55000 leaves to level up, get access to the Kiwi seed, 45 ambers, and a free Avocado seed?";
             tomatoBuyButton.GetComponent<Button>().interactable = true;
             eggplantBuyButton.GetComponent<Button>().interactable = true;
             pearBuyButton.GetComponent<Button>().interactable = true;
@@ -181,6 +181,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 250)
             {
                 playerLevel = 2;
+                bagScript.wheatseed = bagScript.wheatseed + 1;
                 bagScript.Gems = bagScript.Gems + 10;
                 bagScript.Monay = bagScript.Monay - 250;
                 pot2.GetComponent<Collider2D>().enabled = true;
@@ -199,6 +200,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 750)
             {
                 playerLevel = 3;
+                bagScript.appleseed = bagScript.appleseed + 1;
                 bagScript.Gems = bagScript.Gems + 15;
                 bagScript.Monay = bagScript.Monay - 750;
                 pot3.GetComponent<Collider2D>().enabled = true;
@@ -217,6 +219,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 1500)
             {
                 playerLevel = 4;
+                bagScript.tomatoseed = bagScript.tomatoseed + 1;
                 bagScript.Gems = bagScript.Gems + 20;
                 bagScript.Monay = bagScript.Monay - 1500;
             }
@@ -230,6 +233,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 3500)
             {
                 playerLevel = 5;
+                bagScript.eggplantseed = bagScript.eggplantseed + 1;
                 bagScript.Gems = bagScript.Gems + 25;
                 bagScript.Monay = bagScript.Monay - 3500;
             }
@@ -243,6 +247,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 7500)
             {
                 playerLevel = 6;
+                bagScript.pearseed = bagScript.pearseed + 1;
                 bagScript.Gems = bagScript.Gems + 30;
                 bagScript.Monay = bagScript.Monay - 7500;
             }
@@ -256,6 +261,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 15000)
             {
                 playerLevel = 7;
+                bagScript.sunflowerseed = bagScript.sunflowerseed + 1;
                 bagScript.Gems = bagScript.Gems + 35;
                 bagScript.Monay = bagScript.Monay - 15000;
             }
@@ -269,6 +275,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 22500)
             {
                 playerLevel = 8;
+                bagScript.cherryseed = bagScript.cherryseed + 1;
                 bagScript.Gems = bagScript.Gems + 40;
                 bagScript.Monay = bagScript.Monay - 22500;
             }
@@ -282,6 +289,7 @@ public class ProgressionSystem : MonoBehaviour
             if (bagScript.Monay >= 55000)
             {
                 playerLevel = 9;
+                bagScript.avoseed = bagScript.avoseed + 1;
                 bagScript.Gems = bagScript.Gems + 45;
                 bagScript.Monay = bagScript.Monay - 55000;
             }
