@@ -133,11 +133,79 @@ public class ClickToPlant : MonoBehaviour
     {
         if (tag == "4")
         {
-            blePlanted = potPlacesScript.ble;
-            targetTimeBle1 = DateTime.Parse(potPlacesScript.TT1P1);
-            targetTimeBle2 = DateTime.Parse(potPlacesScript.TT2P1);
-            targetTimeBle3 = DateTime.Parse(potPlacesScript.TT3P1);
-            Debug.Log(targetTimeBle1);
+            blePlanted = potPlacesScript.ble1;
+            if (blePlanted = true)
+            {
+                targetTimeBle1 = DateTime.Parse(potPlacesScript.TT1P1);
+                targetTimeBle2 = DateTime.Parse(potPlacesScript.TT2P1);
+                targetTimeBle3 = DateTime.Parse(potPlacesScript.TT3P1);
+            }
+
+            applePlanted = potPlacesScript.apple1;
+            if (applePlanted = true)
+            {
+                targetTimeApple1 = DateTime.Parse(potPlacesScript.TT1P1);
+                targetTimeApple2 = DateTime.Parse(potPlacesScript.TT2P1);
+                targetTimeApple3 = DateTime.Parse(potPlacesScript.TT3P1);
+            }
+
+            tomatoPlanted = potPlacesScript.tomato1;
+            if (tomatoPlanted = true)
+            {
+                targetTimeTomato1 = DateTime.Parse(potPlacesScript.TT1P1);
+                targetTimeTomato2 = DateTime.Parse(potPlacesScript.TT2P1);
+                targetTimeTomato3 = DateTime.Parse(potPlacesScript.TT3P1);
+            }
+
+            eggplantPlanted = potPlacesScript.eggplant1;
+            if (eggplantPlanted = true)
+            {
+                targetTimeEggplant1 = DateTime.Parse(potPlacesScript.TT1P1);
+                targetTimeEggplant2 = DateTime.Parse(potPlacesScript.TT2P1);
+                targetTimeEggplant3 = DateTime.Parse(potPlacesScript.TT3P1);
+            }
+
+            pearPlanted = potPlacesScript.pear1;
+            if (pearPlanted = true)
+            {
+                targetTimePear1 = DateTime.Parse(potPlacesScript.TT1P1);
+                targetTimePear2 = DateTime.Parse(potPlacesScript.TT2P1);
+                targetTimePear3 = DateTime.Parse(potPlacesScript.TT3P1);
+            }
+
+            sunflowerPlanted = potPlacesScript.sunflower1;
+            if (sunflowerPlanted = true)
+            {
+                targetTimeSunflower1 = DateTime.Parse(potPlacesScript.TT1P1);
+                targetTimeSunflower2 = DateTime.Parse(potPlacesScript.TT2P1);
+                targetTimeSunflower3 = DateTime.Parse(potPlacesScript.TT3P1);
+            }
+
+            cherryPlanted = potPlacesScript.cherry1;
+            if (cherryPlanted = true)
+            {
+                targetTimeCherry1 = DateTime.Parse(potPlacesScript.TT1P1);
+                targetTimeCherry2 = DateTime.Parse(potPlacesScript.TT2P1);
+                targetTimeCherry3 = DateTime.Parse(potPlacesScript.TT3P1);
+            }
+
+            avocadoPlanted = potPlacesScript.avocado1;
+            if (avocadoPlanted = true)
+            {
+                targetTimeAvocado1 = DateTime.Parse(potPlacesScript.TT1P1);
+                targetTimeAvocado2 = DateTime.Parse(potPlacesScript.TT2P1);
+                targetTimeAvocado3 = DateTime.Parse(potPlacesScript.TT3P1);
+            }
+
+            kiwiPlanted = potPlacesScript.kiwi1;
+            if (kiwiPlanted = true)
+            {
+                targetTimeKiwi1 = DateTime.Parse(potPlacesScript.TT1P1);
+                targetTimeKiwi2 = DateTime.Parse(potPlacesScript.TT2P1);
+                targetTimeKiwi3 = DateTime.Parse(potPlacesScript.TT3P1);
+            }
+
+
         }
      
     }
@@ -254,6 +322,25 @@ public class ClickToPlant : MonoBehaviour
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 45;
                         bagScript1.MakePotsShine = false;
+
+                        if (tag == "4")
+                        {
+                            potPlacesScript.TT1P1 = targetTimeApple1.ToString();
+                            potPlacesScript.TT2P1 = targetTimeApple2.ToString();
+                            potPlacesScript.TT3P1 = targetTimeApple3.ToString();
+                        }
+                        if (tag == "2")
+                        {
+                            potPlacesScript.TT1P2 = targetTimeApple1.ToString();
+                            potPlacesScript.TT2P2 = targetTimeApple2.ToString();
+                            potPlacesScript.TT3P2 = targetTimeApple3.ToString();
+                        }
+                        if (tag == "3")
+                        {
+                            potPlacesScript.TT1P3 = targetTimeApple1.ToString();
+                            potPlacesScript.TT2P3 = targetTimeApple2.ToString();
+                            potPlacesScript.TT3P3 = targetTimeApple3.ToString();
+                        }
                     }
 
                     else if (bagScript1.plantingseed == 3)
@@ -272,6 +359,25 @@ public class ClickToPlant : MonoBehaviour
 
                         sellingPrice = 90;
                         bagScript1.MakePotsShine = false;
+
+                        if (tag == "4")
+                        {
+                            potPlacesScript.TT1P1 = targetTimeTomato1.ToString();
+                            potPlacesScript.TT2P1 = targetTimeTomato2.ToString();
+                            potPlacesScript.TT3P1 = targetTimeTomato3.ToString();
+                        }
+                        if (tag == "2")
+                        {
+                            potPlacesScript.TT1P2 = targetTimeTomato1.ToString();
+                            potPlacesScript.TT2P2 = targetTimeTomato2.ToString();
+                            potPlacesScript.TT3P2 = targetTimeTomato3.ToString();
+                        }
+                        if (tag == "3")
+                        {
+                            potPlacesScript.TT1P3 = targetTimeTomato1.ToString();
+                            potPlacesScript.TT2P3 = targetTimeTomato2.ToString();
+                            potPlacesScript.TT3P3 = targetTimeTomato3.ToString();
+                        }
                     }
 
                     else if (bagScript1.plantingseed == 4)
@@ -289,6 +395,25 @@ public class ClickToPlant : MonoBehaviour
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 200;
                         bagScript1.MakePotsShine = false;
+
+                        if (tag == "4")
+                        {
+                            potPlacesScript.TT1P1 = targetTimeEggplant1.ToString();
+                            potPlacesScript.TT2P1 = targetTimeEggplant2.ToString();
+                            potPlacesScript.TT3P1 = targetTimeEggplant3.ToString();
+                        }
+                        if (tag == "2")
+                        {
+                            potPlacesScript.TT1P2 = targetTimeEggplant1.ToString();
+                            potPlacesScript.TT2P2 = targetTimeEggplant2.ToString();
+                            potPlacesScript.TT3P2 = targetTimeEggplant3.ToString();
+                        }
+                        if (tag == "3")
+                        {
+                            potPlacesScript.TT1P3 = targetTimeEggplant1.ToString();
+                            potPlacesScript.TT2P3 = targetTimeEggplant2.ToString();
+                            potPlacesScript.TT3P3 = targetTimeEggplant3.ToString();
+                        }
                     }
 
                     else if (bagScript1.plantingseed == 5)
@@ -306,6 +431,25 @@ public class ClickToPlant : MonoBehaviour
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 500;
                         bagScript1.MakePotsShine = false;
+
+                        if (tag == "4")
+                        {
+                            potPlacesScript.TT1P1 = targetTimePear1.ToString();
+                            potPlacesScript.TT2P1 = targetTimePear2.ToString();
+                            potPlacesScript.TT3P1 = targetTimePear3.ToString();
+                        }
+                        if (tag == "2")
+                        {
+                            potPlacesScript.TT1P2 = targetTimePear1.ToString();
+                            potPlacesScript.TT2P2 = targetTimePear2.ToString();
+                            potPlacesScript.TT3P2 = targetTimePear3.ToString();
+                        }
+                        if (tag == "3")
+                        {
+                            potPlacesScript.TT1P3 = targetTimePear1.ToString();
+                            potPlacesScript.TT2P3 = targetTimePear2.ToString();
+                            potPlacesScript.TT3P3 = targetTimePear3.ToString();
+                        }
                     }
 
                     else if (bagScript1.plantingseed == 6)
@@ -323,6 +467,25 @@ public class ClickToPlant : MonoBehaviour
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 1500;
                         bagScript1.MakePotsShine = false;
+
+                        if (tag == "4")
+                        {
+                            potPlacesScript.TT1P1 = targetTimeSunflower1.ToString();
+                            potPlacesScript.TT2P1 = targetTimeSunflower2.ToString();
+                            potPlacesScript.TT3P1 = targetTimeSunflower3.ToString();
+                        }
+                        if (tag == "2")
+                        {
+                            potPlacesScript.TT1P2 = targetTimeSunflower1.ToString();
+                            potPlacesScript.TT2P2 = targetTimeSunflower2.ToString();
+                            potPlacesScript.TT3P2 = targetTimeSunflower3.ToString();
+                        }
+                        if (tag == "3")
+                        {
+                            potPlacesScript.TT1P3 = targetTimeSunflower1.ToString();
+                            potPlacesScript.TT2P3 = targetTimeSunflower2.ToString();
+                            potPlacesScript.TT3P3 = targetTimeSunflower3.ToString();
+                        }
                     }
 
                     else if (bagScript1.plantingseed == 7)
@@ -340,6 +503,25 @@ public class ClickToPlant : MonoBehaviour
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 4000;
                         bagScript1.MakePotsShine = false;
+
+                        if (tag == "4")
+                        {
+                            potPlacesScript.TT1P1 = targetTimeCherry1.ToString();
+                            potPlacesScript.TT2P1 = targetTimeCherry2.ToString();
+                            potPlacesScript.TT3P1 = targetTimeCherry3.ToString();
+                        }
+                        if (tag == "2")
+                        {
+                            potPlacesScript.TT1P2 = targetTimeCherry1.ToString();
+                            potPlacesScript.TT2P2 = targetTimeCherry2.ToString();
+                            potPlacesScript.TT3P2 = targetTimeCherry3.ToString();
+                        }
+                        if (tag == "3")
+                        {
+                            potPlacesScript.TT1P3 = targetTimeCherry1.ToString();
+                            potPlacesScript.TT2P3 = targetTimeCherry2.ToString();
+                            potPlacesScript.TT3P3 = targetTimeCherry3.ToString();
+                        }
                     }
 
                     else if (bagScript1.plantingseed == 8)
@@ -357,6 +539,25 @@ public class ClickToPlant : MonoBehaviour
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 12300;
                         bagScript1.MakePotsShine = false;
+
+                        if (tag == "4")
+                        {
+                            potPlacesScript.TT1P1 = targetTimeAvocado1.ToString();
+                            potPlacesScript.TT2P1 = targetTimeAvocado2.ToString();
+                            potPlacesScript.TT3P1 = targetTimeAvocado3.ToString();
+                        }
+                        if (tag == "2")
+                        {
+                            potPlacesScript.TT1P2 = targetTimeAvocado1.ToString();
+                            potPlacesScript.TT2P2 = targetTimeAvocado2.ToString();
+                            potPlacesScript.TT3P2 = targetTimeAvocado3.ToString();
+                        }
+                        if (tag == "3")
+                        {
+                            potPlacesScript.TT1P3 = targetTimeAvocado1.ToString();
+                            potPlacesScript.TT2P3 = targetTimeAvocado2.ToString();
+                            potPlacesScript.TT3P3 = targetTimeAvocado3.ToString();
+                        }
                     }
 
                     else if (bagScript1.plantingseed == 9)
@@ -375,6 +576,26 @@ public class ClickToPlant : MonoBehaviour
                         StartCoroutine("WaitForOpenPannel");
                         sellingPrice = 35000;
                         bagScript1.MakePotsShine = false;
+
+
+                        if (tag == "4")
+                        {
+                            potPlacesScript.TT1P1 = targetTimeKiwi1.ToString();
+                            potPlacesScript.TT2P1 = targetTimeKiwi2.ToString();
+                            potPlacesScript.TT3P1 = targetTimeKiwi3.ToString();
+                        }
+                        if (tag == "2")
+                        {
+                            potPlacesScript.TT1P2 = targetTimeKiwi1.ToString();
+                            potPlacesScript.TT2P2 = targetTimeKiwi2.ToString();
+                            potPlacesScript.TT3P2 = targetTimeKiwi3.ToString();
+                        }
+                        if (tag == "3")
+                        {
+                            potPlacesScript.TT1P3 = targetTimeKiwi1.ToString();
+                            potPlacesScript.TT2P3 = targetTimeKiwi2.ToString();
+                            potPlacesScript.TT3P3 = targetTimeKiwi3.ToString();
+                        }
                     }
 
                     //Debug.Log(tag);
@@ -429,6 +650,20 @@ public class ClickToPlant : MonoBehaviour
                 }
 
                 blePlanted = false;
+                if (tag == "4")
+                {
+                    potPlacesScript.ble1 = blePlanted;
+                }
+                if (tag == "2")
+                {
+                    potPlacesScript.ble2 = blePlanted;
+                }
+                if (tag == "3")
+                {
+                    potPlacesScript.ble3 = blePlanted;
+                }
+
+
                 ButtonPopUp buttonPopUpScript = gameObject.GetComponent<ButtonPopUp>();
                 if (ev)
                 {
@@ -539,6 +774,18 @@ public class ClickToPlant : MonoBehaviour
                 plantFinished = true;
                 
                 applePlanted = false;
+                if (tag == "4")
+                {
+                    potPlacesScript.apple1 = applePlanted;
+                }
+                if (tag == "2")
+                {
+                    potPlacesScript.apple2 = applePlanted;
+                }
+                if (tag == "3")
+                {
+                    potPlacesScript.apple3 = applePlanted;
+                }
             }
             else if (DateTime.Compare(CurrentTime, targetTimeApple2) == 1)
             {
@@ -635,6 +882,18 @@ public class ClickToPlant : MonoBehaviour
                 plantFinished = true;
                
                 tomatoPlanted = false;
+                if (tag == "4")
+                {
+                    potPlacesScript.tomato1 = tomatoPlanted;
+                }
+                if (tag == "2")
+                {
+                    potPlacesScript.tomato2 = tomatoPlanted;
+                }
+                if (tag == "3")
+                {
+                    potPlacesScript.tomato3 = tomatoPlanted;
+                }
             }
             else if (DateTime.Compare(CurrentTime, targetTimeTomato2) == 1)
             {
@@ -730,6 +989,19 @@ public class ClickToPlant : MonoBehaviour
                 plantFinished = true;
                 
                 eggplantPlanted = false;
+
+                if (tag == "4")
+                {
+                    potPlacesScript.eggplant1 = eggplantPlanted;
+                }
+                if (tag == "2")
+                {
+                    potPlacesScript.eggplant2 = eggplantPlanted;
+                }
+                if (tag == "3")
+                {
+                    potPlacesScript.eggplant3 = eggplantPlanted;
+                }
             }
             else if (DateTime.Compare(CurrentTime, targetTimeEggplant2) == 1)
             {
@@ -827,6 +1099,19 @@ public class ClickToPlant : MonoBehaviour
                 plantFinished = true;
                
                 pearPlanted = false;
+                if (tag == "4")
+                {
+                    potPlacesScript.pear1 = pearPlanted;
+                }
+                if (tag == "2")
+                {
+                    potPlacesScript.pear2 = pearPlanted;
+                }
+                if (tag == "3")
+                {
+                    potPlacesScript.pear3 = pearPlanted;
+                }
+
             }
             else if (DateTime.Compare(CurrentTime, targetTimePear2) == 1)
             {
@@ -924,6 +1209,18 @@ public class ClickToPlant : MonoBehaviour
                 plantFinished = true;
                 
                 sunflowerPlanted = false;
+                if (tag == "4")
+                {
+                    potPlacesScript.sunflower1 = sunflowerPlanted;
+                }
+                if (tag == "2")
+                {
+                    potPlacesScript.sunflower2 = sunflowerPlanted;
+                }
+                if (tag == "3")
+                {
+                    potPlacesScript.sunflower3 = sunflowerPlanted;
+                }
             }
             else if (DateTime.Compare(CurrentTime, targetTimeSunflower2) == 1)
             {
@@ -1017,6 +1314,18 @@ public class ClickToPlant : MonoBehaviour
                 plantFinished = true;
                
                 cherryPlanted = false;
+                if (tag == "4")
+                {
+                    potPlacesScript.cherry1 = cherryPlanted;
+                }
+                if (tag == "2")
+                {
+                    potPlacesScript.cherry2 = cherryPlanted;
+                }
+                if (tag == "3")
+                {
+                    potPlacesScript.cherry3 = cherryPlanted;
+                }
             }
             else if (DateTime.Compare(CurrentTime, targetTimeCherry2) == 1)
             {
@@ -1109,6 +1418,18 @@ public class ClickToPlant : MonoBehaviour
                 plantFinished = true;
                
                 avocadoPlanted = false;
+                if (tag == "4")
+                {
+                    potPlacesScript.avocado1 = avocadoPlanted;
+                }
+                if (tag == "2")
+                {
+                    potPlacesScript.avocado2 = avocadoPlanted;
+                }
+                if (tag == "3")
+                {
+                    potPlacesScript.avocado3 = avocadoPlanted;
+                }
 
             }
             else if (DateTime.Compare(CurrentTime, targetTimeAvocado2) == 1)
@@ -1204,6 +1525,18 @@ public class ClickToPlant : MonoBehaviour
                 plantFinished = true;
                
                 kiwiPlanted = false;
+                if (tag == "4")
+                {
+                    potPlacesScript.kiwi1 = kiwiPlanted;
+                }
+                if (tag == "2")
+                {
+                    potPlacesScript.kiwi2 = kiwiPlanted;
+                }
+                if (tag == "3")
+                {
+                    potPlacesScript.kiwi3 = kiwiPlanted;
+                }
             }
             else if (DateTime.Compare(CurrentTime, targetTimeKiwi2) == 1)
             {
