@@ -49,7 +49,40 @@ public class Loader : MonoBehaviour
         //Pot places 
 
         //plants 
-        places.ble = dataP.s_ble;
+        places.ble1 = dataP.s_ble1;
+        places.apple1 = dataP.s_apple1;
+        places.tomato1 = dataP.s_tomato1 ;
+        places.eggplant1 = dataP.s_eggplant1;
+        places.pear1 = dataP.s_pear1;
+        places.sunflower1 = dataP.s_sunflower1;
+        places.cherry1 = dataP.s_cherry1;
+        places.avocado1 = dataP.s_avocado1;
+        places.kiwi1 = dataP.s_kiwi1;
+
+
+        places.ble2 = dataP.s_ble2;
+        places.apple2 = dataP.s_apple2;
+        places.tomato2 = dataP.s_tomato2;
+        places.eggplant2 = dataP.s_eggplant2;
+        places.pear2 = dataP.s_pear2;
+        places.sunflower2 = dataP.s_sunflower2;
+        places.cherry2 = dataP.s_cherry2;
+        places.avocado2 = dataP.s_avocado2;
+        places.kiwi2 = dataP.s_kiwi2;
+
+
+
+        places.ble3 = dataP.s_ble3;
+        places.apple3 = dataP.s_apple3;
+        places.tomato3 =dataP.s_tomato3;
+        places.eggplant3 = dataP.s_eggplant3;
+        places.pear3 = dataP.s_pear3;
+        places.sunflower3 = dataP.s_sunflower3;
+        places.cherry3 = dataP.s_cherry3;
+        places.avocado3 = dataP.s_avocado3;
+        places.kiwi3 = dataP.s_kiwi3;
+         
+
 
 
 
@@ -58,6 +91,16 @@ public class Loader : MonoBehaviour
         places.TT2P1 = dataP.s_TT2P1;
         places.TT3P1 = dataP.s_TT3P1;
         Debug.Log(places.TT1P1);
+
+        places.TT1P2 = dataP.s_TT1P2;
+        places.TT2P2 = dataP.s_TT2P2;
+        places.TT3P2 = dataP.s_TT3P2;
+        Debug.Log(places.TT1P2);
+
+        places.TT1P3 = dataP.s_TT1P3;
+        places.TT2P3 = dataP.s_TT2P3;
+        places.TT3P3 = dataP.s_TT3P3;
+        Debug.Log(places.TT1P3);
 
 
 
