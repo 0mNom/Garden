@@ -810,7 +810,7 @@ public class DotANIM : MonoBehaviour
     {
         seeds.gameObject.SetActive(true);
         seedBag.DOAnchorPos(new Vector2(-120,-250), 0.25f);
-        seedBag.gameObject.SetActive(false);
+       // seedBag.gameObject.SetActive(false);
         seeds.DOAnchorPos(new Vector2(0, 0), 0.25f);
     }
 
