@@ -7,6 +7,7 @@ using TMPro;
 public class ClickToPlant : MonoBehaviour
 {
     public PotPlaces potPlacesScript;
+    public Loader loaderScript;
     public Sounds sound;
 
     public bool ev = true ;
@@ -410,7 +411,7 @@ public class ClickToPlant : MonoBehaviour
 
 
 
-            if (Input.touchCount > 0)
+        if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
@@ -854,6 +855,8 @@ public class ClickToPlant : MonoBehaviour
                     canWaterFirstEvo = true;
                     canWaterSecondEvo = true;
                     canWaterThirdEvo = true;
+
+                    loaderScript.SaveGame();
                     //Debug.Log(canWaterFirstEvo);
                     //Debug.Log(canWaterSecondEvo);
                 }

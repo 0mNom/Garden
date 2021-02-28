@@ -96,7 +96,7 @@ public class SaveDataPots
 
 
         s_lvl = places.lvl;
-
+        Debug.Log(s_lvl);
         s_PF1 = places.PF1;
         s_PF2 = places.PF2;
         s_PF3 = places.PF3;

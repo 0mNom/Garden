@@ -216,7 +216,7 @@ public class Loader : MonoBehaviour
         SaveManager.SaveGame(bag);
         SaveManager.SaveGameP(places);
         SaveManager.SaveGameI(invent);
-
+        Debug.Log("Saved");
     }
 
     IEnumerator start()

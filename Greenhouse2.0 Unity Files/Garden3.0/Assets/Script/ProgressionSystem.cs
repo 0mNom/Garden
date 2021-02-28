@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ProgressionSystem : MonoBehaviour
 {
+    public Loader loaderScript;
     public PotPlaces pot;
      
     public GameObject levelUpButton;
@@ -270,6 +271,7 @@ public class ProgressionSystem : MonoBehaviour
                 pot2.GetComponent<Collider2D>().enabled = true;
                 pot2.GetComponent<SpriteRenderer>().enabled = true;
                 pot2Shine.GetComponent<SpriteRenderer>().enabled = true;
+                pot.lvl = 2;
                 //ClickToPlant clickToPlantScriptPot2 = pot2.GetComponent<ClickToPlant>();
                 //clickToPlantScriptPot2.gotPlant = false;
             }
@@ -289,6 +291,7 @@ public class ProgressionSystem : MonoBehaviour
                 pot3.GetComponent<Collider2D>().enabled = true;
                 pot3.GetComponent<SpriteRenderer>().enabled = true;
                 pot3Shine.GetComponent<SpriteRenderer>().enabled = true;
+                pot.lvl = 3;
                 // clickToPlantScriptPot3 = pot3.GetComponent<ClickToPlant>();
                 //clickToPlantScriptPot3.gotPlant = false;
             }
@@ -305,6 +308,7 @@ public class ProgressionSystem : MonoBehaviour
                 bagScript.tomatoseed = bagScript.tomatoseed + 1;
                 bagScript.Gems = bagScript.Gems + 20;
                 bagScript.Monay = bagScript.Monay - 1500;
+                pot.lvl = 4;
             }
             else
             {
@@ -319,6 +323,7 @@ public class ProgressionSystem : MonoBehaviour
                 bagScript.eggplantseed = bagScript.eggplantseed + 1;
                 bagScript.Gems = bagScript.Gems + 25;
                 bagScript.Monay = bagScript.Monay - 3500;
+                pot.lvl = 5;
             }
             else
             {
@@ -333,6 +338,7 @@ public class ProgressionSystem : MonoBehaviour
                 bagScript.pearseed = bagScript.pearseed + 1;
                 bagScript.Gems = bagScript.Gems + 30;
                 bagScript.Monay = bagScript.Monay - 7500;
+                pot.lvl = 6;
             }
             else
             {
@@ -347,6 +353,7 @@ public class ProgressionSystem : MonoBehaviour
                 bagScript.sunflowerseed = bagScript.sunflowerseed + 1;
                 bagScript.Gems = bagScript.Gems + 35;
                 bagScript.Monay = bagScript.Monay - 15000;
+                pot.lvl = 7;
             }
             else
             {
@@ -361,6 +368,7 @@ public class ProgressionSystem : MonoBehaviour
                 bagScript.cherryseed = bagScript.cherryseed + 1;
                 bagScript.Gems = bagScript.Gems + 40;
                 bagScript.Monay = bagScript.Monay - 22500;
+                pot.lvl = 8;
             }
             else
             {
@@ -375,11 +383,14 @@ public class ProgressionSystem : MonoBehaviour
                 bagScript.avoseed = bagScript.avoseed + 1;
                 bagScript.Gems = bagScript.Gems + 45;
                 bagScript.Monay = bagScript.Monay - 55000;
+                pot.lvl = 9;
             }
             else
             {
                 NoMoneyToLvlUpPanel.SetActive(true);
             }
         }
+        Debug.Log(playerLevel);
+        loaderScript.SaveGame();
     }
 }
