@@ -28,6 +28,8 @@ public class BagScript : MonoBehaviour
     public TextMeshProUGUI SliderValueAvo;
     public TextMeshProUGUI SliderValueKiwi;
 
+    public TMP_Text totalWheat, totalapple, totaltomato, totaleggplant, totalpear, totalsunflower, totalcherry, totalavo, totalkiwi;
+
     public int plantingseed;
     public int wheatprice, appleprice, tomatoprice, eggplantprice, pearprice, sunflowerprice, cherryprice, avoprice, kiwiprice;
     public int wheatseed, appleseed, tomatoseed, eggplantseed, pearseed, sunflowerseed, cherryseed, avoseed, kiwiseed;
@@ -164,6 +166,19 @@ public class BagScript : MonoBehaviour
         SliderValueSunflower.text = SliderSunflower.value.ToString();
         SliderValueAvo.text = SliderAvo.value.ToString();
         SliderValueKiwi.text = SliderKiwi.value.ToString();
+
+
+        totalapple.text = (appleprice * (int)SliderApple.value).ToString();
+        totalWheat.text = (wheatprice * (int)SliderWheat.value).ToString();
+        totalcherry.text = (cherryprice * (int)SliderCherry.value).ToString();
+        totaltomato.text = (tomatoprice * (int)SliderTomato.value).ToString();
+        totaleggplant.text = (eggplantprice * (int)SliderEggplant.value).ToString();
+        totalpear.text = (pearprice * (int)SliderPear.value).ToString();
+        totalsunflower.text = (sunflowerprice * (int)SliderSunflower.value).ToString();
+        totalavo.text = (avoprice * (int)SliderAvo.value).ToString();
+        totalkiwi.text = (kiwiprice * (int)SliderKiwi.value).ToString();
+
+
 
         //Debug.Log(plantingseed);
         if (plantingseed == 1)
