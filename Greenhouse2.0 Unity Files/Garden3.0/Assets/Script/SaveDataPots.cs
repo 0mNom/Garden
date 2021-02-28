@@ -19,8 +19,15 @@ public class SaveDataPots
     public int s_sell1, s_sell2, s_sell3;
     public int s_lvl;
 
+    //added by axel
+    public bool s_got1, s_got2, s_got3;
+
     public SaveDataPots(PotPlaces places)
     {
+        //added by axel
+        s_got1 = places.got1;
+        s_got2 = places.got2;
+        s_got3 = places.got3;
 
         //active pots? collectioin
         s_p1 = places.p1;

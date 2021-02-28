@@ -51,7 +51,6 @@ public class Loader : MonoBehaviour
         invent.pot16 = dataI.s_pot16;
 
 
-
         //Bag,money and Seeds
         bag.Monay = data.s_Money;
         bag.Gems = data.s_Gems;
@@ -67,6 +66,11 @@ public class Loader : MonoBehaviour
         bag.kiwiseed = data.s_kiwi;
 
         //Pot places 
+
+        //gotPlant
+        places.got1 = dataP.s_got1;
+        places.got2 = dataP.s_got2;
+        places.got3 = dataP.s_got3;
 
         //plants 
         places.ble1 = dataP.s_ble1;
@@ -116,17 +120,17 @@ public class Loader : MonoBehaviour
         places.TT1P1 = dataP.s_TT1P1;
         places.TT2P1 = dataP.s_TT2P1;
         places.TT3P1 = dataP.s_TT3P1;
-        Debug.Log(places.TT1P1);
+        //Debug.Log(places.TT1P1);
 
         places.TT1P2 = dataP.s_TT1P2;
         places.TT2P2 = dataP.s_TT2P2;
         places.TT3P2 = dataP.s_TT3P2;
-        Debug.Log(places.TT1P2);
+        //Debug.Log(places.TT1P2);
 
         places.TT1P3 = dataP.s_TT1P3;
         places.TT2P3 = dataP.s_TT2P3;
         places.TT3P3 = dataP.s_TT3P3;
-        Debug.Log(places.TT1P3);
+        //Debug.Log(places.TT1P3);
 
         //selling price
 
@@ -204,7 +208,7 @@ public class Loader : MonoBehaviour
             places.pp10 = dataP.s_pp10;
         }
         places.loadplants();
-        Debug.Log("Pots loaded");
+        //Debug.Log("Pots loaded");
     }
 
     public void SaveGame()
