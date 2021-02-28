@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sounds : MonoBehaviour
 {
-    public AudioClip s_PotPlaced, s_buy, s_start, s_upgrade, s_evolution, s_planted, s_inventO, s_inventC, s_market, s_tab, s_pop, s_closeSeedBag, s_water, s_close, s_sellPlant, s_error,  s_openSeedBag;
+    public AudioClip s_PotPlaced, s_buy, s_start, s_upgrade, s_evolution, s_planted, s_inventO, s_inventC, s_market, s_tab, s_pop, s_closeSeedBag, s_water, s_close, s_sellPlant, s_error,  s_openSeedBag, s_lvlup;
     
 
     private AudioSource source { get { return GetComponent<AudioSource>(); } }
@@ -138,6 +138,11 @@ public class Sounds : MonoBehaviour
         source.PlayOneShot(s_evolution);
     }
 
+    public void lvlup()
+    {
+        source.clip = s_lvlup;
+        source.PlayOneShot(s_lvlup);
+    }
 
 }
 
