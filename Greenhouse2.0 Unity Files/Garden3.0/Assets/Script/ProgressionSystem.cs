@@ -79,6 +79,10 @@ public class ProgressionSystem : MonoBehaviour
             playerLevelText.text = "Level 2";
             priceToLevelUpText.text = "Spend 750 leaves to level up, get a new pot, 15 ambers, and a free Apple seed?";
 
+            pot2.GetComponent<Collider2D>().enabled = true;
+            pot2.GetComponent<SpriteRenderer>().enabled = true;
+            pot2Shine.GetComponent<SpriteRenderer>().enabled = true;
+
             pot3.GetComponent<Collider2D>().enabled = false;
             pot3.GetComponent<SpriteRenderer>().enabled = false;
             pot3Shine.GetComponent<SpriteRenderer>().enabled = false;

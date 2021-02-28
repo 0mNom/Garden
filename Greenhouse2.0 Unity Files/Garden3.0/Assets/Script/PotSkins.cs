@@ -9,6 +9,7 @@ public class PotSkins : MonoBehaviour
     public PotPlaces places;
     ButtonPopUp popUp;
     public Inventory inv;
+    public GameObject pMarketPanel;
 
 
     void Start()
@@ -28,7 +29,9 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot1 < 1)
         {
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
         }
         else
@@ -47,18 +50,15 @@ public class PotSkins : MonoBehaviour
             if (popUp.Tag == "10") places.sp10 = 1;
             sendinfo();
         }
-        
-
-
-
-
     }
     public void skin2()
     {
 
         if (inv.pot2 < 1)
         {
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
         }
         else
@@ -77,19 +77,14 @@ public class PotSkins : MonoBehaviour
             if (popUp.Tag == "10") places.sp10 = 2;
             sendinfo();
         }
-       
-
-        
-
     }
     public void skin3()
     {
         if (inv.pot3 < 1)
         {
-
-            inv.StartCoroutine("errr");
-
-
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
         }
         else
         {
@@ -114,7 +109,9 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot4 < 1)
         {
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
         }
         else
@@ -139,7 +136,9 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot5 < 1)
         {
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
         }
         else
@@ -165,7 +164,9 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot6 < 1)
         {
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
         }
         else
@@ -192,7 +193,9 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot7 < 1)
         {
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
         }
 
@@ -219,7 +222,9 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot8 < 1)
         {
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
         }
 
@@ -245,7 +250,9 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot9 < 1)
         {
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
         }
 
@@ -272,7 +279,9 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot10 < 1)
         {
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
         }
 
@@ -302,7 +311,9 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot11 < 1)
         {
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
         }
         else
@@ -332,7 +343,9 @@ public class PotSkins : MonoBehaviour
 
         if (inv.pot12 < 1)
         {
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
         }
         else
@@ -360,8 +373,10 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot13 < 1)
         {
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
 
-            inv.StartCoroutine("errr");
+            //inv.StartCoroutine("errr");
 
 
         }
@@ -388,8 +403,10 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot14 < 1)
         {
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
 
-            inv.StartCoroutine("errr");
+            //inv.StartCoroutine("errr");
 
 
         }
@@ -416,8 +433,10 @@ public class PotSkins : MonoBehaviour
     {
         if (inv.pot15 < 1)
         {
+            pMarketPanel.SetActive(true);
 
-            inv.StartCoroutine("errr");
+            dot.pmarketOpen();
+            //inv.StartCoroutine("errr");
 
 
         }
@@ -445,7 +464,10 @@ public class PotSkins : MonoBehaviour
         if (inv.pot16 < 1)
         {
 
-            inv.StartCoroutine("errr");
+            pMarketPanel.SetActive(true);
+            dot.pmarketOpen();
+
+            //inv.StartCoroutine("errr");
 
 
         }
