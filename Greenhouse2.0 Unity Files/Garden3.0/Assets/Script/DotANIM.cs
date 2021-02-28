@@ -136,9 +136,9 @@ public class DotANIM : MonoBehaviour
         if (tutorial == null) yield break;
         sound.tutPlay();
         anim2.SetBool("talking", true);
-        txt3.DOText("This is where your seeds are stored for easy acess and for planting, try opening it", 5f, false, ScrambleMode.None, null);
+        txt3.DOText("This is where your seeds are stored for easy access and for planting, try opening it", 5f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
-        btxt3.DOText("This is where your seeds are stored for easy acess and for planting, try opening it", 5f, false, ScrambleMode.None, null);
+        btxt3.DOText("This is where your seeds are stored for easy access and for planting, try opening it", 5f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
         yield return new WaitForSeconds(5f);
         sound.tutPause();
@@ -205,8 +205,8 @@ public class DotANIM : MonoBehaviour
         T31.DOAnchorPos(new Vector2(-140, 97.6f), 0.25f);
         sound.tutPlay();
         anim4.SetBool("talking", true);
-        txt8.DOText("now that you have a seed in your hand you can click on a glowing pot to plant it.", 5f, false, ScrambleMode.None, null);
-        btxt8.DOText("now that you have a seed in your hand you can click on a glowing pot to plant it.", 5f, false, ScrambleMode.None, null);
+        txt8.DOText("now that you have a seed in your hand you can tap on a glowing pot to plant it.", 5f, false, ScrambleMode.None, null);
+        btxt8.DOText("now that you have a seed in your hand you can tap on a glowing pot to plant it.", 5f, false, ScrambleMode.None, null);
         yield return new WaitForSeconds(5f);
         sound.tutPause();
         anim4.SetBool("talking", true);
@@ -269,8 +269,8 @@ public class DotANIM : MonoBehaviour
         T5.DOAnchorPos(new Vector2(0, -770), 0.25f);
         sound.tutPlay();
         anim6.SetBool("talking", true);
-        txt6.DOText("Here you can find a whole bunch of information like how long your plant will take to grow.", 5f, false, ScrambleMode.None, null);
-        btxt6.DOText("Here you can find a whole bunch of information like how long your plant will take to grow.", 5f, false, ScrambleMode.None, null);
+        txt6.DOText("Here you can find a whole bunch of information like, how long your plant will take to grow.", 5f, false, ScrambleMode.None, null);
+        btxt6.DOText("Here you can find a whole bunch of information like, how long your plant will take to grow.", 5f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
         yield return new WaitForSeconds(5f);
         sound.tutPause();
@@ -332,8 +332,8 @@ public class DotANIM : MonoBehaviour
         btxt6.DOText("", 1f, false, ScrambleMode.None, null);
         if (tutorial == null) yield break;
         
-        txt6.DOText("this will make its selling price higher so come and check on them often.", 5f, false, ScrambleMode.None, null);
-        btxt6.DOText("this will make its selling price higher so come and check on them often.", 5f, false, ScrambleMode.None, null);
+        txt6.DOText("this will make its selling price higher so come and check on it often.", 5f, false, ScrambleMode.None, null);
+        btxt6.DOText("this will make its selling price higher so come and check on it often.", 5f, false, ScrambleMode.None, null);
         yield return new WaitForSeconds(5f);
         sound.tutPause();
         anim6.SetBool("talking", false);
@@ -373,8 +373,8 @@ public class DotANIM : MonoBehaviour
         txt6.DOText("", 1f, false, ScrambleMode.None, null);
         btxt6.DOText("", 1f, false, ScrambleMode.None, null);
        
-        txt6.DOText("to change a pot, open the store room and selet the pot you want to use.", 5f, false, ScrambleMode.None, null);
-        btxt6.DOText("to change a pot, open the store room and selet the pot you want to use.", 5f, false, ScrambleMode.None, null);
+        txt6.DOText("to change a pot, open the store room and select the pot you want to use.", 5f, false, ScrambleMode.None, null);
+        btxt6.DOText("to change a pot, open the store room and select the pot you want to use.", 5f, false, ScrambleMode.None, null);
         yield return new WaitForSeconds(5f);
         sound.tutPause();
         anim6.SetBool("talking", false);
