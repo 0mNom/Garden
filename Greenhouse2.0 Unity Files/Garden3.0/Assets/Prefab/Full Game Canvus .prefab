@@ -4379,7 +4379,7 @@ RectTransform:
   - {fileID: 576276046}
   - {fileID: 872029843}
   m_Father: {fileID: 2498715304347875877}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5940,17 +5940,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950614427}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1062478435}
-  m_Father: {fileID: 3714568884686942692}
-  m_RootOrder: 0
+  m_Father: {fileID: 2498715304347875877}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 311, y: -760}
+  m_AnchoredPosition: {x: -521.29816, y: 1030.3077}
   m_SizeDelta: {x: 920.7085, y: 608.2119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &950614431
@@ -10793,7 +10793,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556954812}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10804,12 +10804,12 @@ RectTransform:
   - {fileID: 1136868035}
   - {fileID: 416667033}
   - {fileID: 1070374989}
-  m_Father: {fileID: 3714568884686942692}
-  m_RootOrder: 1
+  m_Father: {fileID: 2498715304347875877}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 313.25, y: -761}
+  m_AnchoredPosition: {x: -519.0483, y: 1029.3077}
   m_SizeDelta: {x: 916.2178, y: 589.82385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1556954815
@@ -13274,7 +13274,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2498715304347875877}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -15241,7 +15241,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3714568884686942692}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26206,6 +26206,8 @@ RectTransform:
   - {fileID: 723410768}
   - {fileID: 7794323486360686914}
   - {fileID: 3714568884686942692}
+  - {fileID: 950614428}
+  - {fileID: 1556954813}
   - {fileID: 707712886}
   - {fileID: 1891107222}
   m_Father: {fileID: 2498715304759935406}
@@ -43186,6 +43188,15 @@ MonoBehaviour:
   SliderValueCherry: {fileID: 2498715303894677628}
   SliderValueAvo: {fileID: 2498715303891084414}
   SliderValueKiwi: {fileID: 2498715304601413599}
+  totalWheat: {fileID: 0}
+  totalapple: {fileID: 0}
+  totaltomato: {fileID: 0}
+  totaleggplant: {fileID: 0}
+  totalpear: {fileID: 0}
+  totalsunflower: {fileID: 0}
+  totalcherry: {fileID: 0}
+  totalavo: {fileID: 0}
+  totalkiwi: {fileID: 0}
   plantingseed: 0
   wheatprice: 0
   appleprice: 0
@@ -49473,8 +49484,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 950614428}
-  - {fileID: 1556954813}
   - {fileID: 2384134296570315334}
   m_Father: {fileID: 2498715304347875877}
   m_RootOrder: 15
